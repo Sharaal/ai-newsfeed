@@ -8,7 +8,7 @@ module.exports = function parseQueryValue(value) {
     return value.split(',').reduce(
         (previous, current) => {
             let [name, value] = current.split('-');
-            previous[name] = value;
+            previous[name] = value || 1;
             return previous;
         },
         {},

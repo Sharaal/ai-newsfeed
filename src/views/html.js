@@ -23,6 +23,15 @@ module.exports = [
             return `
 <article id="item-${index}">
     <h2>${item.title}</h2>
+    ${
+        item.categories 
+        ? `<p><em>
+            ${Object.entries(item.categories).map(
+                ([category, relevance]) => `<a href="${process.env.URL}/?categories=${category}">${category}</a>-${relevance}`
+            ).join(', ')}
+        </em></p>`
+        : ''
+    }
     ${item.assets?.tts ? `<audio controls><source src="${process.env.URL}/${item.assets.tts}" type="audio/mpeg"></audio>` : ''}
     <div class="summary">${summaryHtml}</div>
     <div class="full" style="display:none">
@@ -47,7 +56,7 @@ module.exports = [
 </head>
 <body>
     <header>
-        <h1>AI Newsfeed</h1>
+        <h1><a href="${process.env.URL}">AI Newsfeed</a></h1>
         <a href="${process.env.URL}/api-docs" target="_blank">API Docs</a>
     </header>
     <main>${itemsHtml}</main>
