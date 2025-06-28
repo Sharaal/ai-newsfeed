@@ -2,6 +2,8 @@
 
 Das Projekt soll helfen alle Neuigkeiten zu sammeln, aber nur diejenigen in einem Feed auszugeben, die für einen Nutzer relevant sind.
 
+Jetzt ausprobieren: https://ai-newsfeed.onrender.com/
+
 ## Workflow
 
 Beispielartikel: https://www.heise.de/news/Weltraumteleskop-James-Webb-bildet-erstmals-Exoplaneten-direkt-ab-10461248.html

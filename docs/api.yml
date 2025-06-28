@@ -5,6 +5,8 @@ info:
   description: 
 
 servers:
+  - url: https://ai-newsfeed.onrender.com
+    description: production server.
   - url: http://localhost:3001
     description: local development server.
 
