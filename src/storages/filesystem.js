@@ -17,9 +17,9 @@ const data = globSync('./data/*.md')
             date: file.substring(5, 15),
             content: content.trim(),
             assets: {
-                images: globSync('./public/' + file.substring(5, file.length - 3) + '/images/*.*')
+                images: globSync('./public/assets/' + file.substring(5, file.length - 3) + '/images/*.*')
                     .map(asset => asset.substring(7)),
-                tts: globSync('./public/' + file.substring(5, file.length - 3) + '/tts.*')
+                tts: globSync('./public/assets/' + file.substring(5, file.length - 3) + '/tts.*')
                     .map(asset => asset.substring(7))[0],
             }
         }
