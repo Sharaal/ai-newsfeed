@@ -1,4 +1,5 @@
 ---
+layout: "post"
 language: "de"
 title: "Die Zukunft der Arbeitswelt: Chancen und Herausforderungen durch KI"
 categories:

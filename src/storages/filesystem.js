@@ -12,6 +12,9 @@ const orderByDateDesc = require('../utils/orderByDateDesc');
 const data = globSync('./data/*.md')
     .map(file => {
         const { content, data } = matter(fs.readFileSync(file, 'utf-8'));
+        if (data.layout !== 'post') {
+            return;
+        }
         return {
             ...data,
             date: file.substring(5, 15),
@@ -24,6 +27,7 @@ const data = globSync('./data/*.md')
             }
         }
     })
+    .filter(Boolean)
     .sort(orderByDateDesc);
 
 module.exports = function storage({ language, categories, qualitygates, aigenerated, date, limit, offset }) {

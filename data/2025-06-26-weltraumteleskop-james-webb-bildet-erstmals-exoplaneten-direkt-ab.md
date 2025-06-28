@@ -1,4 +1,5 @@
 ---
+layout: "post"
 language: "de"
 title: "Weltraumteleskop James Webb bildet erstmals Exoplaneten direkt ab"
 categories:

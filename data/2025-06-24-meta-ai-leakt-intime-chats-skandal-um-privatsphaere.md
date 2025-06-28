@@ -1,4 +1,5 @@
 ---
+layout: "post"
 language: "de"
 title: "Meta AI leakt intime Chats: Skandal um Privatsphäre!"
 categories:
