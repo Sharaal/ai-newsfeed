@@ -1,0 +1,110 @@
+openapi: 3.0.0
+info:
+  title: AI Newsfeed API
+  version: "0.0.0"
+  description: 
+
+servers:
+  - url: http://localhost:3001
+    description: local development server.
+
+paths:
+  /:
+    get:
+      summary: Get Feed
+      description: Query the feed with optional filters for categories and quality gates.
+      parameters:
+        - in: headers
+          name: Accept
+          schema:
+            type: string
+            default: application/json
+          description: The response format, e.g. "application/json", "application/rss+xml" or "text/html".
+        - in: query
+          name: language
+          schema:
+            type: string
+          description: Language for filtering the news. (Default: no filter)
+        - in: query
+          name: categories
+          schema:
+            type: string
+          description: Comma separated list of categories-relevance pairs to filter by, e.g. "it-5,ai-2". (Default: no filter)
+        - in: query
+          name: qualitygates
+          schema:
+            type: string
+          description: Comma separated list of qualitygates-true/false pairs to filter by, e.g. "spelling-true,facts-false". Alternatively "false" can be given to disable qualitygates filter. (Default: all qualitygates true)
+        - in: query
+          name: aigenerated
+          schema:
+            type: boolean
+          description: false to filter out all AI generated news. (Default: no filter)
+        - in: query
+          name: date
+          schema:
+            type: string
+          description: Minimum date to filter in format "YYYY-MM-DD". (Default: no filter)
+        - in: query
+          name: limit
+          schema:
+            type: number
+          description: Limit for pagination. (Default: no limit)
+        - in: query
+          name: offset
+          schema:
+            type: number
+          description: Offset for pagination. (Default: no offset)
+      responses:
+        '200':
+          description: Successful response with the feed of all news.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/News'
+            application/rss+xml:
+              type: string
+            text/html:
+              type: string
+
+components:
+  schemas:
+    News:
+      type: object
+      properties:
+        language:
+          type: string
+        title:
+          type: string
+        categories:
+          type: object
+          additionalProperties:
+            type: integer
+        qualitygates:
+          type: object
+          additionalProperties:
+            type: boolean
+        aigenerated:
+          type: boolean
+        date:
+          type: string
+          format: date
+        content:
+          type: string
+        assets:
+          type: object
+          properties:
+            images:
+              type: array
+              items:
+                type: string
+                format: uri
+            tts:
+              type: string
+              format: uri
+      required:
+        - title
+        - date
+        - content
