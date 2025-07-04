@@ -1,10 +1,36 @@
 ---
-layout: "post"
-language: "de"
-title: "Meta AI leakt intime Chats: Skandal um Privatsphäre!"
+layout: post
+language: de
+title: 'Meta AI leakt intime Chats: Skandal um Privatsphäre!'
 aigenerated: true
 assets:
-    tts: "assets/2025-06-24-meta-ai-leakt-intime-chats-skandal-um-privatsphaere/tts.mp3"
+  tts: >-
+    assets/2025-06-24-meta-ai-leakt-intime-chats-skandal-um-privatsphaere/tts.mp3
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Der Skandal betrifft direkt Meta AI und zeigt fundamentale Probleme beim
+      Umgang mit KI-Chatbots auf, was für alle AI-Interessierten hochrelevant
+      ist.
+  - name: security
+    relevance: 9
+    reasoning: >-
+      Massive Sicherheitslücken führten zur ungewollten Veröffentlichung
+      privater Chats - ein kritisches Sicherheitsproblem mit weitreichenden
+      Folgen.
+  - name: data protection
+    relevance: 10
+    reasoning: >-
+      Dies ist ein Paradebeispiel für schwerwiegende Datenschutzverletzungen,
+      bei dem intime persönliche Daten öffentlich wurden - bahnbrechend relevant
+      für alle Nutzer.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Relevant für Unternehmen und Arbeitnehmer, die KI-Tools nutzen, da es
+      zeigt, welche Risiken bei der geschäftlichen Nutzung von AI-Chatbots
+      bestehen.
 ---
 
 Meta steht erneut im Zentrum eines Datenschutzskandals. Die kürzlich veröffentlichte KI-App des Unternehmens, die es Nutzern ermöglicht, mit einem Chatbot zu interagieren, hat versehentlich intime Chats öffentlich zugänglich gemacht. Diese Chats, die medizinische Details, rechtliche Fragen und persönliche Geständnisse enthalten, sind im öffentlich zugänglichen Discover-Feed der App aufgetaucht. Nutzer, die glaubten, ihre Gespräche seien privat, mussten feststellen, dass ihre sensiblen Informationen für jedermann einsehbar waren.

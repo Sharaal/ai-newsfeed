@@ -1,0 +1,70 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Fake-Shops: Warum \"Claudias Atelier\" nur eine KI ist\n\n\nIn den letzten Tagen hat sich herausgestellt, dass der Online-Shop \"Claudias Atelier\" ein Fake-Shop ist, der von einer Künstlichen Intelligenz (KI) betrieben wird. Der Shop lockte Kunden mit emotionalen Geschichten und extremen Rabatten, die angeblich aufgrund einer Geschäftsaufgabe angeboten wurden. Viele Nutzer wurden durch die professionell gestalteten Webseiten und die scheinbar authentischen Kundenbewertungen getäuscht und bestellten Waren, die nie geliefert wurden.\n\n<!--more-->\n\nDie Verbraucherzentrale Bayern warnt vor einer zunehmenden Professionalisierung von Fake-Shops durch den Einsatz von KI. Diese Shops nutzen Algorithmen, um überzeugende Texte und Bilder zu generieren, die das Vertrauen der Kunden gewinnen sollen. \"Claudias Atelier\" ist nur ein Beispiel von vielen, die in den letzten Wochen aufgedeckt wurden. Die Betreiber dieser Fake-Shops sind oft schwer zu fassen, da sie ihre Spuren im Internet gut verschleiern und die Webseiten schnell wieder offline nehmen, sobald sie entdeckt werden.\n\nDie Behörden raten Verbrauchern, bei Online-Käufen besonders vorsichtig zu sein und verdächtige Shops zu melden. Es wird empfohlen, vor einer Bestellung die Seriosität des Shops zu überprüfen, beispielsweise durch den Einsatz von Tools wie dem Fakeshop-Finder der Verbraucherzentrale. Zudem sollten Kunden auf sichere Zahlungsmethoden achten und im Zweifelsfall lieber auf den Kauf verzichten.\n\n### Quellen\n- [BR24: Fake-Shops: Warum \"Claudias Atelier\" nur eine KI ist](https://www.br.de/nachrichten/netzwelt/fake-shops-warum-claudias-atelier-nur-eine-ki-ist,UpJTdYw)\n- [Verbraucherschutz.de: Fake Shops Juni 2025](https://verbraucherschutz.de/fake-shops-juni-2025/)\n- [Kieler Nachrichten: Fake-Shops: Auf allen Ebenen bekämpfen](https://www.kn-online.de/wirtschaft/regional/kommentar-kieler-nachrichten-zu-fakeshops-plattformen-in-haftung-nehmen-ZWVOVXL66VFBXGWDDUJQLLYL3I.html)\n\n    ",
+    "timestamp": "2025-07-04T12:27:18.082Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über KI-betriebene Fake-Shops und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 8/10**\nDer Artikel behandelt direkt den Einsatz von KI zur Erstellung professioneller Fake-Shops, was ein wichtiges Beispiel für den Missbrauch von KI-Technologie darstellt und für alle AI-Interessierten hochrelevant ist.\n\n**security - Relevanz: 9/10**\nFake-Shops stellen eine direkte Sicherheitsbedrohung für Online-Nutzer dar, da sie Betrug und Identitätsdiebstahl ermöglichen - ein kritisches Sicherheitsthema mit hoher Allgemeinrelevanz.\n\n**work - Relevanz: 6/10**\nDer Artikel zeigt, wie KI traditionelle Betrugsmethoden automatisiert und professionalisiert, was Auswirkungen auf Arbeitsplätze im E-Commerce und Verbraucherschutz haben könnte.\n\n**data protection - Relevanz: 7/10**\nFake-Shops sammeln unrechtmäßig Kundendaten (Zahlungsinformationen, persönliche Daten), was ein wichtiges Datenschutzproblem darstellt.\n\n**copyright - Relevanz: 5/10**\nKI-generierte Inhalte für Fake-Shops könnten urheberrechtlich geschützte Bilder oder Texte verwenden, allerdings wird dieser Aspekt im Artikel nicht explizit behandelt.\n\nDie Kategorien **programming** und **databases** sind nicht relevant, da der Artikel keine technischen Details zur Implementierung oder Datenverwaltung der Fake-Shops behandelt.",
+          "id": "738b715a-d4e0-4dcd-98da-35903d157169"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Der Artikel behandelt direkt den Einsatz von KI zur Erstellung professioneller Fake-Shops, was ein wichtiges Beispiel für den Missbrauch von KI-Technologie darstellt und für alle AI-Interessierten hochrelevant ist."
+          },
+          {
+            "name": "security",
+            "relevance": 9,
+            "reasoning": "Fake-Shops stellen eine direkte Sicherheitsbedrohung für Online-Nutzer dar, da sie Betrug und Identitätsdiebstahl ermöglichen - ein kritisches Sicherheitsthema mit hoher Allgemeinrelevanz."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Der Artikel zeigt, wie KI traditionelle Betrugsmethoden automatisiert und professionalisiert, was Auswirkungen auf Arbeitsplätze im E-Commerce und Verbraucherschutz haben könnte."
+          },
+          {
+            "name": "data protection",
+            "relevance": 7,
+            "reasoning": "Fake-Shops sammeln unrechtmäßig Kundendaten (Zahlungsinformationen, persönliche Daten), was ein wichtiges Datenschutzproblem darstellt."
+          },
+          {
+            "name": "copyright",
+            "relevance": 5,
+            "reasoning": "KI-generierte Inhalte für Fake-Shops könnten urheberrechtlich geschützte Bilder oder Texte verwenden, allerdings wird dieser Aspekt im Artikel nicht explizit behandelt."
+          }
+        ]
+      ]
+    }
+  }
+}

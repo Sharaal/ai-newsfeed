@@ -1,0 +1,55 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Context in JavaScript closures\n\n\r\nClosures are functions which use variables from the surrounded context. Using them without think about can result in unpredictable side effects:\r\n<!--more-->\r\n\r\n```javascript\r\nvar context = 'a';\r\nvar closure = function () {\r\n    console.log(context);\r\n};\r\nclosure(); // console.log: a\r\ncontext = 'b';\r\nclosure(); // console.log: b\r\n```\r\n\r\nThe closure use and depends on the current values of the context variables. The same function call with the same arguments results in different behaviors.\r\n\r\nA possible way to save the state of the context is to wrap the closure with a self calling function:\r\n\r\n```javascript\r\nvar context = 'a';\r\nvar closure = function (context) {\r\n  return function () { console.log(context) };\r\n}(context);\r\nclosure(); // console.log: a\r\ncontext = 'b';\r\nclosure(); // console.log: a\r\n```\r\n\r\nThe value of the argument get copied into the parameter which no longer changes and every function call results in the same behavior.\r\n\r\n## Summary\r\n\r\nClosures are useful and flexible. But care about using them with mutable context variables.\r\n\n    ",
+    "timestamp": "2025-07-04T13:47:33.662Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den gegebenen Newstext über JavaScript Closures:\n\n## Analyse des Newstexts\n\nDer Text behandelt ein spezifisches Programmierkonzept in JavaScript - Closures und deren Verhalten mit Kontextvariablen. Es wird ein technisches Problem erklärt und eine Lösungsstrategie vorgestellt.\n\n## Passende Kategorien mit Relevanz-Bewertung\n\n**programming: 8/10**\nDer Text behandelt direkt ein wichtiges Programmierkonzept in JavaScript mit praktischen Codebeispielen und ist für alle JavaScript-Entwickler sehr relevant, da Closures ein fundamentales Konzept sind.\n\n**ai: 1/10**\nNur sehr indirekt relevant, da JavaScript-Kenntnisse auch in der KI-Entwicklung verwendet werden können, aber der Text behandelt kein KI-spezifisches Thema.\n\nDie anderen Kategorien (databases, security, work, data protection, copyright) sind nicht relevant, da der Text ausschließlich ein spezifisches JavaScript-Programmierkonzept behandelt und keine Bezüge zu Datenbanken, Sicherheit, Arbeitswelt, Datenschutz oder Urheberrecht aufweist.",
+          "id": "3969dab7-2790-48a1-a805-28ae23e93ca1"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "programming",
+            "relevance": 8,
+            "reasoning": "Der Text behandelt direkt ein wichtiges Programmierkonzept in JavaScript mit praktischen Codebeispielen und ist für alle JavaScript-Entwickler sehr relevant, da Closures ein fundamentales Konzept sind."
+          },
+          {
+            "name": "ai",
+            "relevance": 1,
+            "reasoning": "Nur sehr indirekt relevant, da JavaScript-Kenntnisse auch in der KI-Entwicklung verwendet werden können, aber der Text behandelt kein KI-spezifisches Thema."
+          }
+        ]
+      ]
+    }
+  }
+}

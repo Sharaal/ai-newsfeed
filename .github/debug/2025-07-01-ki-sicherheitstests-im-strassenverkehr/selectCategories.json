@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-Sicherheitstests im Straßenverkehr\n\n\nIn den letzten Tagen hat die Diskussion um die Sicherheit von Künstlicher Intelligenz (KI) im Straßenverkehr neue Impulse erhalten. Verschiedene Projekte und Studien zeigen, wie KI-Systeme zur Verbesserung der Verkehrssicherheit beitragen können. Ein bemerkenswertes Beispiel ist das Verkehrslabor der Zukunft, das im ZDF-Morgenmagazin vorgestellt wurde. Hier wird ein \"digitaler Zwilling\" des Straßenverkehrs geschaffen, der Autos, Radfahrende und Fußgänger realistisch integriert, um das autonome Fahren sicherer zu machen.\n\n<!--more-->\n\nEin weiteres Projekt, das Aufmerksamkeit erregt, ist die KI-gestützte Erfassung von Straßenschäden in Schleswig-Holstein. In 30 Kommunen wird eine App eingesetzt, die mithilfe von KI Straßenschäden erkennt und dokumentiert. Dies spart Zeit und Kosten und erhöht die Effizienz der Straßeninstandhaltung. In Ingolstadt wird an drei Straßenkreuzungen getestet, wie KI zur Verkehrssicherheit beitragen kann, indem sie Verkehrsteilnehmer vor gefährlichen Situationen warnt.\n\nAuch die Deutsche Gesetzliche Unfallversicherung (DGUV) hat sich dem Thema angenommen und in ihrer aktuellen Ausgabe des DGUV Forums die Vorteile von KI im Straßenverkehr hervorgehoben. KI-Systeme können helfen, den Rad- und Fußverkehr zu erkennen und Unfälle zu vermeiden, die durch den toten Winkel oder fehlende Aufmerksamkeit verursacht werden. \n\nEin weiteres Beispiel ist das Projekt KISSaF, das die Verkehrssicherheit durch den Einsatz von KI verbessern soll. Durch das Training von KI-Algorithmen kann das Verhalten von Verkehrsteilnehmern vorhergesagt werden, was zu einer präziseren und sichereren Interaktion mit automatisierten Fahrerassistenzsystemen führt. \n\nDie Tagesschau berichtete zudem über die Möglichkeit, dass KI den Verkehr flüssiger machen könnte, indem sie Staus durch bessere Planung reduziert. Dies ist jedoch noch ein langer Weg, bis solche Systeme flächendeckend eingesetzt werden können.\n\n### Quellen\n- [ZDFheute](https://www.zdfheute.de/video/zdf-morgenmagazin/ki-sicherheitstests-strassenverkehr-fahren-autonom-100.html)\n- [NDR](https://www.ndr.de/nachrichten/schleswig-holstein/ki-erfasst-strassenschaeden-in-30-kommunen-in-schleswig-holstein,strassensoftware-114.html)\n- [BR24](https://www.br.de/nachrichten/bayern/so-soll-kuenstliche-intelligenz-im-ingolstaedter-verkehr-helfen,TqHw3YL)\n- [DGUV Forum](https://forum.dguv.de/issues/RZ_S028-031_1.08_KI_im_Verkehr.pdf)\n- [Logistik News24](https://www.logistik-news24.de/kissaf-erforscht-kuenstliche-intelligenz-verkehrssituationen/)\n- [Tagesschau](https://www.tagesschau.de/wirtschaft/digitales/ki-verkehr-stau-100.html)\n\n    ",
+    "timestamp": "2025-07-04T12:13:22.310Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über KI-Sicherheitstests im Straßenverkehr ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDer gesamte Artikel dreht sich um KI-Anwendungen im Straßenverkehr, von autonomem Fahren bis hin zu intelligenten Verkehrssystemen - dies ist hochrelevant für alle, die sich für die praktische Anwendung von KI interessieren.\n\n## **security** - Relevanz: 8/10\nVerkehrssicherheit durch KI-Systeme steht im Mittelpunkt des Artikels, mit konkreten Beispielen wie Unfallvermeidung und Gefahrenerkennung - ein wichtiges Thema für die öffentliche Sicherheit.\n\n## **work** - Relevanz: 6/10\nDie Automatisierung von Straßeninstandhaltung und Verkehrsüberwachung hat mittelfristige Auswirkungen auf Arbeitsplätze in der öffentlichen Verwaltung und im Verkehrswesen.\n\n## **programming** - Relevanz: 5/10\nObwohl KI-Algorithmen und deren Training erwähnt werden, liegt der Fokus auf Anwendungen rather than technischen Implementierungsdetails - interessant für Entwickler, aber nicht im Zentrum.\n\nDie Kategorien \"databases\", \"data protection\" und \"copyright\" sind nicht relevant, da der Text weder Datenbankthemen noch Datenschutz- oder Urheberrechtsfragen behandelt.",
+          "id": "63ba38be-9dfc-430c-ac80-ac4a236790d4"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der gesamte Artikel dreht sich um KI-Anwendungen im Straßenverkehr, von autonomem Fahren bis hin zu intelligenten Verkehrssystemen - dies ist hochrelevant für alle, die sich für die praktische Anwendung von KI interessieren."
+          },
+          {
+            "name": "security",
+            "relevance": 8,
+            "reasoning": "Verkehrssicherheit durch KI-Systeme steht im Mittelpunkt des Artikels, mit konkreten Beispielen wie Unfallvermeidung und Gefahrenerkennung - ein wichtiges Thema für die öffentliche Sicherheit."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Die Automatisierung von Straßeninstandhaltung und Verkehrsüberwachung hat mittelfristige Auswirkungen auf Arbeitsplätze in der öffentlichen Verwaltung und im Verkehrswesen."
+          },
+          {
+            "name": "programming",
+            "relevance": 5,
+            "reasoning": "Obwohl KI-Algorithmen und deren Training erwähnt werden, liegt der Fokus auf Anwendungen rather than technischen Implementierungsdetails - interessant für Entwickler, aber nicht im Zentrum."
+          }
+        ]
+      ]
+    }
+  }
+}

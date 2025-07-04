@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# DeepSeek-Skandal: China-KI zapft deutsche Daten an!\n\n\nDie chinesische KI-Anwendung DeepSeek steht derzeit im Zentrum eines Datenschutzskandals in Deutschland. Die Berliner Datenschutzbeauftragte Meike Kamp hat die App bei den großen App-Store-Betreibern Google und Apple als rechtswidrigen Inhalt gemeldet. Grund dafür sind massive Datenschutzbedenken, da personenbezogene Daten deutscher Nutzer illegal nach China übertragen werden. Die Unternehmen müssen nun zeitnah prüfen, ob sie die App aus ihren Stores entfernen.\n\n<!--more-->\n\nDeepSeek, entwickelt von der Hangzhou DeepSeek Artificial Intelligence Co., Ltd., speichert verschiedene persönliche Daten der Nutzer, darunter Anfragen und hochgeladene Dateien, auf Servern in China. Dies verstößt gegen europäische Datenschutzrichtlinien, da die Sicherheit der Datenübertragung ins Nicht-EU-Ausland nicht gewährleistet ist. Besonders problematisch ist, dass chinesische Behörden weitreichende Zugriffsrechte auf die Daten haben. Trotz einer Aufforderung im Mai, die Sicherheitsanforderungen zu erfüllen oder die App freiwillig zu entfernen, hat DeepSeek bisher nicht reagiert.\n\nDie Berliner Datenschutzbeauftragte betonte, dass DeepSeek nicht überzeugend nachweisen konnte, dass die Daten der Nutzer auf den chinesischen Servern genauso geschützt sind wie bei einer Speicherung in der EU. Dies hat zu einer intensiven Prüfung und letztlich zur Meldung der App als rechtswidrigen Inhalt geführt. Die Entscheidung, DeepSeek aus den App-Stores zu entfernen, könnte ein Präzedenzfall für den Umgang mit ausländischen KI-Anwendungen in Europa werden.\n\nDeepSeek hatte Anfang des Jahres für Aufsehen gesorgt, als es ein neues Large Language Model (LLM) vorstellte, das zu einem Bruchteil der Kosten ähnliche Leistungen wie ChatGPT und andere US-Produkte bieten soll. In Italien wurde die App bereits wegen Datenschutzbedenken aus den App-Stores verbannt. Die aktuellen Entwicklungen in Deutschland könnten ähnliche Maßnahmen in anderen europäischen Ländern nach sich ziehen.\n\n### Quellen\n- [tagesschau.de](https://www.tagesschau.de/inland/deepseek-datenschutz-102.html)\n- [Handelsblatt](https://www.handelsblatt.com/technik/ki/ki-deepseek-droht-in-deutschland-rauswurf-aus-app-stores/100137839.html)\n- [Spiegel](https://www.spiegel.de/netzwelt/deepseek-berliner-datenschuetzer-wollen-chinesische-ki-aus-app-stores-werfen-a-5544ae1c-b929-4c4d-909f-48420bb2ad45)\n- [Zeit](https://www.zeit.de/digital/datenschutz/2025-06/datenschutz-deepseek-loeschung-digital-services-act)\n- [rbb24](https://www.rbb24.de/politik/beitrag/2025/06/deepseek-appstore-datenschutzbeauftragte-berlin-meike-kamp-apple-google.html)\n- [n-tv.de](https://www.n-tv.de/ticker/DSA-meldet-DeepSeek-wegen-Datenschutzbedenken-article25863948.html)\n- [datenschutz-berlin.de](https://www.datenschutz-berlin.de/pressemitteilung/berliner-datenschutzbeauftragte-meldet-ki-app-deepseek-in-deutschland-bei-apple-und-google-als-rechtswidrigen-inhalt)\n- [stern.de](https://www.stern.de/digital/kuenstliche-intelligenz--datenschuetzer-wollen-deepseek-aus-den-app-stores-verbannen-35845686.html)\n- [WinFuture](https://winfuture.de/news,151874.html)\n\n    ",
+    "timestamp": "2025-07-04T12:31:02.339Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über den DeepSeek-Datenschutzskandal ordne ich folgende Kategorien mit entsprechenden Relevanzbewertungen zu:\n\n## **ai** - Relevanz: 9/10\nDie Nachricht behandelt eine chinesische KI-Anwendung (DeepSeek) und deren Large Language Model, was für alle AI-Interessierten hochrelevant ist, da es grundsätzliche Fragen zum Umgang mit ausländischen KI-Systemen aufwirft.\n\n## **data protection** - Relevanz: 10/10\nDies ist der Kernaspekt der Nachricht - massive Datenschutzverletzungen durch illegale Datenübertragung nach China und Verstöße gegen europäische Datenschutzrichtlinien machen dies für jeden Datenschutz-Interessierten bahnbrechend relevant.\n\n## **security** - Relevanz: 8/10\nDie Sicherheitsproblematik durch chinesische Behördenzugriffe auf Nutzerdaten und ungesicherte Datenübertragung ins Nicht-EU-Ausland ist für Sicherheitsexperten sehr relevant.\n\n## **work** - Relevanz: 6/10\nDa DeepSeek als kostengünstige Alternative zu ChatGPT für berufliche Anwendungen beworben wurde, betrifft das Verbot auch Arbeitsumgebungen, die solche Tools nutzen wollen.\n\nDie Kategorien **programming**, **databases** und **copyright** sind nicht relevant, da der Text weder technische Implementierungsdetails, Datenbankaspekte noch urheberrechtliche Fragen behandelt.",
+          "id": "be226a0b-b5bb-47c8-854c-3bb81f706c1e"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Die Nachricht behandelt eine chinesische KI-Anwendung (DeepSeek) und deren Large Language Model, was für alle AI-Interessierten hochrelevant ist, da es grundsätzliche Fragen zum Umgang mit ausländischen KI-Systemen aufwirft."
+          },
+          {
+            "name": "data protection",
+            "relevance": 10,
+            "reasoning": "Dies ist der Kernaspekt der Nachricht - massive Datenschutzverletzungen durch illegale Datenübertragung nach China und Verstöße gegen europäische Datenschutzrichtlinien machen dies für jeden Datenschutz-Interessierten bahnbrechend relevant."
+          },
+          {
+            "name": "security",
+            "relevance": 8,
+            "reasoning": "Die Sicherheitsproblematik durch chinesische Behördenzugriffe auf Nutzerdaten und ungesicherte Datenübertragung ins Nicht-EU-Ausland ist für Sicherheitsexperten sehr relevant."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Da DeepSeek als kostengünstige Alternative zu ChatGPT für berufliche Anwendungen beworben wurde, betrifft das Verbot auch Arbeitsumgebungen, die solche Tools nutzen wollen."
+          }
+        ]
+      ]
+    }
+  }
+}

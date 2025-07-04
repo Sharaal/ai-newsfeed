@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Google startet Doppl: KI-Anprobe jetzt per App\n\n\nGoogle hat in den USA die KI-App Doppl gestartet, mit der Nutzer Kleidung virtuell an sich selbst testen können. Die neue App aus Google Labs erstellt anhand von Fotos oder Screenshots eine digitale Darstellung der Person und zeigt, wie ein Outfit aussehen könnte – auch in Form kurzer KI-generierter Videos. Sie ist ab sofort für Android und iOS erhältlich. Google weist darauf hin, dass Doppl sich noch in der Testphase befindet und Passform oder Details nicht immer genau dargestellt werden. Nutzerfeedback soll in die Weiterentwicklung einfließen.\n\n<!--more-->\n\nDoppl setzt auf ein einfaches Prinzip. Nutzer laden ein Bild von sich selbst hoch, importieren das gewünschte Outfit, und die App generiert eine fotorealistische Vorschau. Dabei muss das Kleidungsstück nicht einmal aus einem Online-Shop stammen. Auch Screenshots aus sozialen Netzwerken oder Magazinen lassen sich verwenden. Die App erkennt Form und Schnitt und legt das virtuelle Kleidungsstück möglichst realistisch über das eigene Bild. Neu ist die Integration von Bewegung. Statt nur ein statisches Bild zu liefern, erstellt Doppl animierte Kurzvideos, in denen sich die Kleidung mitbewegt. Damit soll der Nutzer ein besseres Gefühl dafür bekommen, wie das Outfit im Alltag wirken könnte. Google beschreibt die Funktion als Vorschau auf das Tragegefühl, ohne dass man den eigenen Kleiderschrank öffnen muss.\n\nIm ersten Praxiseinsatz zeigt Doppl Potenzial, aber auch einige Schwächen. Während Oberteile und Kleider meist gut dargestellt werden, gibt es bei Hosen häufiger Probleme. Verzerrte Längen oder merkwürdige Übergänge an Knien und Füßen lassen erkennen, dass das System noch mit Körperproportionen zu kämpfen hat. Besonders bei weiten oder gemusterten Stoffen kommt es zu Fehlern, die das Ergebnis verfälschen können. Trotzdem bleibt das Tool spannend, gerade weil Google bei problematischen Eingaben auf Sicherheit achtet. Bilder von Prominenten oder anstößigen Outfits werden nicht akzeptiert. Die App prüft die Uploads automatisch und sorgt so für einen gewissen ethischen Rahmen. Auch Altersbeschränkungen sind aktiv, wenn auch technisch leicht zu umgehen.\n\nDoppl ist derzeit nur in den USA verfügbar und funktioniert auf Android und iOS. Der Fokus liegt auf klassischen Kleidungsstücken wie Oberteilen, Hosen oder Kleidern. Accessoires oder Schuhe sind bislang außen vor. Nutzer können allerdings direkt Feedback geben, das laut Google in die Weiterentwicklung der App einfließt. Erste Berichte aus sozialen Netzwerken zeigen bereits, wie unterschiedlich die Resultate ausfallen – je nach Körperhaltung, Licht oder Fotoqualität.\n\nDoppl wirkt wie ein logischer nächster Schritt im Zusammenspiel von Mode und Technik. Die Kombination aus KI, Animation und Personalisierung hat Charme – vor allem in einer Welt, in der Online-Shopping Alltag ist und Umkleidekabinen eher nerven als helfen. Noch fehlt der App die letzte Präzision, um wirklich verlässlich zu sein. Verzerrte Proportionen und unvollständige Kleidungsauswahl trüben das Nutzererlebnis. Aber Doppl macht etwas richtig: Es bringt Bewegung in ein Format, das lange starr war. Wenn Google an den technischen Details feilt und mehr Kleidungsstücke integriert, könnte aus dem Experiment ein alltägliches Werkzeug werden. Ein digitaler Spiegel, der mehr kann als nur spiegeln.\n\n### Quellen\n- [The Decoder](https://the-decoder.de/google-startet-doppl-neue-ki-app-fuer-virtuelle-outfit-anproben/)\n- [All-AI.de](https://www.all-ai.de/news/news24/google-doppl)\n- [Retail News](https://retail-news.de/google-doppl-virtuelle-anprobe-app-usa/)\n- [Stadt Bremerhaven](https://stadt-bremerhaven.de/google-doppl-ki-gestuetzte-anprobe-us/)\n\n    ",
+    "timestamp": "2025-07-04T12:25:59.941Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts über Googles KI-App Doppl ordne ich folgende Kategorien zu:\n\n## Gewählte Kategorien mit Relevanzbewertung:\n\n**ai - Relevanz: 8/10**\nDie App basiert vollständig auf KI-Technologie für fotorealistische Bildgenerierung und Animation. Dies zeigt einen praktischen Durchbruch von KI im Consumer-Bereich, der für ein breites Publikum interessant ist.\n\n**data protection - Relevanz: 6/10**\nNutzer laden persönliche Fotos hoch, die von Google verarbeitet werden. Die automatische Prüfung der Uploads und Sicherheitsmaßnahmen gegen Missbrauch sind datenschutzrelevante Aspekte, die viele Nutzer betreffen.\n\n**work - Relevanz: 5/10**\nDie App könnte die Modebranche und den Online-Handel verändern, indem sie virtuelle Anproben ermöglicht. Dies ist besonders für Fachkräfte in E-Commerce und Retail relevant.\n\n## Nicht gewählte Kategorien:\n- **programming**: Keine technischen Implementierungsdetails erwähnt\n- **databases**: Keine Datenbankthemen behandelt\n- **security**: Nur oberflächliche Sicherheitsaspekte, keine IT-Security im engeren Sinne\n- **copyright**: Keine urheberrechtlichen Fragestellungen thematisiert\n\nDie App stellt einen bedeutenden Fortschritt in der praktischen KI-Anwendung dar, mit relevantem Datenschutzbezug und potenziellen Auswirkungen auf die Arbeitswelt im Modebereich.",
+          "id": "b4e8612f-8b1c-4fa9-bb0c-ced74c0e1557"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Die App basiert vollständig auf KI-Technologie für fotorealistische Bildgenerierung und Animation. Dies zeigt einen praktischen Durchbruch von KI im Consumer-Bereich, der für ein breites Publikum interessant ist."
+          },
+          {
+            "name": "data protection",
+            "relevance": 6,
+            "reasoning": "Nutzer laden persönliche Fotos hoch, die von Google verarbeitet werden. Die automatische Prüfung der Uploads und Sicherheitsmaßnahmen gegen Missbrauch sind datenschutzrelevante Aspekte, die viele Nutzer betreffen."
+          },
+          {
+            "name": "work",
+            "relevance": 5,
+            "reasoning": "Die App könnte die Modebranche und den Online-Handel verändern, indem sie virtuelle Anproben ermöglicht. Dies ist besonders für Fachkräfte in E-Commerce und Retail relevant."
+          }
+        ]
+      ]
+    }
+  }
+}

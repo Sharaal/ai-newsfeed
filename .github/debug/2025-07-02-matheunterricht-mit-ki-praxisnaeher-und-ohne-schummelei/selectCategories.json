@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Matheunterricht mit KI: Praxisnäher und ohne Schummelei?\n\n\nKünstliche Intelligenz (KI) revolutioniert den Mathematikunterricht an deutschen Schulen. In Nordrhein-Westfalen testen derzeit 25 Schulen den Einsatz von KI-gestützten Lernsystemen, die Schüler individuell fördern und Lehrkräfte entlasten sollen. Die Technologie analysiert beispielsweise Blickbewegungen der Schüler, um Schwächen in mathematischen Grundlagen zu erkennen. So können gezielte Übungen vorgeschlagen werden, die den Lernprozess optimieren. Erste Ergebnisse zeigen, dass Schüler durch diese personalisierte Unterstützung schneller Fortschritte machen und Wissenslücken effektiver geschlossen werden können.\n\n<!--more-->\n\nDoch der Einsatz von KI im Klassenzimmer wirft auch Fragen auf. Kritiker befürchten, dass Schüler durch die Automatisierung weniger eigenständig denken und sich zu sehr auf die Technologie verlassen könnten. Zudem gibt es Bedenken hinsichtlich des Datenschutzes, da viele Systeme persönliche Daten wie Blickbewegungen oder Lernverhalten speichern. Befürworter argumentieren hingegen, dass KI den Unterricht praxisnäher und gerechter macht, da sie individuelle Bedürfnisse besser berücksichtigt als herkömmliche Methoden. Auch das Schummeln wird durch KI erschwert, da die Systeme in Echtzeit analysieren, wie Aufgaben bearbeitet werden.\n\n### Quellen\n- [BR24: Matheunterricht mit Künstlicher Intelligenz - keine Schummelei?](https://www.br.de/nachrichten/wissen/matheunterricht-mit-kuenstlicher-intelligenz-keine-schummelei,UpmAiWz)\n- [NRW1: 25 NRW-Schulen testen KI in Mathe und Deutsch](https://www.nrw1.de/nachrichten/25-NRW-Schulen-testen-KI-in-Mathe-und-Deutsch-id1261027.html)\n- [SmartUp News: KI erkennt Schwächen im Mathe-Unterricht](https://smartup-news.de/technologie/unterricht-der-zukunft-ki-erkennt-mathe-schwaechen-mit-einem-blick/)\n\n    ",
+    "timestamp": "2025-07-04T12:12:07.011Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über KI im Mathematikunterricht und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 8/10**\nDer Artikel behandelt direkt den Einsatz von KI-gestützten Lernsystemen im Bildungsbereich, was ein hochrelevantes und zukunftsweisendes Anwendungsgebiet der Künstlichen Intelligenz darstellt.\n\n**work - Relevanz: 6/10**\nDie Technologie soll Lehrkräfte entlasten und verändert deren Arbeitsweise im Unterricht, was für Bildungsberufe und die Zukunft der Arbeit relevant ist.\n\n**data protection - Relevanz: 7/10**\nDer Artikel thematisiert explizit Datenschutzbedenken bezüglich der Speicherung persönlicher Daten wie Blickbewegungen und Lernverhalten, was ein wichtiges gesellschaftliches Thema darstellt.\n\n**security - Relevanz: 4/10**\nDas Thema Betrugsverhinderung (Anti-Schummel-Funktionen) wird erwähnt, ist aber nur ein Nebenaspekt und weniger sicherheitskritisch als andere IT-Security-Themen.\n\nDie Kategorien \"programming\", \"databases\" und \"copyright\" sind nicht relevant, da der Artikel weder technische Implementierungsdetails noch Urheberrechtsfragen behandelt.",
+          "id": "61a729dc-884c-47e3-b480-977f142d77c5"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Der Artikel behandelt direkt den Einsatz von KI-gestützten Lernsystemen im Bildungsbereich, was ein hochrelevantes und zukunftsweisendes Anwendungsgebiet der Künstlichen Intelligenz darstellt."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Die Technologie soll Lehrkräfte entlasten und verändert deren Arbeitsweise im Unterricht, was für Bildungsberufe und die Zukunft der Arbeit relevant ist."
+          },
+          {
+            "name": "data protection",
+            "relevance": 7,
+            "reasoning": "Der Artikel thematisiert explizit Datenschutzbedenken bezüglich der Speicherung persönlicher Daten wie Blickbewegungen und Lernverhalten, was ein wichtiges gesellschaftliches Thema darstellt."
+          },
+          {
+            "name": "security",
+            "relevance": 4,
+            "reasoning": "Das Thema Betrugsverhinderung (Anti-Schummel-Funktionen) wird erwähnt, ist aber nur ein Nebenaspekt und weniger sicherheitskritisch als andere IT-Security-Themen."
+          }
+        ]
+      ]
+    }
+  }
+}

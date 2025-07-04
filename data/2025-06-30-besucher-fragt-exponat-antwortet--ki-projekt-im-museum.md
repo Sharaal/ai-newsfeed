@@ -1,8 +1,28 @@
 ---
-layout: "post"
-language: "de"
-title: "Besucher fragt, Exponat antwortet – KI-Projekt im Museum"
+layout: post
+language: de
+title: 'Besucher fragt, Exponat antwortet – KI-Projekt im Museum'
 aigenerated: true
+categories:
+  - name: ai
+    reasoning: >-
+      Der Artikel behandelt zentral den Einsatz von KI-Technologien in Museen,
+      einschließlich generativer KI, Sprachmodellen und Chatbots - dies ist
+      hochrelevant für alle, die sich für praktische KI-Anwendungen
+      interessieren.
+    relevance: 9
+  - name: programming
+    reasoning: >-
+      Die Entwicklung von KI-Chatbots und interaktiven Systemen erfordert
+      erhebliche Programmierarbeit, was für Entwickler interessant ist, aber
+      nicht im Detail technisch beschrieben wird.
+    relevance: 6
+  - name: work
+    reasoning: >-
+      Das Projekt zeigt, wie KI die Arbeitswelt in Museen und
+      Kultureinrichtungen verändert und neue Formen der Wissensvermittlung
+      ermöglicht - relevant für Fachkräfte in Bildung und Kultur.
+    relevance: 7
 ---
 
 Im Fränkische Schweiz-Museum in Tüchersfeld wird derzeit ein innovatives Projekt umgesetzt, das die Art und Weise, wie Besucher mit Ausstellungsstücken interagieren, revolutionieren könnte. Mithilfe eines neuen KI-Tools sollen die historischen Exponate in der Lage sein, auf Fragen der Besucher zu antworten. Dieses Projekt wird durch eine finanzielle Unterstützung ermöglicht und zielt darauf ab, die Ausstellung interaktiver und informativer zu gestalten. Die Idee ist, dass Besucher nicht nur passiv Informationen aufnehmen, sondern aktiv mit den Exponaten kommunizieren können, um ein tieferes Verständnis und eine persönlichere Erfahrung zu erhalten.

@@ -1,0 +1,55 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Node.js clustering in multi CPU environments\n\n\r\nNode.js is single threaded. To use the capacity of multi CPU environments clustering is needed. There are solutions already available, so just have a quick look at one of them.\r\n\r\n<!--more-->\r\n\r\n`throng` is the name of the package, accepts a function to initialize an instance and options, in the following example it requires the `app.js`. The first important option is the amount of instances. For Heroku use the environment variable `WEB_CONCURRENCY` contains of amount of CPUs or total ram / ram per instance. For other environments the fallback is the amount of CPUs. The second important option is the lifetime of each instance.\r\n\r\n```javascript\r\nrequire('throng')(\r\n    () => require('./app'),\r\n    {\r\n        workers: process.env.WEB_CONCURRENCY,\r\n        lifetime: Infinity\r\n    }\r\n);\r\n```\r\n\r\nNow we use this `cluster.js` in the `npm start` definition. For local development, we define a user script which starts only one instance of the application (e.g. with `nodemon` watching and restarting on changes).\r\n\r\n```json\r\n{\r\n  \"main\": \"app.js\",\r\n  \"scripts\": {\r\n    \"start\": \"node cluster.js\",\r\n    \"start-watch\": \"nodemon --watch app.js\"\r\n  },\r\n  \"dependencies\": {\r\n    \"throng\": \"^1.0.0\"\r\n  },\r\n  \"devDependencies\": {\r\n    \"nodemon\": \"^1.3.7\"\r\n  }\r\n}\r\n```\r\n\r\n## Summary\r\n\r\nClustering in multi CPU environments must be handled by the application itself, but can easily supported with already available solutions and less effort.\r\n\n    ",
+    "timestamp": "2025-07-04T13:44:57.038Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts über Node.js Clustering ordne ich folgende Kategorien zu:\n\n## **programming** - Relevanz: 7/10\nDer Text behandelt konkrete Programmierkonzepte und Code-Beispiele für Node.js Clustering, was für Entwickler sehr relevant ist, die Performance-Optimierung in Multi-CPU-Umgebungen implementieren möchten.\n\n## **work** - Relevanz: 5/10\nDas Thema ist relevant für die Arbeitswelt, da es sich um praktische Lösungen für Produktionsumgebungen handelt, die IT-Teams bei der Skalierung von Anwendungen unterstützen, aber primär für technische Rollen interessant ist.\n\n**Nicht zugeordnete Kategorien:**\n- **ai**: Kein Bezug zu Künstlicher Intelligenz\n- **databases**: Keine Datenbankthemen behandelt\n- **security**: Keine Sicherheitsaspekte diskutiert\n- **data protection**: Kein Datenschutzbezug\n- **copyright**: Keine urheberrechtlichen Themen\n\nDer Text ist ein technischer Artikel, der sich an Entwickler richtet und praktische Lösungen für ein spezifisches Node.js-Problem aufzeigt.",
+          "id": "c453d2c1-c230-428d-8992-f036285d87bf"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "programming",
+            "reasoning": "Der Text behandelt konkrete Programmierkonzepte und Code-Beispiele für Node.js Clustering, was für Entwickler sehr relevant ist, die Performance-Optimierung in Multi-CPU-Umgebungen implementieren möchten.",
+            "relevance": 7
+          },
+          {
+            "name": "work",
+            "reasoning": "Das Thema ist relevant für die Arbeitswelt, da es sich um praktische Lösungen für Produktionsumgebungen handelt, die IT-Teams bei der Skalierung von Anwendungen unterstützen, aber primär für technische Rollen interessant ist.",
+            "relevance": 5
+          }
+        ]
+      ]
+    }
+  }
+}

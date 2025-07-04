@@ -1,6 +1,33 @@
 ---
-layout: "post"
-title: "AI first @ maxdome"
+layout: post
+title: AI first @ maxdome
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Der Artikel behandelt zentral die Implementierung von KI-Sprachassistenten
+      (Alexa, Google Assistant) bei maxdome und beschreibt deren praktische
+      Anwendung im Streaming-Bereich, was für die gesamte KI-Branche
+      hochrelevant ist.
+  - name: programming
+    relevance: 7
+    reasoning: >-
+      Der Text enthält detaillierte technische Implementierungsdetails,
+      Microservices-Architektur, REST-APIs, JSON-Formate und OAuth 2.0
+      Integration, was für Entwickler sehr wertvoll ist.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Der Artikel zeigt einen konkreten Transformationsprozess eines
+      Unternehmens hin zu 'AI first' und beschreibt organisatorische
+      Lernprozesse und Strategieentscheidungen, die für andere Unternehmen
+      relevant sind.
+  - name: security
+    relevance: 4
+    reasoning: >-
+      OAuth 2.0 wird erwähnt und Account Linking behandelt, jedoch sind
+      Sicherheitsaspekte nur am Rande thematisiert und nicht der Hauptfokus des
+      Artikels.
 ---
 
 Google ushered a new era with AI first last year. So we started preparing us for this future with a lot of PoC's (= proof of concepts). I will describe a few of them to give you an overview about AI in general, Alexa and Google Assistent in particular.

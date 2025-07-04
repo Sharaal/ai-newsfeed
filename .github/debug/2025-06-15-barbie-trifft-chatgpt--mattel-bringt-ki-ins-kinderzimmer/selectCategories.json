@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Barbie trifft ChatGPT – Mattel bringt KI ins Kinderzimmer\n\n\nDer Spielzeughersteller Mattel hat eine strategische Partnerschaft mit OpenAI, dem Unternehmen hinter ChatGPT, angekündigt. Ziel der Zusammenarbeit ist es, Künstliche Intelligenz (KI) in die Welt des Spielzeugs zu integrieren und so neue, interaktive Erlebnisse für Kinder zu schaffen. Noch in diesem Jahr soll das erste Produkt aus dieser Kooperation auf den Markt kommen. Mattel betont, dass bei der Entwicklung der neuen Spielzeuge ein besonderer Fokus auf Datenschutz und Sicherheit gelegt wird – eine Lehre aus der kontroversen „Hello Barbie“, die 2015 aufgrund von Datenschutzproblemen und Sicherheitslücken für Schlagzeilen sorgte.\n\n<!--more-->\n\nDie neue Generation von Barbie-Puppen könnte dank der Integration von ChatGPT deutlich interaktiver und vielseitiger werden. Während die „Hello Barbie“ noch auf vorgefertigte Dialoge beschränkt war, könnte die KI-gestützte Barbie in der Lage sein, echte Gespräche zu führen und auf die individuellen Bedürfnisse und Interessen der Kinder einzugehen. Mattel und OpenAI planen zudem, die KI-Technologie nicht nur auf Puppen zu beschränken, sondern auch in andere Spielzeuglinien wie Hot Wheels oder Fisher-Price zu integrieren. Die Partnerschaft markiert einen Wendepunkt in der Spielzeugindustrie, die zunehmend auf digitale Innovationen setzt, um sich an veränderte Marktbedingungen anzupassen.\n\n### Quellen\n- [Netzwelt: Mattel und OpenAI – Kooperation für KI-Spielzeug](https://www.netzwelt.de/news/242999-umstrittene-barbie-puppe-comeback-mattel-macht-grosse-ankuendigung.html)\n- [Trending Topics: Mattel bringt KI ins Kinderzimmer](https://www.trendingtopics.eu/mattel-verkuendet-ki-kooperation-mit-openai-erstes-produkt-noch-2025/)\n- [WinFuture: Barbie-Puppen mit KI-Gehirn](https://winfuture.de/news,151539.html)\n\n    ",
+    "timestamp": "2025-07-04T13:15:23.861Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über Mattels Partnerschaft mit OpenAI für KI-gestützte Spielzeuge:\n\n## Passende Kategorien mit Relevanz-Bewertung:\n\n**ai - Relevanz: 8/10**\nDie Integration von ChatGPT in Spielzeuge stellt eine bedeutende Anwendung von KI im Konsumentenbereich dar und zeigt, wie KI-Technologie in alltägliche Produkte für Kinder einzieht.\n\n**data protection - Relevanz: 7/10**\nDer explizite Fokus auf Datenschutz und die Erwähnung der problematischen \"Hello Barbie\" von 2015 machen Datenschutz zu einem zentralen Thema, besonders relevant da es um Kinderdaten geht.\n\n**security - Relevanz: 6/10**\nDie Sicherheitslücken der früheren \"Hello Barbie\" und die betonten Sicherheitsmaßnahmen für die neuen KI-Spielzeuge machen IT-Sicherheit zu einem wichtigen Aspekt dieser Entwicklung.\n\n**work - Relevanz: 5/10**\nDie Partnerschaft zeigt den Wandel in der Spielzeugindustrie und könnte Auswirkungen auf Arbeitsplätze und Geschäftsmodelle in diesem Sektor haben, ist aber nicht der Hauptfokus der Nachricht.\n\nDie Kategorien \"programming\", \"databases\" und \"copyright\" sind nicht direkt relevant, da der Text keine spezifischen Programmieraspekte, Datenbankthemen oder Urheberrechtsfragen behandelt.",
+          "id": "f8d4beb1-677f-4057-a7de-2f21467950ab"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "reasoning": "Die Integration von ChatGPT in Spielzeuge stellt eine bedeutende Anwendung von KI im Konsumentenbereich dar und zeigt, wie KI-Technologie in alltägliche Produkte für Kinder einzieht.",
+            "relevance": 8
+          },
+          {
+            "name": "data protection",
+            "reasoning": "Der explizite Fokus auf Datenschutz und die Erwähnung der problematischen 'Hello Barbie' von 2015 machen Datenschutz zu einem zentralen Thema, besonders relevant da es um Kinderdaten geht.",
+            "relevance": 7
+          },
+          {
+            "name": "security",
+            "reasoning": "Die Sicherheitslücken der früheren 'Hello Barbie' und die betonten Sicherheitsmaßnahmen für die neuen KI-Spielzeuge machen IT-Sicherheit zu einem wichtigen Aspekt dieser Entwicklung.",
+            "relevance": 6
+          },
+          {
+            "name": "work",
+            "reasoning": "Die Partnerschaft zeigt den Wandel in der Spielzeugindustrie und könnte Auswirkungen auf Arbeitsplätze und Geschäftsmodelle in diesem Sektor haben, ist aber nicht der Hauptfokus der Nachricht.",
+            "relevance": 5
+          }
+        ]
+      ]
+    }
+  }
+}

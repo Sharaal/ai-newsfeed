@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# EU investiert Milliarden: Was bringen die KI-Gigafabriken Europa?\n\n\nEuropa investiert viele Milliarden in Künstliche Intelligenz, weil man anderen Ländern deutlich hinterherhinkt. Die Planung der EU sieht vor, bis zu fünf KI-Gigafactories in Europa entstehen zu lassen. Sie fördert die geschätzten Kosten von etwa drei bis fünf Milliarden Euro mit bis zu 35 Prozent. Die ersten KI-Gigafabriken sollen ab 2026 in Betrieb gehen.\n\n<!--more-->\n\nDie EU-Kommission definiert diese Gigafabriken als \"Großanlagen für die Entwicklung und das Training von KI-Modellen der nächsten Generation mit Billionen von Parametern\". Geplant sind Anlagen mit rund 100.000 KI-Chips der neuesten Generation, die enorme Rechenleistung für das Training und den Betrieb großer KI-Modelle bereitstellen. Diese Rechenleistungen sind notwendig, damit Künstliche Intelligenz Prozesse umfassend automatisieren oder komplexe Fragen in Sekundenschnelle beantworten kann. In Europa gibt es zwar schon KI-Fabriken, aber mit den Gigafabriken entstünde eine neue Dimension: Sie sind viermal so groß und ermöglichen dadurch noch leistungsfähigere Berechnungen.\n\nDie EU verfolgt mehrere strategische Ziele mit diesen Investitionen. So will man etwa die digitale Souveränität stärken und den Rückstand bei der Entwicklung von KI-Technologie aufholen. 70 Prozent aller KI-Modelle kamen in den vergangenen acht Jahren aus den USA und 15 Prozent aus China. Insgesamt will die EU deshalb 200 Milliarden Euro investieren, um Europa zum \"KI-Kontinent\" zu machen.\n\nDie möglichen Milliardensubventionen der EU locken viele interessierte Unternehmen an, die diese KI-Rechenzentren bauen wollen. Mittlerweile haben sich bereits 76 Unternehmen darum beworben, darunter sowohl Firmen aus der EU als auch von außerhalb der EU. Die von ihnen vorgelegten Pläne sehen den Bau von Rechenzentren an 60 verschiedenen Standorten in 16 Mitgliedsländern der EU vor. Die Finanzierung erfolgt über einen Fonds mit unterschiedlichen Risikoprofilen, wobei die EU einen Teil des Investitionsrisikos übernimmt. Mittel stammen aus Programmen wie Digital Europe, Horizon Europe und InvestEU sowie aus Beiträgen der Mitgliedstaaten.\n\n### Quellen\n- [ZDFheute](https://www.zdfheute.de/politik/ausland/eu-ki-chips-kuenstliche-intelligenz-fabriken-100.html)\n- [Euronews](https://de.euronews.com/next/2025/07/01/europa-baut-ki-gigafabriken-das-sind-die-grossten-investoren)\n- [Vertretung der Europäischen Kommission in Deutschland](https://germany.representation.ec.europa.eu/news/ki-gigafabriken-76-interessenten-wollen-16-eu-landern-kunstliche-intelligenz-investieren-2025-07-01_de)\n- [Inside IT](https://www.inside-it.ch/grosses-interesse-an-den-ki-gigafabriken-der-eu-20250701)\n- [Heise Online](https://www.heise.de/news/Milliardeninvestitionen-76-Interessenten-wollen-KI-Gigafabriken-in-der-EU-bauen-10465243.html)\n- [Kapitalcheck](https://kapitalcheck.de/2025/06/21/der-wettlauf-um-europas-erste-ki-gigafabrik-deutschland-im-fokus/)\n- [ifun.de](https://www.ifun.de/investai-eu-wird-200-milliarden-in-ki-gigafabriken-investieren-248411/)\n- [Computerbase](https://www.computerbase.de/news/netzpolitik/aufbau-von-ki-gigafabriken-eu-kuendigt-200-mrd-paket-fuer-ki-entwicklung-an.91369/)\n- [Deutsche Wirtschafts Nachrichten](https://deutsche-wirtschafts-nachrichten.de/714784/eu-investiert-milliarden-in-eigene-ki-gigafabriken-bruessel-will-abhaengigkeit-von-us-datenmonopolen-beenden)\n\n    ",
+    "timestamp": "2025-07-04T12:15:52.633Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über die EU-KI-Gigafabriken ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDer Artikel behandelt direkt massive EU-Investitionen in KI-Infrastruktur und die Entwicklung von KI-Modellen der nächsten Generation - ein bahnbrechendes Thema für die europäische KI-Landschaft.\n\n## **work** - Relevanz: 7/10\nDie KI-Gigafabriken werden erhebliche Auswirkungen auf die Arbeitswelt haben, da sie \"Prozesse umfassend automatisieren\" sollen und neue Arbeitsplätze in der KI-Industrie schaffen werden.\n\n## **security** - Relevanz: 6/10\nDas Thema \"digitale Souveränität\" und die Reduzierung der Abhängigkeit von US- und chinesischen KI-Technologien hat klare sicherheitspolitische Dimensionen für Europa.\n\n## **programming** - Relevanz: 5/10\nDie Entwicklung und das Training von KI-Modellen mit \"Billionen von Parametern\" erfordert spezialisierte Programmierkenntnisse und neue Entwicklungsansätze.\n\nDie Kategorien **databases**, **data protection** und **copyright** sind nicht direkt relevant, da der Artikel primär über Infrastrukturinvestitionen und strategische Positionierung berichtet, ohne spezifische technische Details zu Datenverwaltung, Datenschutz oder Urheberrechtsfragen zu behandeln.",
+          "id": "945039ab-7cf2-4642-a1b6-217638ddcb4c"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt direkt massive EU-Investitionen in KI-Infrastruktur und die Entwicklung von KI-Modellen der nächsten Generation - ein bahnbrechendes Thema für die europäische KI-Landschaft."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Die KI-Gigafabriken werden erhebliche Auswirkungen auf die Arbeitswelt haben, da sie 'Prozesse umfassend automatisieren' sollen und neue Arbeitsplätze in der KI-Industrie schaffen werden."
+          },
+          {
+            "name": "security",
+            "relevance": 6,
+            "reasoning": "Das Thema 'digitale Souveränität' und die Reduzierung der Abhängigkeit von US- und chinesischen KI-Technologien hat klare sicherheitspolitische Dimensionen für Europa."
+          },
+          {
+            "name": "programming",
+            "relevance": 5,
+            "reasoning": "Die Entwicklung und das Training von KI-Modellen mit 'Billionen von Parametern' erfordert spezialisierte Programmierkenntnisse und neue Entwicklungsansätze."
+          }
+        ]
+      ]
+    }
+  }
+}

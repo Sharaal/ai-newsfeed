@@ -1,0 +1,55 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Open Graph Tags for Facebook\n\n\r\nFacebook has the feature to show a summary of a webpage by writing the URL into a post. I will describe which information Facebook use and how its possible to change them.\r\n\r\n<!--more-->\r\n\r\n## Facebook standard behavior\r\n\r\nIf an user write a URL into a post, Facebook makes a GET request to this URL. If no Open Graph Tag exists Facebook use the title, the meta description of the webpage and the user written URL.\r\n\r\n## Define an Open Graph Tag\r\n\r\n```html\r\n<meta property=\"og:type\" content=\"website\" />\r\n<meta property=\"og:title\" content=\"Title\" />\r\n<meta property=\"og:description\" content=\"Description\" />\r\n<meta property=\"og:url\" content=\"URL\" />\r\n<meta property=\"og:image\" content=\"path/to/an/image.png\" />\r\n```\r\n\r\nWith Open Graph Tags its possible to define what Facebook use to have other information in case of title, description and URL and and additional information in case of an image.\r\n\r\n## Choose the language of the user\r\n\r\nIts possible to provide the information in the language of the Facebook user. For this feature there are two parts must be added:\r\n\r\n* The current language and the list of the available languages for the webpage as Open Graph Tags\r\n\r\n```html\r\n<meta property=\"og:locale\" content=\"de\" />\r\n<meta property=\"og:locale:alternate\" content=\"en\" />\r\n```\r\n\r\n* Parsing the HTTP request header for the \"X-Facebook-Locale\" header and provide the information in the Open Graph Tags in this given language\r\n\r\n## Summary\r\n\r\nDefine Open Graph Tags allow to modify and extend the information Facebook use for the posted summary of the webpage.\r\n\n    ",
+    "timestamp": "2025-07-04T13:39:26.040Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den gegebenen Newstext über Open Graph Tags für Facebook:\n\n## Analyse des Newstexts\n\nDer Text beschreibt, wie Open Graph Tags verwendet werden, um die Darstellung von Webseiten-Links in Facebook-Posts zu steuern. Es handelt sich um eine technische Anleitung zur Implementierung von HTML-Meta-Tags.\n\n## Passende Kategorien mit Relevanzbewertung\n\n**programming - Relevanz: 6/10**\nDer Text behandelt HTML-Meta-Tags und deren Implementierung, was direkte Programmierkenntnisse erfordert und für Webentwickler relevant ist.\n\n**work - Relevanz: 4/10**\nDas Wissen über Open Graph Tags ist für Webentwickler, Social Media Manager und Marketing-Fachkräfte beruflich relevant, aber nicht branchenübergreifend wichtig.\n\n## Nicht zutreffende Kategorien\n\n- **ai**: Keine Bezüge zu Künstlicher Intelligenz\n- **databases**: Keine Datenbankthemen behandelt\n- **security**: Keine Sicherheitsaspekte erwähnt\n- **data protection**: Keine datenschutzrechtlichen Inhalte\n- **copyright**: Keine urheberrechtlichen Themen\n\nDer Text ist eine spezifische technische Anleitung mit mittlerer Relevanz für Webentwickler und Social Media Professionals, aber nicht bahnbrechend oder für ein breites Publikum interessant.",
+          "id": "99214f27-fc77-4aaa-9649-5ebcbf4737e2"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Der Text behandelt HTML-Meta-Tags und deren Implementierung, was direkte Programmierkenntnisse erfordert und für Webentwickler relevant ist."
+          },
+          {
+            "name": "work",
+            "relevance": 4,
+            "reasoning": "Das Wissen über Open Graph Tags ist für Webentwickler, Social Media Manager und Marketing-Fachkräfte beruflich relevant, aber nicht branchenübergreifend wichtig."
+          }
+        ]
+      ]
+    }
+  }
+}

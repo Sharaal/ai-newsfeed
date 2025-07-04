@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Meta AI leakt intime Chats: Skandal um Privatsphäre!\n\n\nMeta steht erneut im Zentrum eines Datenschutzskandals. Die kürzlich veröffentlichte KI-App des Unternehmens, die es Nutzern ermöglicht, mit einem Chatbot zu interagieren, hat versehentlich intime Chats öffentlich zugänglich gemacht. Diese Chats, die medizinische Details, rechtliche Fragen und persönliche Geständnisse enthalten, sind im öffentlich zugänglichen Discover-Feed der App aufgetaucht. Nutzer, die glaubten, ihre Gespräche seien privat, mussten feststellen, dass ihre sensiblen Informationen für jedermann einsehbar waren.\n\n<!--more-->\n\nDie Sicherheitsmechanismen der App scheinen unzureichend zu sein. Obwohl Nutzer gewarnt werden, bevor sie eine Unterhaltung teilen, sind die Hinweise oft vage und missverständlich formuliert. Der Teilen-Button ist prominent platziert, was die Wahrscheinlichkeit erhöht, dass er versehentlich angetippt wird. Experten kritisieren, dass das Design der App eher auf Engagement als auf Datenschutz abzielt. Besonders problematisch ist, dass viele dieser öffentlich gewordenen Unterhaltungen konkrete Personen identifizierbar machen, da Namen, Profilbilder und Links zu Instagram-Konten neben den Chatverläufen angezeigt werden.\n\nDatenschützer werfen Meta vor, grundlegende Standards für den Schutz sensibler Inhalte zu ignorieren. Die Umsetzung des Discover-Feeds wird als systemischer Designfehler angesehen, bei dem kommerzielle Interessen über das Wohl der Nutzer gestellt wurden. Trotz der Behauptung von Meta, dass geteilte Chats nicht für Werbezwecke oder KI-Training verwendet würden, bleibt unklar, wie diese Zusagen konkret umgesetzt und kontrolliert werden. Nutzer müssen sich durch unübersichtliche Datenschutzeinstellungen arbeiten, um ihre Daten zu schützen – eine Hürde, die viele schlicht übersehen.\n\nDer Skandal hat das Vertrauen in Meta stark erschüttert. Der Konzern muss dringend nachbessern – sowohl technisch als auch kommunikativ. Dazu gehört ein radikales Umdenken beim App-Design: Voreinstellungen, die die Privatsphäre respektieren, klar formulierte Warnungen und eine intuitive Möglichkeit, das Teilen dauerhaft zu deaktivieren. Solange diese Standards nicht erfüllt sind, bleibt die Plattform ein Risiko für alle, die persönliche Informationen mit Meta AI teilen. Wer seine Daten schützen will, sollte den Discover-Feed meiden oder sich vorerst ganz von der App fernhalten.\n\n### Quellen\n- [All-AI.de](https://www.all-ai.de/news/topbeitraege/meta-leak-aifeed)\n- [eWeek](https://www.eweek.com/news/meta-ai-chats-public-sensitive-data-privacy/)\n- [Trending Topics](https://www.trendingtopics.eu/meta-ai-user-veroeffentlich-offenbar-unwissentlich-intime-prompts/)\n- [Computer Bild](https://www.computerbild.de/artikel/cb-News-Internet-Private-Chats-bei-Meta-AI-sichtbar-39767625.html)\n- [Swiss Cybersecurity](https://www.swisscybersecurity.net/news/2025-06-16/user-fuehren-intime-chats-mit-meta-ki-und-teilen-sie-mit-der-ganzen-welt)\n\n    ",
+    "timestamp": "2025-07-04T12:38:41.165Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über den Meta AI Datenschutzskandal ordne ich folgende Kategorien mit entsprechenden Relevanzen zu:\n\n## **ai** - Relevanz: 8/10\nDer Skandal betrifft direkt Meta AI und zeigt fundamentale Probleme beim Umgang mit KI-Chatbots auf, was für alle AI-Interessierten hochrelevant ist.\n\n## **security** - Relevanz: 9/10\nMassive Sicherheitslücken führten zur ungewollten Veröffentlichung privater Chats - ein kritisches Sicherheitsproblem mit weitreichenden Folgen.\n\n## **data protection** - Relevanz: 10/10\nDies ist ein Paradebeispiel für schwerwiegende Datenschutzverletzungen, bei dem intime persönliche Daten öffentlich wurden - bahnbrechend relevant für alle Nutzer.\n\n## **work** - Relevanz: 6/10\nRelevant für Unternehmen und Arbeitnehmer, die KI-Tools nutzen, da es zeigt, welche Risiken bei der geschäftlichen Nutzung von AI-Chatbots bestehen.\n\nDie Kategorien **programming**, **databases** und **copyright** sind nicht relevant, da der Text keine technischen Implementierungsdetails, Datenbankprobleme oder urheberrechtliche Aspekte behandelt, sondern sich auf Datenschutz, Sicherheit und KI-Ethik konzentriert.",
+          "id": "e929f9e8-4569-4449-a615-96150ff74257"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Der Skandal betrifft direkt Meta AI und zeigt fundamentale Probleme beim Umgang mit KI-Chatbots auf, was für alle AI-Interessierten hochrelevant ist."
+          },
+          {
+            "name": "security",
+            "relevance": 9,
+            "reasoning": "Massive Sicherheitslücken führten zur ungewollten Veröffentlichung privater Chats - ein kritisches Sicherheitsproblem mit weitreichenden Folgen."
+          },
+          {
+            "name": "data protection",
+            "relevance": 10,
+            "reasoning": "Dies ist ein Paradebeispiel für schwerwiegende Datenschutzverletzungen, bei dem intime persönliche Daten öffentlich wurden - bahnbrechend relevant für alle Nutzer."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Relevant für Unternehmen und Arbeitnehmer, die KI-Tools nutzen, da es zeigt, welche Risiken bei der geschäftlichen Nutzung von AI-Chatbots bestehen."
+          }
+        ]
+      ]
+    }
+  }
+}

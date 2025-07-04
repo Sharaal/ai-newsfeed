@@ -1,8 +1,33 @@
 ---
-layout: "post"
-language: "de"
-title: "EU investiert Milliarden: Was bringen die KI-Gigafabriken Europa?"
+layout: post
+language: de
+title: 'EU investiert Milliarden: Was bringen die KI-Gigafabriken Europa?'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt direkt massive EU-Investitionen in KI-Infrastruktur
+      und die Entwicklung von KI-Modellen der nächsten Generation - ein
+      bahnbrechendes Thema für die europäische KI-Landschaft.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Die KI-Gigafabriken werden erhebliche Auswirkungen auf die Arbeitswelt
+      haben, da sie 'Prozesse umfassend automatisieren' sollen und neue
+      Arbeitsplätze in der KI-Industrie schaffen werden.
+  - name: security
+    relevance: 6
+    reasoning: >-
+      Das Thema 'digitale Souveränität' und die Reduzierung der Abhängigkeit von
+      US- und chinesischen KI-Technologien hat klare sicherheitspolitische
+      Dimensionen für Europa.
+  - name: programming
+    relevance: 5
+    reasoning: >-
+      Die Entwicklung und das Training von KI-Modellen mit 'Billionen von
+      Parametern' erfordert spezialisierte Programmierkenntnisse und neue
+      Entwicklungsansätze.
 ---
 
 Europa investiert viele Milliarden in Künstliche Intelligenz, weil man anderen Ländern deutlich hinterherhinkt. Die Planung der EU sieht vor, bis zu fünf KI-Gigafactories in Europa entstehen zu lassen. Sie fördert die geschätzten Kosten von etwa drei bis fünf Milliarden Euro mit bis zu 35 Prozent. Die ersten KI-Gigafabriken sollen ab 2026 in Betrieb gehen.

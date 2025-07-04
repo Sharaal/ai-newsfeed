@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Google bringt Gemini CLI: KI jetzt im Terminal\n\n\nGoogle hat kürzlich die Einführung von Gemini CLI angekündigt, einem neuen Open-Source-KI-Tool, das direkt im Terminal läuft. Diese Veröffentlichung markiert einen bedeutenden Schritt in Richtung einer breiteren Zugänglichkeit und Nutzbarkeit von KI für Entwickler. Gemini CLI integriert die fortschrittlichen Gemini-Modelle von Google und bietet Entwicklern eine leistungsstarke Schnittstelle, um Code zu schreiben, zu debuggen und Workflows zu automatisieren – alles innerhalb der Kommandozeile.\n\n<!--more-->\n\nGemini CLI ist unter der Apache 2.0-Lizenz verfügbar, was bedeutet, dass Entwickler den gesamten Code einsehen, verstehen und anpassen können. Dies ist besonders wichtig für sicherheitsbewusste Organisationen und Unternehmen, die die Sicherheit und Funktionsweise der Tools, die sie verwenden, überprüfen möchten. Mit einer großzügigen kostenlosen Nutzung von bis zu 60 Modellanfragen pro Minute und 1.000 Anfragen pro Tag bietet Google Entwicklern eine beispiellose Flexibilität und Kapazität, um ihre Projekte voranzutreiben.\n\nEin herausragendes Merkmal von Gemini CLI ist seine Fähigkeit, große Codebasen zu analysieren und zu bearbeiten, dank eines Kontextfensters von bis zu einer Million Tokens. Dies ermöglicht es Entwicklern, komplexe Projekte effizient zu verwalten und zu optimieren. Darüber hinaus unterstützt das Tool multimodale Funktionen, die es ermöglichen, verschiedene Arten von Eingaben wie PDFs oder Skizzen zu verarbeiten und daraus neue Anwendungen zu generieren.\n\nGoogle hat auch die Integration von Gemini CLI mit dem Gemini Code Assist angekündigt, was bedeutet, dass Entwickler auf allen Ebenen – von Einzelpersonen bis hin zu großen Unternehmen – von den KI-gestützten Funktionen profitieren können. Diese Integration ermöglicht es, Code in Echtzeit zu schreiben und zu verbessern, was die Produktivität und Effizienz erheblich steigert.\n\nFür Entwickler, die an der Weiterentwicklung und Anpassung von Gemini CLI interessiert sind, steht das Tool auf GitHub zur Verfügung. Google ermutigt die Community, neue Tools zu entwickeln, Verbesserungen vorzuschlagen und das Potenzial dieses flexiblen, terminal-nativen KI-Agents zu erkunden.\n\n### Quellen\n- [Google Blog](https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/)\n- [Android Sage](https://www.androidsage.com/2025/06/25/google-releases-gemini-cli-for-developers/)\n- [TechXplore](https://techxplore.com/news/2025-06-google-debuts-gemini-ai-coding.html)\n- [DevClass](https://devclass.com/2025/06/25/google-positions-itself-for-next-decade-of-ai-as-gemini-cli-arrives-with-generous-free-tier/)\n- [Gadgets360](https://www.gadgets360.com/ai/news/google-gemini-cli-ai-agent-coding-open-source-free-preview-features-released-8764945)\n- [TechCrunch](https://techcrunch.com/2025/06/25/google-unveils-gemini-cli-an-open-source-ai-tool-for-terminals/)\n- [Help Net Security](https://www.helpnetsecurity.com/2025/06/26/google-gemini-cli-open-source-ai-agents/)\n- [9to5Google](https://9to5google.com/2025/06/25/google-gemini-cli/)\n- [The Star](https://www.thestar.com.my/news/world/2025/06/26/google-unveils-open-source-gemini-cli)\n\n    ",
+    "timestamp": "2025-07-04T12:32:17.671Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über Google Gemini CLI ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDies ist eine bahnbrechende KI-Entwicklung, die KI-Technologie direkt in die Entwicklungsumgebung integriert und damit die Art, wie Entwickler mit KI arbeiten, grundlegend verändert.\n\n## **programming** - Relevanz: 8/10\nDas Tool revolutioniert die Programmierarbeit durch KI-gestützte Code-Generierung, Debugging und Workflow-Automatisierung direkt im Terminal und ist daher für alle Entwickler hochrelevant.\n\n## **work** - Relevanz: 7/10\nGemini CLI wird die Arbeitsweise von Entwicklern und IT-Teams erheblich verändern, indem es Produktivität und Effizienz durch KI-Integration steigert - relevant für alle, die in der Softwareentwicklung tätig sind.\n\n## **security** - Relevanz: 6/10\nDie Open-Source-Natur unter Apache 2.0-Lizenz und die Möglichkeit für sicherheitsbewusste Organisationen, den Code zu überprüfen, macht dies für Sicherheitsverantwortliche interessant.\n\nDie Kategorien **databases**, **data protection** und **copyright** sind nicht relevant, da der Text keine spezifischen Datenbankfunktionen, Datenschutzaspekte oder Urheberrechtsfragen behandelt.",
+          "id": "cdcdd82c-5dc9-45e8-b040-3012740e2d94"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Dies ist eine bahnbrechende KI-Entwicklung, die KI-Technologie direkt in die Entwicklungsumgebung integriert und damit die Art, wie Entwickler mit KI arbeiten, grundlegend verändert."
+          },
+          {
+            "name": "programming",
+            "relevance": 8,
+            "reasoning": "Das Tool revolutioniert die Programmierarbeit durch KI-gestützte Code-Generierung, Debugging und Workflow-Automatisierung direkt im Terminal und ist daher für alle Entwickler hochrelevant."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Gemini CLI wird die Arbeitsweise von Entwicklern und IT-Teams erheblich verändern, indem es Produktivität und Effizienz durch KI-Integration steigert - relevant für alle, die in der Softwareentwicklung tätig sind."
+          },
+          {
+            "name": "security",
+            "relevance": 6,
+            "reasoning": "Die Open-Source-Natur unter Apache 2.0-Lizenz und die Möglichkeit für sicherheitsbewusste Organisationen, den Code zu überprüfen, macht dies für Sicherheitsverantwortliche interessant."
+          }
+        ]
+      ]
+    }
+  }
+}

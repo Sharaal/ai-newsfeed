@@ -1,8 +1,37 @@
 ---
-layout: "post"
-language: "de"
-title: "Hype um \"AutoMix\": Neue Apple-KI mischt Musik wie ein DJ"
+layout: post
+language: de
+title: 'Hype um "AutoMix": Neue Apple-KI mischt Musik wie ein DJ'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Die AutoMix-Funktion basiert vollständig auf künstlicher Intelligenz für
+      Echtzeit-Musikanalyse und automatische DJ-Übergänge, was ein sehr
+      praktisches und weitreichendes AI-Anwendungsbeispiel für Millionen von
+      Nutzern darstellt.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Die Implementierung von AutoMix und anderen KI-Features in iOS 26 zeigt
+      interessante Entwicklungen in der mobilen App-Programmierung und
+      Integration von Machine Learning in Consumer-Apps, relevant für
+      iOS-Entwickler.
+  - name: work
+    relevance: 4
+    reasoning: >-
+      Die Funktion könnte für professionelle DJs und Musikproduzenten von
+      Interesse sein, da sie zeigt, wie KI traditionelle DJ-Techniken
+      automatisiert und möglicherweise die Arbeitsweise in der Musikbranche
+      beeinflusst.
+  - name: copyright
+    relevance: 3
+    reasoning: >-
+      Die automatische Musikbearbeitung und das 'Remixen' durch KI könnte
+      langfristig urheberrechtliche Fragen aufwerfen, besonders wenn die KI die
+      ursprünglichen Werke verändert, auch wenn dies derzeit nur Übergänge
+      betrifft.
 ---
 
 Mit der Einführung von iOS 26 hat Apple eine neue Funktion namens AutoMix in seine Musik-App integriert, die für viel Aufsehen sorgt. AutoMix nutzt künstliche Intelligenz, um Songs in einer Playlist nahtlos ineinander übergehen zu lassen, ähnlich wie bei einem professionellen DJ-Set. Diese Funktion analysiert die Songs in Echtzeit und passt Tempo und Beat an, um flüssige Übergänge zu gewährleisten. Die Musik-App zeigt während des Übergangs sogar eine kleine "Mixing"-Animation im Now-Playing-Bildschirm an, was das Hörerlebnis noch immersiver macht.

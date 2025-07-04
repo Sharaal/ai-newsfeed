@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-gestützte Krebsdiagnose revolutioniert die Medizin\n\n\nDie Krebsdiagnose steht vor einer Revolution: Künstliche Intelligenz (KI) verändert die Art und Weise, wie Krebs erkannt und behandelt wird. In den letzten Tagen wurden mehrere bahnbrechende Entwicklungen bekannt gegeben, die das Potenzial haben, die medizinische Praxis grundlegend zu verändern. Ein herausragendes Beispiel ist das Kooperationsprojekt zwischen dem Universitätsklinikum Erlangen und dem Gravina Hospital in Caltagirone, Italien. Hier wurden KI-Algorithmen in die Pathologie integriert, um die klinische Diagnostik zu optimieren. Die Ergebnisse, die in der renommierten Fachzeitschrift Genome Medicine veröffentlicht wurden, zeigen, dass die Technologie Pathologen erheblich bei der Erkennung von Krebsarten und der Analyse von Gewebeproben unterstützen kann.\n\n<!--more-->\n\nEin weiteres bemerkenswertes Projekt kommt aus dem Universitätsklinikum Freiburg, wo eine KI-Diagnoseplattform die Früherkennung von Hautkrebs verbessert hat. Diese Plattform, bekannt als SkinDoc, nutzt erklärbare KI für die Teledermatologie und unterstützt Ärzte bei Therapieentscheidungen in der Krebsbehandlung. Die Technologie hat das Potenzial, Fehldiagnosen zu reduzieren und innovative Behandlungswege zu ermöglichen. Auch in Oberösterreich sorgt eine Weltpremiere für Aufsehen: In einem Linzer Spital hilft erstmals ein KI-System bei Therapieentscheidungen für Blasen- und Nierenkrebs. Diese Neuerung könnte für Krebs-Patienten alles ändern, indem sie präzisere und schnellere Diagnosen ermöglicht.\n\nDie Stanford-Universität hat ebenfalls bedeutende Fortschritte gemacht. Ihre KI, bekannt als MUSK, sagt Überlebenschancen bei Krebs genau voraus. Millionen von Daten fließen in die Vorhersagen ein, wodurch Rückfälle, Therapieerfolge und Überlebensraten präziser eingeschätzt werden können. Dies ist ein großer Schritt für die personalisierte Krebsforschung und könnte die Behandlungsergebnisse erheblich verbessern. Auch das Deutsche Krebsforschungszentrum (DKFZ) in Heidelberg hat betont, wie vielversprechend der Einsatz von KI in der Medizin ist. Besonders in der Bildauswertung und der Früherkennung von Krebs zeigt die Technologie großes Potenzial.\n\nDie Integration von KI in die Krebsdiagnose und -behandlung ist ein bedeutender Fortschritt, der nicht nur die Genauigkeit und Geschwindigkeit der Diagnosen verbessert, sondern auch die Effizienz der medizinischen Versorgung erhöht. Diese Entwicklungen zeigen, dass die Zukunft der Krebsmedizin digital und KI-gestützt ist, was letztlich zu besseren Behandlungsergebnissen und einer höheren Überlebensrate für Patienten führen könnte.\n\n### Quellen\n- [SWR: Wie KI die Krebsmedizin revolutionieren könnte](https://www.swr.de/wissen/wie-ki-die-krebsmedizin-revolutionieren-koennte-100.html)\n- [Das Wissen: KI revolutioniert Krebserkennung](https://das-wissen.de/news/ki-revolutioniert-krebserkennung-schneller-praeziser-und-digital)\n- [Universitätsklinikum Freiburg: KI-gestützte Krebsdiagnostik](https://www.uniklinik-freiburg.de/cccf/krebs-webweiser/stichworte-d-g/diagnostik/ki-gestuetzte-krebsdiagnostik.html)\n- [Smartup News: KI im Einsatz gegen den Krebs](https://smartup-news.de/wissen/ki-im-einsatz-gegen-den-krebs-praezisere-prognosen-aus-stanford/)\n- [Heute: Diese Neuerung könnte für Krebs-Patienten alles ändern](https://www.heute.at/s/diese-neuerung-koennte-fuer-krebs-patienten-alles-aendern-120113143)\n\n    ",
+    "timestamp": "2025-07-04T12:45:14.854Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über KI-gestützte Krebsdiagnose ordne ich folgende Kategorien zu:\n\n## Passende Kategorien mit Relevanzbewertung:\n\n**ai - Relevanz: 9/10**\nDer gesamte Artikel dreht sich um bahnbrechende KI-Anwendungen in der Medizin, von Diagnosealgorithmen bis hin zu Überlebensprognosen - dies ist hochrelevant für alle, die sich für KI-Fortschritte interessieren.\n\n**programming - Relevanz: 6/10**\nDie erwähnten KI-Algorithmen und Diagnoseplattformen wie SkinDoc erfordern komplexe Programmierung, auch wenn die technischen Details nicht im Fokus stehen - interessant für Entwickler im Gesundheitswesen.\n\n**databases - Relevanz: 7/10**\nStanford's MUSK-System verarbeitet \"Millionen von Daten\" für Prognosen, was auf umfangreiche medizinische Datenbanken und Big-Data-Verarbeitung hinweist - relevant für Datenbankspezialisten im Healthcare-Bereich.\n\n**data protection - Relevanz: 8/10**\nMedizinische KI-Systeme verarbeiten hochsensible Patientendaten, was erhebliche Datenschutzimplikationen hat - sehr relevant für alle, die sich mit Gesundheitsdatenschutz beschäftigen.\n\nDie Kategorien **security**, **work** und **copyright** sind nicht direkt relevant, da der Artikel keine spezifischen Sicherheitsbedrohungen, Arbeitsplatzveränderungen oder Urheberrechtsfragen thematisiert.",
+          "id": "9bd066c2-ca06-438c-b6c7-d43a22482aac"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der gesamte Artikel dreht sich um bahnbrechende KI-Anwendungen in der Medizin, von Diagnosealgorithmen bis hin zu Überlebensprognosen - dies ist hochrelevant für alle, die sich für KI-Fortschritte interessieren."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Die erwähnten KI-Algorithmen und Diagnoseplattformen wie SkinDoc erfordern komplexe Programmierung, auch wenn die technischen Details nicht im Fokus stehen - interessant für Entwickler im Gesundheitswesen."
+          },
+          {
+            "name": "databases",
+            "relevance": 7,
+            "reasoning": "Stanford's MUSK-System verarbeitet 'Millionen von Daten' für Prognosen, was auf umfangreiche medizinische Datenbanken und Big-Data-Verarbeitung hinweist - relevant für Datenbankspezialisten im Healthcare-Bereich."
+          },
+          {
+            "name": "data protection",
+            "relevance": 8,
+            "reasoning": "Medizinische KI-Systeme verarbeiten hochsensible Patientendaten, was erhebliche Datenschutzimplikationen hat - sehr relevant für alle, die sich mit Gesundheitsdatenschutz beschäftigen."
+          }
+        ]
+      ]
+    }
+  }
+}

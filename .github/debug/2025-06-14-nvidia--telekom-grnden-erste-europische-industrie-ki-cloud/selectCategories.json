@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# NVIDIA & Telekom gründen erste europäische Industrie-KI-Cloud\n\n\nDie Deutsche Telekom und NVIDIA haben eine Partnerschaft angekündigt, um die erste europäische Industrie-KI-Cloud zu schaffen. Ziel des Projekts ist es, eine leistungsstarke Infrastruktur für künstliche Intelligenz bereitzustellen, die speziell auf die Bedürfnisse der europäischen Industrie zugeschnitten ist. Das Rechenzentrum, das in Deutschland errichtet wird, soll mit 10.000 GPUs der neuesten Blackwell-Generation von NVIDIA ausgestattet werden. Diese Hardware ermöglicht es, hochkomplexe KI-Anwendungen wie digitale Zwillinge, autonome Robotik und simulationsgestützte Produktionsprozesse zu betreiben.\n\n<!--more-->\n\nDie Plattform richtet sich nicht nur an große Konzerne, sondern auch an mittelständische Unternehmen, Start-ups und Forschungseinrichtungen. Durch den Zugang zu Hochleistungsrechenkapazitäten und spezialisierten Softwaretools sollen auch kleinere Akteure in die Lage versetzt werden, KI-Technologien effektiv zu nutzen. Die Deutsche Telekom wird dabei für den Betrieb, die Sicherheit und den Vertrieb der Cloud-Lösung verantwortlich sein, während NVIDIA die technische Basis liefert. Die Inbetriebnahme ist für 2026 geplant, mit dem Ziel, die europäische Industrie im globalen Wettbewerb zu stärken.\n\n### Quellen\n- [n-tv: Deutsche Telekom baut mit Nvidia industrielle KI-Cloud](https://www.n-tv.de/ticker/Deutsche-Telekom-baut-mit-Nvidia-industrielle-KI-Cloud-fuer-europaeische-Hersteller-article25832101.html)\n- [Golem: Nvidia baut KI-Gigafactory mit der Telekom](https://www.golem.de/news/jensen-huang-nvidia-baut-seine-ki-gigafactory-mit-der-telekom-2506-197119.html)\n- [WirtschaftsWoche: Industrie-KI-Cloud startet in Deutschland](https://www.wiwo.de/unternehmen/it/deutsche-telekom-und-nvidia-industrie-ki-cloud-startet-in-deutschland/100134914.html)\n- [Manager Magazin: Deutsche Telekom baut mit Nvidia industrielle KI-Cloud](https://www.manager-magazin.de/unternehmen/tech/deutsche-telekom-baut-mit-nvidia-industrielle-ki-cloud-a-c2a0a08e-e7e0-4396-b968-3a0d4661e044)\n\n    ",
+    "timestamp": "2025-07-04T13:16:41.884Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über die NVIDIA & Telekom Industrie-KI-Cloud ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDiese Nachricht ist bahnbrechend für den KI-Bereich, da sie die erste europäische Industrie-KI-Cloud mit 10.000 Blackwell-GPUs ankündigt und KI-Technologien für die breite europäische Industrie zugänglich macht.\n\n## **work** - Relevanz: 8/10\nDie Initiative wird die Arbeitswelt erheblich beeinflussen, da sie KI-Anwendungen wie digitale Zwillinge und autonome Robotik in der Produktion ermöglicht und auch mittelständischen Unternehmen und Start-ups Zugang zu Hochleistungs-KI verschafft.\n\n## **security** - Relevanz: 6/10\nDie Sicherheit spielt eine wichtige Rolle, da die Deutsche Telekom explizit für die Sicherheit der Cloud-Lösung verantwortlich sein wird und es sich um kritische Industrieinfrastruktur handelt.\n\n## **data protection** - Relevanz: 5/10\nDatenschutz ist relevant, da eine europäische KI-Cloud-Lösung potenziell bessere Kontrolle über Industriedaten bietet als außereuropäische Alternativen, auch wenn dies im Text nicht explizit thematisiert wird.\n\nDie Kategorien **programming**, **databases** und **copyright** sind für diese Nachricht nicht direkt relevant, da der Fokus auf der Infrastruktur-Partnerschaft und industriellen Anwendungen liegt, nicht auf spezifischen technischen Implementierungsdetails oder rechtlichen Aspekten.",
+          "id": "80e0a61a-521f-425d-a6ca-cc8d4639d12e"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Diese Nachricht ist bahnbrechend für den KI-Bereich, da sie die erste europäische Industrie-KI-Cloud mit 10.000 Blackwell-GPUs ankündigt und KI-Technologien für die breite europäische Industrie zugänglich macht."
+          },
+          {
+            "name": "work",
+            "relevance": 8,
+            "reasoning": "Die Initiative wird die Arbeitswelt erheblich beeinflussen, da sie KI-Anwendungen wie digitale Zwillinge und autonome Robotik in der Produktion ermöglicht und auch mittelständischen Unternehmen und Start-ups Zugang zu Hochleistungs-KI verschafft."
+          },
+          {
+            "name": "security",
+            "relevance": 6,
+            "reasoning": "Die Sicherheit spielt eine wichtige Rolle, da die Deutsche Telekom explizit für die Sicherheit der Cloud-Lösung verantwortlich sein wird und es sich um kritische Industrieinfrastruktur handelt."
+          },
+          {
+            "name": "data protection",
+            "relevance": 5,
+            "reasoning": "Datenschutz ist relevant, da eine europäische KI-Cloud-Lösung potenziell bessere Kontrolle über Industriedaten bietet als außereuropäische Alternativen, auch wenn dies im Text nicht explizit thematisiert wird."
+          }
+        ]
+      ]
+    }
+  }
+}

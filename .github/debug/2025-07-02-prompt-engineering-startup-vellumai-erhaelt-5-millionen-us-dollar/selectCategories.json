@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Prompt-Engineering-Startup Vellum.ai erhält 5 Millionen US-Dollar\n\n\nDas KI-Startup Vellum.ai hat erfolgreich eine Seed-Finanzierungsrunde in Höhe von 5 Millionen US-Dollar abgeschlossen. Die Runde wurde von namhaften Investoren wie Y Combinator, Rebel Fund, Pioneer Fund und Eastlink Capital unterstützt. Auch prominente Angel-Investoren wie Arash Ferdowsi (Mitgründer von Dropbox) und Dharmesh Shah (Mitgründer von HubSpot) beteiligten sich. Mit dieser Finanzierung plant Vellum.ai, seine Plattform für Prompt-Engineering weiter auszubauen und Unternehmen dabei zu helfen, produktionsreife Anwendungen mit großen Sprachmodellen (LLMs) zu entwickeln.\n\n<!--more-->\n\nDas Unternehmen, das erst vor wenigen Monaten gegründet wurde, hat bereits 40 zahlende Kunden und verzeichnet ein monatliches Umsatzwachstum von 25 bis 30 Prozent. Vellum.ai bietet Tools, die es Entwicklern ermöglichen, effizienter mit LLMs zu arbeiten, darunter Funktionen für die Erstellung, Versionierung und Evaluierung von Prompts. Laut CEO Akash Sharma ist die Nachfrage nach generativen KI-Lösungen enorm, und die neuen Mittel sollen genutzt werden, um die Plattform weiterzuentwickeln und das Team zu vergrößern.\n\n### Quellen\n- [KI-News.app](https://ki-news.app/vellum-ai-5-millionen-us-dollar-seed-finanzierung-fuer-ki-startup/)\n- [TechCrunch](https://techcrunch.com/2023/07/11/prompt-engineering-startup-vellum-ai/)\n- [Vellum.ai Blog](https://www.vellum.ai/blog/announcing-our-seed-round)\n\n    ",
+    "timestamp": "2025-07-04T12:09:36.210Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über das Prompt-Engineering-Startup Vellum.ai und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt ein KI-Startup, das sich auf Prompt-Engineering und die Arbeit mit großen Sprachmodellen (LLMs) spezialisiert hat - dies ist hochrelevant für alle, die sich mit aktuellen KI-Entwicklungen beschäftigen.\n\n**programming - Relevanz: 7/10**\nDie Plattform richtet sich direkt an Entwickler und bietet Tools für die Erstellung, Versionierung und Evaluierung von Prompts - sehr relevant für Programmierer, die mit KI-APIs arbeiten.\n\n**work - Relevanz: 6/10**\nDas Startup plant Teamvergrößerung und zeigt den wachsenden Arbeitsmarkt im KI-Bereich auf, außerdem geht es um Tools zur Produktivitätssteigerung in der Softwareentwicklung.\n\nDie anderen Kategorien (databases, security, data protection, copyright) sind nicht relevant, da der Artikel keine spezifischen Aspekte zu Datenbanken, Sicherheit, Datenschutz oder Urheberrecht behandelt. Der Fokus liegt klar auf der Finanzierung und den Entwicklungstools für KI-Anwendungen.",
+          "id": "dc41b7de-e751-4a6f-a13c-a185fed998c8"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt ein KI-Startup, das sich auf Prompt-Engineering und die Arbeit mit großen Sprachmodellen (LLMs) spezialisiert hat - dies ist hochrelevant für alle, die sich mit aktuellen KI-Entwicklungen beschäftigen."
+          },
+          {
+            "name": "programming",
+            "relevance": 7,
+            "reasoning": "Die Plattform richtet sich direkt an Entwickler und bietet Tools für die Erstellung, Versionierung und Evaluierung von Prompts - sehr relevant für Programmierer, die mit KI-APIs arbeiten."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Das Startup plant Teamvergrößerung und zeigt den wachsenden Arbeitsmarkt im KI-Bereich auf, außerdem geht es um Tools zur Produktivitätssteigerung in der Softwareentwicklung."
+          }
+        ]
+      ]
+    }
+  }
+}

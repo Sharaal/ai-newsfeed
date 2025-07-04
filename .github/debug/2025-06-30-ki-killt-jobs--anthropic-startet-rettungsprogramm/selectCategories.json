@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI killt Jobs – Anthropic startet Rettungsprogramm\n\n\nAnthropic hat am vergangenen Freitag ein neues Programm ins Leben gerufen, um die wirtschaftlichen Auswirkungen von Künstlicher Intelligenz (KI) zu untersuchen und zu mildern. Das \"Economic Futures Program\" zielt darauf ab, Forschung und politische Maßnahmen zu fördern, die den durch KI verursachten Arbeitsplatzverlusten entgegenwirken sollen. CEO Dario Amodei betonte, dass bis zu 50 % der Einstiegsjobs im Bürobereich durch Automatisierung gefährdet seien und die Arbeitslosenquote auf bis zu 20 % steigen könnte.\n\n<!--more-->\n\nDas Programm umfasst mehrere Initiativen, darunter Forschungsstipendien, die schnelle empirische Studien ermöglichen sollen, sowie politische Dialoge und Symposien in Washington und Europa. Ziel ist es, fundierte Daten zu sammeln und politische Entscheidungen vorzubereiten, die den strukturellen Wandel durch KI besser gestalten können. Anthropic plant auch, anonymisierte Daten zur Auswirkung von KI auf den Arbeitsmarkt bereitzustellen, um mehr Transparenz zu schaffen und Spekulationen durch konkrete Informationen zu ersetzen.\n\nSarah Heck, Leiterin der politischen Partnerschaften bei Anthropic, betonte, dass es nicht nur um den Verlust von Arbeitsplätzen gehe, sondern auch um die Chancen, die sich durch neue Technologien ergeben könnten. Das Programm soll helfen, neue Perspektiven zu erkennen und die Qualifikationen zu identifizieren, die in aufstrebenden Branchen gefragt sein werden. Während Anthropic den Fokus auf mögliche Verwerfungen im Arbeitsmarkt legt, setzt OpenAI in seinem eigenen Blueprint auf Bildungsinitiativen, Infrastruktur und regionale Entwicklung.\n\nAnthropic-CEO Dario Amodei hat zudem eine sogenannte \"Token-Steuer\" vorgeschlagen, bei der ein Teil der Einnahmen aus der Nutzung von Sprachmodellen an den Staat gehen und umverteilt werden soll. Diese Maßnahme soll helfen, die wirtschaftlichen Auswirkungen der KI zu mildern und staatliche Mehreinnahmen zu generieren. Amodei betonte die Notwendigkeit von Transparenz und offener Kommunikation seitens der KI-Unternehmen, um die Gesellschaft auf die bevorstehenden Veränderungen vorzubereiten.\n\n### Quellen\n- [TechCrunch](https://techcrunch.com/2025/06/27/as-job-losses-loom-anthropic-launches-program-to-track-ais-economic-fallout/)\n- [All-AI.de](https://www.all-ai.de/news/news24/amodei-ki-rettung-internet)\n- [ZDNET](https://www.zdnet.com/article/anthropic-has-a-plan-to-combat-ai-triggered-job-losses-predicted-by-its-ceo/)\n- [The Register](https://www.theregister.com/2025/06/27/anthropic_job_killing_tech_study/)\n- [VICE](https://www.vice.com/en/article/anthropic-ai-plan-for-the-future/)\n\n    ",
+    "timestamp": "2025-07-04T12:18:31.449Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über Anthropics \"Economic Futures Program\" und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt zentral die gesellschaftlichen Auswirkungen von KI-Technologie und Anthropics strategische Initiative zur Bewältigung dieser Herausforderungen, was für alle KI-Interessierten hochrelevant ist.\n\n**work - Relevanz: 10/10**\nDas Thema Arbeitsplatzverluste durch KI-Automatisierung (bis zu 50% der Bürojobs gefährdet, potentiell 20% Arbeitslosigkeit) ist bahnbrechend relevant für praktisch alle Arbeitnehmer und Arbeitgeber.\n\n**data protection - Relevanz: 6/10**\nAnthropics Plan, anonymisierte Daten zur KI-Arbeitsmarktauswirkung bereitzustellen, berührt Datenschutzaspekte, ist aber eher für Fachleute im Bereich Datenverarbeitung interessant.\n\n**Nicht zugeordnete Kategorien:**\n- **programming**: Keine spezifischen Programmierinhalte oder technische Implementierungsdetails\n- **databases**: Keine Datenbankthemen behandelt\n- **security**: Keine IT-Sicherheitsaspekte thematisiert  \n- **copyright**: Keine urheberrechtlichen Fragestellungen erwähnt\n\nDie Nachricht ist besonders bedeutsam, da sie zeigt, wie KI-Unternehmen proaktiv gesellschaftliche Verantwortung übernehmen und konkrete Lösungsansätze für die durch ihre Technologie verursachten Disruptions entwickeln.",
+          "id": "a873d233-f5db-4645-afbb-5a71db60905a"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "reasoning": "Der Artikel behandelt zentral die gesellschaftlichen Auswirkungen von KI-Technologie und Anthropics strategische Initiative zur Bewältigung dieser Herausforderungen, was für alle KI-Interessierten hochrelevant ist.",
+            "relevance": 9
+          },
+          {
+            "name": "work",
+            "reasoning": "Das Thema Arbeitsplatzverluste durch KI-Automatisierung (bis zu 50% der Bürojobs gefährdet, potentiell 20% Arbeitslosigkeit) ist bahnbrechend relevant für praktisch alle Arbeitnehmer und Arbeitgeber.",
+            "relevance": 10
+          },
+          {
+            "name": "data protection",
+            "reasoning": "Anthropics Plan, anonymisierte Daten zur KI-Arbeitsmarktauswirkung bereitzustellen, berührt Datenschutzaspekte, ist aber eher für Fachleute im Bereich Datenverarbeitung interessant.",
+            "relevance": 6
+          }
+        ]
+      ]
+    }
+  }
+}

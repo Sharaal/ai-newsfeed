@@ -1,6 +1,19 @@
 ---
-layout: "post"
-title: "Yarn, the better NPM?"
+layout: post
+title: 'Yarn, the better NPM?'
+categories:
+  - name: programming
+    relevance: 8
+    reasoning: >-
+      Der Text behandelt direkt ein wichtiges Werkzeug für JavaScript-Entwickler
+      und Package-Management, was für die meisten Programmierer hochrelevant
+      ist.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Package Manager wie Yarn können Deployment-Workflows vereinfachen und
+      stabiler machen, was direkte Auswirkungen auf die tägliche Arbeit von
+      Entwicklungsteams hat.
 ---
 
 Yarn is a new package manager for JavaScript which can be used as substitute of NPM developed by Facebook and Google. I tried it out and want to share my first experiences with it which are not already presented at their homepage.

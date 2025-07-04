@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Meta AI leakt intime Chats: Skandal um Privatsphäre!\n\n\nDie jüngste Enthüllung über die Meta-AI-App hat eine Welle der Empörung ausgelöst: Private Chats, die Nutzer mit dem KI-gestützten Chatbot führten, wurden unabsichtlich öffentlich gemacht. Die App, die ursprünglich als innovatives Tool für personalisierte Konversationen gedacht war, verfügt über eine sogenannte \"Discover\"-Funktion. Diese erlaubt es Nutzern, ihre Gespräche mit der KI zu teilen – oft jedoch ohne ihr Wissen. Besonders brisant: Die veröffentlichten Inhalte umfassen sensible Themen wie medizinische Fragen, rechtliche Angelegenheiten und persönliche Beziehungen. Viele Nutzer waren sich nicht bewusst, dass ihre Chats öffentlich sichtbar wurden, was zu einem massiven Vertrauensverlust führte.\n\n<!--more-->\n\nMeta verteidigt sich mit dem Argument, dass die \"Discover\"-Funktion nur durch aktives Teilen aktiviert werde. Doch Kritiker werfen dem Unternehmen vor, die Benutzeroberfläche sei irreführend gestaltet und die Warnhinweise unzureichend. Datenschutzexperten warnen, dass solche Vorfälle nicht nur die Privatsphäre der Nutzer gefährden, sondern auch die Grundlage für Missbrauch und Identitätsdiebstahl schaffen könnten. Während Meta betont, dass die Chats standardmäßig privat seien, zeigt die Realität, dass viele Nutzer unabsichtlich ihre intimsten Gedanken und Fragen öffentlich gemacht haben. Die Debatte um die Verantwortung von Technologieunternehmen für den Schutz der Privatsphäre ihrer Nutzer ist damit erneut entbrannt.\n\n### Quellen\n- [Der Standard: Metas KI-Feed ist ein Privatsphäre-Albtraum](https://www.derstandard.at/story/3000000273898/metas-ki-feed-ist-ein-privatsphaere-albtraum)\n- [WinBuzzer: Meta’s AI App ‘Discover’ Feed Publicly Exposes Private Chats](https://winbuzzer.com/2025/06/13/metas-ai-app-discover-feed-publicly-exposes-private-chats-without-users-knowing-xcxwbn/)\n- [TechCrunch: The Meta AI app is a privacy disaster](https://techcrunch.com/2025/06/12/the-meta-ai-app-is-a-privacy-disaster/)\n- [Washington Post: Meta AI users confide on sex, God and Trump](https://www.washingtonpost.com/technology/2025/06/13/meta-ai-privacy-users-chatbot/)\n- [iPhone in Canada: Meta AI App Accidentally Broadcasts Private Chats](https://www.iphoneincanada.ca/2025/06/13/meta-ai-app-leaks-private-chats-to-all/)\n\n    ",
+    "timestamp": "2025-07-04T13:12:53.606Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts über den Meta AI Privatsphäre-Skandal ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 8/10\nDer Artikel behandelt direkt Meta's KI-gestützten Chatbot und dessen problematische \"Discover\"-Funktion, was für alle AI-Interessierten hochrelevant ist, da es grundlegende Fragen zum verantwortlichen Umgang mit KI-Technologie aufwirft.\n\n## **data protection** - Relevanz: 9/10\nDies ist ein klassischer Datenschutz-Skandal mit unbeabsichtigter Veröffentlichung privater Gespräche, der exemplarisch die Risiken moderner Tech-Plattformen aufzeigt und für praktisch jeden Internetnutzer relevant ist.\n\n## **security** - Relevanz: 7/10\nDer Vorfall demonstriert erhebliche Sicherheitsmängel in der Benutzeroberfläche und den Standardeinstellungen, die zu ungewollter Datenpreisgabe führen - wichtig für alle, die sich mit IT-Sicherheit beschäftigen.\n\n## **work** - Relevanz: 6/10\nFür Unternehmen und Arbeitnehmer relevant, da es zeigt, welche Risiken bei der Nutzung von KI-Tools am Arbeitsplatz bestehen und wie wichtig entsprechende Richtlinien sind.\n\nDie Kategorien \"programming\", \"databases\" und \"copyright\" sind nicht relevant, da der Artikel weder technische Implementierungsdetails noch Urheberrechtsfragen behandelt.",
+          "id": "47c1fe57-74f9-4340-9071-cd589814d23c"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Der Artikel behandelt direkt Meta's KI-gestützten Chatbot und dessen problematische 'Discover'-Funktion, was für alle AI-Interessierten hochrelevant ist, da es grundlegende Fragen zum verantwortlichen Umgang mit KI-Technologie aufwirft."
+          },
+          {
+            "name": "data protection",
+            "relevance": 9,
+            "reasoning": "Dies ist ein klassischer Datenschutz-Skandal mit unbeabsichtigter Veröffentlichung privater Gespräche, der exemplarisch die Risiken moderner Tech-Plattformen aufzeigt und für praktisch jeden Internetnutzer relevant ist."
+          },
+          {
+            "name": "security",
+            "relevance": 7,
+            "reasoning": "Der Vorfall demonstriert erhebliche Sicherheitsmängel in der Benutzeroberfläche und den Standardeinstellungen, die zu ungewollter Datenpreisgabe führen - wichtig für alle, die sich mit IT-Sicherheit beschäftigen."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Für Unternehmen und Arbeitnehmer relevant, da es zeigt, welche Risiken bei der Nutzung von KI-Tools am Arbeitsplatz bestehen und wie wichtig entsprechende Richtlinien sind."
+          }
+        ]
+      ]
+    }
+  }
+}

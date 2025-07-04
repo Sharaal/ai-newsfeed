@@ -1,0 +1,75 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# DeepSeek: Chinesisches Start-up fordert KI-Giganten heraus\n\n\nDeepSeek, ein aufstrebendes chinesisches Start-up, hat in der vergangenen Woche die Tech-Welt in Aufruhr versetzt. Mit seinem neuen KI-Modell R1, das mit minimalem Ressourceneinsatz entwickelt wurde, stellt das Unternehmen etablierte Giganten wie OpenAI und Google vor ernsthafte Herausforderungen. Besonders beeindruckend ist die Effizienz des Modells: Während Konkurrenten wie ChatGPT Millionen in die Entwicklung investieren, hat DeepSeek mit einem Bruchteil der Kosten ein konkurrenzfähiges Produkt auf den Markt gebracht. Die App des Unternehmens hat in kürzester Zeit die Spitze der Download-Charts erreicht und sorgt für einen regelrechten Hype – nicht nur in China, sondern auch international.\n\n<!--more-->\n\nDoch der Erfolg von DeepSeek bleibt nicht ohne Kontroversen. Kritiker werfen dem Unternehmen vor, sich unrechtmäßig an Daten westlicher Konkurrenten bedient zu haben, um sein Modell zu trainieren. Zudem gibt es Bedenken hinsichtlich der Datensicherheit und der Einhaltung internationaler Datenschutzstandards. In Europa und den USA wird bereits über mögliche Regulierungen diskutiert, während einige Länder wie Australien und Taiwan die Nutzung von DeepSeek auf staatlichen Geräten untersagt haben. Trotz dieser Herausforderungen bleibt das Start-up ein Symbol für Chinas wachsende Innovationskraft im Bereich der Künstlichen Intelligenz.\n\n### Quellen\n- [T-Online: DeepSeek fordert KI-Giganten heraus](https://www.t-online.de/digital/aktuelles/id_100584838/deepseek-chinesisches-start-up-toppt-ki-giganten-und-erregt-aufsehen.html)  \n- [Industriemagazin: DeepSeek erschüttert die Wall Street](https://industriemagazin.at/it-und-software/deepseek-wie-ein-chinesisches-start-up-die-ki-welt-und-die-wall-street-erschuettert/)  \n- [BR24: Kampfansage aus China](https://www.br.de/nachrichten/netzwelt/kampfansage-aus-china-deepseek-bringt-ki-giganten-ins-schwitzen,Ub5lKoH)  \n- [Deutsche Wirtschafts Nachrichten: DeepSeek und die Revolution in der KI](https://deutsche-wirtschafts-nachrichten.de/713954/deepseek-und-die-revolution-in-der-ki-was-steckt-hinter-dem-erfolg-des-start-ups)\n\n    ",
+    "timestamp": "2025-07-04T13:09:02.172Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts über DeepSeek ordne ich folgende Kategorien mit entsprechenden Relevanzen zu:\n\n## **ai - Relevanz: 9/10**\nDas ist eine bahnbrechende Entwicklung in der KI-Branche, da ein chinesisches Start-up mit minimalen Ressourcen etablierte Giganten wie OpenAI und Google herausfordert und damit die gesamte Branchendynamik verändert.\n\n## **programming - Relevanz: 7/10**\nFür Entwickler ist dies hochrelevant, da DeepSeek zeigt, wie effiziente KI-Modelle mit deutlich geringeren Ressourcen entwickelt werden können, was neue Möglichkeiten für die Programmierung eröffnet.\n\n## **security - Relevanz: 8/10**\nDie Sicherheitsbedenken bezüglich Datenschutz, internationaler Standards und die bereits erfolgten Verbote in Australien und Taiwan machen dies zu einem wichtigen Sicherheitsthema.\n\n## **work - Relevanz: 6/10**\nDer Erfolg von DeepSeek könnte die Arbeitswelt im KI-Bereich verändern und zeigt, wie Start-ups mit innovativen Ansätzen etablierte Unternehmen herausfordern können.\n\n## **data protection - Relevanz: 7/10**\nDie Bedenken hinsichtlich Datensicherheit und Einhaltung internationaler Datenschutzstandards sowie die diskutierten Regulierungen machen dies zu einem wichtigen Datenschutzthema.\n\n## **copyright - Relevanz: 6/10**\nDie Vorwürfe, dass sich DeepSeek unrechtmäßig an Daten westlicher Konkurrenten bedient haben könnte, berühren wichtige urheberrechtliche Fragen beim Training von KI-Modellen.\n\n**Nicht zugeordnet:** databases - Der Text behandelt keine spezifischen Datenbankthemen oder -technologien.",
+          "id": "84f49721-74a2-4c42-9d35-3bb607e0f1b4"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Das ist eine bahnbrechende Entwicklung in der KI-Branche, da ein chinesisches Start-up mit minimalen Ressourcen etablierte Giganten wie OpenAI und Google herausfordert und damit die gesamte Branchendynamik verändert."
+          },
+          {
+            "name": "programming",
+            "relevance": 7,
+            "reasoning": "Für Entwickler ist dies hochrelevant, da DeepSeek zeigt, wie effiziente KI-Modelle mit deutlich geringeren Ressourcen entwickelt werden können, was neue Möglichkeiten für die Programmierung eröffnet."
+          },
+          {
+            "name": "security",
+            "relevance": 8,
+            "reasoning": "Die Sicherheitsbedenken bezüglich Datenschutz, internationaler Standards und die bereits erfolgten Verbote in Australien und Taiwan machen dies zu einem wichtigen Sicherheitsthema."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Der Erfolg von DeepSeek könnte die Arbeitswelt im KI-Bereich verändern und zeigt, wie Start-ups mit innovativen Ansätzen etablierte Unternehmen herausfordern können."
+          },
+          {
+            "name": "data protection",
+            "relevance": 7,
+            "reasoning": "Die Bedenken hinsichtlich Datensicherheit und Einhaltung internationaler Datenschutzstandards sowie die diskutierten Regulierungen machen dies zu einem wichtigen Datenschutzthema."
+          },
+          {
+            "name": "copyright",
+            "relevance": 6,
+            "reasoning": "Die Vorwürfe, dass sich DeepSeek unrechtmäßig an Daten westlicher Konkurrenten bedient haben könnte, berühren wichtige urheberrechtliche Fragen beim Training von KI-Modellen."
+          }
+        ]
+      ]
+    }
+  }
+}

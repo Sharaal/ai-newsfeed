@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# SQL Workshop\n\n\nBecause of security issues I did a very small SQL workshop in my company focused on SQL Injections.\n\nSo I explain them what they are, what the issues are and how to ensure not having any issues with them. Also some more topics in a rough walkthrough like proper database design and some best practices.\n\n<!--more-->\n\n## SQL Injection\n\nSQL Injection means to change the expected behaviour of a SQL query by sending parts of the SQL query instead of only values and can always be done if the values are not right escaped. It's the number one reason of all security problems out in the world.\n\ne.g. Update email of an user:\n\n```javascript\napp.post('/users/email', async (req, res) => {\n  const email = req.body.email\n  const id = req.user.id\n  await db.query(`UPDATE users SET email = '${email}' WHERE id = ${id}`)\n  res.sendStatus(204)\n})\n```\n\nThe expected behaviour if there is a post which contains:\n\n```json\n{\n  \"email\": \"sharaal@example.com\"\n}\n```\n\nworks fine.\n\nBut what happens if there is an attacker trying some injection by sending:\n\n```json\n{\n  \"email\": \"attacker@example.com' WHERE id = 1 --\"\n}\n```\n\nIn this case the SQL which is executed looks like:\n\n```sql\nUPDATE users SET email = 'attacker@example.com' WHERE id = 1 --' WHERE id = 5\n```\n\nAnd if the user with the ID 1 is an admin, the attacker can to a password forget with his own email address and took successfully over these account.\n\n### Parameters\n\nTo solve that kind of security issues all values which are not hardcoded in the SQL query needs to be escaped. DB drivers should provide own solution for that, so it's recommended to use that and never building an own solution.\n\nFor PostgreSQL parameters are the way to go: using placeholders in the SQL query, send the values separately and the database will handle them securely.\n\ne.g. Update email of an user:\n\n```javascript\napp.post('/users/email', async (req, res) => {\n  const email = req.body.email\n  const id = req.user.id\n  await db.query(\n    `UPDATE users SET email = $1 WHERE id = $2`,\n    [email, id]\n  )\n  res.sendStatus(204)\n})\n```\n\nThat's all. Follow these and never have security issues because of SQL Injections.\n\n### Identifiers (table/column names)\n\nBecause of technical reasons (changed query paths), placeholders we use for values are not allowed for identifiers. Also here different databases has different solutions to solve these, some just don't have any.\n\nPostgreSQL is one of the database don't have a solution, but a well documented format of identifiers, so we can easily write an own escape function:\n\n```javascript\nfunction escapeIdentifier (identifier) {\n  return `\"${identifier.replace(/\"/g, '\"\"')}\"`\n}\n```\n\nEvery `\"` will be replaced by `\"\"` to be escaped an the identifier is surrounded by `\"`.\n\nSo if the table name should be dynamically in the user email example, it will looks like:\n\n```javascript\nconst tableName = 'users'\n\napp.post('/users/email', async (req, res) => {\n  const email = req.body.email\n  const id = req.user.id\n  await db.query(\n    `UPDATE ${escapeIdentifier(tableName)} SET email = $1 WHERE id = $2`,\n    [email, id]\n  )\n  res.sendStatus(204)\n})\n```\n\n## Additional Solution: SQL Tagged Template Literal\n\nWith ES6 tagged template literals was introduced and can be used to build sql queries. The user email example using them would look like:\n\n```javascript\nconst tableName = 'users'\n\napp.post('/users/email', async (req, res) => {\n  const email = req.body.email\n  const id = req.user.id\n  await sql.query(\n    sql`UPDATE ${sql.key(tableName)} SET email = ${email} WHERE id = ${id}`\n  )\n  res.sendStatus(204)\n})\n```\n\nThe sql tag handles the splitting of the query and the values automatically and provide also a method to escape identifiers together with a lot more convenience methods. Using this kind of solution does it makes ensures SQL Injections are not possible to have.\n\n## Database Design\n\n### ID\n\n- Always have a serial ID column named `id`\n\n### Timestamps\n\n- Always have a `created_at` column automatically filled with the current timestamp if inserting new rows and a `updated_at` column automatically filled with the current timestamp if inserting new rows or updating existing ones\n\n`updated_at` needs a special solution for PostgreSQL:\n\nCustom function:\n\n```sql\nCREATE OR REPLACE FUNCTION on_update_timestamp()\n  RETURNS trigger AS $\n  BEGIN\n    NEW.updated_at = now();\n    RETURN NEW;\n  END;\n  $ language 'plpgsql'\n```\n\nTrigger for every table, e.g. users:\n```sql\nCREATE TRIGGER users_updated_at\n  BEFORE UPDATE ON users\n  FOR EACH ROW\n  EXECUTE PROCEDURE on_update_timestamp()\n```\n\n### Indices\n\n- All columns used in joins and where conditions should be indexed\n- Combined indexes needs care about the order of the including columns\n\n### Relations\n\n- Always use INNER JOIN if OUTER JOIN is not explicit needed\n- Always use the ON of the JOINs for the foreign keys instead of compare them in the WHERE\n\nDifferent relations:\n- 1:1: related table has an unique foreign key to the host table\n- 1:n: related table has a foreign key to the host table\n- m:n: relation table with both IDs of the related tables\n\n## Best Practices\n\n### Uppercased Keywords / Lowercased Identifier\n\nEasier to read if used consequent independently if syntax highlighting is available (e.g. in logs). e.g.:\n\n```sql\n-- bad\nselect * from users\n\n-- good\nSELECT * FROM users\n```\n\n### Always use lowercased identifier\n\nEven if it's possible, it's hard to work with identifiers having uppercased characters, e.g.:\n\n```sql\n-- bad\nSELECT * FROM \"Users\"\n\n-- good\nSELECT * FROM users\n```\n\n### Never INSERT INTO without columns\n\n```sql\n-- bad\nINSERT INTO users VALUES\n  (null, 'sharaal@example.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)\n\n-- Not possible to omit columns with default values\n-- It will break if there are changes in the table schema\n\n-- good\nINSERT INTO users (email) VALUES ('sharaal@example.com')\n```\n\n### Split Migrations and Service Technologies\n\n- Evaluate and use solutions for migrations and querying in services separately\n- e.g. `knex` for migrations, `pg` for querying in services\n- Think about query builder if the queries become more complex with the native `pg` use\n\n    ",
+    "timestamp": "2025-07-04T13:21:57.112Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den gegebenen Newstext über einen SQL-Workshop mit Fokus auf SQL Injections und Datenbankdesign.\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**security** - Relevanz: 9/10\nDer Hauptfokus des Artikels liegt auf SQL Injections, die als \"number one reason of all security problems\" bezeichnet werden, mit praktischen Beispielen und Lösungsansätzen.\n\n**programming** - Relevanz: 8/10\nDer Text enthält umfangreiche Code-Beispiele in JavaScript/Node.js und SQL, zeigt konkrete Implementierungen und Best Practices für Entwickler.\n\n**databases** - Relevanz: 7/10\nBehandelt wichtige Datenbankthemen wie Design-Prinципien, Indizierung, Relationen und PostgreSQL-spezifische Lösungen für sichere Datenbankoperationen.\n\n**work** - Relevanz: 6/10\nDer Artikel entstand aus einem firmeninternen Workshop und zeigt praktische Anwendung von Sicherheitsschulungen am Arbeitsplatz.\n\nDie Kategorien **ai**, **data protection** und **copyright** sind nicht relevant, da der Text keine Bezüge zu Künstlicher Intelligenz, Datenschutzbestimmungen oder Urheberrechtsfragen enthält.",
+          "id": "8a285b0e-21e4-4fe8-a5dc-07d8cfe4e5b3"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "security",
+            "relevance": 9,
+            "reasoning": "Der Hauptfokus des Artikels liegt auf SQL Injections, die als 'number one reason of all security problems' bezeichnet werden, mit praktischen Beispielen und Lösungsansätzen."
+          },
+          {
+            "name": "programming",
+            "relevance": 8,
+            "reasoning": "Der Text enthält umfangreiche Code-Beispiele in JavaScript/Node.js und SQL, zeigt konkrete Implementierungen und Best Practices für Entwickler."
+          },
+          {
+            "name": "databases",
+            "relevance": 7,
+            "reasoning": "Behandelt wichtige Datenbankthemen wie Design-Prinzipien, Indizierung, Relationen und PostgreSQL-spezifische Lösungen für sichere Datenbankoperationen."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Der Artikel entstand aus einem firmeninternen Workshop und zeigt praktische Anwendung von Sicherheitsschulungen am Arbeitsplatz."
+          }
+        ]
+      ]
+    }
+  }
+}

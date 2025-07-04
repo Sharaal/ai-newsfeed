@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI im Alltag: Datenhunger, Stromverbrauch, Kostenexplosion und neue Chancen für Europa\n\n\nDer Energieverbrauch von Rechenzentren für KI-Anwendungen und andere Digitalisierungsprojekte wird in Europa einer Studie zufolge bis zum Jahr 2030 drastisch steigen. Der Strombedarf werde sich voraussichtlich auf mehr als 150 Terawattstunden fast verdreifachen, was rund fünf Prozent des gesamten europäischen Stromverbrauchs ausmachen würde. Diese Entwicklung stellt eine erhebliche Hürde für globale Nachhaltigkeitsziele dar, insbesondere in Zeiten von Klimakrisen.\n\n<!--more-->\n\nDie Kosten für den Betrieb und die Wartung von KI-Systemen steigen ebenfalls rapide an. Unternehmen müssen nicht nur in leistungsfähigere Hardware investieren, sondern auch in die Kühlung und den Betrieb der Rechenzentren, was zu einer Kostenexplosion führt. Trotz dieser Herausforderungen bietet die KI-Technologie auch neue Chancen für Europa. Durch den Einsatz von KI können Unternehmen ihre Energieeffizienz verbessern und innovative Lösungen für die Energieverwaltung entwickeln, wie z.B. die Optimierung von Energiespeichern und die Verbesserung der Batterieleistung.\n\nDie Europäische Union hat bereits Maßnahmen ergriffen, um die Nutzung erneuerbarer Energien zu fördern und die Abhängigkeit von fossilen Brennstoffen zu reduzieren. Dies ist entscheidend, um den steigenden Energiebedarf durch KI zu decken und gleichzeitig die Klimaziele zu erreichen. Darüber hinaus könnten neue regulatorische Rahmenbedingungen und finanzielle Anreize dazu beitragen, die Entwicklung und Implementierung energieeffizienter KI-Technologien zu beschleunigen.\n\nInsgesamt zeigt sich, dass die Integration von KI in den Alltag sowohl Herausforderungen als auch Chancen mit sich bringt. Während der Datenhunger und der Stromverbrauch von KI-Systemen erhebliche Probleme darstellen, bieten sich durch innovative Ansätze und nachhaltige Technologien neue Möglichkeiten für Europa, um im globalen Wettbewerb zu bestehen und gleichzeitig die Umwelt zu schützen.\n\n### Quellen\n- [Tagesschau: Neue Studie Energiebedarf von KI-Anwendungen steigt drastisch](https://www.tagesschau.de/wirtschaft/energie/kuenstliche-intelligenz-energieverbrauch-100.html)\n- [taz: Energieverbrauch von KI: Der neue Stromfresser steckt im ...](https://taz.de/Energieverbrauch-von-KI/!6077886/)\n- [Deutschlandfunk: Der Stromhunger der KI](https://www.deutschlandfunk.de/kuenstliche-intelligenz-energieverbrauch-klimaschutz-nachhaltigkeit-umwelt-atomkraft-100.html)\n- [Spiegel: Künstliche Intelligenz: KI-Revolution treibt Stromverbrauch in die Höhe](https://www.spiegel.de/netzwelt/kuenstliche-intelligenz-ki-revolution-treibt-stromverbrauch-in-die-hoehe-a-da916800-2227-4844-8465-800f8292829f)\n- [Techzeitgeist: Energieverbrauch von KI-Anwendungen: Eine Herausforderung für die nachhaltige Zukunft](https://www.techzeitgeist.de/energieverbrauch-von-ki-anwendungen-eine-herausforderung-fuer-die-nachhaltige-zukunft/)\n- [n-tv: Unersättlicher KI-Energiehunger: Wird Künstliche Intelligenz zum großen Klimakiller?](https://www.n-tv.de/wirtschaft/Unersaettlicher-KI-Energiehunger-Wird-Kuenstliche-Intelligenz-zum-grossen-Klimakiller-article25331319.html)\n\n    ",
+    "timestamp": "2025-07-04T13:00:51.497Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDer Artikel behandelt zentral die Auswirkungen von KI-Anwendungen auf Energieverbrauch und Kosten, was für alle KI-Interessierten hochrelevant ist, da es fundamentale Herausforderungen der KI-Entwicklung aufzeigt.\n\n## **work** - Relevanz: 7/10\nDie beschriebenen Kostenexplosionen und notwendigen Investitionen in Hardware und Infrastruktur haben direkte Auswirkungen auf Unternehmen und deren Arbeitsplätze, besonders in der Tech-Branche.\n\n## **security** - Relevanz: 6/10\nDer massive Energiebedarf und die Abhängigkeit von Rechenzentren schaffen neue Vulnerabilitäten und Sicherheitsrisiken für die digitale Infrastruktur, auch wenn dies nicht explizit thematisiert wird.\n\n## **data protection** - Relevanz: 5/10\nDer erwähnte \"Datenhunger\" von KI-Systemen impliziert Datenschutzherausforderungen, auch wenn der Artikel diese nicht direkt behandelt, sondern sich auf den Energieaspekt konzentriert.\n\nDie Kategorien **programming**, **databases** und **copyright** sind nicht relevant, da der Artikel weder technische Implementierungsdetails noch spezifische Datenbank- oder Urheberrechtsfragen behandelt, sondern sich auf makroökonomische und energiepolitische Aspekte der KI-Nutzung fokussiert.",
+          "id": "3be1eef7-555f-4bf0-a587-9bc99e1c7f34"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt zentral die Auswirkungen von KI-Anwendungen auf Energieverbrauch und Kosten, was für alle KI-Interessierten hochrelevant ist, da es fundamentale Herausforderungen der KI-Entwicklung aufzeigt."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Die beschriebenen Kostenexplosionen und notwendigen Investitionen in Hardware und Infrastruktur haben direkte Auswirkungen auf Unternehmen und deren Arbeitsplätze, besonders in der Tech-Branche."
+          },
+          {
+            "name": "security",
+            "relevance": 6,
+            "reasoning": "Der massive Energiebedarf und die Abhängigkeit von Rechenzentren schaffen neue Vulnerabilitäten und Sicherheitsrisiken für die digitale Infrastruktur, auch wenn dies nicht explizit thematisiert wird."
+          },
+          {
+            "name": "data protection",
+            "relevance": 5,
+            "reasoning": "Der erwähnte 'Datenhunger' von KI-Systemen impliziert Datenschutzherausforderungen, auch wenn der Artikel diese nicht direkt behandelt, sondern sich auf den Energieaspekt konzentriert."
+          }
+        ]
+      ]
+    }
+  }
+}

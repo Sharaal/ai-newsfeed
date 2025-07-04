@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Microsoft setzt auf Atomstrom für KI – Reaktor Three Mile Island soll 2027 ans Netz\n\n\nMicrosoft plant, seinen steigenden Energiebedarf für KI-Rechenzentren künftig verstärkt mit Atomstrom zu decken. Im September des Vorjahres unterzeichnete das Unternehmen einen 20-jährigen Stromabnahmevertrag mit Constellation Energy, einem US-Versorger, der auf CO2-neutralen Strom aus Nuklearanlagen spezialisiert ist. Ziel ist es, den stillgelegten Reaktor TMI Block 1 des Kraftwerks Three Mile Island bis 2028 wieder in Betrieb zu nehmen. Constellation-CEO Joe Dominguez erklärte nun, dass die Reaktivierung möglicherweise bereits 2027 erfolgen könnte, sofern der lokale Netzbetreiber PJM die Anlage wieder ans Netz anschließt. Der 837-Megawatt-Reaktor wurde 2019 aus wirtschaftlichen Gründen stillgelegt, da Subventionen fehlten, um mit fossilen Brennstoffen zu konkurrieren.\n\n<!--more-->\n\nDie Reaktivierung des Reaktors ist technisch anspruchsvoll, da Turbine, Generator, Transformatoren sowie Kühl- und Steuerungssysteme umfassend modernisiert werden müssen. Microsofts Entscheidung, auf Atomstrom zu setzen, ist Teil einer größeren Strategie, die darauf abzielt, den CO2-Fußabdruck des Unternehmens zu reduzieren und gleichzeitig den wachsenden Energiebedarf seiner KI-Infrastrukturen zu decken. Der Einsatz von Atomstrom wird als eine Möglichkeit gesehen, stabile und emissionsarme Energie zu gewährleisten, die für den Betrieb der energieintensiven Rechenzentren erforderlich ist.\n\nThree Mile Island ist historisch bekannt für den schwerwiegendsten Atomunfall in der Geschichte der USA, der sich 1979 ereignete. Der betroffene Reaktorblock 2 bleibt dauerhaft stillgelegt, während Block 1, der nicht vom Unfall betroffen war, nun wieder in Betrieb genommen werden soll. Die Entscheidung, das Kraftwerk wieder ans Netz zu bringen, hat sowohl Befürworter als auch Kritiker. Befürworter argumentieren, dass Atomstrom eine notwendige Brückentechnologie ist, um die Klimaziele zu erreichen, während Kritiker Sicherheitsbedenken und die langfristige Entsorgung des Atommülls anführen.\n\nMicrosofts Schritt könnte einen Präzedenzfall für andere Technologieunternehmen schaffen, die ebenfalls nach nachhaltigen Energiequellen suchen, um ihre Rechenzentren zu betreiben. Die Partnerschaft mit Constellation Energy zeigt, dass große Unternehmen bereit sind, langfristige Investitionen in die Energieinfrastruktur zu tätigen, um ihre Nachhaltigkeitsziele zu erreichen. Es bleibt abzuwarten, wie sich diese Entwicklung auf die öffentliche Wahrnehmung von Atomenergie und die zukünftige Energiepolitik auswirken wird.\n\n### Quellen\n- [KI Echo](https://ki-echo.de/microsoft-setzt-auf-atomstrom-fuer-ki-reaktor-three-mile-island-soll-2027-ans-netz/)\n- [Welt](https://www.welt.de/wirtschaft/article253629860/Wegen-KI-US-Reaktor-soll-fuer-Microsoft-wieder-ans-Netz.html)\n- [ZDF Heute](https://www.zdfheute.de/wirtschaft/unternehmen/atomkraftwerk-three-mile-island-microsoft-ki-energie-100.html)\n- [T-Online](https://www.t-online.de/finanzen/aktuelles/wirtschaft/id_100494222/microsoft-laesst-beruechtigtes-atomkraftwerk-wieder-ans-netz-gehen.html)\n- [n-tv](https://www.n-tv.de/wirtschaft/US-Atommeiler-geht-fuer-Microsoft-wieder-ans-Netz-article25242734.html)\n\n    ",
+    "timestamp": "2025-07-04T12:20:59.669Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts über Microsofts Atomstrom-Initiative für KI-Rechenzentren ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 8/10\nDie Nachricht ist hochrelevant für die KI-Community, da sie einen wichtigen Trend zur Energieversorgung von KI-Rechenzentren aufzeigt und zeigt, wie der massive Energiebedarf von KI-Systemen die Energieinfrastruktur beeinflusst.\n\n## **work** - Relevanz: 6/10\nFür die Arbeitswelt relevant, da Microsofts Strategie Auswirkungen auf die gesamte Tech-Branche haben könnte und einen Präzedenzfall für nachhaltige Unternehmensstrategien schafft, was Arbeitsplätze und Geschäftsmodelle beeinflussen wird.\n\n## **security** - Relevanz: 5/10\nMäßig relevant für IT-Sicherheit, da die Energieversorgung kritischer Infrastrukturen wie Rechenzentren ein wichtiger Aspekt der Betriebssicherheit ist, auch wenn der Fokus hier mehr auf Energiepolitik als auf Cybersecurity liegt.\n\nDie anderen Kategorien (programming, databases, data protection, copyright) sind nicht relevant, da der Text sich primär mit Energieversorgung und Unternehmensstrategie beschäftigt, nicht mit technischen Implementierungsdetails oder rechtlichen Aspekten von Software und Daten.",
+          "id": "eb2fb2ac-0a86-44df-92a3-ab37b9af0b03"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Die Nachricht ist hochrelevant für die KI-Community, da sie einen wichtigen Trend zur Energieversorgung von KI-Rechenzentren aufzeigt und zeigt, wie der massive Energiebedarf von KI-Systemen die Energieinfrastruktur beeinflusst."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Für die Arbeitswelt relevant, da Microsofts Strategie Auswirkungen auf die gesamte Tech-Branche haben könnte und einen Präzedenzfall für nachhaltige Unternehmensstrategien schafft, was Arbeitsplätze und Geschäftsmodelle beeinflussen wird."
+          },
+          {
+            "name": "security",
+            "relevance": 5,
+            "reasoning": "Mäßig relevant für IT-Sicherheit, da die Energieversorgung kritischer Infrastrukturen wie Rechenzentren ein wichtiger Aspekt der Betriebssicherheit ist, auch wenn der Fokus hier mehr auf Energiepolitik als auf Cybersecurity liegt."
+          }
+        ]
+      ]
+    }
+  }
+}

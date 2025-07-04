@@ -1,8 +1,29 @@
 ---
-layout: "post"
-language: "de"
-title: "Mira Murati’s Thinking Machines Lab closes on $2B at $10B valuation"
+layout: post
+language: de
+title: Mira Murati’s Thinking Machines Lab closes on $2B at $10B valuation
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Dies ist eine bahnbrechende Nachricht für die KI-Branche, da eine der
+      führenden Persönlichkeiten (ehemalige OpenAI CTO) ein neues Unternehmen
+      mit Rekordfinanzierung gründet, das sich auf die Entwicklung sichererer
+      und breit einsetzbarerer KI-Systeme konzentriert.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Die Nachricht ist hochrelevant für die Arbeitswelt, da sie den
+      Talentabfluss von OpenAI zu einem neuen Konkurrenten zeigt und die Dynamik
+      des KI-Arbeitsmarktes verdeutlicht, wo Top-Talente die knappste Ressource
+      sind.
+  - name: security
+    relevance: 6
+    reasoning: >-
+      Das Unternehmen fokussiert sich explizit auf die Entwicklung 'sichererer'
+      KI-Systeme als bestehende Lösungen, was für IT-Sicherheitsexperten und
+      alle, die sich mit KI-Sicherheit beschäftigen, relevant ist.
 ---
 
 Mira Murati, die ehemalige CTO von OpenAI, hat für ihr neues KI-Unternehmen Thinking Machines Lab beeindruckende 2 Milliarden Dollar gesammelt. Nur sechs Monate nach der Gründung wird das Unternehmen nun mit 10 Milliarden Dollar bewertet. Diese Finanzierungsrunde, die von Andreessen Horowitz angeführt wurde, ist eine der größten Seed-Runden in der Geschichte des Silicon Valley und hat das ursprüngliche Ziel von 1 Milliarde Dollar verdoppelt.

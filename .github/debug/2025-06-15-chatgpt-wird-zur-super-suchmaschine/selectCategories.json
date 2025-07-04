@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# ChatGPT wird zur Super-Suchmaschine\n\n\nDie Welt der Suchmaschinen steht vor einer Revolution: OpenAI hat kürzlich die Websuche-Funktion von ChatGPT für alle Nutzer freigeschaltet. Was einst nur zahlenden Abonnenten vorbehalten war, ist nun für jeden zugänglich – sowohl in der App als auch auf der Webseite. Mit dieser Neuerung positioniert sich ChatGPT als ernstzunehmende Alternative zu traditionellen Suchmaschinen wie Google. Statt einer Liste von Links liefert ChatGPT präzise Antworten auf Fragen, ergänzt durch Quellenangaben und multimediale Inhalte wie Bilder und Videos. Besonders beeindruckend ist die Möglichkeit, Fragen in natürlicher Sprache zu stellen, was die Nutzung intuitiver und persönlicher macht.\n\n<!--more-->\n\nDie neue Funktionalität geht jedoch über die reine Websuche hinaus. Nutzer können ChatGPT nun auch als Standardsuchmaschine in Browsern wie Chrome integrieren. Eine spezielle Erweiterung ermöglicht es, direkt in der Adresszeile des Browsers zu suchen. Zudem hat OpenAI die Sprachfunktionen verbessert, sodass Antworten auch vorgelesen werden können. Diese Entwicklungen machen ChatGPT nicht nur zu einem praktischen Werkzeug, sondern auch zu einem potenziellen Gamechanger in der Art und Weise, wie wir Informationen suchen und konsumieren.\n\nDie Auswirkungen dieser Innovation sind weitreichend. Laut einer Analyse von SEMrush nutzen immer mehr Menschen, insbesondere die Generation Z, ChatGPT anstelle von Google. Die Gründe liegen auf der Hand: Die Antworten sind schneller, direkter und oft relevanter. Für Unternehmen und Content-Ersteller bedeutet dies, dass sie ihre SEO-Strategien überdenken müssen. Statt auf Keywords zu setzen, wird es wichtiger, Inhalte zu erstellen, die präzise, vertrauenswürdig und dialogorientiert sind.\n\n### Quellen\n- [all-ai.de: ChatGPT wird zur Super-Suchmaschine](https://www.all-ai.de/news/top-news24/openai-chatgpt-suche)\n- [chip.de: ChatGPT wird zur Suchmaschine](https://www.chip.de/nachrichten/kuenstliche-intelligenz,135700/chatgpt-wird-zur-suchmaschine-jetzt-endlich-fuer-alle_b44bd3ff-36f5-4f91-8301-44abaed020ae.html)\n- [schmidtisblog.de: ChatGPT wird zur Suchmaschine für alle](https://www.schmidtisblog.de/chatgpt-wird-zur-suchmaschine-fuer-alle-1764981/)\n- [digitalhandwerk.rocks: ChatGPT wird zur Suchmaschine – und die Gen Z ist schon da](https://digitalhandwerk.rocks/ki/chatgpt-wird-zur-suchmaschine-und-die-gen-z-ist-schon-da/)\n- [mactechnews.de: ChatGPT Search für alle Nutzer freigegeben](https://www.mactechnews.de/news/article/ChatGPT-Search-fuer-alle-Nutzer-freigegeben-Websuche-soll-Google-ersetzen-186293.html)\n\n    ",
+    "timestamp": "2025-07-04T13:14:07.279Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über ChatGPTs neue Websuche-Funktion ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDie Nachricht behandelt eine bahnbrechende Entwicklung im KI-Bereich, da ChatGPT nun als vollwertige Suchmaschine fungiert und damit die Art der Informationssuche revolutioniert.\n\n## **programming** - Relevanz: 6/10\nFür Entwickler relevant, da Browser-Integrationen und Erweiterungen erwähnt werden, die technische Implementierungen erfordern und neue Möglichkeiten für die Integration von KI-Tools bieten.\n\n## **work** - Relevanz: 8/10\nHochrelevant für die Arbeitswelt, da sich SEO-Strategien, Content-Erstellung und Suchverhalten grundlegend ändern werden, was Unternehmen und Marketing-Fachkräfte direkt betrifft.\n\nDie Kategorien **databases**, **security**, **data protection** und **copyright** sind nicht direkt relevant, da der Text diese Aspekte nicht behandelt. Der Fokus liegt klar auf der funktionalen Innovation und deren Auswirkungen auf Nutzerverhalten und Geschäftsstrategien.",
+          "id": "d6e5dad6-e053-4b80-9f21-05f6b32b293b"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Die Nachricht behandelt eine bahnbrechende Entwicklung im KI-Bereich, da ChatGPT nun als vollwertige Suchmaschine fungiert und damit die Art der Informationssuche revolutioniert."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Für Entwickler relevant, da Browser-Integrationen und Erweiterungen erwähnt werden, die technische Implementierungen erfordern und neue Möglichkeiten für die Integration von KI-Tools bieten."
+          },
+          {
+            "name": "work",
+            "relevance": 8,
+            "reasoning": "Hochrelevant für die Arbeitswelt, da sich SEO-Strategien, Content-Erstellung und Suchverhalten grundlegend ändern werden, was Unternehmen und Marketing-Fachkräfte direkt betrifft."
+          }
+        ]
+      ]
+    }
+  }
+}

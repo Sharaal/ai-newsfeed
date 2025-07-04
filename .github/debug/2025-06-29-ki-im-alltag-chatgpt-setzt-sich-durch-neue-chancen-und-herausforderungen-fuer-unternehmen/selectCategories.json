@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI im Alltag: ChatGPT setzt sich durch, neue Chancen und Herausforderungen für Unternehmen\n\n\nKünstliche Intelligenz (KI) hat in den letzten Jahren einen bemerkenswerten Aufschwung erlebt und ist mittlerweile ein fester Bestandteil des Alltags vieler Menschen. Besonders ChatGPT, ein KI-gestütztes Sprachmodell von OpenAI, hat sich als äußerst nützlich erwiesen. Unternehmen nutzen ChatGPT zunehmend, um ihre Effizienz zu steigern und neue Geschäftsmöglichkeiten zu erschließen. Die Flexibilität und Vielseitigkeit von ChatGPT ermöglichen es, eine Vielzahl von Aufgaben zu automatisieren, von der Kundenbetreuung bis hin zur Datenanalyse.\n\n<!--more-->\n\nDie Integration von ChatGPT in den Unternehmensalltag bringt jedoch auch Herausforderungen mit sich. Datenschutz und Datensicherheit sind zentrale Themen, die Unternehmen berücksichtigen müssen. Die Verarbeitung großer Datenmengen durch KI-Systeme erfordert strenge Sicherheitsmaßnahmen, um sensible Informationen zu schützen. Zudem gibt es Bedenken hinsichtlich der Transparenz und Nachvollziehbarkeit der von KI generierten Ergebnisse. Unternehmen müssen sicherstellen, dass die Entscheidungen, die auf Basis von KI getroffen werden, nachvollziehbar und gerecht sind.\n\nEin weiterer Aspekt ist die Auswirkung auf den Arbeitsmarkt. Während KI-Systeme wie ChatGPT viele repetitive Aufgaben übernehmen können, besteht die Gefahr, dass Arbeitsplätze verloren gehen. Gleichzeitig entstehen jedoch auch neue Berufsfelder und Anforderungen, die spezialisierte Kenntnisse im Umgang mit KI erfordern. Unternehmen sind gefordert, ihre Mitarbeitenden entsprechend weiterzubilden und neue Kompetenzen zu fördern.\n\nTrotz dieser Herausforderungen bietet die Nutzung von ChatGPT und anderen KI-Technologien enorme Chancen. Unternehmen können ihre Prozesse optimieren, Kosten senken und innovative Produkte und Dienstleistungen entwickeln. Die Zukunft der Arbeit wird durch die Integration von KI maßgeblich beeinflusst, und es liegt an den Unternehmen, diese Entwicklung aktiv und verantwortungsvoll zu gestalten.\n\n### Quellen\n- [KI im Alltag: ChatGPT setzt sich durch, neue Chancen und Herausforderungen für Unternehmen](https://ki-echo.de/ki-im-alltag-chatgpt-setzt-sich-durch-neue-chancen-und-herausforderungen-fuer-unternehmen/)\n- [ChatGPT: Wie KI im Alltag unser Leben in SH beeinflusst](https://www.ndr.de/nachrichten/schleswig-holstein/chatgpt-wie-ki-im-alltag-unser-leben-in-sh-beeinflusst,ki-126.html)\n- [Künstliche Intelligenz: \"Sie behauptet mit großer Vehemenz, dass die ...\"](https://www.zeit.de/gesellschaft/2025-06/kuenstliche-intelligenz-alltag-nutzung-anwendung-technologie)\n- [Unternehmen setzen vermehrt auf ChatGPT und KI-Anwendungen: So ...](https://digitalzentrum-berlin.de/unternehmen-setzen-vermehrt-auf-chatgpt-und-ki-anwendungen)\n\n    ",
+    "timestamp": "2025-07-04T12:22:15.340Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDer gesamte Artikel dreht sich um ChatGPT und KI-Technologien im Unternehmenskontext, was für nahezu alle Branchen und Berufsgruppen hochrelevant ist.\n\n## **work** - Relevanz: 8/10\nDer Text behandelt ausführlich die Auswirkungen von KI auf den Arbeitsmarkt, Jobverluste, neue Berufsfelder und die Notwendigkeit der Mitarbeiterweiterbildung - ein Thema, das viele Arbeitnehmer direkt betrifft.\n\n## **data protection** - Relevanz: 7/10\nDatenschutz wird als zentrale Herausforderung bei der KI-Integration explizit erwähnt, was für Unternehmen und deren Compliance-Anforderungen sehr wichtig ist.\n\n## **security** - Relevanz: 6/10\nDatensicherheit und Schutz sensibler Informationen werden als wichtige Aspekte bei der Verarbeitung großer Datenmengen durch KI-Systeme thematisiert.\n\nDie Kategorien **programming**, **databases** und **copyright** sind nicht relevant, da der Text keine spezifischen technischen Implementierungsdetails, Datenbankthemen oder urheberrechtliche Fragestellungen behandelt, sondern sich auf die allgemeine Geschäftsanwendung und gesellschaftlichen Auswirkungen von KI konzentriert.",
+          "id": "871771a6-a506-48c3-a9e1-5b5f92e5f3dc"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "reasoning": "Der gesamte Artikel dreht sich um ChatGPT und KI-Technologien im Unternehmenskontext, was für nahezu alle Branchen und Berufsgruppen hochrelevant ist.",
+            "relevance": 9
+          },
+          {
+            "name": "work",
+            "reasoning": "Der Text behandelt ausführlich die Auswirkungen von KI auf den Arbeitsmarkt, Jobverluste, neue Berufsfelder und die Notwendigkeit der Mitarbeiterweiterbildung - ein Thema, das viele Arbeitnehmer direkt betrifft.",
+            "relevance": 8
+          },
+          {
+            "name": "data protection",
+            "reasoning": "Datenschutz wird als zentrale Herausforderung bei der KI-Integration explizit erwähnt, was für Unternehmen und deren Compliance-Anforderungen sehr wichtig ist.",
+            "relevance": 7
+          },
+          {
+            "name": "security",
+            "reasoning": "Datensicherheit und Schutz sensibler Informationen werden als wichtige Aspekte bei der Verarbeitung großer Datenmengen durch KI-Systeme thematisiert.",
+            "relevance": 6
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI fälscht Papst-Reden: \"Destabilisierende Wirkung\" für Kirche\n\n\nMillionenfach geklickt und für echt gehalten: Gefälschte Predigten von Papst Leo XIV. verbreiten sich rasant auf Plattformen wie YouTube und TikTok. Die täuschend echt wirkenden Videos, die mit Hilfe von Künstlicher Intelligenz (KI) erstellt wurden, imitieren nicht nur die Stimme des Papstes, sondern auch seinen Sprachstil und theologische Wendungen. Besonders brisant: Einige dieser Deepfakes enthalten apokalyptische Botschaften, die Gläubige verunsichern und die Glaubwürdigkeit der Kirche gefährden könnten. Ein spanischsprachiges TikTok-Video, in dem der Papst angeblich über die Rolle von Frauen spricht, erreichte beispielsweise 9,6 Millionen Aufrufe – weit mehr als die offiziellen Kanäle des Vatikans.\n\n<!--more-->\n\nDie Kirche reagiert alarmiert. Der Vatikan hat bereits mehrfach darauf hingewiesen, dass alle offiziellen Reden und Ansprachen des Papstes ausschließlich auf der Website des Vatikans veröffentlicht werden. Dennoch fallen viele Gläubige auf die Fälschungen herein, selbst wenn diese als KI-generiert gekennzeichnet sind. Experten wie Oren Etzioni, emeritierter Informatik-Professor, warnen vor den destabilisierenden Auswirkungen solcher Desinformation. Die Technologie hinter den Deepfakes entwickelt sich rasant weiter, was es immer schwieriger macht, echte von gefälschten Inhalten zu unterscheiden. Plattformen wie YouTube haben bereits zahlreiche Kanäle gelöscht, doch die Flut an neuen Videos reißt nicht ab.\n\nDie katholische Kirche sieht sich mit einer neuen Herausforderung konfrontiert: Wie kann sie in einer digitalen Welt, in der KI-Desinformation immer präsenter wird, ihre Botschaften authentisch und glaubwürdig vermitteln? Der Vatikan fordert nun strengere Regulierungen für KI-Technologien und ruft zu einem globalen ethischen Konsens auf. Gleichzeitig appelliert er an die Gläubigen, Inhalte kritisch zu hinterfragen und sich ausschließlich auf offizielle Quellen zu verlassen.\n\n### Quellen\n- [BR24: KI fälscht Papst-Reden](https://www.br.de/nachrichten/kultur/ki-faelscht-reden-von-papst-leo-xiv-destabilisierende-wirkung-fuer-kirche,Unj4x00)\n- [Katholisch.de: KI-gefälschte Predigten](https://www.katholisch.de/artikel/62258-ki-gefaelschte-predigten-von-papst-leo-xiv-fluten-das-internet)\n- [Domradio: Deepfakes von Papst Leo XIV.](https://www.domradio.de/artikel/ki-gefaelschte-predigten-von-papst-leo-xiv-fluten-das-internet)\n\n    ",
+    "timestamp": "2025-07-04T13:17:59.890Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über KI-gefälschte Papst-Reden ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDie Künstliche Intelligenz steht im Zentrum der Nachricht, da Deepfake-Technologie verwendet wird, um täuschend echte Videos des Papstes zu erstellen - ein hochaktuelles Beispiel für die gesellschaftlichen Auswirkungen fortgeschrittener KI-Systeme.\n\n## **security** - Relevanz: 8/10\nDer Fall zeigt deutlich die Sicherheitsrisiken von Deepfakes auf, die zur Verbreitung von Desinformation genutzt werden und das Vertrauen in authentische Inhalte untergraben können.\n\n## **data protection** - Relevanz: 7/10\nDie unerlaubte Nutzung der Identität, Stimme und des Erscheinungsbilds des Papstes für gefälschte Inhalte wirft wichtige Fragen zum Schutz personenbezogener Daten und Persönlichkeitsrechte auf.\n\n## **copyright** - Relevanz: 6/10\nDie Nachahmung von Papst-Reden und theologischen Inhalten könnte urheberrechtliche Probleme aufwerfen, auch wenn dies im Text nicht explizit thematisiert wird.\n\nDie Kategorien \"programming\", \"databases\" und \"work\" sind nicht relevant, da der Text weder technische Implementierungsdetails noch Arbeitsplatz-bezogene Aspekte behandelt.",
+          "id": "2affc363-fdbd-4646-b4b2-6309fa4035af"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Die Künstliche Intelligenz steht im Zentrum der Nachricht, da Deepfake-Technologie verwendet wird, um täuschend echte Videos des Papstes zu erstellen - ein hochaktuelles Beispiel für die gesellschaftlichen Auswirkungen fortgeschrittener KI-Systeme."
+          },
+          {
+            "name": "security",
+            "relevance": 8,
+            "reasoning": "Der Fall zeigt deutlich die Sicherheitsrisiken von Deepfakes auf, die zur Verbreitung von Desinformation genutzt werden und das Vertrauen in authentische Inhalte untergraben können."
+          },
+          {
+            "name": "data protection",
+            "relevance": 7,
+            "reasoning": "Die unerlaubte Nutzung der Identität, Stimme und des Erscheinungsbilds des Papstes für gefälschte Inhalte wirft wichtige Fragen zum Schutz personenbezogener Daten und Persönlichkeitsrechte auf."
+          },
+          {
+            "name": "copyright",
+            "relevance": 6,
+            "reasoning": "Die Nachahmung von Papst-Reden und theologischen Inhalten könnte urheberrechtliche Probleme aufwerfen, auch wenn dies im Text nicht explizit thematisiert wird."
+          }
+        ]
+      ]
+    }
+  }
+}

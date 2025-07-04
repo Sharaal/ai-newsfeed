@@ -1,0 +1,155 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Yarn, the better NPM?\n\n\r\nYarn is a new package manager for JavaScript which can be used as substitute of NPM developed by Facebook and Google. I tried it out and want to share my first experiences with it which are not already presented at their homepage.\r\n\r\n<!--more-->\r\n\r\nPositives:\r\n\r\n* Can be used as substitute of NPM, it uses the `package.json` and the NPM registry\r\n* Creates a `.lock` file with the actual installed versions of the dependencies to ensure the next install will use the same\r\n* Performance, especially if there are already things cached\r\n* Some packages needs a flatten structure (e.g. `eslint-config-airbnb` with `eslint-plugin-import`)\r\n\r\nNegatives:\r\n\r\n* It doesn't execute `postinstall` scripts\r\n* Flatten most dependencies, keep the tree structure only for different dependency versions. Can broken things which expect tree structure (e.g. `bin` scripts)\r\n\r\n## Conclusion\r\n\r\nThe `.lock` file can make a difference by simplifying the deployment workflow and make it more stable and the disadvantages are more edge cases.\r\n\r\nSo it can be worth it to have a look at it, but its not the next big thing makes all smart until now.\r\n\n    ",
+    "timestamp": "2025-07-04T13:34:21.619Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool-call",
+              "toolCallId": "tooluse_3YiPffitR8qO7_4A02FNHA",
+              "toolName": "web_search",
+              "args": {
+                "query": "Yarn package manager JavaScript NPM Facebook Google 2024"
+              }
+            }
+          ],
+          "id": "7474c488-0388-4272-a38a-21ab15a86511"
+        },
+        {
+          "role": "tool",
+          "id": "fa22493b-81b0-45fa-b15d-c65baaae2a61",
+          "content": [
+            {
+              "type": "tool-result",
+              "toolCallId": "tooluse_3YiPffitR8qO7_4A02FNHA",
+              "toolName": "web_search",
+              "result": {
+                "input": "Yarn package manager JavaScript NPM Facebook Google 2024",
+                "output": [
+                  {
+                    "title": "Choosing the Right Node.js Package Manager in 2024: A ... - NodeSource",
+                    "url": "https://nodesource.com/blog/nodejs-package-manager-comparative-guide-2024/",
+                    "type": "website-preview",
+                    "text": "Explore the top Node.js package managers in 2024: npm, Yarn, pnpm. Compare features, performance, and choose the best for your project.. ",
+                    "idx": "2-0"
+                  },
+                  {
+                    "title": "Yarn vs. npm: Benchmarking Against Popular CI Tools",
+                    "url": "https://www.bomberbot.com/javascript/yarn-vs-npm-benchmarking-against-popular-ci-tools/",
+                    "type": "website-preview",
+                    "text": "For years, npm (Node Package Manager) has been the go-to solution for managing dependencies in Node.js projects. However, in 2016, Facebook, Google, and Tilde introduced Yarn, a new package manager designed to address some of npm‘s shortcomings.. ",
+                    "idx": "2-1"
+                  },
+                  {
+                    "title": "NPM vs. Yarn: Which Package Manager Should You Use?",
+                    "url": "https://www.nilebits.com/blog/2024/05/npm-vs-yarn-which-package-manager-use/",
+                    "type": "website-preview",
+                    "text": "We'll examine NPM and Yarn in-depth in this extensive tutorial, weighing their advantages and disadvantages and offering useful examples to assist you in selecting the package manager that best meets your requirements.. ",
+                    "idx": "2-2"
+                  },
+                  {
+                    "title": "Yarn Install: A Comprehensive Guide for JavaScript Package Management ...",
+                    "url": "https://www.codingeasypeasy.com/blog/yarn-install-a-comprehensive-guide-for-javascript-package-management-2024",
+                    "type": "website-preview",
+                    "text": "yarn install is a fundamental command in the Yarn package manager, crucial for managing dependencies in JavaScript projects. This guide provides a deep dive into yarn install, covering its functionalities, best practices, troubleshooting, and comparisons with npm.. ",
+                    "idx": "2-3"
+                  },
+                  {
+                    "title": "JavaScript package managers compared: npm, Yarn, or pnpm?",
+                    "url": "https://blog.logrocket.com/javascript-package-managers-compared/",
+                    "type": "website-preview",
+                    "text": "In this article, we’ll compare these package managers across a variety of criteria, including installation workflows, project structures, config files, and more. Feel free to use the table of contents to skip around and read what’s most relevant to you.. \n\n[\n\n###### Advisory boards aren’t only for executives. Join the LogRocket Content Advisory Board today →\n\n\n\n\n\n](https://lp.logrocket.com/blg/content-advisory-board-signup)\n\n[](https://logrocket.com)\n\n*   [Blog](https://blog.logrocket.com/)\n    *   [Dev](https://blog.logrocket.com/dev)\n    *   [Product Management](https://blog.logrocket.com/product-management)\n    *   [UX Design](https://blog.logrocket.com/ux-design)\n    *   [Podcast](https://podrocket.logrocket.com)\n*   [Features](https://logrocket.com/features)\n*   [Solutions](#)\n    *   [Solve User-Reported Issues](https://logrocket.com/solutions/solve-user-issues)\n    *   [Find Issues Faster](https://logrocket.com/solutions/find-issues-faster)\n    *   [Optimize Conversion and Adoption](https://logrocket.com/solutions/optimize-conversion-adoption)\n\n*   [Start Monitoring for Free](https://lp.logrocket.com/blg/signup)\n*   [Sign In](https://app.logrocket.com/)\n\n2022-02-16\n\n5623\n\n#vanilla javascript\n\nSebastian Weber\n\n29420\n\nFeb 16, 2022 ⋅ 20 min read\n\nJavaScript package managers compared: npm, Yarn, or pnpm?\n=========================================================\n\n[](https://blog.logrocket.com/author/sebastianweber/)\n\n[Sebastian Weber](https://blog.logrocket.com/author/sebastianweber/) Fell in love with CSS and JS over 20 years ago.\n\nTable of contents\n\n*   [A brief history of JavaScript package managers](https://blog.logrocket.com/javascript-package-managers-compared/#brief-history-javascript-package-managers)\n    \n*   [Installation workflows](https://blog.logrocket.com/javascript-package-managers-compared/#installation-workflows)\n    \n*   [Project structures](https://blog.logrocket.com/javascript-package-managers-compared/#project-structures)\n    \n*   [Lock files and dependency storage](https://blog.logrocket.com/javascript-package-managers-compared/#lock-files-dependency-storage)\n    \n*   [CLI commands](https://blog.logrocket.com/javascript-package-managers-compared/#cli-commands)\n    \n*   [Configuration files](https://blog.logrocket.com/javascript-package-managers-compared/#configuration-files)\n    \n*   [Monorepo support](https://blog.logrocket.com/javascript-package-managers-compared/#monorepo-support)\n    \n*   [Performance and disk-space efficiency](https://blog.logrocket.com/javascript-package-managers-compared/#performance-disk-space-efficiency)\n    \n*   [Security features](https://blog.logrocket.com/javascript-package-managers-compared/#security-features)\n    \n*   [Adoption by popular projects](https://blog.logrocket.com/javascript-package-managers-compared/#adoption-popular-projects)\n    \n\nIntroducing Galileo AI\n\nLogRocket’s Galileo AI watches every session, surfacing impactful user struggle and key behavior patterns.\n\n[READ THE  \nBLOG POST](https://blog.logrocket.com/galileo-ai)\n\n**_Editor’s note_**_: This post was completely rewritten 16 February 2022 to reassess the package manager landscape, reference and compare new tools and workspaces, discuss Corepack functionality and performance impacts, provide a bird’s-eye view of package manager usage among popular open source projects, and more thoroughly explain the evolution of package managers since 2010._\n\nThree major players exist in the field of package managers today:\n\n1.  [npm](https://docs.npmjs.com/)\n2.  [Yarn](https://yarnpkg.com/) — We will see shortly that Yarn can refer to either [Yarn Classic](https://classic.yarnpkg.com/) (<v2), or its more modern version [Yarn Berry](https://yarnpkg.com/) (≥v2)\n3.  [performant npm (pnpm)](https://pnpm.io/)\n\nVirtually, we’ve achieved feature-parity among all package managers, so most likely you’ll decide which package manager to use based on non-functional requirements, like installation speed, storage consumption, or how it meshes with your existing workflow.\n\nOf course, how you choose to use each package manager will differ, but they all share a set of main concepts. You can do the following with any of these package managers:\n\n*   Handle and write metadata\n*   Batch install or update all dependencies\n*   Add, update, and remove dependencies\n*   Run scripts\n*   Publish packages\n*   Perform security audits\n\nDespite this parity, though, package managers differ under the hood. Traditionally, npm and Yarn have installed dependencies in a flat [`node_modules` folder](https://docs.npmjs.com/cli/v8/configuring-npm/folders#node-modules). But this dependency resolution strategy is not free of criticism.\n\nThus, pnpm has introduced some new concepts to store dependencies more efficiently in a nested `node_modules` folder. Yarn Berry goes even further by ditching `node_modules` completely with its Plug’n’Play (PnP) mode.\n\nIn this article, we’ll compare these package managers across a variety of criteria, includ",
+                    "idx": "2-4"
+                  },
+                  {
+                    "title": "Npm vs Yarn - Medium",
+                    "url": "https://ouseqqam.medium.com/npm-vs-yarn-55397c7135b1",
+                    "type": "website-preview",
+                    "text": "Both npm (Node Package Manager) and Yarn are popular package managers for JavaScript and Node.js, used to manage dependencies in a project. Here is a detailed comparison of the two:. \n\n[Sitemap](/sitemap/sitemap.xml)\n\n[Open in app](https://rsci.app.link/?%24canonical_url=https%3A%2F%2Fmedium.com%2Fp%2F55397c7135b1&%7Efeature=LoOpenInAppButton&%7Echannel=ShowPostUnderUser&%7Estage=mobileNavBar&source=post_page---top_nav_layout_nav-----------------------------------------)\n\nSign up\n\n[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fouseqqam.medium.com%2Fnpm-vs-yarn-55397c7135b1&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)\n\n[](https://medium.com/?source=post_page---top_nav_layout_nav-----------------------------------------)\n\n[\n\nWrite\n\n\n\n](https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---top_nav_layout_nav-----------------------new_post_topnav------------------)\n\n[\n\n](https://medium.com/search?source=post_page---top_nav_layout_nav-----------------------------------------)\n\nSign up\n\n[Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fouseqqam.medium.com%2Fnpm-vs-yarn-55397c7135b1&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)\n\nNpm vs Yarn\n===========\n\n[\n\n](/?source=post_page---byline--55397c7135b1---------------------------------------)\n\n[Oussama SEQQAM](/?source=post_page---byline--55397c7135b1---------------------------------------)\n\n3 min read\n\n·\n\nJun 14, 2024\n\n[\n\n](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F55397c7135b1&operation=register&redirect=https%3A%2F%2Fouseqqam.medium.com%2Fnpm-vs-yarn-55397c7135b1&user=Oussama+SEQQAM&userId=110c5a69ca83&source=---header_actions--55397c7135b1---------------------clap_footer------------------)\n\n\\--\n\n[](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F55397c7135b1&operation=register&redirect=https%3A%2F%2Fouseqqam.medium.com%2Fnpm-vs-yarn-55397c7135b1&source=---header_actions--55397c7135b1---------------------bookmark_footer------------------)\n\nListen\n\nShare\n\nBoth npm (Node Package Manager) and Yarn are popular package managers for JavaScript and Node.js, used to manage dependencies in a project. Here is a detailed comparison of the two:\n\n**npm (Node Package Manager)**\n==============================\n\n**1\\. Installation and Usage:**  \n— npm is the default package manager for Node.js.  \n— Installed automatically with Node.js.\n\n**2\\. Performance:**  \n— Historically, npm was slower due to single-threaded installation.  \n— Recent updates (npm v5 and above) have significantly improved performance with better caching and parallel package installation.\n\n**3\\. Package Management:**  \n— Uses a \\`package-lock.json\\` file to lock the versions of dependencies.  \n— Supports \\`npm ci\\` command for clean and faster installs in continuous integration environments.\n\n**4\\. Features:**  \n— Strong integration with the npm registry.  \n— Built-in support for audit and security checks.  \n— Scripts and lifecycle management for various build and development tasks.\n\n**5\\. Community and Ecosystem:**  \n— Large user base and extensive documentation.  \n— Integrates well with many build tools and services.\n\n**Yarn**\n========\n\n**1\\. Installation and Usage:**  \n— Developed by Facebook as an alternative to npm.  \n— Requires a separate installation (can be installed via npm or other package managers).\n\n**2\\. Performance:**  \n— Initially designed to address performance and consistency issues in npm.  \n— Parallel installation of packages, efficient caching mechanisms, and deterministic installs with a \\`yarn.lock\\` file.\n\n**3\\. Package Management:**  \n— Uses a \\`yarn.lock\\` file to ensure deterministic dependency versions.  \n— Supports workspaces for managing multiple packages within a single project.\n\n**4\\. Features:**  \n— Offline mode: Can install dependencies from the cache if no internet connection is available.  \n— Plug’n’Play (PnP): Avoids the need for a \\`node\\_modules\\` folder, leading to faster installs and reduced disk space usage.  \n— Focus on security and performance, with frequent updates and improvements.\n\n**5\\. Community and Ecosystem:**  \n— Strong backing by major companies like Facebook and Google.  \n— Rapidly growing community and active development.  \n— Good documentation and a supportive community.\n\n**Key Differences**\n===================\n\n**1\\. Speed and Efficiency:**  \n— Yarn was originally faster due to parallel installations, but npm has caught up in recent versions.  \n— Yarn’s PnP and offline mode can further improve speed and efficiency.\n\n**2\\. Lock Files:**  \n— Both use lock files (\\`package-lock.json\\` for npm and \\`yarn.lock\\` for Yarn) for consistent installations, but the format and implementation differ slightly.\n\n**3\\. Workspaces:**  \n— Yarn has native support for workspaces, making it easier to manage monorepo",
+                    "idx": "2-5"
+                  },
+                  {
+                    "title": "Package Manager Comparison: npm vs pnpm vs yarn",
+                    "url": "https://blogs.itsgokul.co/npm-vs-pnpm-vs-yarn-which-package-manager-is-best",
+                    "type": "website-preview",
+                    "text": "In this blog, we'll delve into a detailed comparison of npm, yarn, and pnpm and explore why pnpm might just be the package manager you should consider for your next project.. ",
+                    "idx": "2-6"
+                  },
+                  {
+                    "title": "A Comprehensive Guide to Modern JavaScript Package Managers: npm, pnpm ...",
+                    "url": "https://dev.to/mrv90/a-comprehensive-guide-to-modern-javascript-package-managers-npm-pnpm-yarn-and-bun-47a0",
+                    "type": "website-preview",
+                    "text": "Yarn is a fast, reliable, and secure dependency manager. It was developed by Facebook to address performance and security issues in npm 6. 2016: Yarn was released by Facebook, Google, Exponent, and Tilde. It introduced a lockfile (yarn.lock) to ensure consistent installs.. \n\n  \n\n[Skip to content](#main-content)\n\n[](/)\n\n [Powered by Algolia](https://www.algolia.com/developers/?utm_source=devto&utm_medium=referral)\n\n[Log in](https://dev.to/enter) [Create account](https://dev.to/enter?state=new-user)\n\nDEV Community\n-------------\n\nAdd reaction\n\nLike Unicorn Exploding Head Raised Hands Fire\n\nJump to Comments Save Boost\n\nModerate\n\nCopy link\n\nCopied to Clipboard\n\n[Share to X](https://twitter.com/intent/tweet?text=%22A%20Comprehensive%20Guide%20to%20Modern%20JavaScript%20Package%20Managers%3A%20npm%2C%20pnpm%2C%20Yarn%2C%20and%20Bun%22%20by%20hmousavin%20%23DEVCommunity%20https%3A%2F%2Fdev.to%2Fmrv90%2Fa-comprehensive-guide-to-modern-javascript-package-managers-npm-pnpm-yarn-and-bun-47a0) [Share to LinkedIn](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fdev.to%2Fmrv90%2Fa-comprehensive-guide-to-modern-javascript-package-managers-npm-pnpm-yarn-and-bun-47a0&title=A%20Comprehensive%20Guide%20to%20Modern%20JavaScript%20Package%20Managers%3A%20npm%2C%20pnpm%2C%20Yarn%2C%20and%20Bun&summary=Ever%20wondered%20which%20package%20manager%2C%20should%20I%20use%3F%20How%20to%20choose%20between%20npm%2C%20pnpm%2C%20yarn%20or...&source=DEV%20Community) [Share to Facebook](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdev.to%2Fmrv90%2Fa-comprehensive-guide-to-modern-javascript-package-managers-npm-pnpm-yarn-and-bun-47a0) [Share to Mastodon](https://toot.kytta.dev/?text=https%3A%2F%2Fdev.to%2Fmrv90%2Fa-comprehensive-guide-to-modern-javascript-package-managers-npm-pnpm-yarn-and-bun-47a0)\n\n[Report Abuse](/report-abuse)\n\n[](/mrv90)\n\n[hmousavin](/mrv90)\n\nPosted on Jul 28, 2024\n\nA Comprehensive Guide to Modern JavaScript Package Managers: npm, pnpm, Yarn, and Bun\n=====================================================================================\n\n[#npm](/t/npm) [#webdev](/t/webdev) [#node](/t/node)\n\n[](#ever-wondered-which-package-manager-should-i-use-how-to-choose-between-npm-pnpm-yarn-or-bun-this-article-tries-to-answer-these-questions-in-details)Ever wondered which package manager, should I use? How to choose between npm, pnpm, yarn or bun? This article tries to answer these questions, in details:\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n### [](#npm)[npm](https://www.npmjs.com/):\n\nNPM (Node Package Manager) is the default package manager for [Node.js](https://nodejs.org/en), allowing developers to share and reuse code. It manages dependencies for JavaScript projects and provides a command-line interface to interact with the npm ecosystem.\n\n*   2010: npm was created by Isaac Z. Schlueter as a solution to manage Node.js packages.\n*   2013: npm Inc. was founded to support the development and maintenance of npm.\n*   2016: npm 3 was released, introducing a flat dependency structure[1](#fn1) to reduce duplication.\n*   2017: npm 5 introduced significant performance improvements and the package-lock.json file for deterministic installs.\n*   2020: npm 7 brought workspaces[2](#fn2) support and improved dependency resolution.\n*   2021: npm 8 was released with further performance enhancements and security features[3](#fn3).\n\n### [](#pnpm)[PNPM](https://pnpm.io/):\n\nPNPM (Performant npm) is a fast, disk space-efficient package manager. It uses symlinks[4](#fn4) to create a single content-addressable storage for all files, avoiding duplication and speeding up installations.\n\n*   2016: pnpm was created by Zoltan Kochan to address the inefficiencies of npm.\n*   2017: pnpm 1.0 was released, focusing on performance and disk space efficiency.\n*   2018: pnpm 2.0 introduced support for monorepos[5](#fn5) and workspaces.\n*   2020: pnpm 5 brought significant improvements in speed and reliability.\n*   2021: pnpm 6 added support for peer dependencies and improved compatibility with other tools2.\n\n### [](#yarn)[Yarn](https://yarnpkg.com/):\n\nYarn is a fast, reliable, and secure dependency manager. It was developed by Facebook to address performance and security issues in npm[6](#fn6).\n\n*   2016: Yarn was released by Facebook, Google, Exponent, and Tilde. It introduced a lockfile (yarn.lock) to ensure consistent installs.\n*   2017: Yarn 1.0 brought performance improvements and new features like workspaces.\n*   2018: Yarn 1.3 introduced Plug’n’Play (PnP)[7](#fn7), eliminating the need for a node\\_modules folder.\n*   2020: Yarn 2 (Berry) was released, focusing on modularity and performance. It introduced new features like constraints and improved PnP [8](#fn8).\n*   2021: Ya",
+                    "idx": "2-7"
+                  },
+                  {
+                    "title": "NPM and Yarn: what's new for 2024 - JS Master",
+                    "url": "https://persistencejs.org/npm-and-yarn-whats-new-for-2024/",
+                    "type": "website-preview",
+                    "text": "The world of JavaScript package management continues to evolve at a rapid pace, and 2024 is no exception. With updated features, enhanced performance, and improved security protocols, both NPM and Yarn are stepping up to meet the demands of developers.. ",
+                    "idx": "2-8"
+                  },
+                  {
+                    "title": "Bun vs. NPM vs. Yarn: A Comprehensive Guide to JavaScript Package Managers",
+                    "url": "https://medium.com/@MakeComputerScienceGreatAgain/bun-vs-npm-vs-yarn-a-comprehensive-guide-to-javascript-package-managers-f0ef7a4aabe4",
+                    "type": "website-preview",
+                    "text": "npm (Node Package Manager) is the default package manager for Node.js, released in 2010. It allows developers to install and manage dependencies for JavaScript projects, providing a.... \n\n[Sitemap](/sitemap/sitemap.xml)\n\n[Open in app](https://rsci.app.link/?%24canonical_url=https%3A%2F%2Fmedium.com%2Fp%2Ff0ef7a4aabe4&%7Efeature=LoOpenInAppButton&%7Echannel=ShowPostUnderUser&%7Estage=mobileNavBar&source=post_page---top_nav_layout_nav-----------------------------------------)\n\nSign up\n\n[Sign in](/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F%40MakeComputerScienceGreatAgain%2Fbun-vs-npm-vs-yarn-a-comprehensive-guide-to-javascript-package-managers-f0ef7a4aabe4&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)\n\n[](/?source=post_page---top_nav_layout_nav-----------------------------------------)\n\n[\n\nWrite\n\n\n\n](/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---top_nav_layout_nav-----------------------new_post_topnav------------------)\n\n[\n\n](/search?source=post_page---top_nav_layout_nav-----------------------------------------)\n\nSign up\n\n[Sign in](/m/signin?operation=login&redirect=https%3A%2F%2Fmedium.com%2F%40MakeComputerScienceGreatAgain%2Fbun-vs-npm-vs-yarn-a-comprehensive-guide-to-javascript-package-managers-f0ef7a4aabe4&source=post_page---top_nav_layout_nav-----------------------global_nav------------------)\n\nBun vs. NPM vs. Yarn: A Comprehensive Guide to JavaScript Package Managers\n==========================================================================\n\n[\n\n](/@MakeComputerScienceGreatAgain?source=post_page---byline--f0ef7a4aabe4---------------------------------------)\n\n[Make Computer Science Great Again](/@MakeComputerScienceGreatAgain?source=post_page---byline--f0ef7a4aabe4---------------------------------------)\n\n6 min read\n\n·\n\nAug 29, 2024\n\n[\n\n](/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Ff0ef7a4aabe4&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40MakeComputerScienceGreatAgain%2Fbun-vs-npm-vs-yarn-a-comprehensive-guide-to-javascript-package-managers-f0ef7a4aabe4&user=Make+Computer+Science+Great+Again&userId=f20142284488&source=---header_actions--f0ef7a4aabe4---------------------clap_footer------------------)\n\n\\--\n\n[](/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Ff0ef7a4aabe4&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40MakeComputerScienceGreatAgain%2Fbun-vs-npm-vs-yarn-a-comprehensive-guide-to-javascript-package-managers-f0ef7a4aabe4&source=---header_actions--f0ef7a4aabe4---------------------bookmark_footer------------------)\n\nListen\n\nShare\n\nPhoto by [Chang Duong](https://unsplash.com/@iamchang?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)\n\nJavaScript has become one of the most popular programming languages in the world, powering everything from small websites to large-scale applications. At the core of JavaScript development is package management — tools that help developers manage libraries, dependencies, and scripts. Three of the most popular package managers are **Bun**, **npm**, and **Yarn**. Each has its strengths and weaknesses, and choosing the right one for your project can significantly impact your workflow and productivity. This article will provide an in-depth comparison of Bun, npm, and Yarn, helping you decide which tool best fits your needs.\n\nWhat are Bun, npm, and Yarn?\n============================\n\n**npm (Node Package Manager)** is the default package manager for Node.js, released in 2010. It allows developers to install and manage dependencies for JavaScript projects, providing a vast repository of packages to use.\n\n**Yarn** was developed by Facebook and released in 2016 as an alternative to npm. Yarn focuses on speed, reliability, and security, aiming to address some of the perceived shortcomings of npm, particularly regarding performance and consistency.\n\n**Bun** is a newer entry in the package management space, designed from the ground up to be a faster, more modern alternative to npm and Yarn. Released in 2022, Bun is not just a package manager but also includes a JavaScript runtime and a build system, aiming to unify several aspects of JavaScript development into a single tool.\n\nPerformance\n===========\n\nBun\n===\n\nBun is designed for speed. It is written in Zig, a low-level programming language that compiles to native code, making it significantly faster than both npm and Yarn. Bun’s performance enhancements are not just limited to package management. It also accelerates runtime tasks, such as starting a development server or compiling TypeScript, thanks to its built-in JavaScript runtime and bundler.\n\nnpm\n===\n\nnpm has made significant strides in performance, especially with the release of npm 7 and npm 8. The improvements include better caching, more efficient dependency resolution, and parallelized operations. However, npm’s speed is still generally considered sl",
+                    "idx": "2-9"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": "Basierend auf meiner Analyse des Newstexts über Yarn als Alternative zu NPM ordne ich den Text folgenden Kategorien zu:\n\n## Ausgewählte Kategorien mit Relevanzbewertung:\n\n**programming - Relevanz: 8/10**\nDer Text behandelt direkt ein wichtiges Werkzeug für JavaScript-Entwickler und Package-Management, was für die meisten Programmierer hochrelevant ist 【2-0】【2-1】.\n\n**work - Relevanz: 6/10**\nPackage Manager wie Yarn können Deployment-Workflows vereinfachen und stabiler machen, was direkte Auswirkungen auf die tägliche Arbeit von Entwicklungsteams hat 【2-2】【2-3】.\n\n## Begründung der Kategorieauswahl:\n\nDer Text fokussiert sich ausschließlich auf technische Aspekte von Yarn als JavaScript Package Manager. Es werden konkrete Vor- und Nachteile im Vergleich zu NPM diskutiert, wie Performance-Verbesserungen, Lock-Files für deterministische Installationen und potenzielle Probleme mit der Dependency-Struktur 【2-4】【2-5】.\n\nDie anderen Kategorien (ai, databases, security, data protection, copyright) sind nicht relevant, da der Text keine Bezüge zu Künstlicher Intelligenz, Datenbankthemen, Sicherheitsaspekten, Datenschutz oder Urheberrecht enthält. Es handelt sich um eine rein technische Bewertung eines Entwicklungstools.",
+          "id": "4d01538c-8f92-4eff-a2d1-8e93682a5e1f"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "programming",
+            "relevance": 8,
+            "reasoning": "Der Text behandelt direkt ein wichtiges Werkzeug für JavaScript-Entwickler und Package-Management, was für die meisten Programmierer hochrelevant ist."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Package Manager wie Yarn können Deployment-Workflows vereinfachen und stabiler machen, was direkte Auswirkungen auf die tägliche Arbeit von Entwicklungsteams hat."
+          }
+        ]
+      ]
+    }
+  }
+}

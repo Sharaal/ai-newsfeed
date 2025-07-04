@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Teslas autonomer Traum? Robotaxi startet mit doppeltem Boden\n\n\nTesla hat am 22. Juni 2025 in Austin, Texas, den lang erwarteten Start seines Robotaxi-Dienstes bekannt gegeben. Die ersten Fahrten wurden in einer begrenzten Anzahl von Model Y Fahrzeugen durchgeführt, die für eine ausgewählte Gruppe von Tesla-Fans und -Investoren zur Verfügung standen. Elon Musk, CEO von Tesla, zeigte sich begeistert und verkündete auf X (ehemals Twitter), dass die Fahrten zu einem symbolischen Preis von 4,20 USD angeboten werden. Der Dienst soll täglich von 6:00 Uhr morgens bis Mitternacht verfügbar sein, wobei die Anzahl der Fahrzeuge und die Verfügbarkeit der Fahrten zunächst begrenzt sind.\n\n<!--more-->\n\nTrotz der großen Ankündigung und der hohen Erwartungen gibt es jedoch einige Einschränkungen. Entgegen den ursprünglichen Plänen, die vollständig autonomes Fahren ohne Sicherheitsfahrer vorsahen, sind in den Robotaxis vorerst noch Sicherheitsfahrer an Bord. Dies ist eine Vorsichtsmaßnahme, um mögliche technische Probleme und Sicherheitsbedenken zu adressieren. Tesla hat betont, dass dies nur eine vorübergehende Maßnahme sei und man weiterhin daran arbeite, die volle Autonomie zu erreichen.\n\nDie Einführung des Robotaxi-Dienstes markiert einen bedeutenden Schritt in Teslas Vision einer autonomen Zukunft. Musk hat wiederholt betont, dass Robotaxis die Art und Weise, wie Menschen sich fortbewegen, revolutionieren werden. Die Fahrzeuge sind mit der neuesten Version von Teslas Full-Self-Driving (FSD) Software ausgestattet, die kontinuierlich durch Over-the-Air-Updates verbessert wird. Kritiker und Experten bleiben jedoch skeptisch und weisen auf die zahlreichen regulatorischen und technischen Herausforderungen hin, die noch überwunden werden müssen.\n\nDie Reaktionen auf den Start des Dienstes sind gemischt. Während viele Tesla-Enthusiasten die Einführung feiern und gespannt auf die Weiterentwicklung des Dienstes warten, äußern andere Bedenken hinsichtlich der Sicherheit und der Zuverlässigkeit der Technologie. Die kommenden Monate werden entscheidend sein, um zu sehen, ob Tesla die hohen Erwartungen erfüllen kann und ob der Robotaxi-Dienst tatsächlich den Durchbruch schafft, den Musk versprochen hat.\n\n### Quellen\n- [CNN Business](https://edition.cnn.com/2025/06/23/business/tesla-robotaxi-service-austin)\n- [CNBC](https://www.cnbc.com/2025/06/20/tesla-robotaxi-launch-austin.html)\n- [New York Times](https://www.nytimes.com/2025/06/22/business/tesla-robotaxi-service-austin.html)\n- [Forbes](https://www.forbes.com/sites/bradtempleton/2025/06/22/tesla-misses-robotaxi-launch-date-goes-with-safety-drivers/)\n- [TechCrunch](https://techcrunch.com/2025/06/22/tesla-launches-robotaxi-rides-in-austin-with-big-promises-and-unanswered-questions/)\n- [CBS News](https://www.cbsnews.com/news/tesla-robotaxi-launch-austin-texas-elon-musk-june-22/)\n- [Bloomberg](https://www.bloomberg.com/news/articles/2025-06-23/tesla-starts-long-awaited-robotaxi-service-with-low-key-rollout)\n- [Fortune](https://fortune.com/2025/06/22/elon-musk-tesla-robotaxi-service-launch-austin-420-flat-fee/)\n\n    ",
+    "timestamp": "2025-07-04T12:42:37.483Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über Teslas Robotaxi-Start ordne ich folgende Kategorien mit entsprechenden Relevanzen zu:\n\n## **ai - Relevanz: 8/10**\nDer Text behandelt autonomes Fahren und Full-Self-Driving Software, was zentrale KI-Anwendungen sind und einen bedeutenden Durchbruch in der praktischen KI-Implementierung darstellt.\n\n## **programming - Relevanz: 6/10**\nDie Over-the-Air-Updates und die kontinuierliche Verbesserung der FSD-Software sind für Entwickler interessant, da sie moderne Software-Deployment-Strategien in kritischen Systemen zeigen.\n\n## **security - Relevanz: 7/10**\nSicherheitsbedenken bei autonomen Fahrzeugen und die Notwendigkeit von Sicherheitsfahrern als Backup-System sind wichtige Sicherheitsaspekte, die über die Automobilbranche hinaus relevant sind.\n\n## **work - Relevanz: 7/10**\nRobotaxis könnten traditionelle Taxi- und Transportjobs disruptieren und neue Arbeitsmodelle in der Mobilitätsbranche schaffen, was erhebliche Auswirkungen auf den Arbeitsmarkt hat.\n\nDie Kategorien **databases**, **data protection** und **copyright** sind nicht relevant, da der Text keine spezifischen Datenbankthemen, Datenschutzaspekte oder Urheberrechtsfragen behandelt.",
+          "id": "f7183b50-0d0a-4253-99eb-638312b3411e"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Der Text behandelt autonomes Fahren und Full-Self-Driving Software, was zentrale KI-Anwendungen sind und einen bedeutenden Durchbruch in der praktischen KI-Implementierung darstellt."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Die Over-the-Air-Updates und die kontinuierliche Verbesserung der FSD-Software sind für Entwickler interessant, da sie moderne Software-Deployment-Strategien in kritischen Systemen zeigen."
+          },
+          {
+            "name": "security",
+            "relevance": 7,
+            "reasoning": "Sicherheitsbedenken bei autonomen Fahrzeugen und die Notwendigkeit von Sicherheitsfahrern als Backup-System sind wichtige Sicherheitsaspekte, die über die Automobilbranche hinaus relevant sind."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Robotaxis könnten traditionelle Taxi- und Transportjobs disruptieren und neue Arbeitsmodelle in der Mobilitätsbranche schaffen, was erhebliche Auswirkungen auf den Arbeitsmarkt hat."
+          }
+        ]
+      ]
+    }
+  }
+}

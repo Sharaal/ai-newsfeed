@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# If Heroku free is to small and hobby to large\n\n\nSometimes apps should neither sleep nor use free dyno hours. Sometimes apps doesn't get many requests to need the performance of a hobby dyno.\n\n<!--more-->\n\nWhat if it would be possible many of these apps could combined run on a single hobby dyno?\n\nBesides that we also want to let the apps located in their own GitHub repos and standalone runnable. The first requirement is easy solvable, we publish them as NPM packages. For the second we use a small trick, we will see later.\n\n## Prepare the apps\n\nWe want to reuse the app variable in another app. So the app must not listen on the port on their own, but get exported. To determine if the app is running standalone or required by another app we can use `module.parent`:\n\n```javascript\nif (module.parent) {\n  module.exports = app;\n} else {\n  app.listen(process.env.PORT);\n}\n```\n\nAdditionally we must ensure the apps are runnable in another app or more specific, runnable if the working directory is not the app directory, because the app will be located under `node_modules` if using as NPM dependency. To solve this we use `__dirname` if we reference the filesystem:\n\n```javascript\napp.set('views', path.join(__dirname, '../views'));\napp.use(express.static(path.join(__dirname, '../www')));\n```\n\nLast but not least we want to ensure the app also works if the URL has a path, so everywhere we need an URL to another part of the app we use `req.originalUrl`. If we need an absolute URL we additionally use `req.get('host')`:\n```javascript\nres.render('index', { host: req.get('host'), url: req.originalUrl });\n```\n\nIf we are finished, we publish the app by NPM.\n\n## Setting up the proxy app\n\nThe proxy is an own app, reference all apps we want to run as dependency:\n\n```json\n  \"dependencies\": {\n    \"@dragonprojects/sharaal\": \"^1.0.0\"\n  }\n```\n\nNow the trick, we distribute the incoming requests to the apps by a path or optionally by the host which is requested:\n\n```javascript\nconst sharaal = require('@dragonprojects/sharaal');\nproxy.use('/sharaal', sharaal);\nproxy.use(require('vhost')('www.sharaal.de', sharaal));\n```\n\n## Configure the hosting\n\nWe create a new app in Heroku and deploy the proxy.\n\nIf we don't have own domains for the apps, we are finished now, we can request the app by \"/sharaal\".\n\nOtherwise we add the domain \"www.sharaal.de\" in the settings:\n![App Domain Setting](/assets/2017-5-23-if-heroku-free-is-to-small-and-hobby-to-large/images/app-domain-setting.png)\n\nConfigure the domain \"sharaal.de\" to redirect to \"www.sharaal.de\" and add a CNAME entry targeting the DNS name of our proxy app \"www.sharaal.de.herokudns.com\":\n![Hosting Redirect](/assets/2017-5-23-if-heroku-free-is-to-small-and-hobby-to-large/images/hosting-redirect.png)\n![Hosting CNAME](/assets/2017-5-23-if-heroku-free-is-to-small-and-hobby-to-large/images/hosting-cname.png)\nWhy not add the CNAME entry to the domain? Because all traffic will be redirected by a CNAME entry, not only http requests, also e-mails if we want to use the domain also for them.\n\n## Summary\n\nIf we done all right we have now different still standalone runnable and located apps, combined to a single heroku app (which gets the hobby upgrade) and requestable by own domains:\n\n* [sharaal.de](http://sharaal.de) - [http://github.com/sharaal/sharaal](http://github.com/sharaal/sharaal)\n* [maxdome-rssfeeds.de](http://maxdome-rssfeeds.de) - [http://github.com/sharaal/maxdome-rssfeeds](http://github.com/sharaal/maxdome-rssfeeds)\n\nThe complete workflow in a diagramm:\n![Complete Workflow](/assets/2017-05-23-if-heroku-free-is-to-small-and-hobby-to-large/images/complete-workflow.png)\n\n    ",
+    "timestamp": "2025-07-04T13:30:09.667Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den gegebenen Newstext und ordne ihn den passenden Kategorien zu:\n\n## Analyse des Newstexts\n\nDer Text beschreibt eine technische Lösung für das Hosting mehrerer kleiner Anwendungen auf einer einzigen Heroku-Instanz, um Kosten zu sparen. Es wird eine Proxy-Architektur mit Node.js/Express vorgestellt, die mehrere Apps kombiniert.\n\n## Kategoriezuordnung mit Relevanzbewertung\n\n**programming - Relevanz: 7/10**\nDer Artikel ist hochrelevant für Programmierer, da er konkrete Code-Beispiele in JavaScript/Node.js zeigt und eine praktische Architekturlösung für App-Deployment präsentiert.\n\n**work - Relevanz: 6/10** \nRelevant für Entwickler und DevOps-Teams, die kosteneffiziente Hosting-Lösungen suchen und ihre Infrastrukturkosten optimieren möchten.\n\n**security - Relevanz: 3/10**\nNur geringe Sicherheitsrelevanz, da das Thema Proxy-Routing und Domain-Konfiguration angesprochen wird, aber keine spezifischen Sicherheitsaspekte behandelt werden.\n\nDie anderen Kategorien (ai, databases, data protection, copyright) sind nicht relevant, da der Text weder KI-Themen, Datenbankaspekte noch Datenschutz- oder Urheberrechtsfragen behandelt.",
+          "id": "40ea6249-6935-462c-affa-8c833516f397"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "programming",
+            "reasoning": "Der Artikel ist hochrelevant für Programmierer, da er konkrete Code-Beispiele in JavaScript/Node.js zeigt und eine praktische Architekturlösung für App-Deployment präsentiert.",
+            "relevance": 7
+          },
+          {
+            "name": "work",
+            "reasoning": "Relevant für Entwickler und DevOps-Teams, die kosteneffiziente Hosting-Lösungen suchen und ihre Infrastrukturkosten optimieren möchten.",
+            "relevance": 6
+          },
+          {
+            "name": "security",
+            "reasoning": "Nur geringe Sicherheitsrelevanz, da das Thema Proxy-Routing und Domain-Konfiguration angesprochen wird, aber keine spezifischen Sicherheitsaspekte behandelt werden.",
+            "relevance": 3
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-Fußballspiel in China: Roboter fallen reihenweise um\n\n\nIn Peking fand kürzlich ein historisches Ereignis statt: das erste vollständig autonome Fußballspiel zwischen humanoiden Robotern. Vier Teams, bestehend aus je drei Robotern, traten in einem 3-gegen-3-Turnier gegeneinander an. Die Roboter wurden ausschließlich von künstlicher Intelligenz gesteuert, ohne jegliche menschliche Eingriffe. Doch anstatt beeindruckender Spielzüge sorgten die Maschinen vor allem für Unterhaltung – durch zahlreiche Stürze und technische Pannen.\n\n<!--more-->\n\nDas Turnier, das am 28. Juni 2025 im Beijing Smart Esports Event Centre stattfand, wurde von Universitäten organisiert, die ihre Roboterteams programmiert hatten. Trotz modernster Sensorik und Algorithmen hatten die Maschinen Schwierigkeiten, das Gleichgewicht zu halten. Immer wieder fielen sie um, was das Publikum gleichermaßen amüsierte und faszinierte. Das Team der Tsinghua-Universität konnte sich schließlich mit einem 5:3-Sieg gegen die China Agricultural University durchsetzen und den ersten Titel dieser Art gewinnen.\n\nDie Veranstaltung war nicht nur ein Test für die Fähigkeiten der Roboter, sondern auch ein Meilenstein in der Entwicklung von KI und Robotik. Experten sehen in solchen Turnieren eine Möglichkeit, die Technologie unter realistischen Bedingungen zu testen und weiterzuentwickeln. Dennoch zeigte das Turnier, dass humanoide Roboter noch weit davon entfernt sind, menschliche Athleten zu ersetzen. Die Balanceprobleme und die oft unbeholfenen Bewegungen der Maschinen unterstrichen die Herausforderungen, die noch vor den Entwicklern liegen.\n\n### Quellen\n- [20 Minuten: KI-Fußballspiel in Peking](https://www.20min.ch/video/china-erstmals-ki-fussballspiel-mit-robotern-und-alle-fallen-um-103373438)\n- [Xpert Digital: Die Zukunft des Sports?](https://xpert.digital/humanoide-roboter-erobern-die-fussballfelder/)\n- [Euronews: Roboter stolpern durch Fußballspiel](https://de.euronews.com/video/2025/06/30/schaut-zu-humanoide-roboter-stolpern-durch-ki-gesteuertes-fussballspiel-in-peking)\n\n    ",
+    "timestamp": "2025-07-04T12:07:04.960Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über das KI-Fußballspiel mit humanoiden Robotern in China und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 8/10**\nDer Artikel behandelt ein bedeutendes Ereignis in der KI-Entwicklung mit vollständig autonomen humanoiden Robotern, was für die breite Tech-Community und KI-Interessierte hochrelevant ist.\n\n**programming - Relevanz: 6/10**\nDie Roboter wurden von Universitäten programmiert und zeigen praktische Herausforderungen bei der Implementierung komplexer Bewegungsalgorithmen, was für Entwickler im Robotik-Bereich interessant ist.\n\n**work - Relevanz: 4/10**\nDas Event zeigt den aktuellen Stand der Robotik-Technologie und deren Grenzen, was für Diskussionen über die Zukunft der Automatisierung in verschiedenen Arbeitsbereichen relevant sein könnte.\n\n## Nicht zutreffende Kategorien:\n\n- **databases**: Keine Erwähnung von Datenbankthemen\n- **security**: Keine sicherheitsrelevanten Aspekte behandelt\n- **data protection**: Keine Datenschutzthemen angesprochen\n- **copyright**: Keine urheberrechtlichen Fragestellungen erwähnt\n\nDer Artikel fokussiert sich hauptsächlich auf technische Aspekte der KI und Robotik, weshalb diese Bereiche die höchste Relevanz erhalten.",
+          "id": "dcbe6b6d-d92b-4bca-89b2-1d93faa8205e"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Der Artikel behandelt ein bedeutendes Ereignis in der KI-Entwicklung mit vollständig autonomen humanoiden Robotern, was für die breite Tech-Community und KI-Interessierte hochrelevant ist."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Die Roboter wurden von Universitäten programmiert und zeigen praktische Herausforderungen bei der Implementierung komplexer Bewegungsalgorithmen, was für Entwickler im Robotik-Bereich interessant ist."
+          },
+          {
+            "name": "work",
+            "relevance": 4,
+            "reasoning": "Das Event zeigt den aktuellen Stand der Robotik-Technologie und deren Grenzen, was für Diskussionen über die Zukunft der Automatisierung in verschiedenen Arbeitsbereichen relevant sein könnte."
+          }
+        ]
+      ]
+    }
+  }
+}

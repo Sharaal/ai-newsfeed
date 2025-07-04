@@ -1,0 +1,155 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Building requests step by step in a modularized way\n\n\r\nRequests to APIs can be very complex and need a lot of options: hostname, API keys, session tokens and at the end the HTTP method, route to the resource, parameters and so on.\r\n\r\n<!--more-->\r\n\r\nI thought about how to solve this requirement in a flexible and modular way, because the complexity in the connector to make Heimdall (= the API of maxdome) requests exploded by adding more and more.\r\n\r\n## Request options\r\n\r\nA normal Heimdall requests to get some asset data need a lot of different options, some of them should be defined one time for the whole app (hostname, headers, apikey, appid), some of them are needed for all requests of the same type (method, path), some of them only for this one request (filters).\r\n\r\n```javascript\r\nconst options = {\r\n  headers: {\r\n    accept: 'application/json',\r\n    ...\r\n  },\r\n  json: true,\r\n  url: 'https://heimdall.maxdome.de/api/v1/mxd/assets?apikey=apikey&amp;appid=appid&amp;filter%5B%5D=assetId~1',\r\n  method: 'get'\r\n}\r\n```\r\n\r\n## Modularize them\r\n\r\nNow we want to define all request options step by step and at the end merge them together to make a request. For that I implemented [drequest](https://github.com/dnode/drequest) to solve this in an easy way and [drequest-maxdome](https://github.com/dnode/drequest-maxdome) to provide the needed options for Heimdall requests.\r\n\r\n### maxdome options\r\n\r\nGroup all options which are needed to make requests to Heimdall in one object and set them as default for all requests.\r\n\r\n```javascript\r\nconst maxdomeOptions = {\r\n  headers: {\r\n    accept: 'application/json',\r\n    ...\r\n  },\r\n  json: true,\r\n  url: {\r\n    hostname: 'heimdall.maxdome.de/api',\r\n    protocol: 'https',\r\n    queries: [`apikey=apikey`, `appid=appid`]\r\n  }\r\n};\r\n\r\nconst maxdome = new RequestBuilder()\r\n  .addNames('maxdome')\r\n  .setOptions('maxdome', maxdomeOptions);\r\n```\r\n\r\n### Assets options\r\n\r\nGroup all options which are needed to get asset data from Heimdall and store them with a name to make it easily available.\r\n\r\n```javascript\r\nconst assetsOptions = {\r\n  method: 'get',\r\n  url: { path: 'v1/mxd/assets' }\r\n};\r\n\r\nmaxdome.setOptions('assets', assetsOptions);\r\n```\r\n\r\n### Request options\r\n\r\nNow the maxdome request builder is ready to make a requests getting asset data. For all the possible filters, sortings and so on the assets endpoint provides there is the class \"AssetQueryOptions\" which can be initialized and simply used for a request.\r\n\r\n```javascript\r\nconst assets = await maxdome.request('assets')\r\n  .send(new AssetsQueryOptions(assetId));\r\n```\r\n\r\n## Summary\r\n\r\nVoila, we are now able to build a connector step by step and easily make specific requests without handle everytime the whole bunch of options which are needed.\r\n\r\nAnd the positive: To get asset data for a specific user, we only need to define how a session works at maxdome (session token in the header and customerId in some paths) ...\r\n\r\n```javascript\r\nclass SessionOptions {\r\n  constructor(session) {\r\n    this.sessionId = session.sessionId;\r\n    this.customer = {\r\n      customerId: session.customer.customerId,\r\n    };\r\n  }\r\n\r\n  toRequestOptions(options) {\r\n    return {\r\n      headers: {\r\n        'mxd-session': this.sessionId,\r\n      },\r\n      url: {\r\n        path: options.url.path.replace('%customerId%', this.customer.customerId),\r\n      },\r\n    };\r\n  }\r\n}\r\n```\r\n\r\n... and use the session of the user for the request ...\r\n\r\n```javascript\r\nconst assets = await maxdome.request('assets')\r\n  .send([new AssetsQueryOptions(assetId), new SessionOptions(session)]);\r\n```\r\n\r\nCool, or isn't it? :)\r\n\n    ",
+    "timestamp": "2025-07-04T13:33:01.123Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool-call",
+              "toolCallId": "tooluse_g490W0gcQg6DU9m5V3VI3w",
+              "toolName": "web_search",
+              "args": {
+                "query": "drequest npm package JavaScript API request builder"
+              }
+            }
+          ],
+          "id": "3668c9d0-99ed-4ea0-84c2-3830c05518a7"
+        },
+        {
+          "role": "tool",
+          "id": "b97e708f-8b43-4712-8624-96ef0f82bcb2",
+          "content": [
+            {
+              "type": "tool-result",
+              "toolCallId": "tooluse_g490W0gcQg6DU9m5V3VI3w",
+              "toolName": "web_search",
+              "result": {
+                "input": "drequest npm package JavaScript API request builder",
+                "output": [
+                  {
+                    "title": "drequest - npm",
+                    "url": "https://www.npmjs.com/package/drequest",
+                    "type": "website-preview",
+                    "text": "Building requests step by step in a modularized way. Latest version: 3.1.1, last published: 6 years ago. Start using drequest in your project by running `npm i drequest`. There is 1 other project in the npm registry using drequest.. ",
+                    "idx": "2-0"
+                  },
+                  {
+                    "title": "@commercetools/api-request-builder - npm",
+                    "url": "https://www.npmjs.com/package/@commercetools/api-request-builder",
+                    "type": "website-preview",
+                    "text": "Start using @commercetools/api-request-builder in your project by running `npm i @commercetools/api-request-builder`. There are 40 other projects in the npm registry using @commercetools/api-request-builder.. ",
+                    "idx": "2-1"
+                  },
+                  {
+                    "title": "GitHub - DanielBGomez/api-request-builder: Simple request builder on ...",
+                    "url": "https://github.com/DanielBGomez/api-request-builder",
+                    "type": "website-preview",
+                    "text": "Simple request builder on top of Axios that allows pre-configured options, query params parser and errors to text with a Lang option. You can install using npm: This library allows you to set a default set of params for all the request.. \n\n[Skip to content](#start-of-content) \n\nNavigation Menu\n---------------\n\nToggle navigation\n\n[](/)\n\n[Sign in](/login?return_to=https%3A%2F%2Fgithub.com%2FDanielBGomez%2Fapi-request-builder)\n\nAppearance settings\n\n*   Product\n    \n    *   [\n        \n        GitHub Copilot\n        \n        Write better code with AI\n        \n        ](https://github.com/features/copilot)\n    *   [\n        \n        GitHub Models New\n        \n        Manage and compare prompts\n        \n        ](https://github.com/features/models)\n    *   [\n        \n        GitHub Advanced Security\n        \n        Find and fix vulnerabilities\n        \n        ](https://github.com/security/advanced-security)\n    *   [\n        \n        Actions\n        \n        Automate any workflow\n        \n        ](https://github.com/features/actions)\n    *   [\n        \n        Codespaces\n        \n        Instant dev environments\n        \n        ](https://github.com/features/codespaces)\n    \n    *   [\n        \n        Issues\n        \n        Plan and track work\n        \n        ](https://github.com/features/issues)\n    *   [\n        \n        Code Review\n        \n        Manage code changes\n        \n        ](https://github.com/features/code-review)\n    *   [\n        \n        Discussions\n        \n        Collaborate outside of code\n        \n        ](https://github.com/features/discussions)\n    *   [\n        \n        Code Search\n        \n        Find more, search less\n        \n        ](https://github.com/features/code-search)\n    \n    Explore\n    \n    *   [Why GitHub](https://github.com/why-github)\n    *   [All features](https://github.com/features)\n    *   [Documentation](https://docs.github.com)\n    *   [GitHub Skills](https://skills.github.com)\n    *   [Blog](https://github.blog)\n    \n*   Solutions\n    \n    By company size\n    \n    *   [Enterprises](https://github.com/enterprise)\n    *   [Small and medium teams](https://github.com/team)\n    *   [Startups](https://github.com/enterprise/startups)\n    *   [Nonprofits](/solutions/industry/nonprofits)\n    \n    By use case\n    \n    *   [DevSecOps](/solutions/use-case/devsecops)\n    *   [DevOps](/solutions/use-case/devops)\n    *   [CI/CD](/solutions/use-case/ci-cd)\n    *   [View all use cases](/solutions/use-case)\n    \n    By industry\n    \n    *   [Healthcare](/solutions/industry/healthcare)\n    *   [Financial services](/solutions/industry/financial-services)\n    *   [Manufacturing](/solutions/industry/manufacturing)\n    *   [Government](/solutions/industry/government)\n    *   [View all industries](/solutions/industry)\n    \n    [View all solutions](/solutions)\n    \n*   Resources\n    \n    Topics\n    \n    *   [AI](/resources/articles/ai)\n    *   [DevOps](/resources/articles/devops)\n    *   [Security](/resources/articles/security)\n    *   [Software Development](/resources/articles/software-development)\n    *   [View all](/resources/articles)\n    \n    Explore\n    \n    *   [Learning Pathways](https://resources.github.com/learn/pathways)\n    *   [Events & Webinars](https://resources.github.com)\n    *   [Ebooks & Whitepapers](https://github.com/resources/whitepapers)\n    *   [Customer Stories](https://github.com/customer-stories)\n    *   [Partners](https://partner.github.com)\n    *   [Executive Insights](https://github.com/solutions/executive-insights)\n    \n*   Open Source\n    \n    *   [\n        \n        GitHub Sponsors\n        \n        Fund open source developers\n        \n        ](/sponsors)\n    \n    *   [\n        \n        The ReadME Project\n        \n        GitHub community articles\n        \n        ](https://github.com/readme)\n    \n    Repositories\n    \n    *   [Topics](https://github.com/topics)\n    *   [Trending](https://github.com/trending)\n    *   [Collections](https://github.com/collections)\n    \n*   Enterprise\n    \n    *   [\n        \n        Enterprise platform\n        \n        AI-powered developer platform\n        \n        ](/enterprise)\n    \n    Available add-ons\n    \n    *   [\n        \n        GitHub Advanced Security\n        \n        Enterprise-grade security features\n        \n        ](https://github.com/security/advanced-security)\n    *   [\n        \n        Copilot for business\n        \n        Enterprise-grade AI features\n        \n        ](/features/copilot/copilot-business)\n    *   [\n        \n        Premium Support\n        \n        Enterprise-grade 24/7 support\n        \n        ](/premium-support)\n    \n*   [Pricing](https://github.com/pricing)\n\nSearch or jump to...\n\nSearch code, repositories, users, issues, pull requests...\n==========================================================\n\nSearch\n\nClear\n\n[Search syntax tips](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax)\n\nProvide feedback\n================\n\nWe read every piece",
+                    "idx": "2-2"
+                  },
+                  {
+                    "title": "Replacing the deprecated npm package ‘request’ without altering your ...",
+                    "url": "https://dev.to/diegotech/replacing-the-deprecated-npm-package-request-without-altering-your-project-4ij4",
+                    "type": "website-preview",
+                    "text": "In today’s article we will go over why it has been deprecated and then we will start discussing how to replace it in your project without affecting it or doing any major refactoring using axios.. ",
+                    "idx": "2-3"
+                  },
+                  {
+                    "title": "javascript - Dynamically request resources of built npm package - Stack ...",
+                    "url": "https://stackoverflow.com/questions/77873814/dynamically-request-resources-of-built-npm-package",
+                    "type": "website-preview",
+                    "text": "Question about building npm packages and ability to dynamically request resources of one package from the other. Let's say I have a set of images in package A, it also provides JS logic to retrieve them:. ",
+                    "idx": "2-4"
+                  },
+                  {
+                    "title": "Simplifying HTTP API Requests with Client HTTP API Request Builder",
+                    "url": "https://blog.haiderkhan.dev/simplifying-http-api-requests-with-client-http-api-request-builder",
+                    "type": "website-preview",
+                    "text": "The Client HTTP API Request Builder introduces a builder pattern for constructing API requests, providing utilities to streamline the interaction with RESTful APIs.. ",
+                    "idx": "2-5"
+                  },
+                  {
+                    "title": "@commercetools/api-request-builder CDN by jsDelivr - A CDN for npm and ...",
+                    "url": "https://www.jsdelivr.com/package/npm/@commercetools/api-request-builder",
+                    "type": "website-preview",
+                    "text": "A free, fast, and reliable CDN for @commercetools/api-request-builder. Helper functions to construct API requests URI for the commercetools platform in a declarative way.. ",
+                    "idx": "2-6"
+                  },
+                  {
+                    "title": "Client-http-api-request-builder NPM | npm.io",
+                    "url": "https://npm.io/package/client-http-api-request-builder",
+                    "type": "website-preview",
+                    "text": "Client HTTP API Request Builder This project provides a set of utilities for building and interacting with HTTP APIs in a client-side JavaScript application.. \n\n[npm.io](/)\n\n1.1.2 • Published 12 months ago\n\nclient-http-api-request-builder v1.1.2\n======================================\n\nInstall\n\nWeekly downloads\n\n\\-\n\nLicense\n\nMIT\n\nRepository\n\n[github](https://github.com/iamhaiderkhan/client-http-api-request-builder)\n\nLast release\n\n12 months ago\n\nShare package\n\nClient HTTP API Request Builder\n-------------------------------\n\nThis project provides a set of utilities for building and interacting with HTTP APIs in a client-side JavaScript application.\n\nOverview\n--------\n\nThe `client-http-api-request-builder` is designed to simplify the process of making HTTP requests to RESTful APIs. It provides a builder pattern for constructing API requests, and includes utilities for handling common tasks such as setting headers, handling different HTTP methods, and managing endpoints.\n\nKey Files\n---------\n\n*   `api-builder.js`: Contains the `ApiBuilder`, which provides methods for building API requests for entities or endpoints. The `ApiBuilder` function is used to build an API. It takes an options object as a parameter, which can include entities, endpoints, a name, and an endpoint.\n    \n*   `request.js`: Contains the `apiRequest` function, which is used to make the actual HTTP requests, and the `toQueryString` function, which converts an object to a query string for GET requests.\n    \n*   `restEntityApi.js`: `RestEntityAPI` are used to encapsulate the logic for making HTTP requests to a REST API, including creating, reading, updating, and deleting resources\n    \n\nInstallation\n------------\n\nFirst, Install a `client-http-api-request-builder` package from npm.\n\nTo install and set up the library, run:\n\n    npm install client-http-api-request-builder\n\nOr if you prefer using Yarn:\n\n    yarn add client-http-api-request-builder\n\nUsage\n-----\n\n    import ApiBuilder from 'client-http-api-request-builder'\n    \n    const UsersAPI = ApiBuilder({\n        name:'users',\n        endpoint: () => 'https://your.baseUrl/users',\n        // if you want add some custom headers\n        headers: {\n            'Authorization': `Bearer ${token}`,\n        },\n    })\n\nNow `UserAPI` have http request methods for create, update, destroy, getById and list for this endpoint `'https://your.baseUrl/users'`.\n\n    await UsersAPI.create({...payload}); //https://your.baseUrl/users\n    await UsersAPI.update(id,{...updatedPayload}); https://your.baseUrl/users/id\n    await UsersAPI.destroy(id);  //https://your.baseUrl/users/id\n    await UsersAPI.getById(id,{},{...query}); //https://your.baseUrl/users/id\n    await UsersAPI.list({...query}); //https://your.baseUrl/users\n\nGenerate Mutiple Entities in a single run\n-----------------------------------------\n\nYou can generate methods for multiple entities in a single run.\n\n    import ApiBuilder from 'client-http-api-request-builder'\n    \n    const API = ApiBuilder({\n        entities:{\n            users:{\n                name:'users',\n                endpoint: () => 'https://your.baseUrl/users'\n            },\n            books:{\n                name:'books',\n                endpoint: () => 'https://your.baseUrl/books'\n            }\n        },\n        // if you want add some custom headers\n        headers: {\n            'Authorization': `Bearer ${token}`,\n        },\n    })\n\nNow `API` have `API.users`, `API.books` and both have http request methods for create, update, destroy, getById and list respect to their endpoint `'https://your.baseUrl/users'`, `'https://your.baseUrl/books'`.\n\n    // for user\n    await API.users.create({...payload});\n    await API.users.update(id,{...updatedPayload});\n    await API.users.destroy(id);\n    await API.users.getById(id,{},{...query});\n    await API.users.list({...query});\n    \n    // for books\n    await API.books.create({...payload});\n    await API.books.update(id,{...updatedPayload});\n    await API.books.destroy(id);\n    await API.books.getById(id,{},{...query});\n    await API.books.list({...query});\n\nGenerate Mutiple enpoints in a single run\n-----------------------------------------\n\nIf you need different methods for different endpoints you can define your own methods name with request method types.\n\n    import ApiBuilder, { METHOD_TYPES } from 'client-http-api-request-builder'\n    \n    const API = ApiBuilder({\n        endpoints:{\n            getUsers:{\n                type: METHOD_TYPES.LIST,\n                endpoint: () => 'https://your.baseUrl/users-list'\n            },\n            getSingleBookByUserId:{\n                type: METHOD_TYPES.GET,\n                endpoint: (bookId) => 'https://your.baseUrl/book/${bookId}/users'\n            }\n        },\n        // if you want add some custom headers\n        headers: {\n            'Authorization': `Bearer ${token}`,\n        },\n    })\n\nNow `API` have `API.getUsers` and `API.getSingleBookByUserId` functions.\n\n    await API.getUsers({page:4}); //",
+                    "idx": "2-7"
+                  },
+                  {
+                    "title": "Exploring the Request npm Library: Simplifying HTTP Requests in Node.js",
+                    "url": "https://preety.me/blog/technical/frameworks_and_libraries/utility/request.html",
+                    "type": "website-preview",
+                    "text": "The Request npm library simplifies the process of making HTTP requests in Node.js, providing a clean and efficient API for developers. Its simplicity, flexibility, and streaming capabilities make it an excellent choice for various tasks, from API integration to web scraping.. ",
+                    "idx": "2-8"
+                  },
+                  {
+                    "title": "api-request-builder | Yarn",
+                    "url": "https://classic.yarnpkg.com/en/package/api-request-builder",
+                    "type": "website-preview",
+                    "text": "Simple request builder on top of Axios that allows pre-configured options, query params parser and errors to text with a Lang option. \n\n[](https://yarnpkg.com/getting-started/migration)\n\nImportant: This documentation covers Yarn 1 (Classic).\n\nFor Yarn 2+ docs and migration guide, see yarnpkg.com.\n\n[Yarn](/en/)\n\n*   [Getting Started](/en/docs/getting-started)\n*   [Docs](/en/docs)\n*   [Packages](/en/packages)\n*   [Blog](/blog)\n\n*   [English](#)\n    \n    [English](/en/package) [Español](/es-ES/package) [Français](/fr/package) [Bahasa Indonesia](/id-ID/package) [日本語](/ja/package) [Português (Brasil)](/pt-BR/package) [Русский](/ru/package) [Türkçe](/tr/package) [Українська](/uk/package) [中文](/zh-Hans/package) [繁體中文](/zh-Hant/package)\n    \n*   [Discord](https://discord.gg/yarnpkg)\n*   [Twitter](https://twitter.com/yarnpkg)\n*   [Facebook](https://www.facebook.com/yarnpkg)\n*   [GitHub](https://github.com/yarnpkg)\n\nPackage detail\n==============\n\n…\n-\n\n0\n\n…\n\n### [readme](#readme)\n\n[yarn.pm/…](https://yarn.pm/…)\n\ncopy\n\n[/](https://github.com//) […](https://www.npmjs.com/package/…)\n\nUse it\n======\n\n`$ yarn add …` copy\n\n[Try in RunKit](https://runkit.com/npm/…) · [Browse Files](#)\n\nCDNs\n====\n\nPopularity\n==========\n\nUsage\n=====\n\nDependencies\n\n0\n\nDevDependencies\n\n0\n\nPackages\n\n[see package.json](https://github.com///tree/master/package.json)\n\nVersions\n========\n\nContributors\n============\n\n*   \n\n* * *\n\nYarn [Distributed under BSD License](https://github.com/yarnpkg/yarn/blob/master/LICENSE) [Code of Conduct](/en/org/code-of-conduct)\n\n[Edit this page](https://github.com/yarnpkg/website/edit/master/lang/en/package.html)",
+                    "idx": "2-9"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts ordne ich ihn folgenden Kategorien zu:\n\n## **programming** - Relevanz: 7/10\nDer Text beschreibt eine konkrete Programmierlösung für modulare API-Request-Builder in JavaScript 【2-0】. Es werden detaillierte Code-Beispiele gezeigt und eine praktische Implementierung mit dem drequest-Package erklärt, was für JavaScript-Entwickler sehr relevant ist.\n\n## **work** - Relevanz: 6/10  \nDer Artikel behandelt ein typisches Problem aus dem Arbeitsalltag von Entwicklern: die wachsende Komplexität von API-Connectoren und wie man diese durch modulare Architektur lösen kann. Dies ist ein häufiges Problem in der Softwareentwicklung, das viele Entwickler betrifft.\n\nDie anderen Kategorien (ai, databases, security, data protection, copyright) sind nicht relevant, da der Text sich ausschließlich auf die technische Implementierung eines Request-Builders fokussiert, ohne diese Themenbereiche zu berühren.",
+          "id": "cc3ae39d-d7c9-48fd-bcae-d879f9c516d9"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "programming",
+            "relevance": 7,
+            "reasoning": "Der Text beschreibt eine konkrete Programmierlösung für modulare API-Request-Builder in JavaScript mit detaillierten Code-Beispielen und praktischer Implementierung."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Der Artikel behandelt ein typisches Problem aus dem Arbeitsalltag von Entwicklern - die wachsende Komplexität von API-Connectoren und deren Lösung durch modulare Architektur."
+          }
+        ]
+      ]
+    }
+  }
+}

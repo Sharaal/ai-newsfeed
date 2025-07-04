@@ -1,6 +1,28 @@
 ---
-layout: "post"
-title: "Durations - Avoid numbers without the format"
+layout: post
+title: Durations - Avoid numbers without the format
+categories:
+  - name: programming
+    relevance: 8
+    reasoning: >-
+      Der Text behandelt wichtige JavaScript-Programmierkonzepte zur besseren
+      Handhabung von Zeitdauern und Code-Lesbarkeit, die für alle Entwickler
+      hochrelevant sind.
+  - name: databases
+    relevance: 4
+    reasoning: >-
+      Mittlere Relevanz durch die Erwähnung von Redis als Beispiel für
+      unterschiedliche Zeitformat-Anforderungen verschiedener APIs.
+  - name: security
+    relevance: 3
+    reasoning: >-
+      Geringe bis mittlere Relevanz, da falsche Zeitkonfigurationen potenzielle
+      Sicherheitsrisiken darstellen können.
+  - name: ai
+    relevance: 2
+    reasoning: >-
+      Nur sehr geringe Relevanz, da keine direkten KI-spezifischen Themen
+      behandelt werden.
 ---
 
 Durations are easy to understand. They are the timespan between two timestamps. But they are hard to manage, because different APIs need different formats: milliseconds? seconds? Also they should be human readable.

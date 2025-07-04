@@ -1,8 +1,31 @@
 ---
-layout: "post"
-language: "de"
-title: "Meta schnappt sich OpenAIs Top-Köpfe – für 100 Millionen Dollar!"
+layout: post
+language: de
+title: Meta schnappt sich OpenAIs Top-Köpfe – für 100 Millionen Dollar!
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Bahnbrechende Entwicklung im KI-Bereich mit der Abwerbung von drei
+      Top-Forschern von OpenAI zu Meta, die an Vision-Transformern und der
+      Superintelligenz-Entwicklung arbeiten.
+  - name: programming
+    relevance: 7
+    reasoning: >-
+      Hochrelevant für Programmierer, da die abgeworbenen Forscher Experten für
+      Computer Vision, maschinelles Lernen und Vision-Transformer-Architektur
+      sind.
+  - name: work
+    relevance: 8
+    reasoning: >-
+      Zeigt den intensiven Kampf um KI-Talente mit Vergütungen von bis zu 300
+      Millionen Dollar, was die Tech-Arbeitswelt grundlegend verändert.
+  - name: security
+    relevance: 5
+    reasoning: >-
+      Indirekt relevant, da der Verlust von Schlüsselpersonal OpenAIs
+      technologische Position und Wettbewerbssicherheit schwächt.
 ---
 
 Meta gelingt ein Schlag auf dem umkämpften Markt für KI-Talente. Gleich mehrere renommierte Forscher, die zuletzt für OpenAI tätig waren, wechseln ins Team von Mark Zuckerberg. Darunter sind Lucas Beyer, Alexander Kolesnikov und Xiaohua Zhai – Namen, die in der KI-Szene Gewicht haben. Es heißt, Meta habe mit außergewöhnlich hohen Vergütungen gelockt. Doch was steckt hinter dieser aggressiven Personalstrategie, und wie viel Einfluss kann sie tatsächlich auf die Position im globalen KI-Rennen haben?

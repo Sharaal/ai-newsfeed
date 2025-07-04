@@ -1,6 +1,19 @@
 ---
-layout: "post"
-title: "Building requests step by step in a modularized way"
+layout: post
+title: Building requests step by step in a modularized way
+categories:
+  - name: programming
+    relevance: 7
+    reasoning: >-
+      Der Text beschreibt eine konkrete Programmierlösung für modulare
+      API-Request-Builder in JavaScript mit detaillierten Code-Beispielen und
+      praktischer Implementierung.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Der Artikel behandelt ein typisches Problem aus dem Arbeitsalltag von
+      Entwicklern - die wachsende Komplexität von API-Connectoren und deren
+      Lösung durch modulare Architektur.
 ---
 
 Requests to APIs can be very complex and need a lot of options: hostname, API keys, session tokens and at the end the HTTP method, route to the resource, parameters and so on.

@@ -1,6 +1,24 @@
 ---
-layout: "post"
-title: "If Heroku free is to small and hobby to large"
+layout: post
+title: If Heroku free is to small and hobby to large
+categories:
+  - name: programming
+    reasoning: >-
+      Der Artikel ist hochrelevant für Programmierer, da er konkrete
+      Code-Beispiele in JavaScript/Node.js zeigt und eine praktische
+      Architekturlösung für App-Deployment präsentiert.
+    relevance: 7
+  - name: work
+    reasoning: >-
+      Relevant für Entwickler und DevOps-Teams, die kosteneffiziente
+      Hosting-Lösungen suchen und ihre Infrastrukturkosten optimieren möchten.
+    relevance: 6
+  - name: security
+    reasoning: >-
+      Nur geringe Sicherheitsrelevanz, da das Thema Proxy-Routing und
+      Domain-Konfiguration angesprochen wird, aber keine spezifischen
+      Sicherheitsaspekte behandelt werden.
+    relevance: 3
 ---
 
 Sometimes apps should neither sleep nor use free dyno hours. Sometimes apps doesn't get many requests to need the performance of a hobby dyno.

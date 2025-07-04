@@ -1,0 +1,75 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-Brille blendet Werbung in der realen Welt aus\n\n\nStellen Sie sich vor, Sie spazieren durch die Stadt und sehen keine Werbetafeln, keine Plakate und keine Logos mehr – als ob die Werbung einfach verschwunden wäre. Genau das ermöglicht eine neue App, die für Augmented-Reality-Brillen entwickelt wurde. Der belgische Software-Ingenieur Stijn Spanhove hat eine Anwendung programmiert, die mithilfe von künstlicher Intelligenz (KI) Werbung in der realen Welt erkennt und ausblendet. Die Technologie funktioniert mit den Snap Spectacles, einer AR-Brille, die mit Googles Gemini-KI ausgestattet ist. Sobald die Brille Werbung erkennt, wird diese durch eine rote Fläche überdeckt – ähnlich wie ein Adblocker im Internet.\n\n<!--more-->\n\nDie App befindet sich noch in der Entwicklungsphase, zeigt jedoch bereits beeindruckende Ergebnisse. In einem Demonstrationsvideo erkennt die Brille Werbeplakate, Zeitungsanzeigen und sogar Logos auf Produktverpackungen wie Cola-Dosen und blendet sie aus. Die Technologie basiert auf Open-Source-Bibliotheken und APIs, die von Snap bereitgestellt werden. Trotz der Fortschritte gibt es noch technische Einschränkungen: Die roten Überlagerungen wirken für manche Nutzer störend, und die Batterielaufzeit der Brille beträgt derzeit nur 45 Minuten. Dennoch könnte diese Innovation die Art und Weise, wie wir Werbung wahrnehmen, grundlegend verändern.\n\nFür die Zukunft plant Spanhove, die roten Flächen durch personalisierte Inhalte zu ersetzen. Nutzer könnten beispielsweise To-do-Listen, Fotos oder sogar beruhigende Naturbilder anstelle der Werbung sehen. Diese Vision einer \"kontrollierten Realität\" wirft jedoch auch Fragen auf: Wie wird sich die Werbebranche anpassen? Und welche ethischen Herausforderungen bringt eine solche Technologie mit sich? Klar ist, dass die Entwicklung von AR-Brillen mit KI-Unterstützung nicht nur die Werbung, sondern auch unseren Alltag nachhaltig beeinflussen könnte.\n\n### Quellen\n- [20 Minuten: KI-Brille blendet Werbung in Echtzeit aus](https://www.20min.ch/story/augmented-reality-ki-brille-blendet-werbung-einfach-aus-103373124)  \n- [Heute.at: KI-Brille blendet Werbung in den Straßen aus](https://www.heute.at/s/ki-brille-blendet-werbung-in-den-strassen-aus-120117084)  \n- [WinFuture: Schluss mit realer Werbung – Entwickler baut Adblocker für AR-Brillen](https://winfuture.de/news,151869.html)\n\n    ",
+    "timestamp": "2025-07-04T12:08:24.740Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über die KI-Brille, die Werbung ausblendet:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 8/10**\nDie KI ist das Herzstück der Technologie, da sie Werbung in Echtzeit erkennt und klassifiziert – eine hochrelevante Anwendung von Computer Vision und maschinellem Lernen mit großem Zukunftspotenzial.\n\n**programming - Relevanz: 6/10**\nEin Software-Ingenieur hat die App entwickelt und nutzt Open-Source-Bibliotheken sowie APIs – interessant für Entwickler, die sich für AR-Programmierung und KI-Integration interessieren.\n\n**security - Relevanz: 4/10**\nIndirekt relevant, da die Technologie Fragen zum Datenschutz und zur Kontrolle über visuelle Wahrnehmung aufwirft, aber Sicherheitsaspekte werden nicht explizit behandelt.\n\n**work - Relevanz: 7/10**\nDie Technologie könnte die Werbebranche grundlegend verändern und neue Berufsfelder in der AR-Entwicklung schaffen, während traditionelle Werbejobs bedroht sein könnten.\n\n**data protection - Relevanz: 5/10**\nDie Brille muss visuelle Daten verarbeiten und analysieren, was Datenschutzfragen aufwirft, auch wenn diese im Artikel nicht detailliert diskutiert werden.\n\n**copyright - Relevanz: 3/10**\nTangential relevant, da das Ausblenden von Markenlogos und Werbung rechtliche Fragen bezüglich geistigen Eigentums aufwerfen könnte, aber nicht explizit thematisiert.\n\nDie Kategorien **databases** wurde nicht gewählt, da keine spezifischen Datenbankthemen im Text behandelt werden.",
+          "id": "1c0eab6f-9dd2-4baf-b255-c431e0fa9c44"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Die KI ist das Herzstück der Technologie, da sie Werbung in Echtzeit erkennt und klassifiziert – eine hochrelevante Anwendung von Computer Vision und maschinellem Lernen mit großem Zukunftspotenzial."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Ein Software-Ingenieur hat die App entwickelt und nutzt Open-Source-Bibliotheken sowie APIs – interessant für Entwickler, die sich für AR-Programmierung und KI-Integration interessieren."
+          },
+          {
+            "name": "security",
+            "relevance": 4,
+            "reasoning": "Indirekt relevant, da die Technologie Fragen zum Datenschutz und zur Kontrolle über visuelle Wahrnehmung aufwirft, aber Sicherheitsaspekte werden nicht explizit behandelt."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Die Technologie könnte die Werbebranche grundlegend verändern und neue Berufsfelder in der AR-Entwicklung schaffen, während traditionelle Werbejobs bedroht sein könnten."
+          },
+          {
+            "name": "data protection",
+            "relevance": 5,
+            "reasoning": "Die Brille muss visuelle Daten verarbeiten und analysieren, was Datenschutzfragen aufwirft, auch wenn diese im Artikel nicht detailliert diskutiert werden."
+          },
+          {
+            "name": "copyright",
+            "relevance": 3,
+            "reasoning": "Tangential relevant, da das Ausblenden von Markenlogos und Werbung rechtliche Fragen bezüglich geistigen Eigentums aufwerfen könnte, aber nicht explizit thematisiert."
+          }
+        ]
+      ]
+    }
+  }
+}

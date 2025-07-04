@@ -1,0 +1,55 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# One logo to rule them all\n\n\r\nLogos are needed in different formats and sizes: Apple touch icons, favicon and much more. And maybe they are needed in several projects.\r\n\r\n<!--more-->\r\n\r\nWouldn't it be nice only store the logo one time at one place, all the projects use them and resize it to the needed formats and sizes?\r\n\r\n## The idea\r\n\r\nWhat would we need:\r\n\r\n* A central place to store the logo in the original size\r\n* In the projects a configuration which formats and sizes are needed and destination paths to store the resized logos\r\n* ... A magical thing using both to provide the resized logos ...\r\n\r\n## The solution\r\n\r\n### The central place: GitHub + NPM\r\n\r\nA GitHub repository is very nice. It costs nothing, we can track the changes and we can easily get the logo into all projects with NPM.\r\n\r\n### The configuration: JSON\r\n\r\nA JSON file is perfect to store the configuration which formats and sizes we need in the project and with which paths the resized logos should be stored:\r\n\r\n```json\r\n[\r\n  {\r\n    \"source\": \"node_modules/dragonprojects-logo/logo.png\",\r\n    \"path\": \"www/\",\r\n    \"destinations\": [\r\n      { \"path\": \"img/apple-touch-icon/ipad.png\", \"width\": 76 },\r\n      { \"path\": \"img/apple-touch-icon/ipad-retina.png\", \"width\": 152 },\r\n      { \"path\": \"img/apple-touch-icon/iphone.png\", \"width\": 60 },\r\n      { \"path\": \"img/apple-touch-icon/iphone-retina.png\", \"width\": 120 },\r\n      { \"path\": \"favicon.ico\", \"width\": 32 }\r\n    ]\r\n  }\r\n]\r\n```\r\n\r\n### The magical thing: [dlogos](http://github.com/dnode/dlogos)\r\n\r\nA small NPM package which use the logo and the configuration and resize with imagemagick the logo into all formats and sizes to store them in the defined paths.\r\n\r\n```json\r\n{\r\n  \"scripts\": {\r\n    \"postinstall\": \"dlogos\"\r\n  },\r\n  \"dependencies\": {\r\n    \"dlogos\": \"^1.1.0\",\r\n    \"dragonprojects-logo\": \"^1.0.0\"\r\n  }\r\n}\r\n```\r\n\r\n## Extra: QR Codes\r\n\r\nWith [dqrcodes](http://github.com/dnode/dqrcodes)\" the same concept works also for automatically generating QR Code Images. For example the QR Codes of [http://dscores.de](http://dscores.de).\r\n\r\n```json\r\n[\r\n  {\r\n    \"path\": \"www/img/dqwixx/apps-qrcode.png\",\r\n    \"url\": \"http://build.phonegap.com/apps/1944299/install\"\r\n  },\r\n  {\r\n    \"path\": \"www/img/dqwixx/www-qrcode.png\",\r\n    \"url\": \"http://dqwixx.dscores.de\"\r\n  }\r\n]\r\n```\r\n\r\n## Summary\r\n\r\nSo with the logo stored in a GitHub repository, the `dlogos.json` configure the needed formats and sizes and the [dlogos](http://github.com/dnode/dlogos) package we realized our wish.\r\n\n    ",
+    "timestamp": "2025-07-04T13:35:33.999Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den gegebenen Newstext und ordne ihn den passenden Kategorien zu:\n\n## Analyse des Newstexts\n\nDer Text beschreibt eine technische Lösung zur zentralen Verwaltung und automatischen Größenanpassung von Logos für verschiedene Projekte. Es geht um ein NPM-Package namens \"dlogos\", das Logos aus einem GitHub-Repository lädt und sie automatisch in verschiedene Formate und Größen konvertiert.\n\n## Kategoriezuordnung mit Relevanzbewertung\n\n**programming: 8/10**\nDer Artikel behandelt eine konkrete Programmierlösung mit NPM-Packages, JSON-Konfiguration und automatisierten Build-Prozessen - hochrelevant für Entwickler, die ähnliche Automatisierungsprobleme lösen müssen.\n\n**work: 6/10**\nDie beschriebene Lösung optimiert Arbeitsabläufe in der Webentwicklung erheblich, indem sie manuelle Logo-Anpassungen automatisiert und somit Zeit spart - relevant für Teams und Freelancer.\n\nDie anderen Kategorien (ai, databases, security, data protection, copyright) sind nicht zutreffend, da der Text weder KI-Technologien, Datenbankthemen, Sicherheitsaspekte noch rechtliche Fragen behandelt. Es handelt sich um eine reine Entwicklungslösung für Asset-Management.",
+          "id": "c2c303de-5c40-4195-aa7a-71be9e8133ea"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "programming",
+            "relevance": 8,
+            "reasoning": "Der Artikel behandelt eine konkrete Programmierlösung mit NPM-Packages, JSON-Konfiguration und automatisierten Build-Prozessen - hochrelevant für Entwickler, die ähnliche Automatisierungsprobleme lösen müssen."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Die beschriebene Lösung optimiert Arbeitsabläufe in der Webentwicklung erheblich, indem sie manuelle Logo-Anpassungen automatisiert und somit Zeit spart - relevant für Teams und Freelancer."
+          }
+        ]
+      ]
+    }
+  }
+}

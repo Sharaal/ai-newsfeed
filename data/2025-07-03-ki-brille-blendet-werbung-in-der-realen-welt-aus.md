@@ -1,8 +1,45 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-Brille blendet Werbung in der realen Welt aus"
+layout: post
+language: de
+title: KI-Brille blendet Werbung in der realen Welt aus
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Die KI ist das Herzstück der Technologie, da sie Werbung in Echtzeit
+      erkennt und klassifiziert – eine hochrelevante Anwendung von Computer
+      Vision und maschinellem Lernen mit großem Zukunftspotenzial.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Ein Software-Ingenieur hat die App entwickelt und nutzt
+      Open-Source-Bibliotheken sowie APIs – interessant für Entwickler, die sich
+      für AR-Programmierung und KI-Integration interessieren.
+  - name: security
+    relevance: 4
+    reasoning: >-
+      Indirekt relevant, da die Technologie Fragen zum Datenschutz und zur
+      Kontrolle über visuelle Wahrnehmung aufwirft, aber Sicherheitsaspekte
+      werden nicht explizit behandelt.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Die Technologie könnte die Werbebranche grundlegend verändern und neue
+      Berufsfelder in der AR-Entwicklung schaffen, während traditionelle
+      Werbejobs bedroht sein könnten.
+  - name: data protection
+    relevance: 5
+    reasoning: >-
+      Die Brille muss visuelle Daten verarbeiten und analysieren, was
+      Datenschutzfragen aufwirft, auch wenn diese im Artikel nicht detailliert
+      diskutiert werden.
+  - name: copyright
+    relevance: 3
+    reasoning: >-
+      Tangential relevant, da das Ausblenden von Markenlogos und Werbung
+      rechtliche Fragen bezüglich geistigen Eigentums aufwerfen könnte, aber
+      nicht explizit thematisiert.
 ---
 
 Stellen Sie sich vor, Sie spazieren durch die Stadt und sehen keine Werbetafeln, keine Plakate und keine Logos mehr – als ob die Werbung einfach verschwunden wäre. Genau das ermöglicht eine neue App, die für Augmented-Reality-Brillen entwickelt wurde. Der belgische Software-Ingenieur Stijn Spanhove hat eine Anwendung programmiert, die mithilfe von künstlicher Intelligenz (KI) Werbung in der realen Welt erkennt und ausblendet. Die Technologie funktioniert mit den Snap Spectacles, einer AR-Brille, die mit Googles Gemini-KI ausgestattet ist. Sobald die Brille Werbung erkennt, wird diese durch eine rote Fläche überdeckt – ähnlich wie ein Adblocker im Internet.

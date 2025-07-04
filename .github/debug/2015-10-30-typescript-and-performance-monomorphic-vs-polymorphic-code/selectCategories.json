@@ -1,0 +1,155 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# TypeScript and Performance: Monomorphic vs Polymorphic Code\n\n\r\nIn one of my latest tech talks I said \"TypeScript can increase the performance of the application\". There comes the question \"How can this works, TypeScript gets transpiled into normal JavaScript\". Thats true, but using TypeScript helps to write better performing JavaScript.\r\n\r\n<!--more-->\r\n\r\n## Hidden classes and inline cache\r\n\r\nModern JavaScript interpreters use JIT compilers with different techniques to increase the performance. Two of them are hidden classes and inline cache. I will not go to deep how this works in theory, just few examples whats the results of this techniques.\r\n\r\n```javascript\r\nfunction add(a, b) {\r\n    return a + b;\r\n}\r\n\r\n// Monomorphic: Using a function always with the same datatypes\r\nadd(1, 2);\r\nadd(3, 4);\r\n\r\n// Polymorphic: Use a function with different variation of datatypes\r\nadd(1, 2);\r\nadd('a', 'b');\r\n```\r\n\r\nMonomorphic functions becomes highly optimized if they are used a lot during the execution and will be very fast. But using this function sometimes polymorphic by parameters another datatypes means the function will through out of the cache and slows down.\r\n\r\nThats the difference TypeScript can help a lot with the datatype check.\r\n\r\n## Summary\r\n\r\nSo using TypeScript doesn't really increase the performance, but it helps to write monomorphic code which is well prepared to becomes better optimized by the JIT compilers.\r\n\n    ",
+    "timestamp": "2025-07-04T13:36:53.071Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool-call",
+              "toolCallId": "tooluse_GgFHswAiSmC4mtFdl1Sj3w",
+              "toolName": "web_search",
+              "args": {
+                "query": "TypeScript performance monomorphic polymorphic JavaScript JIT compiler hidden classes inline cache"
+              }
+            }
+          ],
+          "id": "73b863f8-604f-4822-9d76-42023d0c801a"
+        },
+        {
+          "role": "tool",
+          "id": "722aa16d-d77b-4f97-810a-b5eba9303099",
+          "content": [
+            {
+              "type": "tool-result",
+              "toolCallId": "tooluse_GgFHswAiSmC4mtFdl1Sj3w",
+              "toolName": "web_search",
+              "result": {
+                "input": "TypeScript performance monomorphic polymorphic JavaScript JIT compiler hidden classes inline cache",
+                "output": [
+                  {
+                    "title": "Hidden inheritance: an inline caching design for TypeScript performance ...",
+                    "url": "https://dl.acm.org/doi/10.1145/3428242",
+                    "type": "website-preview",
+                    "text": "These object-oriented (OO) features will lead to inefficient inline caches (ICs) or trigger deoptimizations, which impact the performance of TypeScript applications. To address this problem, we introduce an inline caching design called hidden inheritance (HI).. ",
+                    "idx": "2-0"
+                  },
+                  {
+                    "title": "javascript - JS V8 Compiler Optimization, Monomorph Polymorph, (sealed ...",
+                    "url": "https://stackoverflow.com/questions/76167593/js-v8-compiler-optimization-monomorph-polymorph-sealed-object-and-classes-o",
+                    "type": "website-preview",
+                    "text": "Couldn't the compiler generate optimised code for objects that all have foo as their first property and that is as fast as monomorphic code, even if they have different additional properties (and therefore different shapes)?. ",
+                    "idx": "2-1"
+                  },
+                  {
+                    "title": "Just-In-Time (JIT) Compilation in V8: A Deep Dive | Medium",
+                    "url": "https://medium.com/@rahul.jindal57/understanding-just-in-time-jit-compilation-in-v8-a-deep-dive-c98b09c6bf0c",
+                    "type": "website-preview",
+                    "text": "JIT compilers optimize property access using hidden classes and inline caching. However, inefficient property access patterns can degrade performance due to increased polymorphism.. Autor: Rahul Jindal",
+                    "idx": "2-2"
+                  },
+                  {
+                    "title": "The V8 Engine Series III: Inline Caching — Unlocking JavaScript Performance",
+                    "url": "https://braineanear.medium.com/the-v8-engine-series-iii-inline-caching-unlocking-javascript-performance-51cf09a64cc3",
+                    "type": "website-preview",
+                    "text": "We’ll also explain the role of hidden classes (maps) in this process, use analogies (ever heard of the coffee shop metaphor?), and show code examples demonstrating monomorphic vs..... ",
+                    "idx": "2-3"
+                  },
+                  {
+                    "title": "How JavaScript JIT Compilation Works : The Magic of Hidden Classes and ...",
+                    "url": "https://prasunchakra.medium.com/how-javascript-jit-compilation-works-the-magic-of-hidden-classes-and-inline-caching-7318e8647f79",
+                    "type": "website-preview",
+                    "text": "JIT compilation is a hybrid approach between traditional interpreters and Ahead-of-Time (AOT) compilation. Here’s how it works: Parsing: JS code is parsed and converted to an Abstract Syntax.... ",
+                    "idx": "2-4"
+                  },
+                  {
+                    "title": "Mastering JavaScript high performance in V8 - Marc Radziwill",
+                    "url": "https://marcradziwill.com/blog/mastering-javascript-high-performance/",
+                    "type": "website-preview",
+                    "text": "In this article, you read about the JavaScipt engine V8, its main parts for parsing and compiling JavaScript, and how you can help V8 to optimize your JavaScript code. I outline techniques for you to implement. What is a JavaScript engine?. \n\n[Marc Radziwill](/)\n\n*   [Services](/#services)\n    *   [Web Performance](/#webperf)\n    *   [Web Sustainability](/#websustainability)\n    *   [Web Development](/#webdev)\n    *   [Web Consulting](/#services)\n*   [Blog](/blog/)\n*   [Projects](/projects/)\n\n[](#)\n\nHow-to\n\nMastering JavaScript high performance in V8\n===========================================\n\nMarc Radziwill | Mar 12, 2020  | 10 min time to read  | updated: Jan 31, 2023\n\n[2](#webmentions)\n\n[2](#webmentions)\n\n[](#webmentions)\n\nIntro to JavaScript performance optimization\n--------------------------------------------\n\nJavaScript performance optimization techniques for the JavaScirpt engine are simple to apply if you stick to some “rules” or better-said bits of advice. The implementation of these rules come with a minimum of understanding of how JavaScript engines work today.\n\nFor the sake of simplicity, we focus on the V8 the JavaScript engine inside of Chrome and Node.js. The V8 engine offers us passionate performance web developers several possibilities to optimize our JavaScript code.\n\nTl;dr\n-----\n\nIn this article, you read about the JavaScipt engine V8, its main parts for parsing and compiling JavaScript, and how you can help V8 to optimize your JavaScript code. I outline techniques for you to implement.\n\nTable of Contents\n-----------------\n\n1.  [What is a JavaScript engine?](#engine)\n    *   [Ignition](#ignition)\n    *   [Turbofan](#turbofan)\n    *   [The duet of Ignition and Turbofan](#duet)\n2.  [The Performance Advice](#measure)\n3.  [How to optimize your JavaScript code](#howopti)\n    *   [Hidden classes in JavaScript engines](#hiddenclasses)\n        *   [Takeaways for hidden classes](#takehc)\n    *   [Inline Caching](#ic)\n        *   [Monomorphic, Polymorphic, Megamorphic](#mpm)\n        *   [Takeaways for hidden classes](#takeic)\n    *   [Take care of JavaScript arrays](#arrays)\n        *   [Takeaways for arrays](#takearrays)\n4.  [Conclusion](#conclusion)\n\nWhat is a JavaScript engine?\n\n\n------------------------------\n\nIn simple words, the JavaScript engine converts your code into byte-code or optimized machine-code that runs on your device. The V8 engine has two main parts that play together in this process. As the V8 team choose car part names for the engine, it stuck with that by naming the subprocesses: `Ignition` and `Turbofan`.\n\n### Ignition\n\nIgnition is the low-level register-based interpreter. It has a fast start-up, so it’s valuable for code executed at page load and rarely executed code in your application. It knows all the JavaScript rules and the ECMAScript standards and won’t skip any parts of your code. Therefore the byte-code runs, but it doesn’t run fast.\n\n### Turbofan\n\nTurbofan is the optimization compiler. It generates swift machine code by making optimistic assumptions (we come back to that later). Turbofan is perfect for code after page load and frequently executed code.\n\nBut how does this help us to write more efficient JavaScript code? It is the combination of the interpreter and compiler that allows a high-speed JavaScript execution and the best part of it. We can feed the optimization compiler with code that is likely to be optimized.\n\n### The duet of Ignition and Turbofan\n\nLet’s have a quick, simplified look under the hood. After our JavaScript file is loaded and parsed the V8 generates an [abstract syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) from it and forwards it to the interpreter which makes byte-code from the AST. As well as Ignition creates byte-code, it also gathers type feedback from the code. Let’s assume we have the following simple function in JavaScript.\n\n    (a) => a + 2;\n\nWhile Ignition executes the code, it gathers type feedback. For our function, this is that `a` is a `Number`. To make it even more simple, we assume that we always pass a number for `a`. The heuristics in Ignition then triggers and marks the function as **hot code** (code with optimization possibilities).\n\nIgnition then passes the function to Turbofan and provides the type feedback as well. Now it’s Turbofans turn. Turbofan makes optimistic assumptions about the code to generate highly optimized machine code. To stay with our example above, Turbofan creates machine code for the case that `a` is a number and that code can execute much faster then the byte-code from Ignition could.\n\nBut as JavaScript is dynamic, we could call our function with a `String` instead of a `Number`. In this case, the optimistic assumption Turbofan made is wrong, and we have to go back to Ignitions execution.\n\nLet’s recap what just happened. First, Ignition passes our code to Turbofan, and the code is optimized. After the assumption was wrong because we added another “type” the code is de-optimized.\n",
+                    "idx": "2-5"
+                  },
+                  {
+                    "title": "Hidden inheritance: an inline caching design for TypeScript performance ...",
+                    "url": "https://dlnext.acm.org/doi/10.1145/3428242",
+                    "type": "website-preview",
+                    "text": "STSC statically generates hidden classes and enhanced inline caches, which are applied to generate specialized machine code via ahead-of-time compilation (AOTC) or just-in-time compilation (JITC).. ",
+                    "idx": "2-6"
+                  },
+                  {
+                    "title": "Supercharge TypeScript: Compiler-Assisted Tricks for Lightning-Fast ...",
+                    "url": "https://dev.to/aaravjoshi/supercharge-typescript-compiler-assisted-tricks-for-lightning-fast-performance-4o9b",
+                    "type": "website-preview",
+                    "text": "Boost TypeScript performance with compiler-assisted optimization. Learn custom transformers, JIT-like techniques, and type-based optimizations for faster, more efficient code.. \n\n  \n\n[Skip to content](#main-content)\n\n[](/)\n\n [Powered by Algolia](https://www.algolia.com/developers/?utm_source=devto&utm_medium=referral)\n\n[Log in](https://dev.to/enter) [Create account](https://dev.to/enter?state=new-user)\n\nDEV Community\n-------------\n\nAdd reaction\n\nLike Unicorn Exploding Head Raised Hands Fire\n\nJump to Comments Save Boost\n\nModerate\n\nCopy link\n\nCopied to Clipboard\n\n[Share to X](https://twitter.com/intent/tweet?text=%22Supercharge%20TypeScript%3A%20Compiler-Assisted%20Tricks%20for%20Lightning-Fast%20Performance%22%20by%20Aarav%20Joshi%20%23DEVCommunity%20https%3A%2F%2Fdev.to%2Faaravjoshi%2Fsupercharge-typescript-compiler-assisted-tricks-for-lightning-fast-performance-4o9b) [Share to LinkedIn](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fdev.to%2Faaravjoshi%2Fsupercharge-typescript-compiler-assisted-tricks-for-lightning-fast-performance-4o9b&title=Supercharge%20TypeScript%3A%20Compiler-Assisted%20Tricks%20for%20Lightning-Fast%20Performance&summary=Boost%20TypeScript%20performance%20with%20compiler-assisted%20optimization.%20Learn%20custom%20transformers%2C%20JIT-like%20techniques%2C%20and%20type-based%20optimizations%20for%20faster%2C%20more%20efficient%20code.&source=DEV%20Community) [Share to Facebook](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdev.to%2Faaravjoshi%2Fsupercharge-typescript-compiler-assisted-tricks-for-lightning-fast-performance-4o9b) [Share to Mastodon](https://toot.kytta.dev/?text=https%3A%2F%2Fdev.to%2Faaravjoshi%2Fsupercharge-typescript-compiler-assisted-tricks-for-lightning-fast-performance-4o9b)\n\n[Report Abuse](/report-abuse)\n\n[](https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fjsschools.com%2Fimages%2Fd492cf46-d823-4f65-894d-1e6747597791.webp)\n\n[](/aaravjoshi)\n\n[Aarav Joshi](/aaravjoshi)\n\nPosted on Dec 4, 2024\n\nSupercharge TypeScript: Compiler-Assisted Tricks for Lightning-Fast Performance\n===============================================================================\n\n[#programming](/t/programming) [#devto](/t/devto) [#typescript](/t/typescript) [#softwareengineering](/t/softwareengineering)\n\nCompiler-assisted optimization in TypeScript is a powerful approach to boost runtime performance while maintaining the benefits of static typing. By tapping into the rich type information available during compilation, we can create highly optimized code paths that leverage this knowledge at runtime.\n\nLet's start by looking at custom transformers. These are plugins we can write for the TypeScript compiler that allow us to modify the emitted JavaScript code. With a custom transformer, we can inject optimized code based on the static type analysis performed by the compiler.\n\nHere's a simple example of a custom transformer that optimizes a common pattern:  \n\n    function optimizeNullChecks(context: ts.TransformationContext) {\n      return (sourceFile: ts.SourceFile) => {\n        function visit(node: ts.Node): ts.Node {\n          if (ts.isBinaryExpression(node) && node.operatorToken.kind === ts.SyntaxKind.EqualsEqualsEqualsToken) {\n            if (ts.isIdentifier(node.left) && node.right.kind === ts.SyntaxKind.NullKeyword) {\n              return ts.createCall(\n                ts.createIdentifier('Object.is'),\n                undefined,\n                [node.left, ts.createNull()]\n              );\n            }\n          }\n          return ts.visitEachChild(node, visit, context);\n        }\n        return ts.visitNode(sourceFile, visit);\n      };\n    }\n    \n\nThis transformer replaces `x === null` checks with `Object.is(x, null)`, which can be faster in some JavaScript engines.\n\nMoving on to JIT-like optimizations, we can leverage TypeScript's type system to implement techniques like method devirtualization and inline caching. Method devirtualization is particularly interesting in TypeScript because we often have more precise type information than in a dynamically typed language.\n\nConsider this example:  \n\n    interface Animal {\n      makeSound(): void;\n    }\n    \n    class Dog implements Animal {\n      makeSound() { console.log('Woof!'); }\n    }\n    \n    class Cat implements Animal {\n      makeSound() { console.log('Meow!'); }\n    }\n    \n    function animalChorus(animals: Animal[]) {\n      for (let animal of animals) {\n        animal.makeSound();\n      }\n    }\n    \n\nIn a dynamic language, each `makeSound()` call would typically involve a property lookup. But with TypeScript, we know the exact set of possible types for `animal`. We can use this information to generate optimized code:  \n\n    function optimizedAnimalChorus(animals: Animal[]) {\n      for (let animal of animals) {\n        if (animal instanceof Dog) {\n          animal.makeSound();  // Direct call to Dog.prototype.makeSound\n        } else if (animal instanceof ",
+                    "idx": "2-7"
+                  },
+                  {
+                    "title": "optimizing-javascript-v8-engine-hidden-classes-inline-caching",
+                    "url": "https://coderspacket.com/posts/optimizing-javascript-v8-engine-hidden-classes-inline-caching/",
+                    "type": "website-preview",
+                    "text": "V8 achieves this by compiling JavaScript directly into machine code (instead of interpreting it) and applying runtime optimizations like Hidden Classes and Inline Caching.. \n\n[Skip to content](#content \"Skip to content\")\n\n[CodersPacket](https://coderspacket.com/posts/)\n\n[CodersPacket](https://coderspacket.com/posts/)\n\nMain Menu\n\n*   [Home](https://coderspacket.com/posts/)\n*   [JavaScript](https://coderspacket.com/posts/category/javascript/)\n*   optimizing-javascript-v8-engine-hidden-classes-inline-caching\n\noptimizing-javascript-v8-engine-hidden-classes-inline-caching\n=============================================================\n\nBy [SALONY RANJAN](https://coderspacket.com/posts/author/salonyranjan-csbs2022/ \"View all posts by SALONY RANJAN\") / March 2, 2025\n\nViews: 0\n\nJavaScript is the backbone of modern web development, but its dynamic nature can sometimes lead to performance challenges. To address this, Google’s V8 engine—the powerhouse behind Chrome and Node.js—employs advanced optimization techniques like **Hidden Classes** and **Inline Caching**. These optimizations are key to making JavaScript run faster and more efficiently.\n\nIn this, we’ll explore what Hidden Classes and Inline Caching are, how they work, and how you can write JavaScript code that takes full advantage of these optimizations. Whether you’re building a high-performance web app or optimizing server-side code, understanding these concepts will help you unlock the full potential of the V8 engine.\n\nWhat is the V8 Engine?\n----------------------\n\nThe V8 engine is a high-performance JavaScript and WebAssembly engine developed by Google. It’s used in Chrome, Node.js, and other platforms to execute JavaScript code at lightning speed. V8 achieves this by compiling JavaScript directly into machine code (instead of interpreting it) and applying runtime optimizations like Hidden Classes and Inline Caching.\n\nThese optimizations are crucial for improving the performance of JavaScript applications, especially in scenarios where speed and efficiency are critical.\n\n* * *\n\nHidden Classes: Structuring Objects for Speed\n---------------------------------------------\n\nJavaScript objects are dynamic—you can add, modify, or delete properties at runtime. While this flexibility is powerful, it can make it difficult for the engine to optimize property access. To solve this, V8 uses **Hidden Classes**.\n\n### What are Hidden Classes?\n\nHidden Classes (also called “Shapes” or “Maps”) are internal data structures used by V8 to represent the layout of objects. When you create an object, V8 assigns it a Hidden Class that describes its structure (e.g., the properties it contains and their types). If you modify the object (e.g., add or remove a property), V8 creates a new Hidden Class to reflect the updated structure.\n\n### Why are Hidden Classes Important?\n\nHidden Classes allow V8 to optimize property access. Instead of performing a costly lookup every time you access a property, V8 can use the Hidden Class to determine the property’s location in memory. This makes property access much faster.\n\n### Best Practices for Hidden Classes\n\nTo take full advantage of Hidden Classes, follow these best practices:\n\n**1.Initialize Object Properties in the Same Order**  \nAlways add properties to objects in a consistent order. This ensures that objects with the same structure share the same Hidden Class.\n\n// Good\nconst obj1 = { a: 1, b: 2 };\nconst obj2 = { a: 3, b: 4 };\n\n// Bad (different Hidden Classes)\nconst obj3 = { a: 1, b: 2 };\nconst obj4 = { b: 4, a: 3 };\n\n**2.Avoid Adding or Deleting Properties After Creation**  \nModifying an object’s structure after creation forces V8 to create a new Hidden Class, which can slow down performance.\n\n// Good\nconst obj = { a: 1, b: 2 };\n\n// Bad (creates a new Hidden Class)\nobj.c = 3;\n\n**3.Use Classes Instead of Dynamic Objects**  \nClasses provide a fixed structure, making it easier for V8 to optimize.\n\n1.  class MyClass {\n      constructor(a, b) {\n        this.a = a;\n        this.b = b;\n      }\n    }\n    const obj = new MyClass(1, 2);\n    \n    Inline Caching: Speeding Up Method Calls\n    ----------------------------------------\n    \n    Inline Caching is another powerful optimization technique used by V8 to speed up method and property access.\n    \n    ### What is Inline Caching?\n    \n    Inline Caching is a mechanism that remembers the results of previous property or method lookups. When you access a property or call a method, V8 caches the location of that property or method. If the same property or method is accessed again, V8 can skip the lookup and use the cached result.\n    \n    ### How Does Inline Caching Work?\n    \n    1.  **Monomorphic Calls**  \n        If a method or property is always accessed on objects of the same Hidden Class, V8 can optimize the call by caching the exact location.\n        \n    2.  **Polymorphic Calls**  \n        If a method or property is accessed on objects of different Hidden Classes, V8 has to perform multiple look",
+                    "idx": "2-8"
+                  },
+                  {
+                    "title": "Hidden Inheritance: An Inline Caching Design for TypeScript Performance",
+                    "url": "https://papertalk.org/papertalks/25188",
+                    "type": "website-preview",
+                    "text": "These object-oriented (OO) features will lead to inefficient inline caches (ICs) or trigger deoptimizations, which impact the performance of TypeScript applications. To address this problem, we introduce an inline caching design called hidden inheritance (HI).. \n\n[](/home)\n\n*   [Home](/home)\n*   [Papertalks](/papertalks)\n*   [About](/about)\n*   [Help](/help)\n*   [Improve](/improve)\n*   [Upload](/upload)\n*   [Login](/auth/login)\n*   [Register](/auth/register)\n\n##### Login Required\n\n×\n\nYou have to login to use this feature.\n\n[Login Page](/auth/login) [Register](/auth/register) Close\n\n15/11/2020\n\nHidden Inheritance: An Inline Caching Design for TypeScript Performance\n-----------------------------------------------------------------------\n\n### [Zhefeng Wu](/papertalks?q=Zhefeng Wu&authors=on&exact=on), [Zhe Sun](/papertalks?q=Zhe Sun&authors=on&exact=on), [Kai Gong](/papertalks?q=Kai Gong&authors=on&exact=on), [Lingyun Chen](/papertalks?q=Lingyun Chen&authors=on&exact=on), [Bin Liao](/papertalks?q=Bin Liao&authors=on&exact=on), [Yihua Jin](/papertalks?q=Yihua Jin&authors=on&exact=on)\n\nKeywords: [Hidden Classes](/papertalks?q=Hidden Classes&keywords=on&title=on&exact=on), [TypeScript](/papertalks?q=TypeScript&keywords=on&title=on&exact=on), [JavaScript](/papertalks?q=JavaScript&keywords=on&title=on&exact=on), [JITC](/papertalks?q=JITC&keywords=on&title=on&exact=on), [STSC](/papertalks?q=STSC&keywords=on&title=on&exact=on), [AOTC](/papertalks?q=AOTC&keywords=on&title=on&exact=on), [Inline Caches](/papertalks?q=Inline Caches&keywords=on&title=on&exact=on)\n\n[](/papertalks?category=com)\n\n[Abstract](#abstract) [Paper](https://dl.acm.org/doi/pdf/10.1145/3428242) [Similar Papers](#similar_papers)\n\nAbstract: TypeScript is a dynamically typed language widely used to develop large-scale applications nowadays. These applications are usually designed with complex class or interface hierarchies and have highly polymorphic behaviors. These object-oriented (OO) features will lead to inefficient inline caches (ICs) or trigger deoptimizations, which impact the performance of TypeScript applications. To address this problem, we introduce an inline caching design called hidden inheritance (HI). The basic idea of HI is to cache the static information of class or interface hierarchies into hidden classes, which are leveraged to generate efficient inline caches for improving the performance of OO-style TypeScript programs. The HI design is implemented in a TypeScript engine STSC (Static TypeScript Compiler) including a static compiler and a runtime system. STSC statically generates hidden classes and enhanced inline caches, which are applied to generate specialized machine code via ahead-of-time compilation (AOTC) or just-in-time compilation (JITC). To evaluate the efficiency of this technique, we implement STSC on a state-of-the-art JavaScript virtual machine V8 and demonstrate its performance improvements on industrial benchmarks and applications.\n\n 0\n\n 0\n\n 0\n\n 0\n\n  [Share](#)    \n\n[](/auth/users/g754gXX8ab)\n\n[OOPSLA](/auth/users/g754gXX8ab)\n\n[](https://2020.splashcon.org/track/splash-2020-oopsla)\n\nThis is an embedded video. Talk and the respective paper are published at [OOPSLA 2020](https://2020.splashcon.org/track/splash-2020-oopsla) virtual conference. If you are one of the authors of the paper and want to manage your upload, see the question \"My papertalk has been externally embedded...\" in the [FAQ section](/help#tab-faq).\n\n#### Comments\n\n[Post Comment](#post_comment)\n\nno comments yet\n\nEnter your comment code of conduct: tbd\n\n##### Share\n\n×\n\n[\n\nTwitter\n\n\n\n](https://twitter.com/share?url=https%3A//papertalk.org/papertalks/25188&text=Hidden%20Inheritance%3A%20An%20Inline%20Caching%20Design%20for%20TypeScript%20Performance \"Share on Twitter\")[\n\nFacebook\n\n\n\n](https://www.facebook.com/sharer/sharer.php?u=https%3A//papertalk.org/papertalks/25188&t=Hidden%20Inheritance%3A%20An%20Inline%20Caching%20Design%20for%20TypeScript%20Performance \"Share on Facebook\")[\n\nReddit\n\n\n\n](http://www.reddit.com/submit?url=https%3A//papertalk.org/papertalks/25188 \"Share on Reddit\")\n\n[\n\nWhatsapp\n\n\n\n](https://wa.me/?text=https%3A//papertalk.org/papertalks/25188 \"Share on WhatsApp\")[\n\nTelegram\n\n\n\n](https://t.me/share/url?url=https%3A//papertalk.org/papertalks/25188&text=Hidden%20Inheritance%3A%20An%20Inline%20Caching%20Design%20for%20TypeScript%20Performance \"Share on Telegram\")[\n\nEmail\n\n\n\n](mailto:?subject=Hidden%20Inheritance%3A%20An%20Inline%20Caching%20Design%20for%20TypeScript%20Performance&body=https%3A//papertalk.org/papertalks/25188\" \"Share via Email\")\n\nPage Link  \n\nSimilar Papers\n--------------\n\n[Back to Top](#)\n\n[About](/about)  ·  [Contact](/contact)  ·  [Privacy Policy](/privacy)  ·  [Legal Notice](/legal_notice)",
+                    "idx": "2-9"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": "Basierend auf meiner Analyse des Newstextes ordne ich ihn folgenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**programming: 8/10**\nDer Text behandelt direkt Programmierkonzepte wie monomorphen vs. polymorphen Code, JavaScript-Funktionen und TypeScript-Entwicklung, was für die meisten Programmierer hochrelevant ist 【2-3】【2-5】.\n\n**ai: 3/10**\nNur indirekt relevant durch die Erwähnung von JIT-Compilern und deren Optimierungstechniken, aber nicht der Hauptfokus des Artikels 【2-2】【2-4】.\n\nDie anderen Kategorien (databases, security, work, data protection, copyright) sind nicht relevant für diesen Text, da er sich ausschließlich auf TypeScript-Performance-Optimierung und JavaScript-Engine-Interna konzentriert.\n\nDer Artikel erklärt, wie TypeScript dabei hilft, performanteren JavaScript-Code zu schreiben, indem es monomorphe Funktionen fördert, die von JIT-Compilern besser optimiert werden können 【2-0】【2-1】. Dies ist besonders wertvoll für Entwickler, die die Performance ihrer Anwendungen verbessern möchten.",
+          "id": "1acfc51a-0eef-48e9-b071-5ba9fd7f21c2"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "programming",
+            "relevance": 8,
+            "reasoning": "Der Text behandelt direkt Programmierkonzepte wie monomorphen vs. polymorphen Code, JavaScript-Funktionen und TypeScript-Entwicklung, was für die meisten Programmierer hochrelevant ist."
+          },
+          {
+            "name": "ai",
+            "relevance": 3,
+            "reasoning": "Nur indirekt relevant durch die Erwähnung von JIT-Compilern und deren Optimierungstechniken, aber nicht der Hauptfokus des Artikels."
+          }
+        ]
+      ]
+    }
+  }
+}
