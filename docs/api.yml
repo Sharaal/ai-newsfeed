@@ -81,9 +81,16 @@ components:
         title:
           type: string
         categories:
-          type: object
-          additionalProperties:
-            type: integer
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              relevance:
+                type: number
+              reasoning:
+                type: string
         qualitygates:
           type: object
           additionalProperties:
