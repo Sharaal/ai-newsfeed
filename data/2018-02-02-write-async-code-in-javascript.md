@@ -1,6 +1,24 @@
 ---
-layout: "post"
-title: "Write async code in JavaScript"
+layout: post
+title: Write async code in JavaScript
+categories:
+  - name: programming
+    reasoning: >-
+      Der Text behandelt zentrale Programmierkonzepte in JavaScript (Callbacks,
+      Promises, async/await) und ist für alle JavaScript-Entwickler
+      hochrelevant, da asynchrone Programmierung ein fundamentales Thema ist.
+    relevance: 8
+  - name: ai
+    reasoning: >-
+      Nur indirekt relevant, da moderne KI-Anwendungen oft JavaScript verwenden,
+      aber der Text behandelt keine KI-spezifischen Themen.
+    relevance: 2
+  - name: work
+    reasoning: >-
+      Sehr relevant für Webentwickler und JavaScript-Programmierer im
+      Arbeitsalltag, da asynchrone Programmierung ein tägliches Werkzeug ist und
+      die Produktivität direkt beeinflusst.
+    relevance: 6
 ---
 
 In a past article I described the [async behavior in JavaScript](/2018/01/25/async-behavior-in-javascript.html). To write async code there are a lot of different options and every few months it switches to another. That results in every new project use another, or even worse every part of one project.

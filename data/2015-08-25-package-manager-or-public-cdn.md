@@ -1,6 +1,27 @@
 ---
-layout: "post"
-title: "Package manager or public CDN"
+layout: post
+title: Package manager or public CDN
+categories:
+  - name: programming
+    relevance: 8
+    reasoning: >-
+      Der Artikel behandelt zentrale Programmierkonzepte wie Dependency
+      Management, Build-Prozesse und verschiedene Ansätze zur Integration von
+      JavaScript-Bibliotheken, was für die meisten Webentwickler hochrelevant
+      ist.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Der Text beschreibt praktische Arbeitsabläufe und Entscheidungsprozesse in
+      der Webentwicklung, die direkt die tägliche Arbeit von
+      Frontend-Entwicklern beeinflussen und Effizienzgewinne ermöglichen können.
+  - name: security
+    relevance: 4
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, berührt der Artikel indirekt
+      Sicherheitsaspekte durch die Diskussion über das Laden externer Ressourcen
+      von CDNs versus lokales Hosting, was Auswirkungen auf die Kontrolle über
+      Abhängigkeiten hat.
 ---
 
 There are many approaches to load third party JavaScript and CSS files. I will describe two of them and a solution to combine both to have most of the advantages.

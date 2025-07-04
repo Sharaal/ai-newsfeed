@@ -1,6 +1,29 @@
 ---
-layout: "post"
-title: "Using third party libraries or write your own"
+layout: post
+title: Using third party libraries or write your own
+categories:
+  - name: programming
+    reasoning: >-
+      Der Text behandelt ein fundamentales Thema der Softwareentwicklung: die
+      Entscheidung zwischen Third-Party-Bibliotheken und eigener
+      Implementierung. Dies ist für alle Programmierer hochrelevant, da es
+      Entwicklungszeit, Wartbarkeit und Projektarchitektur maßgeblich
+      beeinflusst.
+    relevance: 8
+  - name: work
+    reasoning: >-
+      Der Artikel diskutiert wichtige Arbeitsaspekte wie Zeitmanagement,
+      Projektplanung und Teameffizienz in der Softwareentwicklung. Die
+      Entscheidung zwischen eigener Entwicklung und fertigen Lösungen hat
+      direkten Einfluss auf Arbeitsabläufe und Produktivität.
+    relevance: 6
+  - name: security
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, sind Sicherheitsaspekte bei
+      Third-Party-Bibliotheken ein wichtiger Faktor. Der Text behandelt dies nur
+      implizit durch die Erwähnung 'well tested and optimized' Libraries,
+      weshalb die Relevanz moderater ausfällt.
+    relevance: 4
 ---
 
 Using third party libraries or not is a hard decision for beginners. The advantages are not immediately visible in the first time and its so much faster to just start with exactly what you need.

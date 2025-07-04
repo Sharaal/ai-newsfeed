@@ -1,8 +1,35 @@
 ---
-layout: "post"
-language: "de"
-title: "KI im Alltag: Datenhunger, Stromverbrauch, Kostenexplosion und neue Chancen für Europa"
+layout: post
+language: de
+title: >-
+  KI im Alltag: Datenhunger, Stromverbrauch, Kostenexplosion und neue Chancen
+  für Europa
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt zentral die Auswirkungen von KI-Anwendungen auf
+      Energieverbrauch und Kosten, was für alle KI-Interessierten hochrelevant
+      ist, da es fundamentale Herausforderungen der KI-Entwicklung aufzeigt.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Die beschriebenen Kostenexplosionen und notwendigen Investitionen in
+      Hardware und Infrastruktur haben direkte Auswirkungen auf Unternehmen und
+      deren Arbeitsplätze, besonders in der Tech-Branche.
+  - name: security
+    relevance: 6
+    reasoning: >-
+      Der massive Energiebedarf und die Abhängigkeit von Rechenzentren schaffen
+      neue Vulnerabilitäten und Sicherheitsrisiken für die digitale
+      Infrastruktur, auch wenn dies nicht explizit thematisiert wird.
+  - name: data protection
+    relevance: 5
+    reasoning: >-
+      Der erwähnte 'Datenhunger' von KI-Systemen impliziert
+      Datenschutzherausforderungen, auch wenn der Artikel diese nicht direkt
+      behandelt, sondern sich auf den Energieaspekt konzentriert.
 ---
 
 Der Energieverbrauch von Rechenzentren für KI-Anwendungen und andere Digitalisierungsprojekte wird in Europa einer Studie zufolge bis zum Jahr 2030 drastisch steigen. Der Strombedarf werde sich voraussichtlich auf mehr als 150 Terawattstunden fast verdreifachen, was rund fünf Prozent des gesamten europäischen Stromverbrauchs ausmachen würde. Diese Entwicklung stellt eine erhebliche Hürde für globale Nachhaltigkeitsziele dar, insbesondere in Zeiten von Klimakrisen.

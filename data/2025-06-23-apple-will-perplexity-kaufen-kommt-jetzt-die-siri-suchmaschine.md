@@ -1,8 +1,37 @@
 ---
-layout: "post"
-language: "de"
-title: "Apple will Perplexity kaufen: Kommt jetzt die Siri-Suchmaschine?"
+layout: post
+language: de
+title: 'Apple will Perplexity kaufen: Kommt jetzt die Siri-Suchmaschine?'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Die Nachricht behandelt eine potenzielle Milliardenübernahme im KI-Bereich
+      zwischen zwei Tech-Giganten und könnte die KI-Landschaft erheblich
+      verändern, da es um fortschrittliche KI-Suchtechnologien und die
+      Integration in Millionen von Apple-Geräten geht.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Eine Übernahme dieser Größenordnung (14 Milliarden Dollar) hätte
+      erhebliche Auswirkungen auf die Arbeitsplätze bei beiden Unternehmen und
+      könnte die gesamte Tech-Branche beeinflussen, insbesondere im Bereich
+      KI-Entwicklung und Suchmaschinenentwicklung.
+  - name: security
+    relevance: 6
+    reasoning: >-
+      Die Integration von KI-Suchtechnologien in Apple-Dienste wie Siri und
+      Safari wirft wichtige Fragen zur Datensicherheit und zum Schutz der
+      Privatsphäre von Millionen von Nutzern auf, besonders bei der Verarbeitung
+      von Suchanfragen.
+  - name: data protection
+    relevance: 6
+    reasoning: >-
+      Eine eigene KI-Suchmaschine von Apple würde bedeuten, dass weniger
+      Nutzerdaten an Google weitergegeben werden müssen, was die
+      Datenschutzposition von Apple stärken könnte, aber auch neue
+      Datenschutzherausforderungen mit sich bringt.
 ---
 
 Apple plant offenbar die Übernahme des KI-Startups Perplexity AI, um seine Position im Bereich der künstlichen Intelligenz zu stärken. Laut Berichten von Bloomberg und anderen Quellen diskutieren Apple-Führungskräfte intern über ein mögliches Übernahmeangebot für das Unternehmen, das derzeit mit 14 Milliarden US-Dollar bewertet wird. Diese Akquisition wäre die größte in der Geschichte von Apple und würde den bisherigen Rekordkauf von Beats Electronics im Jahr 2014 bei weitem übertreffen.

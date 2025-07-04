@@ -1,8 +1,34 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-Sicherheitstests im Straßenverkehr"
+layout: post
+language: de
+title: KI-Sicherheitstests im Straßenverkehr
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der gesamte Artikel dreht sich um KI-Anwendungen im Straßenverkehr, von
+      autonomem Fahren bis hin zu intelligenten Verkehrssystemen - dies ist
+      hochrelevant für alle, die sich für die praktische Anwendung von KI
+      interessieren.
+  - name: security
+    relevance: 8
+    reasoning: >-
+      Verkehrssicherheit durch KI-Systeme steht im Mittelpunkt des Artikels, mit
+      konkreten Beispielen wie Unfallvermeidung und Gefahrenerkennung - ein
+      wichtiges Thema für die öffentliche Sicherheit.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Die Automatisierung von Straßeninstandhaltung und Verkehrsüberwachung hat
+      mittelfristige Auswirkungen auf Arbeitsplätze in der öffentlichen
+      Verwaltung und im Verkehrswesen.
+  - name: programming
+    relevance: 5
+    reasoning: >-
+      Obwohl KI-Algorithmen und deren Training erwähnt werden, liegt der Fokus
+      auf Anwendungen rather than technischen Implementierungsdetails -
+      interessant für Entwickler, aber nicht im Zentrum.
 ---
 
 In den letzten Tagen hat die Diskussion um die Sicherheit von Künstlicher Intelligenz (KI) im Straßenverkehr neue Impulse erhalten. Verschiedene Projekte und Studien zeigen, wie KI-Systeme zur Verbesserung der Verkehrssicherheit beitragen können. Ein bemerkenswertes Beispiel ist das Verkehrslabor der Zukunft, das im ZDF-Morgenmagazin vorgestellt wurde. Hier wird ein "digitaler Zwilling" des Straßenverkehrs geschaffen, der Autos, Radfahrende und Fußgänger realistisch integriert, um das autonome Fahren sicherer zu machen.

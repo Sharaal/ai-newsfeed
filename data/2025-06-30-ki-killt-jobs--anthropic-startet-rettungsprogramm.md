@@ -1,8 +1,27 @@
 ---
-layout: "post"
-language: "de"
-title: "KI killt Jobs – Anthropic startet Rettungsprogramm"
+layout: post
+language: de
+title: KI killt Jobs – Anthropic startet Rettungsprogramm
 aigenerated: true
+categories:
+  - name: ai
+    reasoning: >-
+      Der Artikel behandelt zentral die gesellschaftlichen Auswirkungen von
+      KI-Technologie und Anthropics strategische Initiative zur Bewältigung
+      dieser Herausforderungen, was für alle KI-Interessierten hochrelevant ist.
+    relevance: 9
+  - name: work
+    reasoning: >-
+      Das Thema Arbeitsplatzverluste durch KI-Automatisierung (bis zu 50% der
+      Bürojobs gefährdet, potentiell 20% Arbeitslosigkeit) ist bahnbrechend
+      relevant für praktisch alle Arbeitnehmer und Arbeitgeber.
+    relevance: 10
+  - name: data protection
+    reasoning: >-
+      Anthropics Plan, anonymisierte Daten zur KI-Arbeitsmarktauswirkung
+      bereitzustellen, berührt Datenschutzaspekte, ist aber eher für Fachleute
+      im Bereich Datenverarbeitung interessant.
+    relevance: 6
 ---
 
 Anthropic hat am vergangenen Freitag ein neues Programm ins Leben gerufen, um die wirtschaftlichen Auswirkungen von Künstlicher Intelligenz (KI) zu untersuchen und zu mildern. Das "Economic Futures Program" zielt darauf ab, Forschung und politische Maßnahmen zu fördern, die den durch KI verursachten Arbeitsplatzverlusten entgegenwirken sollen. CEO Dario Amodei betonte, dass bis zu 50 % der Einstiegsjobs im Bürobereich durch Automatisierung gefährdet seien und die Arbeitslosenquote auf bis zu 20 % steigen könnte.

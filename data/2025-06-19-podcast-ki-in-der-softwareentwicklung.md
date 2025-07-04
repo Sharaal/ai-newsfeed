@@ -1,10 +1,42 @@
 ---
-layout: "post"
-language: "de"
-title: "Podcast: KI in der Softwareentwicklung"
+layout: post
+language: de
+title: 'Podcast: KI in der Softwareentwicklung'
 aigenerated: true
 assets:
-    tts: "assets/2025-06-19-podcast-ki-in-der-softwareentwicklung/tts.wav"
+  tts: assets/2025-06-19-podcast-ki-in-der-softwareentwicklung/tts.wav
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Text behandelt umfassend den Einsatz von KI in der
+      Softwareentwicklung, von Tools wie GitHub Copilot und Cursor bis hin zu
+      Sprachmodellen und deren praktischer Anwendung - ein hochrelevantes Thema
+      für alle Entwickler und Unternehmen.
+  - name: programming
+    relevance: 8
+    reasoning: >-
+      Softwareentwicklung steht im Zentrum des Textes, mit konkreten
+      Diskussionen über Code-Reviews, Tests, Dokumentation und verschiedene
+      Entwicklungsworkflows - essentiell für alle Programmierer.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Der Text behandelt wichtige arbeitsrechtliche Aspekte wie
+      Betriebsratsbeteiligung bei KI-Einführung und die Auswirkungen auf
+      Entwickler-Know-how - relevant für Führungskräfte und Arbeitnehmer.
+  - name: data protection
+    relevance: 6
+    reasoning: >-
+      Datenschutzaspekte werden mehrfach thematisiert, von EU-gehosteten
+      Modellen bis zu Datenspeicherung bei verschiedenen Anbietern - wichtig für
+      compliance-bewusste Unternehmen.
+  - name: security
+    relevance: 5
+    reasoning: >-
+      Sicherheitsaspekte werden indirekt durch Datenschutz und
+      Privacy-Einstellungen verschiedener Tools angesprochen - für
+      Sicherheitsverantwortliche von Interesse.
 ---
 
 Ich wollte mich etwas intensiver mit ElevenLabs beschäftigen und die Podcast-Funktion anhand eines praktischen Beispiels ausprobieren. Dafür habe ich ein Interview-Skript von GPT-4o erstellen lassen, das Informationen zu unserer Initiative "KI in der Softwareentwicklung" enthält – einem Projekt, das ich in meiner Firma leite.

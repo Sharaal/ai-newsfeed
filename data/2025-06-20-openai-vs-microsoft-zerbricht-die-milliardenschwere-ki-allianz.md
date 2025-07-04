@@ -1,8 +1,49 @@
 ---
-layout: "post"
-language: "de"
-title: "OpenAI vs. Microsoft: Zerbricht die milliardenschwere KI-Allianz?"
+layout: post
+language: de
+title: 'OpenAI vs. Microsoft: Zerbricht die milliardenschwere KI-Allianz?'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 10
+    reasoning: >-
+      Der Artikel behandelt den Konflikt zwischen zwei der wichtigsten
+      KI-Unternehmen der Welt und könnte die gesamte KI-Industrie nachhaltig
+      verändern.
+  - name: work
+    relevance: 8
+    reasoning: >-
+      Die Spannungen betreffen die Zukunft der Arbeitswelt, da sowohl OpenAI als
+      auch Microsoft zentrale Akteure bei KI-Tools für den Arbeitsplatz sind und
+      der Konflikt Auswirkungen auf Produkte wie GitHub Copilot haben könnte.
+  - name: copyright
+    relevance: 7
+    reasoning: >-
+      Der Streit um die Windsurf-Übernahme und die Kontrolle über geistiges
+      Eigentum sowie Microsofts exklusive Rechte an OpenAI-Technologien sind
+      zentrale Konfliktpunkte.
+  - name: security
+    relevance: 6
+    reasoning: >-
+      Kartellrechtliche Auseinandersetzungen und die Kontrolle über kritische
+      KI-Infrastruktur haben Auswirkungen auf die Sicherheit der gesamten
+      KI-Landschaft.
+  - name: programming
+    relevance: 5
+    reasoning: >-
+      Die Übernahme von Windsurf, einem AI-Coding-Startup, und die Konkurrenz zu
+      GitHub Copilot betreffen direkt die Programmier-Community.
+  - name: data protection
+    relevance: 4
+    reasoning: >-
+      Änderungen in der Partnerschaft zwischen diesen KI-Giganten haben
+      indirekte Auswirkungen auf Datenschutzpraktiken, da beide Unternehmen
+      große Mengen an Nutzerdaten verarbeiten.
+  - name: databases
+    relevance: 2
+    reasoning: >-
+      Datenbanken werden im Artikel nicht direkt thematisiert und sind nur am
+      Rande relevant für die Cloud-Infrastruktur-Diskussion.
 ---
 
 Die Spannungen zwischen OpenAI und Microsoft haben in den letzten Tagen einen neuen Höhepunkt erreicht. Berichten zufolge erwägt OpenAI, seinen größten Investor und Partner Microsoft wegen wettbewerbswidrigen Verhaltens zu verklagen. Diese drastische Maßnahme, die als "nukleare Option" bezeichnet wird, könnte die milliardenschwere Allianz zwischen den beiden Technologie-Giganten endgültig zerbrechen lassen.

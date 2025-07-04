@@ -1,9 +1,28 @@
 ---
-layout: "post"
-language: "de"
-title: "Daily AI News GitHub Action With Langdock API"
+layout: post
+language: de
+title: Daily AI News GitHub Action With Langdock API
 assets:
-    tts: "assets/2025-06-14-daily-ai-news-github-action-with-langdock-api/tts.mp3"
+  tts: assets/2025-06-14-daily-ai-news-github-action-with-langdock-api/tts.mp3
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Der Artikel behandelt intensiv die praktische Anwendung von KI-APIs zur
+      automatischen Content-Generierung und zeigt konkrete Herausforderungen
+      beim Umgang mit KI-generierten Inhalten auf.
+  - name: programming
+    relevance: 7
+    reasoning: >-
+      Der Text beschreibt detailliert die technische Implementierung eines
+      GitHub Action Workflows, API-Integration und das Parsing von KI-Ausgaben -
+      relevante Programmierthemen für Entwickler.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Der Workflow automatisiert Arbeitsabläufe in der Content-Erstellung und
+      zeigt, wie KI-Tools produktiv in den Arbeitsalltag integriert werden
+      können, inklusive Quality Gates durch manuelle Reviews.
 ---
 
 Ich wollte etwas Produktives mit der Langdock-API in einem GitHub-Action-Workflow machen. Da ich mich für Neuigkeiten rund um KI interessiere, habe ich beides einfach verbunden, um KI-generierte Artikel für meinen Blog erstellen zu lassen.

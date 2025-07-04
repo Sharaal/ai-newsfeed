@@ -1,8 +1,32 @@
 ---
-layout: "post"
-language: "de"
-title: "Microsoft setzt auf Atomstrom für KI – Reaktor Three Mile Island soll 2027 ans Netz"
+layout: post
+language: de
+title: >-
+  Microsoft setzt auf Atomstrom für KI – Reaktor Three Mile Island soll 2027 ans
+  Netz
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Die Nachricht ist hochrelevant für die KI-Community, da sie einen
+      wichtigen Trend zur Energieversorgung von KI-Rechenzentren aufzeigt und
+      zeigt, wie der massive Energiebedarf von KI-Systemen die
+      Energieinfrastruktur beeinflusst.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Für die Arbeitswelt relevant, da Microsofts Strategie Auswirkungen auf die
+      gesamte Tech-Branche haben könnte und einen Präzedenzfall für nachhaltige
+      Unternehmensstrategien schafft, was Arbeitsplätze und Geschäftsmodelle
+      beeinflussen wird.
+  - name: security
+    relevance: 5
+    reasoning: >-
+      Mäßig relevant für IT-Sicherheit, da die Energieversorgung kritischer
+      Infrastrukturen wie Rechenzentren ein wichtiger Aspekt der
+      Betriebssicherheit ist, auch wenn der Fokus hier mehr auf Energiepolitik
+      als auf Cybersecurity liegt.
 ---
 
 Microsoft plant, seinen steigenden Energiebedarf für KI-Rechenzentren künftig verstärkt mit Atomstrom zu decken. Im September des Vorjahres unterzeichnete das Unternehmen einen 20-jährigen Stromabnahmevertrag mit Constellation Energy, einem US-Versorger, der auf CO2-neutralen Strom aus Nuklearanlagen spezialisiert ist. Ziel ist es, den stillgelegten Reaktor TMI Block 1 des Kraftwerks Three Mile Island bis 2028 wieder in Betrieb zu nehmen. Constellation-CEO Joe Dominguez erklärte nun, dass die Reaktivierung möglicherweise bereits 2027 erfolgen könnte, sofern der lokale Netzbetreiber PJM die Anlage wieder ans Netz anschließt. Der 837-Megawatt-Reaktor wurde 2019 aus wirtschaftlichen Gründen stillgelegt, da Subventionen fehlten, um mit fossilen Brennstoffen zu konkurrieren.

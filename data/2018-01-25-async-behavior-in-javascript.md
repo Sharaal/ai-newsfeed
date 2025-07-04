@@ -1,6 +1,33 @@
 ---
-layout: "post"
-title: "async behavior in JavaScript"
+layout: post
+title: async behavior in JavaScript
+categories:
+  - name: programming
+    relevance: 9
+    reasoning: >-
+      Dieser Text ist hochrelevant für Programmierer, da er ein fundamentales
+      Konzept der JavaScript-Programmierung erklärt - das asynchrone Verhalten,
+      welches als einer der größten Meilensteine beim Erlernen von JavaScript
+      beschrieben wird.
+  - name: ai
+    relevance: 2
+    reasoning: >-
+      Nur sehr geringe Relevanz, da der Text zwar Programmierkonzepte behandelt,
+      die in der KI-Entwicklung verwendet werden können, aber keine spezifischen
+      AI-Themen oder -Technologien anspricht.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Mittlere Relevanz für die Arbeitswelt, da asynchrone Programmierung ein
+      wichtiges Skill für Webentwickler ist und das Verständnis dieser Konzepte
+      die Arbeitsqualität und Effizienz in der Softwareentwicklung erheblich
+      verbessert.
+  - name: databases
+    relevance: 4
+    reasoning: >-
+      Geringe bis mittlere Relevanz, da der Text ein Beispiel mit
+      Datenbankabfragen (db.findUserById()) verwendet, um asynchrones Verhalten
+      zu demonstrieren, aber Datenbanken nicht im Fokus stehen.
 ---
 
 Understanding the async behavior is one of the largest milestone in learning JavaScript. I will give you a very first overview what it is.
