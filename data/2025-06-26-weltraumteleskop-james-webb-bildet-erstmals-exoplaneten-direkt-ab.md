@@ -1,15 +1,12 @@
 ---
-layout: "post"
-language: "de"
-title: "Weltraumteleskop James Webb bildet erstmals Exoplaneten direkt ab"
-categories:
-    science: 5
-    astronomy: 8
-    james_web: 10
+layout: post
+language: de
+title: Weltraumteleskop James Webb bildet erstmals Exoplaneten direkt ab
 qualitygates:
-    tagging: true
-    spelling: false
-    facts: false
+  tagging: true
+  spelling: false
+  facts: false
+categories: []
 ---
 
 Das Weltraumteleskop James Webb hat schon einige Entdeckungen geliefert. Nun wurde damit auch erstmals ein Exoplanet direkt abgebildet, kleinere sollen folgen.

@@ -1,0 +1,18 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "relevance"],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "relevance": {
+        "type": "number"
+      },
+      "reasoning": {
+        "type": "string"
+      }
+    }
+  }
+}

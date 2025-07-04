@@ -1,0 +1,7 @@
+- ai
+- programming
+- databases
+- security
+- work
+- data protection
+- copyright

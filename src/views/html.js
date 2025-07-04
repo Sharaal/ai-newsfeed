@@ -26,8 +26,8 @@ module.exports = [
     ${
         item.categories 
         ? `<p><em>
-            ${Object.entries(item.categories).map(
-                ([category, relevance]) => `<a href="${process.env.URL}/?categories=${category}">${category}</a>-${relevance}`
+            ${item.categories.map(
+                ({ name, relevance }) => `<a href="${process.env.URL}/?categories=${name}">${name}</a>-${relevance}`
             ).join(', ')}
         </em></p>`
         : ''

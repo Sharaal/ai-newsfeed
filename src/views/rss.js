@@ -20,18 +20,15 @@ module.exports = [
                 custom_elements: [
                     { language: news.language },
                     { 
-                        assets: [
-                            ...news.assets?.images
-                                ? news.assets?.images.map(url => ({ image: process.env.URL + '/' + url }))
-                                : [],
-                        ],
+                        assets: (news.assets?.images || [])
+                            .map(url => ({ image: process.env.URL + '/' + url })),
                     },
                 ]
                     .concat(
-                        Object.entries(news.categories || {}).map(([category, relevance]) => ({
+                        (news.categories || []).map(([name, relevance]) => ({
                             category: [
                                 { _attr: { relevance } },
-                                category,
+                                name,
                             ],
                         })),
                     )

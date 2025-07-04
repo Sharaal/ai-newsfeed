@@ -1,0 +1,44 @@
+name: Select Categories
+
+on:
+  schedule:
+    # Run daily at 19:00 UTC
+    - cron: '0 19 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  daily-ai-newsletter:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+        
+    - name: Install dependencies
+      run: npm install
+        
+    - name: Select categories with Langdock API
+      id: ai-newsletter
+      run: node .github/scripts/select-categories.js
+      env:
+        LANGDOCK_API_KEY: ${{ secrets.LANGDOCK_API_KEY }}
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .github/debug/
+        git add data/
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "GitHub Action: Select Categories"
+          git push
+        fi 
