@@ -5,7 +5,13 @@ module.exports = [
     'text/html',
     (feed) => {
         const itemsHtml = feed.map((item, index) => {
-            const paragraphs = item.content.split(/\n\s*\n/);
+            let paragraphs = [];
+            const excerptSymbol = '<!--more-->';
+            if (item.content.includes(excerptSymbol)) {
+                paragraphs = item.content.split(excerptSymbol);
+            } else {
+                paragraphs = item.content.split(/\n\s*\n/);
+            }
             const summaryHtml = paragraphs[0] ? md.render(paragraphs[0]) : '';
             const fullHtml = paragraphs.slice(1).map(p => md.render(p)).join('');
             const toggleHtml = `
@@ -37,7 +43,7 @@ module.exports = [
     <div class="full" style="display:none">
         ${toggleHtml}
         ${fullHtml}
-        ${item.aigenerated ? '<p><strong>News is completely AI Generated</strong></p>' : ''}
+        ${item.aigenerated ? '<p>News is completely AI Generated</p>' : ''}
     </div>
     ${toggleHtml}
 </article>`;
