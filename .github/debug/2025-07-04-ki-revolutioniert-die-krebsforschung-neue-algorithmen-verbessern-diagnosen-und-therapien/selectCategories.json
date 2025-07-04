@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI revolutioniert die Krebsforschung: Neue Algorithmen verbessern Diagnosen und Therapien\n\n\nKünstliche Intelligenz (KI) hat in den letzten Jahren enorme Fortschritte gemacht und revolutioniert nun auch die Krebsforschung. Wissenschaftler weltweit setzen auf KI, um Diagnosen zu präzisieren und personalisierte Therapien zu entwickeln. Besonders beeindruckend ist der Einsatz von Algorithmen, die große Datenmengen aus bildgebenden Verfahren wie MRT oder CT analysieren können. Diese Technologien ermöglichen es, Tumore früher zu erkennen und gezielter zu behandeln. Ein Beispiel ist die Entwicklung von KI-gestützten Bluttests, die das Ansprechen auf Immuntherapien vorhersagen können. Solche Fortschritte könnten die Überlebensraten von Krebspatienten erheblich verbessern.\n\n<!--more-->\n\nEin weiterer Durchbruch ist die Integration von KI in die personalisierte Medizin. Forscher des Deutschen Krebsforschungszentrums (DKFZ) in Heidelberg arbeiten an Systemen, die genetische Merkmale von Tumoren analysieren, um maßgeschneiderte Therapien zu entwickeln. Auch in der Früherkennung zeigt KI großes Potenzial: Hochsensitive Sensoren und Lab-on-a-Chip-Technologien ermöglichen es, Biomarker für Krebs in frühen Stadien zu identifizieren. Diese Innovationen könnten die Behandlung revolutionieren und die Belastung für Patienten reduzieren.\n\n### Quellen\n- [Tagesschau: Bessere Krebsdiagnose und -therapie dank KI](https://www.tagesschau.de/wissen/forschung/ki-krebsdiagnose-100.html)\n- [News.de: Wie KI Krebstherapien revolutioniert](https://www.news.de/gesundheit/858739719/aerzte-stehen-kurz-vor-durchbruch-zukunft-der-krebstherapie-greifbar-erkennung-von-krebs-mit-smartphone-aerzte-sind-optimistisch-gestimmt/1/)\n- [SWR: Weltkrebstag 2025 – Wie KI die Krebsmedizin revolutionieren könnte](https://www.swr.de/wissen/wie-ki-die-krebsmedizin-revolutionieren-koennte-100.html)\n- [Onko-Community: KI & Digitalisierung in der Krebsforschung](https://onko-community.thieme.de/schwerpunkte/ki-digitalisierung)\n- [All-Electronics: Wie Mikroelektronik und KI die Krebstherapie verändern](https://www.all-electronics.de/elektronik-entwicklung/elektronik-und-ki-in-der-krebsforschung-und-behandlung-891.html)\n\n    ",
+    "timestamp": "2025-07-04T23:06:22.216Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über KI in der Krebsforschung und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt zentral den Einsatz von KI-Algorithmen in der Medizin, von bildgebender Diagnostik bis hin zu personalisierten Therapien - ein bahnbrechender Fortschritt mit enormer gesellschaftlicher Bedeutung.\n\n**programming - Relevanz: 6/10**\nDie erwähnten KI-Algorithmen und Analysesysteme erfordern komplexe Programmierung, auch wenn die technischen Details nicht im Fokus stehen - relevant für Entwickler im Gesundheitswesen.\n\n**databases - Relevanz: 7/10**\nDie Analyse \"großer Datenmengen\" aus bildgebenden Verfahren und genetischen Daten erfordert leistungsfähige Datenbanksysteme - wichtig für die technische Umsetzung solcher KI-Systeme.\n\n**data protection - Relevanz: 8/10**\nMedizinische Daten, genetische Informationen und Patientendaten sind hochsensibel - der Datenschutz ist bei solchen KI-Anwendungen von kritischer Bedeutung für die praktische Umsetzung.\n\nDie Kategorien \"security\", \"work\" und \"copyright\" sind nicht relevant, da der Artikel weder IT-Sicherheitsaspekte noch Arbeitsplatzveränderungen oder Urheberrechtsfragen thematisiert.",
+          "id": "f5e1eb85-edaa-40ea-a0d3-cf6150552c20"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt zentral den Einsatz von KI-Algorithmen in der Medizin, von bildgebender Diagnostik bis hin zu personalisierten Therapien - ein bahnbrechender Fortschritt mit enormer gesellschaftlicher Bedeutung."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Die erwähnten KI-Algorithmen und Analysesysteme erfordern komplexe Programmierung, auch wenn die technischen Details nicht im Fokus stehen - relevant für Entwickler im Gesundheitswesen."
+          },
+          {
+            "name": "databases",
+            "relevance": 7,
+            "reasoning": "Die Analyse großer Datenmengen aus bildgebenden Verfahren und genetischen Daten erfordert leistungsfähige Datenbanksysteme - wichtig für die technische Umsetzung solcher KI-Systeme."
+          },
+          {
+            "name": "data protection",
+            "relevance": 8,
+            "reasoning": "Medizinische Daten, genetische Informationen und Patientendaten sind hochsensibel - der Datenschutz ist bei solchen KI-Anwendungen von kritischer Bedeutung für die praktische Umsetzung."
+          }
+        ]
+      ]
+    }
+  }
+}

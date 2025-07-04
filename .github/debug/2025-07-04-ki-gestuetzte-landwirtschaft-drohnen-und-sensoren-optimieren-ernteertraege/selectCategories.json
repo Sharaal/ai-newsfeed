@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-gestützte Landwirtschaft: Drohnen und Sensoren optimieren Ernteerträge\n\n\nDie Landwirtschaft erlebt derzeit eine technologische Revolution, die durch den Einsatz von Künstlicher Intelligenz (KI) und moderner Technologien wie Drohnen und Sensoren vorangetrieben wird. Diese Innovationen ermöglichen es Landwirten, präzisere Entscheidungen zu treffen, Ressourcen effizienter zu nutzen und Ernteerträge zu maximieren. Besonders Drohnen spielen eine Schlüsselrolle: Sie überwachen Felder aus der Luft, analysieren Bodenbeschaffenheit und Pflanzenwachstum und liefern in Echtzeit Daten, die von KI-Systemen ausgewertet werden. Diese Informationen helfen, Schädlingsbefall frühzeitig zu erkennen, die Bewässerung zu optimieren und den Einsatz von Düngemitteln zu reduzieren.\n\n<!--more-->\n\nEin weiteres zentrales Element ist das Internet der Dinge (IoT), das Sensoren, Maschinen und Softwarelösungen miteinander vernetzt. Smarte Sensoren messen beispielsweise die Bodenfeuchtigkeit oder den Nährstoffgehalt und senden diese Daten an KI-gestützte Plattformen. Diese analysieren die Informationen und geben Handlungsempfehlungen, wie etwa den optimalen Zeitpunkt für die Aussaat oder Ernte. In Deutschland und der Schweiz setzen immer mehr Betriebe auf diese Technologien, um den Herausforderungen des Klimawandels und der Ressourcenknappheit zu begegnen. Gleichzeitig wird die Automatisierung durch selbstfahrende Traktoren und Erntemaschinen vorangetrieben, was die Effizienz weiter steigert.\n\nDie Vorteile dieser Entwicklungen sind enorm: Neben höheren Erträgen und geringeren Kosten trägt die KI-gestützte Landwirtschaft auch zur Nachhaltigkeit bei, indem sie den Einsatz von Wasser, Düngemitteln und Pestiziden minimiert. Dennoch gibt es Herausforderungen, wie die hohen Investitionskosten und die Notwendigkeit, Landwirte in der Nutzung dieser Technologien zu schulen. Experten sind sich jedoch einig, dass die Zukunft der Landwirtschaft in der Kombination aus KI, IoT und Automatisierung liegt.\n\n### Quellen\n- [Von der Drohne bis zum Traktor: So funktioniert KI-gestützte Landwirtschaft](https://originstamp.com/blog/reader/ki-landwirtschaft/de)\n- [KI-Drohnenlösungen: 5 Innovationen für Präzision & Genauigkeit](https://farmonaut.com/precision-farming/ki-drohnenlosungen-5-innovationen-fur-prazisionslandwirtschaft)\n- [IoT in der Landwirtschaft: Wie smarte Sensoren die Ernte verbessern](https://www.iotmag.de/iot-in-der-landwirtschaft/)\n\n    ",
+    "timestamp": "2025-07-04T23:07:40.176Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über KI-gestützte Landwirtschaft und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n### **ai** - Relevanz: 8/10\nDer Artikel behandelt zentral den Einsatz von Künstlicher Intelligenz in der Landwirtschaft, von der Datenanalyse bis zu automatisierten Entscheidungssystemen - ein hochrelevantes Anwendungsbeispiel für KI außerhalb der typischen Tech-Branchen.\n\n### **programming** - Relevanz: 4/10\nObwohl KI-Systeme und IoT-Plattformen Programmierung erfordern, wird die technische Implementierung nur oberflächlich erwähnt - interessant für Entwickler, die an IoT oder KI-Anwendungen arbeiten, aber nicht im Fokus des Artikels.\n\n### **work** - Relevanz: 6/10\nDer Artikel thematisiert die Transformation der Arbeitswelt in der Landwirtschaft durch Automatisierung und neue Technologien, einschließlich der Notwendigkeit von Schulungen für Landwirte - relevant für Diskussionen über Digitalisierung am Arbeitsplatz.\n\n**Nicht zugeordnete Kategorien:**\n- **databases**: Keine spezifische Erwähnung von Datenbankthemen\n- **security**: Sicherheitsaspekte werden nicht behandelt\n- **data protection**: Datenschutzfragen werden nicht angesprochen\n- **copyright**: Keine urheberrechtlichen Themen erkennbar\n\nDer Artikel zeigt ein praktisches Anwendungsbeispiel für KI-Technologien auf und ist besonders relevant für das Verständnis, wie KI verschiedene Branchen transformiert.",
+          "id": "911837ea-f7bb-4fd3-bebd-afa80137a562"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Der Artikel behandelt zentral den Einsatz von Künstlicher Intelligenz in der Landwirtschaft, von der Datenanalyse bis zu automatisierten Entscheidungssystemen - ein hochrelevantes Anwendungsbeispiel für KI außerhalb der typischen Tech-Branchen."
+          },
+          {
+            "name": "programming",
+            "relevance": 4,
+            "reasoning": "Obwohl KI-Systeme und IoT-Plattformen Programmierung erfordern, wird die technische Implementierung nur oberflächlich erwähnt - interessant für Entwickler, die an IoT oder KI-Anwendungen arbeiten, aber nicht im Fokus des Artikels."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Der Artikel thematisiert die Transformation der Arbeitswelt in der Landwirtschaft durch Automatisierung und neue Technologien, einschließlich der Notwendigkeit von Schulungen für Landwirte - relevant für Diskussionen über Digitalisierung am Arbeitsplatz."
+          }
+        ]
+      ]
+    }
+  }
+}

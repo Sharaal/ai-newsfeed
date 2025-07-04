@@ -1,8 +1,35 @@
 ---
-layout: "post"
-language: "de"
-title: "KI revolutioniert die Krebsforschung: Neue Algorithmen verbessern Diagnosen und Therapien"
+layout: post
+language: de
+title: >-
+  KI revolutioniert die Krebsforschung: Neue Algorithmen verbessern Diagnosen
+  und Therapien
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt zentral den Einsatz von KI-Algorithmen in der
+      Medizin, von bildgebender Diagnostik bis hin zu personalisierten Therapien
+      - ein bahnbrechender Fortschritt mit enormer gesellschaftlicher Bedeutung.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Die erwähnten KI-Algorithmen und Analysesysteme erfordern komplexe
+      Programmierung, auch wenn die technischen Details nicht im Fokus stehen -
+      relevant für Entwickler im Gesundheitswesen.
+  - name: databases
+    relevance: 7
+    reasoning: >-
+      Die Analyse großer Datenmengen aus bildgebenden Verfahren und genetischen
+      Daten erfordert leistungsfähige Datenbanksysteme - wichtig für die
+      technische Umsetzung solcher KI-Systeme.
+  - name: data protection
+    relevance: 8
+    reasoning: >-
+      Medizinische Daten, genetische Informationen und Patientendaten sind
+      hochsensibel - der Datenschutz ist bei solchen KI-Anwendungen von
+      kritischer Bedeutung für die praktische Umsetzung.
 ---
 
 Künstliche Intelligenz (KI) hat in den letzten Jahren enorme Fortschritte gemacht und revolutioniert nun auch die Krebsforschung. Wissenschaftler weltweit setzen auf KI, um Diagnosen zu präzisieren und personalisierte Therapien zu entwickeln. Besonders beeindruckend ist der Einsatz von Algorithmen, die große Datenmengen aus bildgebenden Verfahren wie MRT oder CT analysieren können. Diese Technologien ermöglichen es, Tumore früher zu erkennen und gezielter zu behandeln. Ein Beispiel ist die Entwicklung von KI-gestützten Bluttests, die das Ansprechen auf Immuntherapien vorhersagen können. Solche Fortschritte könnten die Überlebensraten von Krebspatienten erheblich verbessern.

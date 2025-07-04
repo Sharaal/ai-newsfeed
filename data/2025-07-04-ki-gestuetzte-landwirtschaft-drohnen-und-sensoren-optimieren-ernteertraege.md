@@ -1,8 +1,30 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-gestützte Landwirtschaft: Drohnen und Sensoren optimieren Ernteerträge"
+layout: post
+language: de
+title: 'KI-gestützte Landwirtschaft: Drohnen und Sensoren optimieren Ernteerträge'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Der Artikel behandelt zentral den Einsatz von Künstlicher Intelligenz in
+      der Landwirtschaft, von der Datenanalyse bis zu automatisierten
+      Entscheidungssystemen - ein hochrelevantes Anwendungsbeispiel für KI
+      außerhalb der typischen Tech-Branchen.
+  - name: programming
+    relevance: 4
+    reasoning: >-
+      Obwohl KI-Systeme und IoT-Plattformen Programmierung erfordern, wird die
+      technische Implementierung nur oberflächlich erwähnt - interessant für
+      Entwickler, die an IoT oder KI-Anwendungen arbeiten, aber nicht im Fokus
+      des Artikels.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Der Artikel thematisiert die Transformation der Arbeitswelt in der
+      Landwirtschaft durch Automatisierung und neue Technologien, einschließlich
+      der Notwendigkeit von Schulungen für Landwirte - relevant für Diskussionen
+      über Digitalisierung am Arbeitsplatz.
 ---
 
 Die Landwirtschaft erlebt derzeit eine technologische Revolution, die durch den Einsatz von Künstlicher Intelligenz (KI) und moderner Technologien wie Drohnen und Sensoren vorangetrieben wird. Diese Innovationen ermöglichen es Landwirten, präzisere Entscheidungen zu treffen, Ressourcen effizienter zu nutzen und Ernteerträge zu maximieren. Besonders Drohnen spielen eine Schlüsselrolle: Sie überwachen Felder aus der Luft, analysieren Bodenbeschaffenheit und Pflanzenwachstum und liefern in Echtzeit Daten, die von KI-Systemen ausgewertet werden. Diese Informationen helfen, Schädlingsbefall frühzeitig zu erkennen, die Bewässerung zu optimieren und den Einsatz von Düngemitteln zu reduzieren.
