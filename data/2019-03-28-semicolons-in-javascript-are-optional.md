@@ -1,20 +1,6 @@
 ---
-layout: post
-title: Semicolons in JavaScript are optional?
-categories:
-  - name: programming
-    reasoning: >-
-      Der Text behandelt ein fundamentales JavaScript-Programmierkonzept
-      (Automatic Semicolon Insertion) und zeigt konkrete Code-Beispiele mit
-      Fehlern und Lösungsansätzen, was für JavaScript-Entwickler sehr relevant
-      ist.
-    relevance: 8
-  - name: ai
-    reasoning: >-
-      Nur sehr indirekt relevant, da der Text erwähnt, wie der
-      JavaScript-Interpreter Code verarbeitet, aber es geht nicht um
-      KI-Technologien oder maschinelles Lernen.
-    relevance: 2
+layout: "post"
+title: "Semicolons in JavaScript are optional?"
 ---
 
 I won't make a suggestion for this nearly religion discussion using or omitting semicolons in JavaScript. But I experienced they are not always optional and omitting them can result in errors. So I will describe these scenarios and the workarounds.

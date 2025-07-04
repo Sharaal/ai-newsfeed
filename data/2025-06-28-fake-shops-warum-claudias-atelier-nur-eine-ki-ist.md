@@ -1,39 +1,8 @@
 ---
-layout: post
-language: de
-title: 'Fake-Shops: Warum "Claudias Atelier" nur eine KI ist'
+layout: "post"
+language: "de"
+title: "Fake-Shops: Warum \"Claudias Atelier\" nur eine KI ist"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 8
-    reasoning: >-
-      Der Artikel behandelt direkt den Einsatz von KI zur Erstellung
-      professioneller Fake-Shops, was ein wichtiges Beispiel für den Missbrauch
-      von KI-Technologie darstellt und für alle AI-Interessierten hochrelevant
-      ist.
-  - name: security
-    relevance: 9
-    reasoning: >-
-      Fake-Shops stellen eine direkte Sicherheitsbedrohung für Online-Nutzer
-      dar, da sie Betrug und Identitätsdiebstahl ermöglichen - ein kritisches
-      Sicherheitsthema mit hoher Allgemeinrelevanz.
-  - name: work
-    relevance: 6
-    reasoning: >-
-      Der Artikel zeigt, wie KI traditionelle Betrugsmethoden automatisiert und
-      professionalisiert, was Auswirkungen auf Arbeitsplätze im E-Commerce und
-      Verbraucherschutz haben könnte.
-  - name: data protection
-    relevance: 7
-    reasoning: >-
-      Fake-Shops sammeln unrechtmäßig Kundendaten (Zahlungsinformationen,
-      persönliche Daten), was ein wichtiges Datenschutzproblem darstellt.
-  - name: copyright
-    relevance: 5
-    reasoning: >-
-      KI-generierte Inhalte für Fake-Shops könnten urheberrechtlich geschützte
-      Bilder oder Texte verwenden, allerdings wird dieser Aspekt im Artikel
-      nicht explizit behandelt.
 ---
 
 In den letzten Tagen hat sich herausgestellt, dass der Online-Shop "Claudias Atelier" ein Fake-Shop ist, der von einer Künstlichen Intelligenz (KI) betrieben wird. Der Shop lockte Kunden mit emotionalen Geschichten und extremen Rabatten, die angeblich aufgrund einer Geschäftsaufgabe angeboten wurden. Viele Nutzer wurden durch die professionell gestalteten Webseiten und die scheinbar authentischen Kundenbewertungen getäuscht und bestellten Waren, die nie geliefert wurden.

@@ -1,27 +1,8 @@
 ---
-layout: post
-language: de
-title: 'Google startet Doppl: KI-Anprobe jetzt per App'
+layout: "post"
+language: "de"
+title: "Google startet Doppl: KI-Anprobe jetzt per App"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 8
-    reasoning: >-
-      Die App basiert vollständig auf KI-Technologie für fotorealistische
-      Bildgenerierung und Animation. Dies zeigt einen praktischen Durchbruch von
-      KI im Consumer-Bereich, der für ein breites Publikum interessant ist.
-  - name: data protection
-    relevance: 6
-    reasoning: >-
-      Nutzer laden persönliche Fotos hoch, die von Google verarbeitet werden.
-      Die automatische Prüfung der Uploads und Sicherheitsmaßnahmen gegen
-      Missbrauch sind datenschutzrelevante Aspekte, die viele Nutzer betreffen.
-  - name: work
-    relevance: 5
-    reasoning: >-
-      Die App könnte die Modebranche und den Online-Handel verändern, indem sie
-      virtuelle Anproben ermöglicht. Dies ist besonders für Fachkräfte in
-      E-Commerce und Retail relevant.
 ---
 
 Google hat in den USA die KI-App Doppl gestartet, mit der Nutzer Kleidung virtuell an sich selbst testen können. Die neue App aus Google Labs erstellt anhand von Fotos oder Screenshots eine digitale Darstellung der Person und zeigt, wie ein Outfit aussehen könnte – auch in Form kurzer KI-generierter Videos. Sie ist ab sofort für Android und iOS erhältlich. Google weist darauf hin, dass Doppl sich noch in der Testphase befindet und Passform oder Details nicht immer genau dargestellt werden. Nutzerfeedback soll in die Weiterentwicklung einfließen.

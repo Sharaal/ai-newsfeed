@@ -1,34 +1,8 @@
 ---
-layout: post
-language: de
-title: 'KI-Diagnose per Selfie: Gut oder gefährlich?'
+layout: "post"
+language: "de"
+title: "KI-Diagnose per Selfie: Gut oder gefährlich?"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 9
-    reasoning: >-
-      Der Artikel behandelt zentral den Einsatz von Künstlicher Intelligenz in
-      der medizinischen Diagnostik, einschließlich spezifischer KI-Modelle wie
-      'DeepGestalt' und deren praktische Anwendung - hochrelevant für alle, die
-      sich für KI-Entwicklungen interessieren.
-  - name: data protection
-    relevance: 7
-    reasoning: >-
-      Datenschutzprobleme werden explizit als kritischer Punkt bei der
-      Verwendung von Gesichtsfotos für medizinische Analysen erwähnt, was für
-      viele Nutzer solcher Technologien relevant ist.
-  - name: work
-    relevance: 6
-    reasoning: >-
-      Der Artikel thematisiert die Auswirkungen von KI-Diagnostik auf das
-      Vertrauen in Ärzte und deren Arbeitsweise, sowie neue Werkzeuge für
-      medizinische Fachkräfte - relevant für Beschäftigte im Gesundheitswesen.
-  - name: security
-    relevance: 5
-    reasoning: >-
-      Obwohl nicht explizit erwähnt, sind die Sicherheitsaspekte bei der
-      Verarbeitung sensibler biometrischer Gesundheitsdaten implizit relevant,
-      besonders für Fachleute im Sicherheitsbereich.
 ---
 
 Kann ein Selfie Hinweise auf unsere Gesundheit geben? Immer mehr KI-Anwendungen versprechen genau das: Aus einem einfachen Profilbild sollen Algorithmen Rückschlüsse auf biologisches Alter, genetische Syndrome oder gar Herz-Kreislauf-Risiken ziehen können. Klingt nach Science-Fiction - doch es gibt bereits erste ernsthafte medizinische Ansätze. Gleichzeitig warnen Fachleute vor überhöhten Erwartungen. Und auch ein Selbstversuch zeigt: Die Grenzen solcher Analysen sind schnell erreicht.

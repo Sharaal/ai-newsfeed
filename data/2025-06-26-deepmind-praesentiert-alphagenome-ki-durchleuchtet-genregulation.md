@@ -1,34 +1,8 @@
 ---
-layout: post
-language: de
-title: 'DeepMind präsentiert AlphaGenome: KI durchleuchtet Genregulation'
+layout: "post"
+language: "de"
+title: "DeepMind präsentiert AlphaGenome: KI durchleuchtet Genregulation"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 9
-    reasoning: >-
-      AlphaGenome ist ein bahnbrechendes KI-Modell von DeepMind, das die
-      Genomforschung revolutioniert und auf den Erfolgen von AlphaFold aufbaut -
-      dies ist hochrelevant für alle, die sich für KI-Fortschritte
-      interessieren.
-  - name: programming
-    relevance: 6
-    reasoning: >-
-      Die Entwicklung eines komplexen KI-Modells, das DNA-Sequenzen von bis zu
-      einer Million Basenpaaren analysiert, ist für Programmierer interessant,
-      die an Machine Learning und Bioinformatik arbeiten.
-  - name: data protection
-    relevance: 4
-    reasoning: >-
-      Da AlphaGenome mit großen wissenschaftlichen Datensätzen aus öffentlichen
-      Konsortien arbeitet und genetische Daten analysiert, sind
-      Datenschutzaspekte relevant, aber nicht im Fokus des Artikels.
-  - name: work
-    relevance: 7
-    reasoning: >-
-      Das Tool ermöglicht es Forschern, zeitaufwändige Laborexperimente virtuell
-      durchzuführen, was die Arbeitsweise in der Genomforschung und
-      Biotechnologie erheblich verändern könnte.
 ---
 
 DeepMind hat mit AlphaGenome ein neues KI-Modell vorgestellt, das die Genregulation durchleuchtet und damit einen bedeutenden Fortschritt in der Genomforschung markiert. AlphaGenome ist in der Lage, lange DNA-Sequenzen mit höchster Auflösung zu analysieren und kombiniert multiple Vorhersageaufgaben in einem Modell. Dies eröffnet neue Möglichkeiten für die Forschung zur Genregulation und könnte langfristig auch die Entwicklung neuer Therapien unterstützen.

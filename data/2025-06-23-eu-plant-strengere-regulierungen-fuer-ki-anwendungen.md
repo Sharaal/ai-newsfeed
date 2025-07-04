@@ -1,39 +1,8 @@
 ---
-layout: post
-language: de
-title: EU plant strengere Regulierungen für KI-Anwendungen
+layout: "post"
+language: "de"
+title: "EU plant strengere Regulierungen für KI-Anwendungen"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 10
-    reasoning: >-
-      Dies ist eine bahnbrechende Entwicklung für die gesamte KI-Branche, da der
-      EU AI Act der weltweit erste umfassende Rechtsrahmen für Künstliche
-      Intelligenz ist und alle KI-Entwickler und -Nutzer betrifft.
-  - name: work
-    relevance: 8
-    reasoning: >-
-      Die Verordnung hat erhebliche Auswirkungen auf die Arbeitswelt, da sie
-      verpflichtende Mitarbeiterschulungen vorschreibt und KI-Systeme im
-      Personalwesen als Hochrisiko-Anwendungen reguliert.
-  - name: data protection
-    relevance: 7
-    reasoning: >-
-      Der EU AI Act enthält wichtige datenschutzrechtliche Aspekte, insbesondere
-      das Verbot von Social Scoring und biometrischer Kategorisierung nach
-      sensiblen Kriterien, was direkt den Datenschutz betrifft.
-  - name: security
-    relevance: 7
-    reasoning: >-
-      Sicherheitsaspekte sind zentral in der Verordnung verankert, da
-      Hochrisiko-KI-Systeme strenge Sicherheitsanforderungen erfüllen müssen und
-      umfangreiche Risikobewertungen vorgeschrieben sind.
-  - name: programming
-    relevance: 6
-    reasoning: >-
-      Entwickler von KI-Systemen müssen ihre Anwendungen an die neuen
-      rechtlichen Anforderungen anpassen und entsprechende Compliance-Maßnahmen
-      in ihre Entwicklungsprozesse integrieren.
 ---
 
 Seit Juni 2025 gelten in der Europäischen Union strengere Regulierungen für Künstliche Intelligenz (KI). Der EU AI Act, der weltweit erste umfassende Rechtsrahmen für KI, zielt darauf ab, die Entwicklung und Nutzung von KI-Systemen sicherer und transparenter zu gestalten. Die Verordnung betrifft alle Unternehmen, die KI in der EU einsetzen, entwickeln oder vertreiben, unabhängig davon, wo sie ihren Sitz haben. Besonders im Fokus stehen Hochrisiko-KI-Systeme, die in sensiblen Bereichen wie Medizin, Personalwesen oder öffentlicher Sicherheit eingesetzt werden. Diese Systeme unterliegen nun strengen Auflagen und müssen umfangreiche Sicherheits- und Transparenzanforderungen erfüllen.

@@ -1,34 +1,8 @@
 ---
-layout: post
-language: de
-title: 'KI fälscht Papst-Reden: "Destabilisierende Wirkung" für Kirche'
+layout: "post"
+language: "de"
+title: "KI fälscht Papst-Reden: \"Destabilisierende Wirkung\" für Kirche"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 9
-    reasoning: >-
-      Die Künstliche Intelligenz steht im Zentrum der Nachricht, da
-      Deepfake-Technologie verwendet wird, um täuschend echte Videos des Papstes
-      zu erstellen - ein hochaktuelles Beispiel für die gesellschaftlichen
-      Auswirkungen fortgeschrittener KI-Systeme.
-  - name: security
-    relevance: 8
-    reasoning: >-
-      Der Fall zeigt deutlich die Sicherheitsrisiken von Deepfakes auf, die zur
-      Verbreitung von Desinformation genutzt werden und das Vertrauen in
-      authentische Inhalte untergraben können.
-  - name: data protection
-    relevance: 7
-    reasoning: >-
-      Die unerlaubte Nutzung der Identität, Stimme und des Erscheinungsbilds des
-      Papstes für gefälschte Inhalte wirft wichtige Fragen zum Schutz
-      personenbezogener Daten und Persönlichkeitsrechte auf.
-  - name: copyright
-    relevance: 6
-    reasoning: >-
-      Die Nachahmung von Papst-Reden und theologischen Inhalten könnte
-      urheberrechtliche Probleme aufwerfen, auch wenn dies im Text nicht
-      explizit thematisiert wird.
 ---
 
 Millionenfach geklickt und für echt gehalten: Gefälschte Predigten von Papst Leo XIV. verbreiten sich rasant auf Plattformen wie YouTube und TikTok. Die täuschend echt wirkenden Videos, die mit Hilfe von Künstlicher Intelligenz (KI) erstellt wurden, imitieren nicht nur die Stimme des Papstes, sondern auch seinen Sprachstil und theologische Wendungen. Besonders brisant: Einige dieser Deepfakes enthalten apokalyptische Botschaften, die Gläubige verunsichern und die Glaubwürdigkeit der Kirche gefährden könnten. Ein spanischsprachiges TikTok-Video, in dem der Papst angeblich über die Rolle von Frauen spricht, erreichte beispielsweise 9,6 Millionen Aufrufe – weit mehr als die offiziellen Kanäle des Vatikans.

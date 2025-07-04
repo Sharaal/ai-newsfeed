@@ -1,18 +1,6 @@
 ---
-layout: post
-title: Open Graph Tags for Facebook
-categories:
-  - name: programming
-    relevance: 6
-    reasoning: >-
-      Der Text behandelt HTML-Meta-Tags und deren Implementierung, was direkte
-      Programmierkenntnisse erfordert und für Webentwickler relevant ist.
-  - name: work
-    relevance: 4
-    reasoning: >-
-      Das Wissen über Open Graph Tags ist für Webentwickler, Social Media
-      Manager und Marketing-Fachkräfte beruflich relevant, aber nicht
-      branchenübergreifend wichtig.
+layout: "post"
+title: "Open Graph Tags for Facebook"
 ---
 
 Facebook has the feature to show a summary of a webpage by writing the URL into a post. I will describe which information Facebook use and how its possible to change them.

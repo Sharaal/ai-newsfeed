@@ -1,18 +1,6 @@
 ---
-layout: post
-title: 'TypeScript and Performance: Monomorphic vs Polymorphic Code'
-categories:
-  - name: programming
-    relevance: 8
-    reasoning: >-
-      Der Text behandelt direkt Programmierkonzepte wie monomorphen vs.
-      polymorphen Code, JavaScript-Funktionen und TypeScript-Entwicklung, was
-      für die meisten Programmierer hochrelevant ist.
-  - name: ai
-    relevance: 3
-    reasoning: >-
-      Nur indirekt relevant durch die Erwähnung von JIT-Compilern und deren
-      Optimierungstechniken, aber nicht der Hauptfokus des Artikels.
+layout: "post"
+title: "TypeScript and Performance: Monomorphic vs Polymorphic Code"
 ---
 
 In one of my latest tech talks I said "TypeScript can increase the performance of the application". There comes the question "How can this works, TypeScript gets transpiled into normal JavaScript". Thats true, but using TypeScript helps to write better performing JavaScript.

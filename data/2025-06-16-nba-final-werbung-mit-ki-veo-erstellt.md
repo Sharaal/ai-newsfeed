@@ -1,29 +1,8 @@
 ---
-layout: post
-language: de
-title: NBA Final Werbung mit KI "VEO" erstellt
+layout: "post"
+language: "de"
+title: "NBA Final Werbung mit KI \"VEO\" erstellt"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 9
-    reasoning: >-
-      Der Artikel behandelt einen bahnbrechenden Einsatz von Googles Veo 3
-      Text-zu-Video-Modell, der zeigt, wie KI die Medienproduktion
-      revolutioniert und eine breite gesellschaftliche Debatte über synthetische
-      Medien auslöst.
-  - name: work
-    relevance: 7
-    reasoning: >-
-      Die drastische Reduktion von Produktionskosten um 95% und die Möglichkeit,
-      mit nur einer Person statt einem großen Team zu arbeiten, hat erhebliche
-      Auswirkungen auf die Arbeitswelt in der Kreativbranche.
-  - name: copyright
-    relevance: 6
-    reasoning: >-
-      Obwohl nicht explizit erwähnt, wirft der Einsatz von KI-generierten
-      Inhalten in kommerzieller Werbung wichtige Fragen zu Urheberrechten und
-      der Verwendung von Trainingsdaten auf, die für die Rechtspraxis relevant
-      sind.
 ---
 
 Mitten in den NBA-Finals 2025 sorgte ein Werbespot der Wettplattform Kalshi für Aufsehen. Der vollständig KI-generierte Clip, der während des dritten Spiels zwischen den Indiana Pacers und den Oklahoma City Thunder ausgestrahlt wurde, beeindruckte durch seine surreale Bildsprache und die minimalen Produktionskosten von nur 2.000 Dollar. Verantwortlich für die Umsetzung war der Filmemacher PJ Accetturo, der Googles Text-zu-Video-Modell Veo 3 nutzte, um in nur zwei Tagen hunderte Videoclips zu generieren. Die besten 15 Clips wurden schließlich zu einem 30-sekündigen Spot zusammengeschnitten, der mit absurden Szenen wie einem Cowboy mit Chihuahua oder einem Swimmingpool voller Eier die Aufmerksamkeit der Zuschauer auf sich zog.

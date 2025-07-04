@@ -1,31 +1,6 @@
 ---
-layout: post
-title: Split configuration and code
-categories:
-  - name: programming
-    relevance: 8
-    reasoning: >-
-      Der Text behandelt fundamentale Programmierkonzepte zur
-      Konfigurationsverwaltung in Anwendungen und zeigt verschiedene technische
-      Ansätze auf, die für alle Programmierer relevant sind.
-  - name: security
-    relevance: 7
-    reasoning: >-
-      Sicherheitsaspekte sind zentral behandelt, insbesondere der Schutz
-      kritischer Daten wie Datenbankzugangsdaten und die Risiken verschiedener
-      Konfigurationsansätze.
-  - name: databases
-    relevance: 6
-    reasoning: >-
-      Datenbankverbindungen werden als Hauptbeispiel für umgebungsabhängige
-      Konfiguration verwendet und die sichere Verwaltung von DB-Zugangsdaten
-      wird explizit behandelt.
-  - name: work
-    relevance: 5
-    reasoning: >-
-      Der Artikel adressiert praktische Arbeitsabläufe in der
-      Softwareentwicklung, Deployment-Prozesse und hat direkten Einfluss auf
-      Entwicklungsworkflows.
+layout: "post"
+title: "Split configuration and code"
 ---
 
 Applications needs configuration depends on the environment, e.g. the credentials of a database. Lets have a look at different approaches solving this requirement, their pros and cons.

@@ -1,47 +1,8 @@
 ---
-layout: post
-language: de
-title: Musk dreht durch? Grok soll ganze Menschheitsgeschichte umschreiben!
+layout: "post"
+language: "de"
+title: "Musk dreht durch? Grok soll ganze Menschheitsgeschichte umschreiben!"
 aigenerated: true
-categories:
-  - name: ai
-    reasoning: >-
-      Der Artikel behandelt zentral die Entwicklung und geplante Umgestaltung
-      des KI-Systems Grok, einschließlich problematischer Ausgaben und
-      grundlegender Fragen zur KI-Entwicklung - hochrelevant für alle, die sich
-      für KI-Entwicklungen interessieren.
-    relevance: 9
-  - name: programming
-    reasoning: >-
-      Erwähnung von System-Prompts und technischen Aspekten der
-      KI-Programmierung, aber eher als Randthema - interessant für Entwickler,
-      aber nicht im Fokus des Artikels.
-    relevance: 6
-  - name: security
-    reasoning: >-
-      Die unkontrollierten Ausgaben zu extremistischen Inhalten und
-      Verschwörungstheorien zeigen erhebliche Sicherheitsprobleme bei
-      KI-Systemen auf - wichtig für alle, die mit KI-Sicherheit befasst sind.
-    relevance: 7
-  - name: work
-    reasoning: >-
-      Indirekte Relevanz durch die Diskussion über KI-Entwicklung und deren
-      gesellschaftliche Auswirkungen, aber keine direkten Arbeitsplatz-Themen -
-      eher für Fachkräfte in der Tech-Branche relevant.
-    relevance: 5
-  - name: data protection
-    reasoning: >-
-      Die Nutzung von X als primäre Datenquelle und die Sammlung von Nutzerdaten
-      für das Training wirft Datenschutzfragen auf - relevant für
-      Datenschutz-Interessierte, aber nicht der Hauptfokus.
-    relevance: 6
-  - name: copyright
-    reasoning: >-
-      Das 'Umschreiben des gesamten Korpus menschlichen Wissens' könnte
-      urheberrechtliche Fragen aufwerfen, wird aber im Artikel nicht explizit
-      thematisiert - nur für Spezialisten mit Fokus auf KI und Urheberrecht
-      relevant.
-    relevance: 4
 ---
 
 Elon Musk hat erneut für Aufsehen gesorgt, als er ankündigte, dass sein Chatbot Grok die gesamte Menschheitsgeschichte umschreiben soll. Musk, der Gründer von xAI, plant, Grok mit neuen Informationen zu trainieren, die er als "faktisch wahr, aber politisch inkorrekt" bezeichnet. Ziel ist es, das "gesamte Korpus menschlichen Wissens" zu korrigieren, zu ergänzen und von ideologischen Verzerrungen zu befreien. Diese Ankündigung hat eine Welle der Kritik und Besorgnis ausgelöst, da viele Experten befürchten, dass dies zu einer gefährlichen Manipulation von Wissen führen könnte.

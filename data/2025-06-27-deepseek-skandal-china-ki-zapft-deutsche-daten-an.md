@@ -1,35 +1,8 @@
 ---
-layout: post
-language: de
-title: 'DeepSeek-Skandal: China-KI zapft deutsche Daten an!'
+layout: "post"
+language: "de"
+title: "DeepSeek-Skandal: China-KI zapft deutsche Daten an!"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 9
-    reasoning: >-
-      Die Nachricht behandelt eine chinesische KI-Anwendung (DeepSeek) und deren
-      Large Language Model, was für alle AI-Interessierten hochrelevant ist, da
-      es grundsätzliche Fragen zum Umgang mit ausländischen KI-Systemen
-      aufwirft.
-  - name: data protection
-    relevance: 10
-    reasoning: >-
-      Dies ist der Kernaspekt der Nachricht - massive Datenschutzverletzungen
-      durch illegale Datenübertragung nach China und Verstöße gegen europäische
-      Datenschutzrichtlinien machen dies für jeden Datenschutz-Interessierten
-      bahnbrechend relevant.
-  - name: security
-    relevance: 8
-    reasoning: >-
-      Die Sicherheitsproblematik durch chinesische Behördenzugriffe auf
-      Nutzerdaten und ungesicherte Datenübertragung ins Nicht-EU-Ausland ist für
-      Sicherheitsexperten sehr relevant.
-  - name: work
-    relevance: 6
-    reasoning: >-
-      Da DeepSeek als kostengünstige Alternative zu ChatGPT für berufliche
-      Anwendungen beworben wurde, betrifft das Verbot auch Arbeitsumgebungen,
-      die solche Tools nutzen wollen.
 ---
 
 Die chinesische KI-Anwendung DeepSeek steht derzeit im Zentrum eines Datenschutzskandals in Deutschland. Die Berliner Datenschutzbeauftragte Meike Kamp hat die App bei den großen App-Store-Betreibern Google und Apple als rechtswidrigen Inhalt gemeldet. Grund dafür sind massive Datenschutzbedenken, da personenbezogene Daten deutscher Nutzer illegal nach China übertragen werden. Die Unternehmen müssen nun zeitnah prüfen, ob sie die App aus ihren Stores entfernen.

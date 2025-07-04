@@ -1,40 +1,8 @@
 ---
-layout: post
-language: de
-title: 'Cluely, a startup that helps "cheat on everything," raises $15M from a16z'
+layout: "post"
+language: "de"
+title: "Cluely, a startup that helps \"cheat on everything,\" raises $15M from a16z"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 9
-    reasoning: >-
-      Das Startup entwickelt KI-gestützte Desktop-Assistenten mit
-      Echtzeit-Audio- und Bildschirmanalyse, was eine hochrelevante Entwicklung
-      im AI-Bereich darstellt und breite Aufmerksamkeit verdient.
-  - name: work
-    relevance: 8
-    reasoning: >-
-      Cluely hat direkten Einfluss auf die Arbeitswelt durch Tools für
-      Vorstellungsgespräche, Meetings und Verkaufsgespräche, was fundamentale
-      Fragen zur Fairness und Authentizität am Arbeitsplatz aufwirft.
-  - name: security
-    relevance: 7
-    reasoning: >-
-      Die 'undetectable' Technologie, die Überwachungssysteme umgeht, wirft
-      wichtige Sicherheitsfragen auf und könnte neue Erkennungsverfahren und
-      Sicherheitsmaßnahmen erforderlich machen.
-  - name: copyright
-    relevance: 6
-    reasoning: >-
-      Die Verwendung von KI zur Unterstützung bei Prüfungen und Interviews
-      berührt Fragen des geistigen Eigentums und der Authentizität von
-      Leistungen, auch wenn nicht direkt urheberrechtlich geschützte Werke
-      betroffen sind.
-  - name: data protection
-    relevance: 5
-    reasoning: >-
-      Das Tool analysiert live Audio- und Bildschirmkontexte, was
-      Datenschutzfragen aufwirft, obwohl die spezifischen Datenschutzpraktiken
-      nicht detailliert beschrieben werden.
 ---
 
 Cluely, ein Startup, das Nutzern hilft, bei Vorstellungsgesprächen, Prüfungen und Verkaufsgesprächen zu "schummeln", hat eine Serie-A-Finanzierungsrunde in Höhe von 15 Millionen US-Dollar abgeschlossen, die von Andreessen Horowitz (a16z) geleitet wurde. Die Finanzierung wurde am 20. Juni 2025 bekannt gegeben und markiert einen bedeutenden Meilenstein für das Unternehmen, das erst vor wenigen Monaten gegründet wurde. Cluely wurde von Roy Lee und Neel Shanmugam gegründet, die beide von der Columbia University suspendiert wurden, nachdem sie ein KI-Tool entwickelt hatten, das Bewerbern bei technischen Interviews half, zu schummeln.

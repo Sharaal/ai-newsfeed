@@ -1,28 +1,8 @@
 ---
-layout: post
-language: de
-title: 'KI-Influencer und alte Videos: Fakes zum Israel-Iran-Krieg'
+layout: "post"
+language: "de"
+title: "KI-Influencer und alte Videos: Fakes zum Israel-Iran-Krieg"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 9
-    reasoning: >-
-      Die Künstliche Intelligenz steht im Zentrum des Artikels, da KI-Tools zur
-      Erstellung realistischer gefälschter Videos und zur Verbreitung von
-      Desinformation durch KI-Influencer eingesetzt werden - ein hochrelevantes
-      Thema für die gesamte Gesellschaft.
-  - name: security
-    relevance: 8
-    reasoning: >-
-      Der Artikel behandelt eine ernste Sicherheitsbedrohung durch gezielte
-      Desinformationskampagnen, die gesellschaftliche Spannungen anheizen und
-      die öffentliche Meinungsbildung manipulieren können.
-  - name: data protection
-    relevance: 6
-    reasoning: >-
-      Obwohl nicht explizit erwähnt, sind Datenschutzaspekte relevant, da
-      gefälschte verifizierte Konten und die Manipulation von
-      Nutzerinformationen in sozialen Medien thematisiert werden.
 ---
 
 Die Eskalation zwischen Israel und dem Iran hat in den letzten Tagen eine Flut von Falschinformationen und gefälschten Videos in den sozialen Medien ausgelöst. Auf Plattformen wie TikTok, YouTube und X kursieren zahlreiche Videos, die entweder aus dem Kontext gerissen oder komplett gefälscht sind. Diese Inhalte werden oft von KI-Influencern verbreitet und nutzen fortschrittliche Technologien, um die Öffentlichkeit zu täuschen. Experten warnen vor der zunehmenden Verbreitung solcher Fakes, die die Wahrnehmung des Konflikts verzerren und die Spannungen weiter anheizen.

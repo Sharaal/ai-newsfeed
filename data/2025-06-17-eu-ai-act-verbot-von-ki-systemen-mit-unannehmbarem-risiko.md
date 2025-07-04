@@ -1,42 +1,10 @@
 ---
-layout: post
-language: de
-title: 'EU AI Act: Verbot von KI-Systemen mit "unannehmbarem Risiko"'
+layout: "post"
+language: "de"
+title: "EU AI Act: Verbot von KI-Systemen mit \"unannehmbarem Risiko\""
 aigenerated: true
 assets:
-  tts: >-
-    assets/2025-06-17-eu-ai-act-verbot-von-ki-systemen-mit-unannehmbarem-risiko/tts.mp3
-categories:
-  - name: ai
-    relevance: 10
-    reasoning: >-
-      Der Text behandelt direkt die EU-weite Regulierung von Künstlicher
-      Intelligenz durch den AI Act, was für alle KI-Entwickler und -Nutzer von
-      höchster Bedeutung ist.
-  - name: work
-    relevance: 8
-    reasoning: >-
-      Das Gesetz hat erhebliche Auswirkungen auf die Arbeitswelt, da Unternehmen
-      ihre KI-Systeme überprüfen und Mitarbeitende schulen müssen, was
-      Arbeitsabläufe und Compliance-Anforderungen fundamental verändert.
-  - name: data protection
-    relevance: 9
-    reasoning: >-
-      Der AI Act enthält strenge Datenschutzstandards für Hochrisiko-KI-Systeme
-      und verbietet manipulative Technologien, die Grundrechte gefährden
-      könnten.
-  - name: security
-    relevance: 8
-    reasoning: >-
-      Die Verordnung zielt darauf ab, die Sicherheit von KI-Systemen zu
-      gewährleisten und Risiken für Menschen und Gesellschaft zu minimieren, was
-      IT-Sicherheitsverantwortliche direkt betrifft.
-  - name: programming
-    relevance: 7
-    reasoning: >-
-      Entwickler müssen ihre KI-Produkte entsprechend den neuen Vorschriften
-      anpassen und die Nachvollziehbarkeit von Entscheidungen sicherstellen, was
-      direkte Auswirkungen auf die Programmierpraxis hat.
+    tts: "assets/2025-06-17-eu-ai-act-verbot-von-ki-systemen-mit-unannehmbarem-risiko/tts.mp3"
 ---
 
 Die Europäische Union hat mit dem EU AI Act einen Meilenstein in der Regulierung von Künstlicher Intelligenz (KI) gesetzt. Seit Juni 2025 ist das Gesetz vollständig in Kraft und verbietet KI-Systeme, die als "unannehmbares Risiko" eingestuft werden. Dazu zählen Anwendungen wie Social Scoring oder manipulative Technologien, die die Grundrechte der Menschen gefährden könnten. Ziel des Gesetzes ist es, die Sicherheit und Transparenz von KI-Systemen zu gewährleisten und gleichzeitig Innovationen zu fördern. Unternehmen und Entwickler stehen nun vor der Herausforderung, ihre KI-Produkte entsprechend den neuen Vorschriften zu überprüfen und anzupassen.

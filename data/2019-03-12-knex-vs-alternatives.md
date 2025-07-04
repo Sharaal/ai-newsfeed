@@ -1,27 +1,6 @@
 ---
-layout: post
-title: Knex vs alternatives
-categories:
-  - name: programming
-    reasoning: >-
-      Der Artikel behandelt ausführlich verschiedene Programmieransätze für
-      Datenbankinteraktionen in JavaScript/Node.js, einschließlich
-      Code-Beispielen, Testing-Strategien und Architekturentscheidungen -
-      hochrelevant für alle Programmierer, die mit Datenbanken arbeiten.
-    relevance: 8
-  - name: databases
-    reasoning: >-
-      Das ist der Kernbereich des Artikels - er behandelt Datenbankmigrationen,
-      Query Builder, SQL-Abstraktion und verschiedene Ansätze für
-      Datenbankinteraktionen, was für jeden Entwickler mit Datenbankbezug von
-      großer Bedeutung ist.
-    relevance: 9
-  - name: security
-    reasoning: >-
-      Der Artikel erwähnt SQL-Injection-Vulnerabilities und wie Tagged Template
-      Literals diese verhindern können - ein wichtiger Sicherheitsaspekt, aber
-      nicht der Hauptfokus des Artikels.
-    relevance: 6
+layout: "post"
+title: "Knex vs alternatives"
 ---
 
 Working in code with a relational database can be done in different abstraction forms from writing SQL queries over using a query builder to completely abstract the type of the database by using an ORM.

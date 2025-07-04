@@ -1,33 +1,8 @@
 ---
-layout: post
-language: de
-title: Teslas autonomer Traum? Robotaxi startet mit doppeltem Boden
+layout: "post"
+language: "de"
+title: "Teslas autonomer Traum? Robotaxi startet mit doppeltem Boden"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 8
-    reasoning: >-
-      Der Text behandelt autonomes Fahren und Full-Self-Driving Software, was
-      zentrale KI-Anwendungen sind und einen bedeutenden Durchbruch in der
-      praktischen KI-Implementierung darstellt.
-  - name: programming
-    relevance: 6
-    reasoning: >-
-      Die Over-the-Air-Updates und die kontinuierliche Verbesserung der
-      FSD-Software sind für Entwickler interessant, da sie moderne
-      Software-Deployment-Strategien in kritischen Systemen zeigen.
-  - name: security
-    relevance: 7
-    reasoning: >-
-      Sicherheitsbedenken bei autonomen Fahrzeugen und die Notwendigkeit von
-      Sicherheitsfahrern als Backup-System sind wichtige Sicherheitsaspekte, die
-      über die Automobilbranche hinaus relevant sind.
-  - name: work
-    relevance: 7
-    reasoning: >-
-      Robotaxis könnten traditionelle Taxi- und Transportjobs disruptieren und
-      neue Arbeitsmodelle in der Mobilitätsbranche schaffen, was erhebliche
-      Auswirkungen auf den Arbeitsmarkt hat.
 ---
 
 Tesla hat am 22. Juni 2025 in Austin, Texas, den lang erwarteten Start seines Robotaxi-Dienstes bekannt gegeben. Die ersten Fahrten wurden in einer begrenzten Anzahl von Model Y Fahrzeugen durchgeführt, die für eine ausgewählte Gruppe von Tesla-Fans und -Investoren zur Verfügung standen. Elon Musk, CEO von Tesla, zeigte sich begeistert und verkündete auf X (ehemals Twitter), dass die Fahrten zu einem symbolischen Preis von 4,20 USD angeboten werden. Der Dienst soll täglich von 6:00 Uhr morgens bis Mitternacht verfügbar sein, wobei die Anzahl der Fahrzeuge und die Verfügbarkeit der Fahrten zunächst begrenzt sind.

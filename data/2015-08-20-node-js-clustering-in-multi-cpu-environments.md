@@ -1,20 +1,6 @@
 ---
-layout: post
-title: Node.js clustering in multi CPU environments
-categories:
-  - name: programming
-    reasoning: >-
-      Der Text behandelt konkrete Programmierkonzepte und Code-Beispiele für
-      Node.js Clustering, was für Entwickler sehr relevant ist, die
-      Performance-Optimierung in Multi-CPU-Umgebungen implementieren möchten.
-    relevance: 7
-  - name: work
-    reasoning: >-
-      Das Thema ist relevant für die Arbeitswelt, da es sich um praktische
-      Lösungen für Produktionsumgebungen handelt, die IT-Teams bei der
-      Skalierung von Anwendungen unterstützen, aber primär für technische Rollen
-      interessant ist.
-    relevance: 5
+layout: "post"
+title: "Node.js clustering in multi CPU environments"
 ---
 
 Node.js is single threaded. To use the capacity of multi CPU environments clustering is needed. There are solutions already available, so just have a quick look at one of them.

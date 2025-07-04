@@ -1,30 +1,9 @@
 ---
-layout: post
-language: de
-title: 'Die Zukunft der Arbeitswelt: Chancen und Herausforderungen durch KI'
+layout: "post"
+language: "de"
+title: "Die Zukunft der Arbeitswelt: Chancen und Herausforderungen durch KI"
 assets:
-  tts: >-
-    assets/2025-06-20-die-zukunft-der-arbeitswelt-chancen-und-herausforderungen-durch-ki/tts.mp3
-categories:
-  - name: ai
-    reasoning: >-
-      Der Artikel behandelt zentral die Auswirkungen von KI auf die Arbeitswelt
-      mit konkreten Beispielen wie Klarna's KI-Chatbots und AlphaFold, was für
-      nahezu alle Branchen und Arbeitnehmer hochrelevant ist.
-    relevance: 9
-  - name: work
-    reasoning: >-
-      Die Transformation der Arbeitswelt durch KI ist das Hauptthema des
-      Artikels, behandelt Jobverluste, neue Berufsfelder und grundlegende
-      Veränderungen der Arbeitsstrukturen - ein bahnbrechendes Thema für alle
-      Berufstätigen.
-    relevance: 10
-  - name: programming
-    reasoning: >-
-      Neue KI-bezogene Berufe wie 'Prompt Engineer' werden erwähnt und die
-      Notwendigkeit von KI-Kompetenz in technischen Bereichen angesprochen, was
-      für Programmierer und IT-Fachkräfte relevant ist.
-    relevance: 6
+    tts: "assets/2025-06-20-die-zukunft-der-arbeitswelt-chancen-und-herausforderungen-durch-ki/tts.mp3"
 ---
 
 Die Arbeitswelt wandelt sich durch KI: Prozesse werden automatisiert, Arbeitsplätze ersetzt und neue Chancen entstehen. Dieser Artikel beleuchtet, wie KI die Arbeitswelt verändert und welche Chancen und Herausforderungen sich daraus ergeben.

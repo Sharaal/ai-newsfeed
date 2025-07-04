@@ -1,40 +1,8 @@
 ---
-layout: post
-language: de
-title: 'Europäische KI-Souveränität: IONOS, Barmstedt und München setzen neue Maßstäbe'
+layout: "post"
+language: "de"
+title: "Europäische KI-Souveränität: IONOS, Barmstedt und München setzen neue Maßstäbe"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 9
-    reasoning: >-
-      Der gesamte Artikel dreht sich um KI-Entwicklungen in Europa, von IONOS'
-      AI Model Hub über kommunale KI-Anwendungen bis hin zu München als
-      KI-Gründerzentrum - dies ist hochrelevant für alle, die sich für KI-Trends
-      und europäische Alternativen interessieren.
-  - name: data protection
-    relevance: 8
-    reasoning: >-
-      DSGVO-Konformität, keine Datenübertragung in Drittstaaten und der Schutz
-      vor US-Geheimdiensten sind zentrale Themen des Artikels und für alle
-      Unternehmen in Europa von hoher Bedeutung.
-  - name: work
-    relevance: 7
-    reasoning: >-
-      Die Auswirkungen auf KMU, Behörden, Bildungseinrichtungen und die
-      Positionierung Münchens als Gründerzentrum betreffen direkt die
-      Arbeitswelt und neue Geschäftsmöglichkeiten.
-  - name: security
-    relevance: 6
-    reasoning: >-
-      Die Betonung der Datensouveränität, des Schutzes vor ausländischen
-      Geheimdiensten und der sicheren KI-Infrastruktur macht dies für
-      sicherheitsbewusste Organisationen relevant.
-  - name: programming
-    relevance: 5
-    reasoning: >-
-      Die Erwähnung von Open-Source-Modellen wie Llama 3.3, Mistral und
-      Teuken-7B sowie die Nextcloud-Integration sind für Entwickler interessant,
-      stehen aber nicht im Fokus des Artikels.
 ---
 
 Der europäische KI-Markt war lange Zeit von US-amerikanischen und chinesischen Konzernen dominiert. Nun setzen deutsche und europäische Anbieter wie IONOS neue Maßstäbe für eine souveräne, transparente und datenschutzkonforme KI-Infrastruktur. IONOS, als führender europäischer Digitalisierungs-Partner für KMU, bietet mit dem AI Model Hub eine leistungsfähige Plattform für generative KI, die vollständig in Deutschland entwickelt und betrieben wird. Die Plattform ist DSGVO-konform und setzt auf Open-Source-Modelle wie Llama 3.3, Mistral und das speziell für europäische Sprachen entwickelte Teuken-7B.

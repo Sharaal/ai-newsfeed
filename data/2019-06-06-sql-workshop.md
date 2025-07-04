@@ -1,29 +1,6 @@
 ---
-layout: post
-title: SQL Workshop
-categories:
-  - name: security
-    relevance: 9
-    reasoning: >-
-      Der Hauptfokus des Artikels liegt auf SQL Injections, die als 'number one
-      reason of all security problems' bezeichnet werden, mit praktischen
-      Beispielen und Lösungsansätzen.
-  - name: programming
-    relevance: 8
-    reasoning: >-
-      Der Text enthält umfangreiche Code-Beispiele in JavaScript/Node.js und
-      SQL, zeigt konkrete Implementierungen und Best Practices für Entwickler.
-  - name: databases
-    relevance: 7
-    reasoning: >-
-      Behandelt wichtige Datenbankthemen wie Design-Prinzipien, Indizierung,
-      Relationen und PostgreSQL-spezifische Lösungen für sichere
-      Datenbankoperationen.
-  - name: work
-    relevance: 6
-    reasoning: >-
-      Der Artikel entstand aus einem firmeninternen Workshop und zeigt
-      praktische Anwendung von Sicherheitsschulungen am Arbeitsplatz.
+layout: "post"
+title: "SQL Workshop"
 ---
 
 Because of security issues I did a very small SQL workshop in my company focused on SQL Injections.

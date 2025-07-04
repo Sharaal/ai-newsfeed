@@ -1,36 +1,8 @@
 ---
-layout: post
-language: de
-title: Wie KI die Kontrolle von Stromtrassen revolutioniert
+layout: "post"
+language: "de"
+title: "Wie KI die Kontrolle von Stromtrassen revolutioniert"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 8
-    reasoning: >-
-      Der Artikel behandelt zentral den Einsatz von KI zur Analyse von
-      Drohnenaufnahmen und Sensordaten bei der Stromtrassen-Inspektion, was eine
-      konkrete und innovative Anwendung künstlicher Intelligenz in der
-      kritischen Infrastruktur darstellt.
-  - name: programming
-    relevance: 4
-    reasoning: >-
-      Die KI-Plattform zur Datenanalyse und Mustererkennung erfordert
-      spezialisierte Programmierung, jedoch werden keine technischen Details zur
-      Implementierung genannt, weshalb dies nur für Entwickler im Bereich KI/IoT
-      interessant ist.
-  - name: work
-    relevance: 6
-    reasoning: >-
-      Die Technologie verändert die Arbeitsweise von Wartungspersonal erheblich
-      - von manuellen, gefährlichen Inspektionen hin zu drohnengestützten,
-      KI-analysierten Verfahren, was Auswirkungen auf Arbeitsplätze und
-      Qualifikationsanforderungen hat.
-  - name: security
-    relevance: 7
-    reasoning: >-
-      Die frühzeitige Erkennung von Schäden und die Minimierung von
-      Stromausfällen sind direkt relevant für die Versorgungssicherheit und
-      kritische Infrastruktur, was ein wichtiges Sicherheitsthema darstellt.
 ---
 
 Kameras, Sensoren und künstliche Intelligenz heben die Kontrolle von bestehenden Hochspannungsleitungen auf ein neues Level. In Bayern wird derzeit ein innovatives System getestet, das mithilfe von Drohnen und KI die Inspektion von Stromtrassen revolutioniert. Diese Technologie ermöglicht es, Schäden und Abnutzungen frühzeitig zu erkennen und somit die Wartungskosten zu senken und die Versorgungssicherheit zu erhöhen.

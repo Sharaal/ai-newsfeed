@@ -1,27 +1,8 @@
 ---
-layout: post
-language: de
-title: 'KI-Fußballspiel in China: Roboter fallen reihenweise um'
+layout: "post"
+language: "de"
+title: "KI-Fußballspiel in China: Roboter fallen reihenweise um"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 8
-    reasoning: >-
-      Der Artikel behandelt ein bedeutendes Ereignis in der KI-Entwicklung mit
-      vollständig autonomen humanoiden Robotern, was für die breite
-      Tech-Community und KI-Interessierte hochrelevant ist.
-  - name: programming
-    relevance: 6
-    reasoning: >-
-      Die Roboter wurden von Universitäten programmiert und zeigen praktische
-      Herausforderungen bei der Implementierung komplexer Bewegungsalgorithmen,
-      was für Entwickler im Robotik-Bereich interessant ist.
-  - name: work
-    relevance: 4
-    reasoning: >-
-      Das Event zeigt den aktuellen Stand der Robotik-Technologie und deren
-      Grenzen, was für Diskussionen über die Zukunft der Automatisierung in
-      verschiedenen Arbeitsbereichen relevant sein könnte.
 ---
 
 In Peking fand kürzlich ein historisches Ereignis statt: das erste vollständig autonome Fußballspiel zwischen humanoiden Robotern. Vier Teams, bestehend aus je drei Robotern, traten in einem 3-gegen-3-Turnier gegeneinander an. Die Roboter wurden ausschließlich von künstlicher Intelligenz gesteuert, ohne jegliche menschliche Eingriffe. Doch anstatt beeindruckender Spielzüge sorgten die Maschinen vor allem für Unterhaltung – durch zahlreiche Stürze und technische Pannen.

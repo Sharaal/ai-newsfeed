@@ -1,33 +1,8 @@
 ---
-layout: post
-language: de
-title: 'Copilot Vision: Jetzt schaut Microsofts KI auf deinen Bildschirm'
+layout: "post"
+language: "de"
+title: "Copilot Vision: Jetzt schaut Microsofts KI auf deinen Bildschirm"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 9
-    reasoning: >-
-      Diese Nachricht ist hochrelevant für alle KI-Interessierten, da sie eine
-      bahnbrechende neue Funktion zeigt, bei der KI erstmals in Echtzeit
-      Bildschirminhalte analysiert und kontextbezogene Hilfe bietet.
-  - name: programming
-    relevance: 6
-    reasoning: >-
-      Für Programmierer mittelmäßig relevant, da Copilot Vision bei der Arbeit
-      mit Entwicklungstools wie Visual Studio oder beim Erlernen neuer
-      Software-Funktionen unterstützen kann.
-  - name: work
-    relevance: 8
-    reasoning: >-
-      Sehr relevant für die moderne Arbeitswelt, da die Funktion als 'zweites
-      Paar Augen' die Produktivität steigern und bei komplexen Anwendungen wie
-      Office-Tools oder Kreativ-Software helfen soll.
-  - name: data protection
-    relevance: 7
-    reasoning: >-
-      Wichtig für Datenschutz-Bewusste, da Microsoft betont, dass die Funktion
-      nur mit ausdrücklicher Zustimmung aktiviert wird, Daten anonymisiert
-      verarbeitet und nach Sitzungsende gelöscht werden.
 ---
 
 Microsoft hat mit „Copilot Vision“ eine neue Funktion für seinen KI-Assistenten eingeführt, die es ermöglicht, den Bildschirminhalt in Echtzeit zu analysieren. Diese Funktion ist ab sofort für Windows 10 und Windows 11 in den USA verfügbar und soll Nutzern helfen, produktiver zu arbeiten, indem sie kontextbezogene Unterstützung bietet. Copilot Vision agiert dabei wie ein „zweites Paar Augen“, das Texte, Bilder und Bedienelemente erkennt und darauf basierend Hilfestellungen gibt. Nutzer können gezielt einzelne Fenster freigeben, die die KI analysieren soll – ein Ansatz, der an das bekannte Screensharing aus Microsoft Teams erinnert.

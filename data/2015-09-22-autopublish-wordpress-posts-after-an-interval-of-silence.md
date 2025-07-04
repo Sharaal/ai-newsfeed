@@ -1,25 +1,6 @@
 ---
-layout: post
-title: Autopublish WordPress posts after an interval of silence
-categories:
-  - name: programming
-    relevance: 7
-    reasoning: >-
-      Der Text beschreibt eine technische Lösung mit einem CronScript, das über
-      die WordPress API arbeitet und konkrete Programmierkonzepte wie
-      API-Nutzung, Cronjobs und GitHub-Repository erwähnt.
-  - name: work
-    relevance: 6
-    reasoning: >-
-      Die Lösung zielt darauf ab, den Arbeitsaufwand für Blogger zu reduzieren,
-      indem sie das manuelle Planen von Posts eliminiert und eine automatisierte
-      Pipeline für die Veröffentlichung schafft.
-  - name: ai
-    relevance: 2
-    reasoning: >-
-      Obwohl der Text Automatisierung behandelt, handelt es sich um einfache
-      zeitbasierte Automatisierung ohne KI-Komponenten - nur ein Cronjob, der
-      Daten prüft und Posts veröffentlicht.
+layout: "post"
+title: "Autopublish WordPress posts after an interval of silence"
 ---
 
 Having periodically posts without much effort is easy to reach with the WordPress API. I will describe here what's the use case and which solution I use.

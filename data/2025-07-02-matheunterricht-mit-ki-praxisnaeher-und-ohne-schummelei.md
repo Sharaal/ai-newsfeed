@@ -1,33 +1,8 @@
 ---
-layout: post
-language: de
-title: 'Matheunterricht mit KI: Praxisnäher und ohne Schummelei?'
+layout: "post"
+language: "de"
+title: "Matheunterricht mit KI: Praxisnäher und ohne Schummelei?"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 8
-    reasoning: >-
-      Der Artikel behandelt direkt den Einsatz von KI-gestützten Lernsystemen im
-      Bildungsbereich, was ein hochrelevantes und zukunftsweisendes
-      Anwendungsgebiet der Künstlichen Intelligenz darstellt.
-  - name: work
-    relevance: 6
-    reasoning: >-
-      Die Technologie soll Lehrkräfte entlasten und verändert deren Arbeitsweise
-      im Unterricht, was für Bildungsberufe und die Zukunft der Arbeit relevant
-      ist.
-  - name: data protection
-    relevance: 7
-    reasoning: >-
-      Der Artikel thematisiert explizit Datenschutzbedenken bezüglich der
-      Speicherung persönlicher Daten wie Blickbewegungen und Lernverhalten, was
-      ein wichtiges gesellschaftliches Thema darstellt.
-  - name: security
-    relevance: 4
-    reasoning: >-
-      Das Thema Betrugsverhinderung (Anti-Schummel-Funktionen) wird erwähnt, ist
-      aber nur ein Nebenaspekt und weniger sicherheitskritisch als andere
-      IT-Security-Themen.
 ---
 
 Künstliche Intelligenz (KI) revolutioniert den Mathematikunterricht an deutschen Schulen. In Nordrhein-Westfalen testen derzeit 25 Schulen den Einsatz von KI-gestützten Lernsystemen, die Schüler individuell fördern und Lehrkräfte entlasten sollen. Die Technologie analysiert beispielsweise Blickbewegungen der Schüler, um Schwächen in mathematischen Grundlagen zu erkennen. So können gezielte Übungen vorgeschlagen werden, die den Lernprozess optimieren. Erste Ergebnisse zeigen, dass Schüler durch diese personalisierte Unterstützung schneller Fortschritte machen und Wissenslücken effektiver geschlossen werden können.

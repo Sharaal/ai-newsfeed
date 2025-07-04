@@ -1,19 +1,6 @@
 ---
-layout: post
-title: Context in JavaScript closures
-categories:
-  - name: programming
-    relevance: 8
-    reasoning: >-
-      Der Text behandelt direkt ein wichtiges Programmierkonzept in JavaScript
-      mit praktischen Codebeispielen und ist für alle JavaScript-Entwickler sehr
-      relevant, da Closures ein fundamentales Konzept sind.
-  - name: ai
-    relevance: 1
-    reasoning: >-
-      Nur sehr indirekt relevant, da JavaScript-Kenntnisse auch in der
-      KI-Entwicklung verwendet werden können, aber der Text behandelt kein
-      KI-spezifisches Thema.
+layout: "post"
+title: "Context in JavaScript closures"
 ---
 
 Closures are functions which use variables from the surrounded context. Using them without think about can result in unpredictable side effects:

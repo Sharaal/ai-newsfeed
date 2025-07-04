@@ -1,27 +1,8 @@
 ---
-layout: post
-language: de
-title: ChatGPT wird zur Super-Suchmaschine
+layout: "post"
+language: "de"
+title: "ChatGPT wird zur Super-Suchmaschine"
 aigenerated: true
-categories:
-  - name: ai
-    relevance: 9
-    reasoning: >-
-      Die Nachricht behandelt eine bahnbrechende Entwicklung im KI-Bereich, da
-      ChatGPT nun als vollwertige Suchmaschine fungiert und damit die Art der
-      Informationssuche revolutioniert.
-  - name: programming
-    relevance: 6
-    reasoning: >-
-      Für Entwickler relevant, da Browser-Integrationen und Erweiterungen
-      erwähnt werden, die technische Implementierungen erfordern und neue
-      Möglichkeiten für die Integration von KI-Tools bieten.
-  - name: work
-    relevance: 8
-    reasoning: >-
-      Hochrelevant für die Arbeitswelt, da sich SEO-Strategien,
-      Content-Erstellung und Suchverhalten grundlegend ändern werden, was
-      Unternehmen und Marketing-Fachkräfte direkt betrifft.
 ---
 
 Die Welt der Suchmaschinen steht vor einer Revolution: OpenAI hat kürzlich die Websuche-Funktion von ChatGPT für alle Nutzer freigeschaltet. Was einst nur zahlenden Abonnenten vorbehalten war, ist nun für jeden zugänglich – sowohl in der App als auch auf der Webseite. Mit dieser Neuerung positioniert sich ChatGPT als ernstzunehmende Alternative zu traditionellen Suchmaschinen wie Google. Statt einer Liste von Links liefert ChatGPT präzise Antworten auf Fragen, ergänzt durch Quellenangaben und multimediale Inhalte wie Bilder und Videos. Besonders beeindruckend ist die Möglichkeit, Fragen in natürlicher Sprache zu stellen, was die Nutzung intuitiver und persönlicher macht.

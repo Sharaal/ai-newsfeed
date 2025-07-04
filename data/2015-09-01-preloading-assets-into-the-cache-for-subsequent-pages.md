@@ -1,29 +1,6 @@
 ---
-layout: post
-title: Preloading assets into the cache for subsequent pages
-categories:
-  - name: programming
-    relevance: 8
-    reasoning: >-
-      Der Artikel behandelt konkrete Programmiertechniken mit JavaScript und
-      HTML-Code-Beispielen für Asset-Preloading, was für Webentwickler sehr
-      relevant ist.
-  - name: ai
-    relevance: 2
-    reasoning: >-
-      Nur minimale Relevanz, da der Artikel zwar technisch ist, aber keine
-      direkten KI-Bezüge aufweist - es geht um klassische Weboptimierung.
-  - name: security
-    relevance: 3
-    reasoning: >-
-      Geringe Relevanz durch die Erwähnung des X-Frame-Option Headers, der ein
-      Sicherheitsfeature ist, aber nicht im Fokus des Artikels steht.
-  - name: work
-    relevance: 4
-    reasoning: >-
-      Moderate Relevanz für Webentwickler und Frontend-Teams, die
-      Performance-Optimierung implementieren müssen, aber nicht
-      branchenübergreifend relevant.
+layout: "post"
+title: "Preloading assets into the cache for subsequent pages"
 ---
 
 In some scenarios (e.g. having a landing page with the login to the client) the assets needed for subsequent pages are known, can preloaded into the cache and speeds up their first page view.

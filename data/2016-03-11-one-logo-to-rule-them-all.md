@@ -1,19 +1,6 @@
 ---
-layout: post
-title: One logo to rule them all
-categories:
-  - name: programming
-    relevance: 8
-    reasoning: >-
-      Der Artikel behandelt eine konkrete Programmierlösung mit NPM-Packages,
-      JSON-Konfiguration und automatisierten Build-Prozessen - hochrelevant für
-      Entwickler, die ähnliche Automatisierungsprobleme lösen müssen.
-  - name: work
-    relevance: 6
-    reasoning: >-
-      Die beschriebene Lösung optimiert Arbeitsabläufe in der Webentwicklung
-      erheblich, indem sie manuelle Logo-Anpassungen automatisiert und somit
-      Zeit spart - relevant für Teams und Freelancer.
+layout: "post"
+title: "One logo to rule them all"
 ---
 
 Logos are needed in different formats and sizes: Apple touch icons, favicon and much more. And maybe they are needed in several projects.
