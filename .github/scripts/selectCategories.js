@@ -14,7 +14,7 @@ async function main() {
     const categories = fs.readFileSync(`config/categories.md`, 'utf8').trim();
 
     // Alle News aus /data laden, die noch keine Kategorien haben
-    const data = globSync('data/*.md')
+    const files = globSync('data/*.md')
         .map(file => {
             const { content, data } = matter(fs.readFileSync(file, 'utf-8'));
             if (data.layout !== 'post' || data.categories) {
@@ -24,13 +24,13 @@ async function main() {
         })
         .filter(Boolean);
 
-    if (data.length === 0) {
+    if (files.length === 0) {
         console.log('No news files found without categories.');
         return;
     }
 
     // Durchgehen und für jede News die Kategorien prompten
-    await Promise.all(data.map(async ({ file, content, data }) => {
+    for (const { file, content, data } of files) {
         console.log(`Processing file: ${file}`);
 
         const debugFilePath = `.github/debug/${path.basename(file, '.md')}/selectCategories.json`;
@@ -40,7 +40,7 @@ async function main() {
         data.categories = response.formattedResult[0] || [];
         
         fs.writeFileSync(file, matter.stringify(content, data));
-    }));
+    }
 }
 
 main().catch(err => {
