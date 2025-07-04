@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-require('dotenv-safe').config({ allowEmptyValues: true});
-
 const fs = require('fs');
 const { globSync } = require('glob')
 const matter = require('gray-matter');
