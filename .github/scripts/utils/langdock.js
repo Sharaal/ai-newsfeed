@@ -49,8 +49,6 @@ module.exports = async function langdock(debugFilePath, template, templateData) 
     };
     const response = await axios.post(url, body, options);
 
-    console.log('Response from Langdock:', response);
-
     const fileData = {
         request: {
             output: template.output,
