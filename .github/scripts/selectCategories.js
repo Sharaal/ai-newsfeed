@@ -24,8 +24,15 @@ async function main() {
         })
         .filter(Boolean);
 
+    if (data.length === 0) {
+        console.log('No news files found without categories.');
+        return;
+    }
+
     // Durchgehen und für jede News die Kategorien prompten
     await Promise.all(data.map(async ({ file, content, data }) => {
+        console.log(`Processing file: ${file}`);
+
         const debugFilePath = `.github/debug/${path.basename(file, '.md')}/selectCategories.json`;
         const templateData = { categories, content, title: data.title };
         const response = await langdock(debugFilePath, selectCategories, templateData);
