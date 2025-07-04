@@ -24,7 +24,7 @@ jobs:
         
     - name: Select categories with Langdock API
       id: ai-newsletter
-      run: node .github/scripts/select-categories.js
+      run: node .github/scripts/selectCategories.js
       env:
         LANGDOCK_API_KEY: ${{ secrets.LANGDOCK_API_KEY }}
 
