@@ -1,8 +1,33 @@
 ---
-layout: "post"
-language: "de"
-title: "Faktencheck mit KI: Tipps zur Vermeidung von Fehlern bei Chatbots"
+layout: post
+language: de
+title: 'Faktencheck mit KI: Tipps zur Vermeidung von Fehlern bei Chatbots'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Text behandelt zentral die Problematik von KI-Chatbots wie ChatGPT,
+      Google Gemini und Grok, deren 'Halluzinationen' und Fehlerquellen -
+      hochrelevant für alle KI-Nutzer.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Besonders relevant für die Arbeitswelt mit konkreten Empfehlungen für den
+      professionellen Umgang mit KI-Tools und Warnungen vor Risiken bei
+      sensiblen beruflichen Aufgaben.
+  - name: data protection
+    relevance: 6
+    reasoning: >-
+      Die beschriebenen Risiken von Desinformation und unzuverlässigen
+      KI-Systemen sind eng mit Datenschutzaspekten verbunden, da fehlerhafte
+      Informationen zu Rufschädigung führen können.
+  - name: security
+    relevance: 5
+    reasoning: >-
+      Der Text erwähnt Sicherheitsrisiken durch unzuverlässige KI-Systeme,
+      einschließlich finanzieller Verluste und Rufschädigung - mittlere Relevanz
+      für IT-Sicherheit.
 ---
 
 Die Nutzung von KI-Chatbots wie ChatGPT, Google Gemini oder Grok hat in den letzten Jahren stark zugenommen. Sie bieten schnelle Antworten und scheinen oft wie allwissende Assistenten. Doch aktuelle Berichte zeigen, dass diese Systeme nicht immer zuverlässig sind. Fehlerhafte Informationen, sogenannte "Halluzinationen", und sogar erfundene Studien sind keine Seltenheit. Eine Umfrage des TÜV-Verbands ergab, dass jeder dritte Nutzer bereits falsche oder ungenaue Antworten von KI-Chatbots erhalten hat. Besonders problematisch wird es, wenn diese Fehler unkritisch übernommen werden, wie etwa bei einer kürzlich veröffentlichten, KI-generierten Liste von Büchern, die gar nicht existieren.

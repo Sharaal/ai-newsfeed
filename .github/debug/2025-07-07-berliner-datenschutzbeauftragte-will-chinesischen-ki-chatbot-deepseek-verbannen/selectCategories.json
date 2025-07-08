@@ -1,0 +1,70 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Berliner Datenschutzbeauftragte will chinesischen KI-Chatbot DeepSeek verbannen\n\n\nDie Berliner Datenschutzbeauftragte hat den chinesischen KI-Chatbot DeepSeek ins Visier genommen. Grund dafür ist die mutmaßlich rechtswidrige Übermittlung personenbezogener Daten deutscher Nutzer:innen nach China. Die App, die von der Hangzhou DeepSeek Artificial Intelligence Co., Ltd. betrieben wird, speichert und verarbeitet Daten wie Texteingaben, Chatverläufe und Standortinformationen auf Servern in China. Dies verstößt nach Ansicht der Behörde gegen die Datenschutz-Grundverordnung (DSGVO), da weder ein Angemessenheitsbeschluss für China vorliegt noch ausreichende Schutzmaßnahmen nachgewiesen wurden.\n\n<!--more-->\n\nBereits im Mai 2025 hatte die Berliner Datenschutzbeauftragte DeepSeek aufgefordert, die Datenübermittlung nach China zu stoppen. Da das Unternehmen nicht reagierte, wurde die App nun bei Google und Apple als \"rechtswidriger Inhalt\" gemeldet. Die Tech-Konzerne müssen nun entscheiden, ob sie die App aus ihren deutschen App-Stores entfernen. Ähnliche Maßnahmen wurden zuvor bereits in Italien ergriffen, wo DeepSeek ebenfalls aus den App-Stores verbannt wurde. Kritiker:innen warnen zudem vor möglichen Zugriffen chinesischer Behörden auf die gespeicherten Daten, was die Sicherheitsbedenken weiter verstärkt.\n\nDie App DeepSeek hatte in den letzten Monaten durch ihre leistungsstarke KI und den Open-Source-Ansatz viel Aufmerksamkeit erregt. Sie wurde als kostengünstige Alternative zu ChatGPT gefeiert und erreichte hohe Downloadzahlen in Deutschland. Doch die Datenschutzbedenken könnten nun das Ende der App auf dem deutschen Markt bedeuten. Nutzer:innen können die Anwendung zwar weiterhin über die Website des Unternehmens nutzen, doch die Reichweite dürfte ohne die Präsenz in den App-Stores erheblich eingeschränkt werden.\n\n### Quellen\n- [Tagesschau: DeepSeek droht Rauswurf aus deutschen App-Stores](https://www.tagesschau.de/inland/deepseek-datenschutz-102.html)\n- [Datenschutz-Notizen: Berliner Datenschutzbeauftragte geht gegen DeepSeek vor](https://www.datenschutz-notizen.de/berliner-datenschutzbeauftragte-geht-gegen-deepseek-vor-0254918/)\n- [Netzpolitik.org: DeepSeek fliegt aus den App Stores](https://netzpolitik.org/2025/datenschutzbehoerde-greift-ein-deepseek-fliegt-aus-den-app-stores/)\n\n    ",
+    "timestamp": "2025-07-08T19:06:13.964Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über die Berliner Datenschutzbeauftragte und den chinesischen KI-Chatbot DeepSeek ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDer Artikel behandelt einen prominenten KI-Chatbot und dessen regulatorische Herausforderungen, was für die gesamte KI-Branche wegweisend ist und zeigt, wie Datenschutz die KI-Entwicklung beeinflusst.\n\n## **data protection** - Relevanz: 10/10\nDies ist ein bahnbrechender Fall für den Datenschutz, da hier erstmals eine deutsche Behörde konkret gegen einen großen KI-Anbieter wegen DSGVO-Verstößen vorgeht und damit Präzedenzcharakter hat.\n\n## **security** - Relevanz: 8/10\nDie Sicherheitsbedenken bezüglich möglicher Zugriffe chinesischer Behörden auf Nutzerdaten sind hochrelevant für IT-Sicherheitsexperten und Unternehmen, die KI-Tools einsetzen.\n\n## **work** - Relevanz: 7/10\nDa DeepSeek als kostengünstige ChatGPT-Alternative in der Arbeitswelt eingesetzt wird, betrifft das Verbot direkt Unternehmen und Arbeitnehmer, die auf solche Tools angewiesen sind.\n\n## **copyright** - Relevanz: 3/10\nObwohl der Open-Source-Ansatz erwähnt wird, stehen urheberrechtliche Fragen nicht im Fokus des Artikels - die Relevanz ist daher nur für Spezialisten gegeben, die sich für KI-Lizenzmodelle interessieren.",
+          "id": "b372399e-3712-4753-a02d-8b5d74c137cc"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "reasoning": "Der Artikel behandelt einen prominenten KI-Chatbot und dessen regulatorische Herausforderungen, was für die gesamte KI-Branche wegweisend ist und zeigt, wie Datenschutz die KI-Entwicklung beeinflusst.",
+            "relevance": 9
+          },
+          {
+            "name": "data protection",
+            "reasoning": "Dies ist ein bahnbrechender Fall für den Datenschutz, da hier erstmals eine deutsche Behörde konkret gegen einen großen KI-Anbieter wegen DSGVO-Verstößen vorgeht und damit Präzedenzcharakter hat.",
+            "relevance": 10
+          },
+          {
+            "name": "security",
+            "reasoning": "Die Sicherheitsbedenken bezüglich möglicher Zugriffe chinesischer Behörden auf Nutzerdaten sind hochrelevant für IT-Sicherheitsexperten und Unternehmen, die KI-Tools einsetzen.",
+            "relevance": 8
+          },
+          {
+            "name": "work",
+            "reasoning": "Da DeepSeek als kostengünstige ChatGPT-Alternative in der Arbeitswelt eingesetzt wird, betrifft das Verbot direkt Unternehmen und Arbeitnehmer, die auf solche Tools angewiesen sind.",
+            "relevance": 7
+          },
+          {
+            "name": "copyright",
+            "reasoning": "Obwohl der Open-Source-Ansatz erwähnt wird, stehen urheberrechtliche Fragen nicht im Fokus des Artikels - die Relevanz ist daher nur für Spezialisten gegeben, die sich für KI-Lizenzmodelle interessieren.",
+            "relevance": 3
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Neue KI-Tools für personalisiertes Lernen und effektive Bildungsstrategien\n\n\nDie rasante Entwicklung von KI-gestützten Tools revolutioniert derzeit die Bildungslandschaft. Neue Technologien ermöglichen es, Lerninhalte individuell auf die Bedürfnisse der Schüler anzupassen und Lehrkräfte bei der Gestaltung effektiver Unterrichtsstrategien zu unterstützen. Besonders hervorzuheben ist die Einführung von Plattformen wie Google LearnLM, die Lehrern helfen, personalisierte Lernpfade zu erstellen und interaktive Materialien bereitzustellen. Diese Tools analysieren den Lernfortschritt in Echtzeit und passen Inhalte dynamisch an, um Schüler gezielt zu fördern. \n\n<!--more-->\n\nEin weiteres Beispiel ist die Plattform Coursebox AI, die es Lehrkräften ermöglicht, komplexe Themen in leicht verständliche Mindmaps zu verwandeln. Gleichzeitig fördern KI-gestützte Tools wie DreamBox oder Knewton die Inklusion, indem sie Sprachbarrieren abbauen und Schüler mit unterschiedlichen Lernstilen gleichermaßen unterstützen. Kritiker warnen jedoch vor möglichen ethischen Herausforderungen, wie der Gefahr einer Überwachung oder der Abhängigkeit von Technologie. Dennoch sind sich Experten einig, dass KI das Potenzial hat, Bildung zugänglicher und effektiver zu gestalten.\n\n### Quellen\n- [Unite.AI: Die 10 besten KI-Tools für die Bildung](https://www.unite.ai/de/Die-10-besten-KI-Tools-f%C3%BCr-den-Bildungsbereich/)\n- [Coursebox AI: Die Zukunft der KI im personalisierten Lernen](https://www.coursebox.ai/de/blog/the-future-of-ai-in-personalized-learning)\n- [Toolify: Google LearnLM – Revolutionäre KI für Bildung](https://www.toolify.ai/de/ai-news-de/google-learnlm-revolutionre-ki-fr-bildung-und-personalisiertes-lernen-3333441)\n\n    ",
+    "timestamp": "2025-07-08T19:07:33.228Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über KI-Tools für personalisiertes Lernen und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt zentral KI-gestützte Bildungstools wie Google LearnLM, Coursebox AI, DreamBox und Knewton, die personalisierte Lernpfade erstellen und Inhalte dynamisch anpassen - dies ist hochrelevant für alle, die sich für praktische KI-Anwendungen interessieren.\n\n**work - Relevanz: 7/10**\nDie Tools haben direkten Einfluss auf die Arbeitswelt von Lehrkräften und Bildungsexperten, da sie neue Arbeitsweisen und Unterrichtsstrategien ermöglichen - relevant für alle im Bildungsbereich Tätigen.\n\n**data protection - Relevanz: 6/10**\nDer Artikel erwähnt explizit ethische Herausforderungen und Überwachungsrisiken bei KI-Bildungstools, was wichtige Datenschutzaspekte aufwirft - besonders relevant für Bildungsverantwortliche und Datenschutzbeauftragte.\n\n## Nicht zutreffende Kategorien:\n- **programming**: Keine technischen Implementierungsdetails oder Programmieraspekte erwähnt\n- **databases**: Keine spezifischen Datenbank-Technologien oder -Strukturen thematisiert\n- **security**: Keine IT-Sicherheitsaspekte im engeren Sinne behandelt\n- **copyright**: Keine urheberrechtlichen Fragestellungen angesprochen\n\nDer Artikel fokussiert sich primär auf die praktische Anwendung von KI in der Bildung und deren gesellschaftliche Auswirkungen.",
+          "id": "fa5aafcf-8886-4c7a-a14a-ad4290fa88a4"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt zentral KI-gestützte Bildungstools wie Google LearnLM, Coursebox AI, DreamBox und Knewton, die personalisierte Lernpfade erstellen und Inhalte dynamisch anpassen - dies ist hochrelevant für alle, die sich für praktische KI-Anwendungen interessieren."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Die Tools haben direkten Einfluss auf die Arbeitswelt von Lehrkräften und Bildungsexperten, da sie neue Arbeitsweisen und Unterrichtsstrategien ermöglichen - relevant für alle im Bildungsbereich Tätigen."
+          },
+          {
+            "name": "data protection",
+            "relevance": 6,
+            "reasoning": "Der Artikel erwähnt explizit ethische Herausforderungen und Überwachungsrisiken bei KI-Bildungstools, was wichtige Datenschutzaspekte aufwirft - besonders relevant für Bildungsverantwortliche und Datenschutzbeauftragte."
+          }
+        ]
+      ]
+    }
+  }
+}

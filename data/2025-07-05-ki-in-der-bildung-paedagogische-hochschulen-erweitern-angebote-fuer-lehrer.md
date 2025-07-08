@@ -1,8 +1,34 @@
 ---
-layout: "post"
-language: "de"
-title: "KI in der Bildung: Pädagogische Hochschulen erweitern Angebote für Lehrer"
+layout: post
+language: de
+title: 'KI in der Bildung: Pädagogische Hochschulen erweitern Angebote für Lehrer'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Die Künstliche Intelligenz steht im absoluten Zentrum des Artikels und
+      behandelt deren Integration in das Bildungswesen - ein Thema von hoher
+      gesellschaftlicher Relevanz, das weit über Fachkreise hinausgeht.
+  - name: work
+    relevance: 8
+    reasoning: >-
+      Der Artikel behandelt fundamentale Veränderungen in der Arbeitswelt von
+      Lehrkräften durch KI-Integration und zeigt auf, wie sich Berufsbilder und
+      Arbeitsweisen im Bildungssektor wandeln.
+  - name: data protection
+    relevance: 6
+    reasoning: >-
+      Obwohl nicht explizit detailliert behandelt, werden ethische
+      Fragestellungen und der verantwortungsvolle Umgang mit KI erwähnt, was
+      implizit Datenschutzaspekte einschließt - ein wichtiges Thema für
+      Bildungseinrichtungen.
+  - name: copyright
+    relevance: 4
+    reasoning: >-
+      Urheberrechtsfragen werden nicht direkt angesprochen, sind aber bei der
+      Nutzung von KI-Tools im Bildungsbereich relevant - allerdings nur für
+      Spezialinteressierte in diesem Kontext von Bedeutung.
 ---
 
 Schweizer Pädagogische Hochschulen reagieren auf die wachsende Bedeutung von Künstlicher Intelligenz (KI) im Bildungswesen und erweitern ihre Angebote für angehende Lehrkräfte. Eine aktuelle Umfrage zeigt, dass KI-Kurse bei Lehramtsstudierenden besonders gefragt sind. Die Hochschulen setzen dabei auf praxisnahe Schulungen, die den Einsatz von KI-Tools im Unterricht sowie die Vermittlung von Medienkompetenz umfassen. Ziel ist es, Lehrkräfte auf die Herausforderungen der digitalen Transformation vorzubereiten und ihnen das nötige Wissen zu vermitteln, um KI sinnvoll in den Schulalltag zu integrieren.

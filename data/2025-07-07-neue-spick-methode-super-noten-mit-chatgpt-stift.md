@@ -1,8 +1,32 @@
 ---
-layout: "post"
-language: "de"
-title: "Neue Spick-Methode: \"Super Noten mit ChatGPT-Stift\""
+layout: post
+language: de
+title: 'Neue Spick-Methode: "Super Noten mit ChatGPT-Stift"'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Der Artikel behandelt direkt eine KI-Anwendung (ChatGPT-Integration in
+      einem Stift) und deren gesellschaftliche Auswirkungen, was für alle
+      AI-Interessierten hochrelevant ist.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Die Diskussion um veränderte Lernmethoden und die Infragestellung des
+      traditionellen Leistungsbegriffs betrifft direkt die Zukunft der
+      Arbeitswelt und Qualifikationen.
+  - name: security
+    relevance: 6
+    reasoning: >-
+      Der Artikel thematisiert neue Formen des digitalen Betrugs in
+      Bildungseinrichtungen und die Herausforderungen bei der Verhinderung
+      solcher Praktiken.
+  - name: copyright
+    relevance: 4
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, wirft die KI-basierte Textanalyse und
+      -beantwortung implizit Fragen zum Urheberrecht und geistigem Eigentum auf.
 ---
 
 Ein unscheinbarer Stift sorgt derzeit für Aufsehen in deutschen Klassenzimmern. Der sogenannte "ChatGPT-Stift" sieht auf den ersten Blick wie ein gewöhnlicher Textmarker aus, birgt jedoch eine hochentwickelte KI-Technologie. Entwickelt von einem Start-up aus Wuppertal, ermöglicht der Stift das Scannen von Texten, die anschließend in Echtzeit von einer integrierten KI analysiert und beantwortet werden. Besonders vor den Sommerferien, wenn Prüfungen und Notenvergabe anstehen, hat das Gerät für Diskussionen gesorgt.

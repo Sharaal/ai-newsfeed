@@ -1,8 +1,41 @@
 ---
-layout: "post"
-language: "de"
-title: "Berliner Datenschutzbeauftragte will chinesischen KI-Chatbot DeepSeek verbannen"
+layout: post
+language: de
+title: >-
+  Berliner Datenschutzbeauftragte will chinesischen KI-Chatbot DeepSeek
+  verbannen
 aigenerated: true
+categories:
+  - name: ai
+    reasoning: >-
+      Der Artikel behandelt einen prominenten KI-Chatbot und dessen
+      regulatorische Herausforderungen, was für die gesamte KI-Branche
+      wegweisend ist und zeigt, wie Datenschutz die KI-Entwicklung beeinflusst.
+    relevance: 9
+  - name: data protection
+    reasoning: >-
+      Dies ist ein bahnbrechender Fall für den Datenschutz, da hier erstmals
+      eine deutsche Behörde konkret gegen einen großen KI-Anbieter wegen
+      DSGVO-Verstößen vorgeht und damit Präzedenzcharakter hat.
+    relevance: 10
+  - name: security
+    reasoning: >-
+      Die Sicherheitsbedenken bezüglich möglicher Zugriffe chinesischer Behörden
+      auf Nutzerdaten sind hochrelevant für IT-Sicherheitsexperten und
+      Unternehmen, die KI-Tools einsetzen.
+    relevance: 8
+  - name: work
+    reasoning: >-
+      Da DeepSeek als kostengünstige ChatGPT-Alternative in der Arbeitswelt
+      eingesetzt wird, betrifft das Verbot direkt Unternehmen und Arbeitnehmer,
+      die auf solche Tools angewiesen sind.
+    relevance: 7
+  - name: copyright
+    reasoning: >-
+      Obwohl der Open-Source-Ansatz erwähnt wird, stehen urheberrechtliche
+      Fragen nicht im Fokus des Artikels - die Relevanz ist daher nur für
+      Spezialisten gegeben, die sich für KI-Lizenzmodelle interessieren.
+    relevance: 3
 ---
 
 Die Berliner Datenschutzbeauftragte hat den chinesischen KI-Chatbot DeepSeek ins Visier genommen. Grund dafür ist die mutmaßlich rechtswidrige Übermittlung personenbezogener Daten deutscher Nutzer:innen nach China. Die App, die von der Hangzhou DeepSeek Artificial Intelligence Co., Ltd. betrieben wird, speichert und verarbeitet Daten wie Texteingaben, Chatverläufe und Standortinformationen auf Servern in China. Dies verstößt nach Ansicht der Behörde gegen die Datenschutz-Grundverordnung (DSGVO), da weder ein Angemessenheitsbeschluss für China vorliegt noch ausreichende Schutzmaßnahmen nachgewiesen wurden.

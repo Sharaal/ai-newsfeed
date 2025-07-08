@@ -1,8 +1,27 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-gestützte Psychotherapie: Kann ChatGPT eine Therapie ersetzen?"
+layout: post
+language: de
+title: 'KI-gestützte Psychotherapie: Kann ChatGPT eine Therapie ersetzen?'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt zentral den Einsatz von KI-Systemen wie ChatGPT in
+      der Psychotherapie und ist hochrelevant für alle, die sich für
+      KI-Anwendungen im Gesundheitswesen interessieren.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Das Thema betrifft direkt Psychotherapeuten und andere
+      Gesundheitsfachkräfte, deren Arbeitsfeld durch KI-Tools verändert werden
+      könnte, sowie Arbeitnehmer, die unter psychischen Belastungen leiden.
+  - name: data protection
+    relevance: 6
+    reasoning: >-
+      Der Artikel erwähnt explizit ethische Fragen zur Datensicherheit bei der
+      Nutzung von KI-Therapietools, was für datenschutzbewusste Nutzer relevant
+      ist.
 ---
 
 Immer mehr Menschen suchen in Zeiten psychischer Belastung nach schnellen und unkomplizierten Lösungen. Künstliche Intelligenz (KI) wie ChatGPT wird dabei zunehmend als potenzieller Helfer betrachtet. Besonders junge Menschen berichten auf Plattformen wie TikTok und Instagram von positiven Erfahrungen mit KI-gestützten Gesprächen. Die Vorteile liegen auf der Hand: ChatGPT ist rund um die Uhr verfügbar, anonym und ohne Wartezeiten nutzbar. Doch kann ein KI-Chatbot wirklich eine professionelle Psychotherapie ersetzen?

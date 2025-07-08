@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-gestützte Psychotherapie: Kann ChatGPT eine Therapie ersetzen?\n\n\nImmer mehr Menschen suchen in Zeiten psychischer Belastung nach schnellen und unkomplizierten Lösungen. Künstliche Intelligenz (KI) wie ChatGPT wird dabei zunehmend als potenzieller Helfer betrachtet. Besonders junge Menschen berichten auf Plattformen wie TikTok und Instagram von positiven Erfahrungen mit KI-gestützten Gesprächen. Die Vorteile liegen auf der Hand: ChatGPT ist rund um die Uhr verfügbar, anonym und ohne Wartezeiten nutzbar. Doch kann ein KI-Chatbot wirklich eine professionelle Psychotherapie ersetzen?\n\n<!--more-->\n\nExperten sind skeptisch. Laut einer aktuellen Studie der Ohio State University bewerteten Probanden die Antworten von ChatGPT in Paartherapie-Szenarien teilweise höher als die von echten Therapeuten. Dennoch warnen Psychologen wie Andrea Benecke, Präsidentin der Bundespsychotherapeutenkammer, vor den Risiken. KI-Systeme wie ChatGPT seien nicht darauf ausgelegt, komplexe psychische Probleme zu behandeln. Sie könnten wichtige Nuancen übersehen oder sogar schädliche Ratschläge geben. Auch ethische Fragen stehen im Raum: Wie sicher sind die Daten, die Nutzer mit der KI teilen?\n\nNeben ChatGPT gibt es spezialisierte KI-Tools wie Woebot oder Wysa, die gezielt für den Umgang mit Stress und Angstzuständen entwickelt wurden. Diese Programme betonen jedoch, dass sie keine Therapie ersetzen, sondern lediglich als Ergänzung oder Überbrückung dienen sollen. Experten raten, solche Angebote mit Vorsicht zu nutzen und bei ernsthaften Problemen professionelle Hilfe in Anspruch zu nehmen.\n\n### Quellen\n- [ZDFheute: ChatGPT und mentale Gesundheit](https://www.zdfheute.de/ratgeber/gesundheit/kuenstliche-intelligenz-therapie-chatgpt-100.html)\n- [MDR: Kann ChatGPT den Psychotherapeuten ersetzen?](https://www.mdr.de/wissen/psychologie-sozialwissenschaften/chat-gpt-psychotherapie-psychotherapeut-ki-kuenstliche-intelligenz-100.html)\n- [Deutschlandfunk Kultur: KI in der Psychotherapie](https://www.deutschlandfunkkultur.de/ki-psychotherapie-chatgpt-100.html)\n\n    ",
+    "timestamp": "2025-07-08T19:13:09.074Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über KI-gestützte Psychotherapie ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDer Artikel behandelt zentral den Einsatz von KI-Systemen wie ChatGPT in der Psychotherapie und ist hochrelevant für alle, die sich für KI-Anwendungen im Gesundheitswesen interessieren.\n\n## **work** - Relevanz: 7/10\nDas Thema betrifft direkt Psychotherapeuten und andere Gesundheitsfachkräfte, deren Arbeitsfeld durch KI-Tools verändert werden könnte, sowie Arbeitnehmer, die unter psychischen Belastungen leiden.\n\n## **data protection** - Relevanz: 6/10\nDer Artikel erwähnt explizit ethische Fragen zur Datensicherheit bei der Nutzung von KI-Therapietools, was für datenschutzbewusste Nutzer relevant ist.\n\nDie anderen Kategorien (programming, databases, security, copyright) sind nicht zutreffend, da der Artikel weder technische Implementierungsdetails noch spezifische Sicherheits- oder Urheberrechtsfragen behandelt, sondern sich auf die praktische Anwendung und gesellschaftlichen Auswirkungen von KI in der Therapie konzentriert.",
+          "id": "b9e301d0-f8ac-41e6-af8a-021f1cb7ee61"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt zentral den Einsatz von KI-Systemen wie ChatGPT in der Psychotherapie und ist hochrelevant für alle, die sich für KI-Anwendungen im Gesundheitswesen interessieren."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Das Thema betrifft direkt Psychotherapeuten und andere Gesundheitsfachkräfte, deren Arbeitsfeld durch KI-Tools verändert werden könnte, sowie Arbeitnehmer, die unter psychischen Belastungen leiden."
+          },
+          {
+            "name": "data protection",
+            "relevance": 6,
+            "reasoning": "Der Artikel erwähnt explizit ethische Fragen zur Datensicherheit bei der Nutzung von KI-Therapietools, was für datenschutzbewusste Nutzer relevant ist."
+          }
+        ]
+      ]
+    }
+  }
+}

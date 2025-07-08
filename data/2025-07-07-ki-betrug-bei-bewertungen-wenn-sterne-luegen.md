@@ -1,8 +1,41 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-Betrug bei Bewertungen: Wenn Sterne lügen"
+layout: post
+language: de
+title: 'KI-Betrug bei Bewertungen: Wenn Sterne lügen'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt zentral den Einsatz von KI zur Erstellung
+      gefälschter Bewertungen sowie KI-gestützte Gegenmaßnahmen, was für alle
+      AI-Interessierten hochrelevant ist und die gesellschaftlichen Auswirkungen
+      von KI-Missbrauch verdeutlicht.
+  - name: security
+    relevance: 8
+    reasoning: >-
+      Fake-Bewertungen stellen eine bedeutende Sicherheitsbedrohung für
+      Online-Plattformen und Verbraucher dar, mit konkreten Schadenssummen von
+      152 Milliarden Dollar jährlich, was das Thema für Sicherheitsexperten sehr
+      relevant macht.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Der Artikel zeigt erhebliche Auswirkungen auf die Arbeitswelt,
+      insbesondere für die Hotelbranche und Online-Händler, deren
+      Geschäftsmodelle stark von authentischen Bewertungen abhängen.
+  - name: data protection
+    relevance: 6
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, berührt das Thema Datenschutzaspekte bei
+      der Analyse von Nutzerdaten zur Betrugserkennung und beim Schutz vor
+      manipulierten Informationen.
+  - name: copyright
+    relevance: 4
+    reasoning: >-
+      Das Thema tangiert Urheberrechtsfragen nur am Rande, etwa bei der
+      unautorisierten Nutzung von KI zur Erstellung täuschender Inhalte, ist
+      aber nicht der Hauptfokus des Artikels.
 ---
 
 Kundenbewertungen sind für viele Verbraucher die wichtigste Entscheidungsgrundlage beim Online-Shopping. Doch immer häufiger trügt der Schein: Gefälschte Bewertungen, oft erstellt durch Künstliche Intelligenz (KI), überschwemmen Plattformen wie Amazon, Google oder HolidayCheck. Diese manipulierten Rezensionen täuschen nicht nur Verbraucher, sondern verursachen auch immense Schäden für Unternehmen. Laut einer aktuellen Schätzung des Weltwirtschaftsforums beläuft sich der weltweite Schaden durch Fake-Bewertungen auf 152 Milliarden Dollar jährlich. Besonders betroffen ist die Hotelbranche, die stark von positiven Bewertungen abhängig ist.

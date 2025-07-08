@@ -1,8 +1,36 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-Scanner optimieren Flughafen-Schadensermittlung, aber Nachhaltigkeitsprobleme bleiben"
+layout: post
+language: de
+title: >-
+  KI-Scanner optimieren Flughafen-Schadensermittlung, aber
+  Nachhaltigkeitsprobleme bleiben
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Der Artikel behandelt eine konkrete KI-Anwendung mit hochauflösenden
+      Kameras zur automatischen Schadenserkennung, die bereits an vier deutschen
+      Flughäfen implementiert ist und über 1,8 Millionen Scans durchgeführt hat
+      - eine bedeutende praktische KI-Implementierung.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Die Technologie verändert Arbeitsprozesse in der Autovermietungsbranche
+      erheblich, automatisiert die Schadensermittlung und beschleunigt
+      Fahrzeugrückgaben, was für Beschäftigte in diesem Sektor relevant ist.
+  - name: data protection
+    relevance: 4
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, wirft die Erfassung und Verarbeitung von
+      Bilddaten durch KI-Scanner implizit Datenschutzfragen auf, besonders bei
+      der Verarbeitung in Rechenzentren.
+  - name: security
+    relevance: 3
+    reasoning: >-
+      Die automatisierte Schadenserkennung trägt zur Sicherheit von
+      Geschäftsprozessen bei, indem sie Streitigkeiten reduziert und objektive
+      Dokumentation ermöglicht, ist aber nicht primär sicherheitsfokussiert.
 ---
 
 Die Einführung von KI-Scannern an deutschen Flughäfen revolutioniert die Schadensermittlung bei Mietwagen. Das norwegische Unternehmen Wenn ASA hat die Technologie bereits an vier Standorten, darunter Frankfurt, München, Berlin und Stuttgart, installiert. Die Scanner erfassen mit hochauflösenden Kameras den Zustand der Fahrzeuge und erkennen automatisch Kratzer, Dellen oder Lackschäden. Ziel ist es, Streitigkeiten zwischen Mietern und Vermietern zu minimieren und den Prozess der Fahrzeugrückgabe zu beschleunigen. Allein am Flughafen München wurden seit 2023 über 1,8 Millionen Scans durchgeführt, was die Effizienz und Präzision der Technologie unterstreicht.
