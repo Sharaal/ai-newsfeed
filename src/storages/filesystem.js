@@ -4,10 +4,10 @@ const matter = require('gray-matter');
 
 const filterByAigenerated = require('../utils/filterByAigenerated');
 const filterByCategories = require('../utils/filterByCategories');
-const filterByDate = require('../utils/filterByDate');
+const filterByPublished = require('../utils/filterByPublished');
 const filterByLanguage = require('../utils/filterByLanguage');
 const filterByQualitygates = require('../utils/filterByQualitygates');
-const orderByDateDesc = require('../utils/orderByDateDesc');
+const orderByPublishedDesc = require('../utils/orderByPublishedDesc');
 
 const data = globSync('./data/*.md')
     .map(file => {
@@ -19,14 +19,14 @@ const data = globSync('./data/*.md')
             console.warn(`File ${file} is missing a title. Skipping...`);
             return;
         }
-        const date = file.substring(5, 15);
-        if (!date.match(/^\d{4}-\d{2}-\d{2}$/)) {
-            console.warn(`File ${file} has an invalid name format. Expected to start with YYYY-MM-DD. Skipping...`);
+        const published = file.substring(5, 15);
+        if (!published.match(/^\d{4}-\d{2}-\d{2}$/)) {
+            console.warn(`File ${file} has an invalid published format. Expected to start with YYYY-MM-DD. Skipping...`);
             return;
         }
         return {
             ...data,
-            date,
+            published,
             content: content.trim(),
             assets: {
                 images: globSync('./public/assets/' + file.substring(5, file.length - 3) + '/images/*.*')
@@ -37,16 +37,16 @@ const data = globSync('./data/*.md')
         }
     })
     .filter(Boolean)
-    .sort(orderByDateDesc);
+    .sort(orderByPublishedDesc);
 
-module.exports = function storage({ language, categories, qualitygates, aigenerated, date, limit, offset }) {
+module.exports = function storage({ aigenerated, categories, language, published, qualitygates, limit, offset }) {
     let feed = data;
 
-    feed = filterByLanguage(feed, language);
-    feed = filterByCategories(feed, categories);
-    feed = filterByQualitygates(feed, qualitygates);
     feed = filterByAigenerated(feed, aigenerated);
-    feed = filterByDate(feed, date);
+    feed = filterByCategories(feed, categories);
+    feed = filterByLanguage(feed, language);
+    feed = filterByPublished(feed, published);
+    feed = filterByQualitygates(feed, qualitygates);
 
     offset = parseInt(offset) || 0;
     limit = parseInt(limit) || feed.length;

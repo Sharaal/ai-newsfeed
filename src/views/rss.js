@@ -13,7 +13,7 @@ module.exports = [
             rss.item({
                 title: news.title,
                 description: news.content,
-                date: news.date,
+                date: news.published,
                 enclosure: {
                     url: news.assets?.tts ? process.env.URL + '/' + news.assets.tts : undefined,
                 },

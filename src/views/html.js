@@ -28,7 +28,7 @@ module.exports = [
             `;
             return `
 <article id="item-${index}">
-    <h2>${item.date}: ${item.title}</h2>
+    <h2>${item.published}: ${item.title}</h2>
     ${
         item.categories 
         ? `<p><em>

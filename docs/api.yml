@@ -43,10 +43,10 @@ paths:
             type: boolean
           description: false to filter out all AI generated news. (Default: no filter)
         - in: query
-          name: date
+          name: published
           schema:
             type: string
-          description: Minimum date to filter in format "YYYY-MM-DD". (Default: no filter)
+          description: Minimum published date to filter in format "YYYY-MM-DD". (Default: no filter)
         - in: query
           name: limit
           schema:
@@ -76,9 +76,14 @@ components:
     News:
       type: object
       properties:
-        language:
+        published:
           type: string
+          format: date
         title:
+          type: string
+        content:
+          type: string
+        language:
           type: string
         categories:
           type: array
@@ -91,23 +96,6 @@ components:
                 type: number
               reasoning:
                 type: string
-        qualitygates:
-          type: array
-          items:
-            type: object
-            properties:
-              name:
-                type: string
-              verified:
-                type: boolean
-          type: object
-        aigenerated:
-          type: boolean
-        date:
-          type: string
-          format: date
-        content:
-          type: string
         assets:
           type: object
           properties:
@@ -119,7 +107,19 @@ components:
             tts:
               type: string
               format: uri
+        aigenerated:
+          type: boolean
+        qualitygates:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              verified:
+                type: boolean
+          type: object
       required:
+        - published
         - title
-        - date
         - content
