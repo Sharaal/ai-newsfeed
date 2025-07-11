@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-Scanner optimieren Flughafen-Schadensermittlung, aber Nachhaltigkeitsprobleme bleiben\n\n\nDie Einführung von KI-Scannern an deutschen Flughäfen revolutioniert die Schadensermittlung bei Mietwagen. Das norwegische Unternehmen Wenn ASA hat die Technologie bereits an vier Standorten, darunter Frankfurt, München, Berlin und Stuttgart, installiert. Die Scanner erfassen mit hochauflösenden Kameras den Zustand der Fahrzeuge und erkennen automatisch Kratzer, Dellen oder Lackschäden. Ziel ist es, Streitigkeiten zwischen Mietern und Vermietern zu minimieren und den Prozess der Fahrzeugrückgabe zu beschleunigen. Allein am Flughafen München wurden seit 2023 über 1,8 Millionen Scans durchgeführt, was die Effizienz und Präzision der Technologie unterstreicht.\n\n<!--more-->\n\nTrotz der offensichtlichen Vorteile werfen die KI-Scanner auch Fragen zur Nachhaltigkeit auf. Kritiker bemängeln den hohen Energie- und Wasserverbrauch, der mit dem Betrieb der KI-Systeme einhergeht. Besonders in Rechenzentren, die für die Verarbeitung der Bilddaten benötigt werden, ist der Ressourcenverbrauch ein Problem. Experten fordern daher, dass die Betreiber nicht nur auf Effizienz, sondern auch auf ökologische Verantwortung setzen. Der Ausbau der Technologie an weiteren Flughäfen, wie etwa Hamburg, ist dennoch bereits in Planung.\n\n### Quellen\n- [Golem.de: KI-Scanner an deutschen Flughäfen](https://www.golem.de/news/schadensermittlung-bei-autovermietungen-ki-scanner-an-viertem-deutschen-flughafen-in-betrieb-2507-197747.html)\n- [KI-Echo: Nachhaltigkeitsprobleme durch KI](https://ki-echo.de/ki-scanner-wasserverbrauch-und-neue-gesetze-wie-kuenstliche-intelligenz-deutschland-veraendert/)\n- [Der Standard: Automatische Schadensermittlung](https://www.derstandard.de/story/3000000278025/ki-scanner-erfassen-mietwagenschaeden-an-flughaefen)\n\n    ",
+    "timestamp": "2025-07-08T19:08:55.200Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über KI-Scanner zur Schadensermittlung an Flughäfen und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 8/10**\nDer Artikel behandelt eine konkrete KI-Anwendung mit hochauflösenden Kameras zur automatischen Schadenserkennung, die bereits an vier deutschen Flughäfen implementiert ist und über 1,8 Millionen Scans durchgeführt hat - eine bedeutende praktische KI-Implementierung.\n\n**work - Relevanz: 6/10**\nDie Technologie verändert Arbeitsprozesse in der Autovermietungsbranche erheblich, automatisiert die Schadensermittlung und beschleunigt Fahrzeugrückgaben, was für Beschäftigte in diesem Sektor relevant ist.\n\n**data protection - Relevanz: 4/10**\nObwohl nicht explizit erwähnt, wirft die Erfassung und Verarbeitung von Bilddaten durch KI-Scanner implizit Datenschutzfragen auf, besonders bei der Verarbeitung in Rechenzentren.\n\n**security - Relevanz: 3/10**\nDie automatisierte Schadenserkennung trägt zur Sicherheit von Geschäftsprozessen bei, indem sie Streitigkeiten reduziert und objektive Dokumentation ermöglicht, ist aber nicht primär sicherheitsfokussiert.\n\nDie Kategorien *programming*, *databases* und *copyright* sind nicht relevant, da der Artikel weder technische Implementierungsdetails noch Urheberrechtsfragen behandelt.",
+          "id": "3ea75af8-6363-41a8-b481-e0954404feda"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Der Artikel behandelt eine konkrete KI-Anwendung mit hochauflösenden Kameras zur automatischen Schadenserkennung, die bereits an vier deutschen Flughäfen implementiert ist und über 1,8 Millionen Scans durchgeführt hat - eine bedeutende praktische KI-Implementierung."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Die Technologie verändert Arbeitsprozesse in der Autovermietungsbranche erheblich, automatisiert die Schadensermittlung und beschleunigt Fahrzeugrückgaben, was für Beschäftigte in diesem Sektor relevant ist."
+          },
+          {
+            "name": "data protection",
+            "relevance": 4,
+            "reasoning": "Obwohl nicht explizit erwähnt, wirft die Erfassung und Verarbeitung von Bilddaten durch KI-Scanner implizit Datenschutzfragen auf, besonders bei der Verarbeitung in Rechenzentren."
+          },
+          {
+            "name": "security",
+            "relevance": 3,
+            "reasoning": "Die automatisierte Schadenserkennung trägt zur Sicherheit von Geschäftsprozessen bei, indem sie Streitigkeiten reduziert und objektive Dokumentation ermöglicht, ist aber nicht primär sicherheitsfokussiert."
+          }
+        ]
+      ]
+    }
+  }
+}

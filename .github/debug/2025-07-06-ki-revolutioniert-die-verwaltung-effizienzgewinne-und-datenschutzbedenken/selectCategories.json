@@ -1,0 +1,70 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI revolutioniert die Verwaltung: Effizienzgewinne und Datenschutzbedenken\n\n\nDie Einführung von Künstlicher Intelligenz (KI) in der öffentlichen Verwaltung sorgt derzeit für eine stille Revolution. In Städten wie Müllheim und Landkreisen wie Ravensburg werden KI-Systeme wie Nele.AI eingesetzt, um Routineaufgaben zu automatisieren, Bürgeranfragen schneller zu bearbeiten und die Effizienz der Verwaltungsprozesse zu steigern. Diese Technologien ermöglichen es, Daten effizienter zu analysieren und fundierte Entscheidungen zu treffen, was sowohl den Mitarbeitenden als auch den Bürgerinnen und Bürgern zugutekommt. Besonders hervorzuheben ist, dass Nele.AI als Proxy-KI fungiert, die personenbezogene Daten pseudonymisiert und so den strengen EU-Datenschutzvorgaben entspricht.\n\n<!--more-->\n\nTrotz der offensichtlichen Vorteile gibt es auch kritische Stimmen. Datenschutzexperten warnen vor möglichen Sicherheitslücken und der Gefahr, dass sensible Daten in falsche Hände geraten könnten. Zudem wird diskutiert, ob die Automatisierung von Verwaltungsaufgaben langfristig zu einem Verlust von Arbeitsplätzen führen könnte. Um diesen Herausforderungen zu begegnen, setzen viele Kommunen auf umfassende Schulungen für ihre Mitarbeitenden, um den verantwortungsvollen Umgang mit KI-Systemen zu gewährleisten. Gleichzeitig wird betont, dass KI lediglich ein unterstützendes Werkzeug ist und die finale Entscheidungsgewalt weiterhin bei den Menschen liegt.\n\n### Quellen\n- [Landkreisnachrichten: Effizienz und Datenschutz - Hand in Hand](https://landkreisnachrichten.de/themen/verwaltungsinnovation/effizienz-und-datenschutz-hand-in-hand)\n- [KI-Echo: Wie Künstliche Intelligenz die Verwaltung in Müllheim unterstützt](https://ki-echo.de/ki-in-verwaltung-forschung-medien-und-alltag-chancen-risiken-und-aktuelle-debatten/)\n- [IT-Boltwise: Künstliche Intelligenz in der Verwaltung](https://www.it-boltwise.de/kuenstliche-intelligenz-in-der-verwaltung-chancen-und-herausforderungen.html)\n\n    ",
+    "timestamp": "2025-07-08T19:10:17.368Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über KI in der öffentlichen Verwaltung und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt zentral die Einführung von KI-Systemen wie Nele.AI in der öffentlichen Verwaltung und deren transformative Auswirkungen, was für alle AI-Interessierten hochrelevant ist.\n\n**work - Relevanz: 7/10**\nDie Diskussion über Automatisierung von Arbeitsplätzen, Mitarbeiterschulungen und die Veränderung von Arbeitsprozessen in der Verwaltung ist für Arbeitswelt-Themen sehr relevant.\n\n**data protection - Relevanz: 8/10**\nDatenschutz ist ein zentrales Thema des Artikels, mit expliziter Erwähnung von EU-Datenschutzvorgaben, Pseudonymisierung und Datenschutzexperten-Warnungen.\n\n**security - Relevanz: 6/10**\nSicherheitslücken und die Gefahr des Datenmissbrauchs werden als wichtige Bedenken thematisiert, was für IT-Sicherheitsexperten relevant ist.\n\n**programming - Relevanz: 4/10**\nObwohl KI-Systeme erwähnt werden, geht der Artikel nicht auf technische Implementierungsdetails oder Programmieraspekte ein, daher nur für Spezialinteressierte relevant.\n\nDie Kategorien \"databases\" und \"copyright\" sind nicht zutreffend, da der Artikel weder Datenbankthemen noch urheberrechtliche Aspekte behandelt.",
+          "id": "79c0800d-44aa-4ebb-aebc-a6c9e198a4c7"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "reasoning": "Der Artikel behandelt zentral die Einführung von KI-Systemen wie Nele.AI in der öffentlichen Verwaltung und deren transformative Auswirkungen, was für alle AI-Interessierten hochrelevant ist.",
+            "relevance": 9
+          },
+          {
+            "name": "work",
+            "reasoning": "Die Diskussion über Automatisierung von Arbeitsplätzen, Mitarbeiterschulungen und die Veränderung von Arbeitsprozessen in der Verwaltung ist für Arbeitswelt-Themen sehr relevant.",
+            "relevance": 7
+          },
+          {
+            "name": "data protection",
+            "reasoning": "Datenschutz ist ein zentrales Thema des Artikels, mit expliziter Erwähnung von EU-Datenschutzvorgaben, Pseudonymisierung und Datenschutzexperten-Warnungen.",
+            "relevance": 8
+          },
+          {
+            "name": "security",
+            "reasoning": "Sicherheitslücken und die Gefahr des Datenmissbrauchs werden als wichtige Bedenken thematisiert, was für IT-Sicherheitsexperten relevant ist.",
+            "relevance": 6
+          },
+          {
+            "name": "programming",
+            "reasoning": "Obwohl KI-Systeme erwähnt werden, geht der Artikel nicht auf technische Implementierungsdetails oder Programmieraspekte ein, daher nur für Spezialinteressierte relevant.",
+            "relevance": 4
+          }
+        ]
+      ]
+    }
+  }
+}
