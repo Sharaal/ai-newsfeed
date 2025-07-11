@@ -3,7 +3,7 @@ module.exports = function filterByVerifiedQualitygates(feed) {
         if (news.qualitygates === undefined) {
             return true;
         }
-        for (const [, verified] of Object.entries(news.qualitygates)) {
+        for (const { verified } of news.qualitygates) {
             if (!verified) {
                 return false;
             }

@@ -92,9 +92,15 @@ components:
               reasoning:
                 type: string
         qualitygates:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              verified:
+                type: boolean
           type: object
-          additionalProperties:
-            type: boolean
         aigenerated:
           type: boolean
         date:

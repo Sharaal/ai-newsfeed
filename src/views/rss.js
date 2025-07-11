@@ -25,7 +25,7 @@ module.exports = [
                     },
                 ]
                     .concat(
-                        (news.categories || []).map(([name, relevance]) => ({
+                        (news.categories || []).map(({ name, relevance }) => ({
                             category: [
                                 { _attr: { relevance } },
                                 name,
@@ -33,10 +33,10 @@ module.exports = [
                         })),
                     )
                     .concat(
-                        Object.entries(news.qualitygates || {}).map(([qualitygate, verified]) => ({
+                        (news.qualitygates || []).map(({ name, verified }) => ({
                             qualitygate: [
                                 { _attr: { verified } },
-                                qualitygate,
+                                name,
                             ],
                         })),
                     ),

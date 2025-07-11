@@ -4,7 +4,8 @@ module.exports = function filterByQueriedQualitygates(feed, qualitygates) {
             return true;
         }
         for (const [qualitygate, verified] of Object.entries(qualitygates)) {
-            if (news.qualitygates[qualitygate] !== (verified === 'true')) {
+            const newsQualitygate = news.qualitygates.find(newsQualitygate => newsQualitygate.name === qualitygate);
+            if (newsQualitygate && newsQualitygate.verified !== (verified === 'true')) {
                 return false;
             }
         }
