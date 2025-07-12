@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-gestützte Gesundheitsanalyse per Selfie: Chancen und Risiken\n\n\nDie Idee, Gesundheitsdaten aus einem einfachen Selfie zu gewinnen, klingt wie aus einem Science-Fiction-Film. Doch moderne KI-Systeme versprechen genau das: Sie analysieren Gesichtszüge, Hautbeschaffenheit und andere visuelle Merkmale, um Rückschlüsse auf den Gesundheitszustand zu ziehen. Erste Anwendungen können bereits genetische Syndrome, Herz-Kreislauf-Risiken oder den biologischen Alterungsprozess erkennen. Besonders in der Dermatologie und bei seltenen genetischen Erkrankungen zeigen Studien vielversprechende Ergebnisse. Doch wie zuverlässig sind diese Technologien wirklich, und welche Risiken bergen sie?\n\n<!--more-->\n\nExperten warnen vor überzogenen Erwartungen. Während KI-Modelle wie \"DeepGestalt\" in klinischen Studien beeindruckende Ergebnisse liefern, bleibt die Genauigkeit in der breiten Anwendung oft hinter den Erwartungen zurück. Ein weiteres Problem ist der Datenschutz: Die sensiblen Gesundheitsdaten, die durch Selfie-Analysen generiert werden, könnten in falsche Hände geraten oder missbraucht werden. Zudem besteht die Gefahr, dass Menschen durch ungenaue Diagnosen verunsichert werden und unnötige Arztbesuche auslösen. Kritiker fordern daher strengere Regulierungen und eine transparente Kommunikation über die Grenzen der Technologie.\n\nTrotz der Herausforderungen bietet die KI-gestützte Gesundheitsanalyse auch enorme Chancen. Sie könnte den Zugang zu medizinischen Diagnosen erleichtern, insbesondere in Regionen mit begrenzter Gesundheitsversorgung. Zudem könnten solche Technologien präventive Maßnahmen fördern, indem sie frühzeitig auf potenzielle Gesundheitsprobleme hinweisen. Doch um das volle Potenzial auszuschöpfen, müssen ethische und technische Standards weiterentwickelt werden.\n\n### Quellen\n- [ZDFheute: KI-Diagnose per Selfie – Gut oder gefährlich?](https://www.zdfheute.de/panorama/gesundheitsanalyse-ki-chatgpt-100.html)  \n- [IT-Boltwise: Neue Gesundheitsanalyse – Chancen und Risiken der Selbstdiagnose](https://www.it-boltwise.de/neue-gesundheitsanalyse-funktion-health-und-die-herausforderungen-der-selbstdiagnose.html)  \n- [Healthcare Digital: KI im Gesundheitswesen – Potenziale optimieren, Risiken minimieren](https://www.healthcare-digital.de/ki-im-gesundheitswesen-potenziale-optimieren-risiken-minimieren-a-e56a87c60fd33f4bfe216025a70f0017/)\n\n    ",
+    "timestamp": "2025-07-12T19:04:06.908Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts über KI-gestützte Gesundheitsanalyse per Selfie ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDie KI-gestützte Gesundheitsanalyse ist ein hochaktuelles und bahnbrechendes Anwendungsgebiet der Künstlichen Intelligenz, das zeigt, wie KI-Modelle komplexe medizinische Diagnosen aus visuellen Daten ableiten können.\n\n## **data protection** - Relevanz: 8/10\nDer Artikel thematisiert explizit kritische Datenschutzprobleme bei der Verarbeitung sensibler Gesundheitsdaten aus Selfies und die Gefahr des Missbrauchs dieser Informationen.\n\n## **work** - Relevanz: 6/10\nDie Technologie könnte die Arbeitswelt im Gesundheitswesen erheblich verändern, indem sie den Zugang zu medizinischen Diagnosen erleichtert und möglicherweise traditionelle Diagnoseverfahren ergänzt oder ersetzt.\n\n## **security** - Relevanz: 5/10\nObwohl nicht explizit erwähnt, sind die Sicherheitsaspekte bei der Übertragung und Speicherung sensibler Gesundheitsdaten aus Selfie-Analysen ein wichtiger Nebenaspekt der diskutierten Datenschutzproblematik.\n\nDie Kategorien **programming**, **databases** und **copyright** sind für diesen Artikel nicht relevant, da sie nicht thematisiert werden.",
+          "id": "df4f1179-13e9-4fe1-af18-5ca1b0b82046"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Die KI-gestützte Gesundheitsanalyse ist ein hochaktuelles und bahnbrechendes Anwendungsgebiet der Künstlichen Intelligenz, das zeigt, wie KI-Modelle komplexe medizinische Diagnosen aus visuellen Daten ableiten können."
+          },
+          {
+            "name": "data protection",
+            "relevance": 8,
+            "reasoning": "Der Artikel thematisiert explizit kritische Datenschutzprobleme bei der Verarbeitung sensibler Gesundheitsdaten aus Selfies und die Gefahr des Missbrauchs dieser Informationen."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Die Technologie könnte die Arbeitswelt im Gesundheitswesen erheblich verändern, indem sie den Zugang zu medizinischen Diagnosen erleichtert und möglicherweise traditionelle Diagnoseverfahren ergänzt oder ersetzt."
+          },
+          {
+            "name": "security",
+            "relevance": 5,
+            "reasoning": "Obwohl nicht explizit erwähnt, sind die Sicherheitsaspekte bei der Übertragung und Speicherung sensibler Gesundheitsdaten aus Selfie-Analysen ein wichtiger Nebenaspekt der diskutierten Datenschutzproblematik."
+          }
+        ]
+      ]
+    }
+  }
+}

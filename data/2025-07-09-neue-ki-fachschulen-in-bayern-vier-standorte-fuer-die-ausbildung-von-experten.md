@@ -1,8 +1,29 @@
 ---
-layout: "post"
-language: "de"
-title: "Neue KI-Fachschulen in Bayern: Vier Standorte für die Ausbildung von Experten"
+layout: post
+language: de
+title: 'Neue KI-Fachschulen in Bayern: Vier Standorte für die Ausbildung von Experten'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Der Artikel behandelt direkt die Einrichtung spezialisierter
+      KI-Fachschulen und die Ausbildung von KI-Experten, was für die gesamte
+      KI-Community hochrelevant ist und einen wichtigen Meilenstein in der
+      KI-Bildungslandschaft darstellt.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Die Nachricht ist sehr relevant für die Arbeitswelt, da sie neue
+      Berufsbilder und Ausbildungswege schafft, die direkt auf den
+      Fachkräftemangel im KI-Bereich reagieren und neue Karrieremöglichkeiten
+      eröffnen.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, ist Programmierung ein wesentlicher
+      Bestandteil der KI-Ausbildung, weshalb diese Entwicklung für Programmierer
+      und angehende Entwickler durchaus interessant ist.
 ---
 
 Bayern setzt ein starkes Zeichen für die Zukunft der beruflichen Bildung: Ab dem Schuljahr 2025/2026 werden an vier Standorten im Freistaat neue Fachschulen für Künstliche Intelligenz (KI) eröffnet. Die Berufsschulzentren in Altötting, Herzogenaurach, Neumarkt in der Oberpfalz und Nördlingen bieten künftig spezialisierte Ausbildungsprogramme an, die auf die Anforderungen der digitalisierten Arbeitswelt zugeschnitten sind. Ziel ist es, junge Talente zu KI-Expertinnen und -Experten auszubilden und damit dem steigenden Bedarf an Fachkräften in diesem Bereich gerecht zu werden.

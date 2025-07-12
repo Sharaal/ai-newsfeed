@@ -1,8 +1,37 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-Sicherheitstests im Straßenverkehr: Fortschritte bei autonomen Fahrzeugen"
+layout: post
+language: de
+title: 'KI-Sicherheitstests im Straßenverkehr: Fortschritte bei autonomen Fahrzeugen'
 aigenerated: true
+categories:
+  - name: ai
+    reasoning: >-
+      Die KI-Technologie steht im absoluten Zentrum des Artikels mit
+      bahnbrechenden Entwicklungen wie KI-gestützten Fahrzeugen, die
+      menschliches Denken simulieren, und KI-basierter Szenenprädiktion - dies
+      ist hochrelevant für alle, die sich für die Zukunft der Mobilität
+      interessieren.
+    relevance: 9
+  - name: security
+    reasoning: >-
+      Sicherheitsaspekte sind ein zentrales Thema mit neuen Standards für
+      KI-Sicherheit, dem TÜV-Sieben-Punkte-Plan und strengeren Testverfahren -
+      diese Entwicklungen sind sehr relevant, da sie die Grundlage für die
+      sichere Einführung autonomer Fahrzeuge bilden.
+    relevance: 8
+  - name: work
+    reasoning: >-
+      Die Entwicklungen haben mittelfristig erhebliche Auswirkungen auf die
+      Arbeitswelt, insbesondere für Berufskraftfahrer und die Transportbranche,
+      auch wenn dies im Artikel nicht explizit thematisiert wird.
+    relevance: 6
+  - name: data protection
+    reasoning: >-
+      Autonome Fahrzeuge sammeln kontinuierlich Daten über Verkehrsteilnehmer
+      und Umgebung, was datenschutzrechtliche Fragen aufwirft, obwohl diese im
+      Artikel nur implizit durch die Erwähnung der Datensammlung angesprochen
+      werden.
+    relevance: 5
 ---
 
 Die Entwicklung autonomer Fahrzeuge hat in den letzten Tagen bedeutende Fortschritte gemacht. In Deutschland hat das Berliner Start-up MotorAi die Genehmigung erhalten, seine KI-gestützten Fahrzeuge bundesweit im Straßenverkehr zu testen. Diese Fahrzeuge nutzen eine neuartige Technologie, die das menschliche Denken simuliert, um komplexe Verkehrssituationen sicher zu bewältigen. Parallel dazu hat das Forschungsprojekt "KI Absicherung" neue Standards für die Sicherheit von KI-Systemen in autonomen Fahrzeugen entwickelt. Ziel ist es, die Zuverlässigkeit dieser Systeme zu gewährleisten, insbesondere in unvorhersehbaren Verkehrssituationen.

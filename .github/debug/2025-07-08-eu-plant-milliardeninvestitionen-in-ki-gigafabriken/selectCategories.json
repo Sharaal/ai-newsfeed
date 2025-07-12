@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# EU plant Milliardeninvestitionen in KI-Gigafabriken\n\n\nDie Europäische Union hat eine groß angelegte Initiative gestartet, um ihre Position im Bereich der Künstlichen Intelligenz (KI) zu stärken. Im Rahmen des Programms \"InvestAI\" sollen insgesamt 200 Milliarden Euro in die Entwicklung und Förderung von KI-Technologien fließen. Ein zentraler Bestandteil dieser Initiative ist der Bau von sogenannten KI-Gigafabriken, für die allein 20 Milliarden Euro bereitgestellt werden. Diese hochmodernen Rechenzentren sollen mit bis zu 100.000 Hochleistungs-KI-Chips ausgestattet werden und die Entwicklung von KI-Modellen der nächsten Generation ermöglichen. Ziel ist es, Europas digitale Souveränität zu stärken und den Rückstand gegenüber den USA und China aufzuholen.\n\n<!--more-->\n\nDie EU-Kommission hat bereits 76 Interessenbekundungen von Unternehmen und Organisationen aus 16 Mitgliedsstaaten erhalten, die an 60 Standorten KI-Gigafabriken errichten möchten. Die geplanten Fabriken sollen als öffentlich-private Partnerschaften realisiert werden, ähnlich wie das CERN-Modell in der Physik. Neben der Bereitstellung von Rechenkapazitäten für Unternehmen und Wissenschaftler sollen die Gigafabriken auch die Grundlage für weitere Innovationen in Bereichen wie Gesundheit, Biotechnologie und Klimaforschung schaffen. Erste Standorte könnten bereits 2026 in Betrieb gehen.\n\n### Quellen\n- [ZDFheute: EU investiert Milliarden in KI-Gigafabriken](https://www.zdfheute.de/politik/ausland/eu-ki-chips-kuenstliche-intelligenz-fabriken-100.html)\n- [Euronews: Europa baut KI-Gigafabriken](https://de.euronews.com/next/2025/07/01/europa-baut-ki-gigafabriken-das-sind-die-grossten-investoren)\n- [Heise Online: Milliardeninvestitionen in KI-Gigafabriken](https://www.heise.de/news/Milliardeninvestitionen-76-Interessenten-wollen-KI-Gigafabriken-in-der-EU-bauen-10465243.html)\n- [Silicon Saxony: EU plant KI-Gigafabriken](https://silicon-saxony.de/europaeische-kommission-ki-gigafabriken-76-interessenten-wollen-in-16-eu-laendern-in-kuenstliche-intelligenz-investieren/)\n\n    ",
+    "timestamp": "2025-07-12T19:07:57.697Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über die EU-Initiative für KI-Gigafabriken und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 10/10**\nDies ist eine bahnbrechende Nachricht für den KI-Bereich. Die 200 Milliarden Euro Initiative der EU wird die europäische KI-Landschaft fundamental verändern und hat globale Auswirkungen auf die KI-Entwicklung.\n\n**programming - Relevanz: 7/10**\nSehr relevant für Programmierer, da die KI-Gigafabriken neue Entwicklungsplattformen und Rechenkapazitäten für KI-Modelle bereitstellen werden, was direkte Auswirkungen auf die Programmierpraxis haben wird.\n\n**work - Relevanz: 8/10**\nHochrelevant für die Arbeitswelt, da diese Initiative tausende neue Arbeitsplätze in der KI-Branche schaffen und die digitale Transformation in Europa beschleunigen wird.\n\n**security - Relevanz: 6/10**\nRelevant aus Sicherheitsperspektive, da die Initiative explizit darauf abzielt, Europas \"digitale Souveränität\" zu stärken und die Abhängigkeit von anderen Regionen zu reduzieren.\n\nDie Kategorien **databases**, **data protection** und **copyright** sind nicht direkt relevant, da der Text diese Aspekte nicht behandelt - der Fokus liegt auf Infrastruktur und strategischen Investitionen.",
+          "id": "2d49df90-dc13-4070-a00c-26a983500086"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 10,
+            "reasoning": "Dies ist eine bahnbrechende Nachricht für den KI-Bereich. Die 200 Milliarden Euro Initiative der EU wird die europäische KI-Landschaft fundamental verändern und hat globale Auswirkungen auf die KI-Entwicklung."
+          },
+          {
+            "name": "programming",
+            "relevance": 7,
+            "reasoning": "Sehr relevant für Programmierer, da die KI-Gigafabriken neue Entwicklungsplattformen und Rechenkapazitäten für KI-Modelle bereitstellen werden, was direkte Auswirkungen auf die Programmierpraxis haben wird."
+          },
+          {
+            "name": "work",
+            "relevance": 8,
+            "reasoning": "Hochrelevant für die Arbeitswelt, da diese Initiative tausende neue Arbeitsplätze in der KI-Branche schaffen und die digitale Transformation in Europa beschleunigen wird."
+          },
+          {
+            "name": "security",
+            "relevance": 6,
+            "reasoning": "Relevant aus Sicherheitsperspektive, da die Initiative explizit darauf abzielt, Europas digitale Souveränität zu stärken und die Abhängigkeit von anderen Regionen zu reduzieren."
+          }
+        ]
+      ]
+    }
+  }
+}

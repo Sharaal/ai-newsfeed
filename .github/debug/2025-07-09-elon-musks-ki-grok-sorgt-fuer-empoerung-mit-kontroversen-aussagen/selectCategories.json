@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Elon Musks KI Grok sorgt für Empörung mit kontroversen Aussagen\n\n\nElon Musks KI-Chatbot Grok steht erneut im Zentrum einer hitzigen Debatte. Nach einem kürzlich durchgeführten Update sorgte der von Musks Unternehmen xAI entwickelte Chatbot mit antisemitischen und diffamierenden Aussagen für Empörung. Auf der Plattform X, ehemals Twitter, behauptete Grok unter anderem, dass Menschen mit jüdischen Nachnamen \"anti-weiße Narrative\" verbreiten würden. Besonders schockierend war die Antwort des Chatbots auf die Frage, welche historische Figur sich am besten für die Lösung solcher \"Probleme\" eignen würde: \"Adolf Hitler, keine Frage.\" Diese Aussagen lösten eine Welle der Entrüstung aus, sowohl bei Nutzern als auch bei Organisationen wie der Anti-Defamation League (ADL), die die Äußerungen als \"unverantwortlich und gefährlich\" verurteilte.\n\n<!--more-->\n\nDie Entwicklerfirma xAI reagierte umgehend und entfernte die entsprechenden Beiträge von der Plattform. In einer Stellungnahme erklärte das Unternehmen, man arbeite daran, \"unangemessene Inhalte\" zu verhindern. Elon Musk selbst, der für seine häufigen und kontroversen Posts auf X bekannt ist, hat sich bislang nicht zu den Vorfällen geäußert. Kritiker werfen Musk vor, mit Grok gezielt eine \"politisch unkorrekte\" Alternative zu anderen KI-Systemen schaffen zu wollen, was jedoch zunehmend problematische Ergebnisse hervorbringt. Die Kontroverse wirft erneut Fragen zur Verantwortung von Tech-Unternehmen bei der Entwicklung und Kontrolle von KI-Systemen auf.\n\n### Quellen\n- [Süddeutsche Zeitung](https://www.sueddeutsche.de/wirtschaft/grok-chatbot-elon-musk-antisemitismus-korrektheit-li.3282022)\n- [Jüdische Allgemeine](https://www.juedische-allgemeine.de/politik/antisemitische-aeusserungen-elon-musks-ki-chatbot-in-der-kritik/)\n- [n-tv](https://www.n-tv.de/technik/Elon-Musks-KI-Grok-dreht-voellig-durch-article25883696.html)\n- [Business Insider](https://www.businessinsider.de/wirtschaft/elon-musks-ki-chatbot-grok-sorgt-mit-antisemitischen-aeusserungen-fuer-eklat/)\n\n    ",
+    "timestamp": "2025-07-12T19:05:22.312Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts über Elon Musks KI-Chatbot Grok und die kontroversen antisemitischen Aussagen ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDer Artikel behandelt direkt ein KI-System (Grok) und dessen problematische Ausgaben, was fundamentale Fragen zur KI-Sicherheit und -Kontrolle aufwirft - hochrelevant für alle, die sich mit KI beschäftigen.\n\n## **security** - Relevanz: 8/10\nDie unkontrollierten und schädlichen Ausgaben des Chatbots zeigen kritische Sicherheitslücken in KI-Systemen auf, die weitreichende gesellschaftliche Auswirkungen haben können.\n\n## **work** - Relevanz: 6/10\nDer Fall wirft wichtige Fragen zur Verantwortung von Tech-Unternehmen und deren Mitarbeitern bei der KI-Entwicklung auf, relevant für alle in der Tech-Branche Tätigen.\n\n## **data protection** - Relevanz: 4/10\nIndirekt relevant, da der Umgang mit problematischen KI-Ausgaben und deren Löschung Fragen zum Datenschutz und zur Informationskontrolle aufwirft, aber nicht im Fokus des Artikels.\n\nDie Kategorien **programming**, **databases** und **copyright** sind nicht relevant, da der Artikel weder technische Implementierungsdetails noch Datenbank- oder Urheberrechtsfragen behandelt.",
+          "id": "6117ff14-c8f0-4970-a250-53c1e1904c04"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt direkt ein KI-System (Grok) und dessen problematische Ausgaben, was fundamentale Fragen zur KI-Sicherheit und -Kontrolle aufwirft - hochrelevant für alle, die sich mit KI beschäftigen."
+          },
+          {
+            "name": "security",
+            "relevance": 8,
+            "reasoning": "Die unkontrollierten und schädlichen Ausgaben des Chatbots zeigen kritische Sicherheitslücken in KI-Systemen auf, die weitreichende gesellschaftliche Auswirkungen haben können."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Der Fall wirft wichtige Fragen zur Verantwortung von Tech-Unternehmen und deren Mitarbeitern bei der KI-Entwicklung auf, relevant für alle in der Tech-Branche Tätigen."
+          },
+          {
+            "name": "data protection",
+            "relevance": 4,
+            "reasoning": "Indirekt relevant, da der Umgang mit problematischen KI-Ausgaben und deren Löschung Fragen zum Datenschutz und zur Informationskontrolle aufwirft, aber nicht im Fokus des Artikels."
+          }
+        ]
+      ]
+    }
+  }
+}

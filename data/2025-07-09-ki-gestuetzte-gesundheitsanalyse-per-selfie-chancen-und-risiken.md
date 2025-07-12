@@ -1,8 +1,34 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-gestützte Gesundheitsanalyse per Selfie: Chancen und Risiken"
+layout: post
+language: de
+title: 'KI-gestützte Gesundheitsanalyse per Selfie: Chancen und Risiken'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Die KI-gestützte Gesundheitsanalyse ist ein hochaktuelles und
+      bahnbrechendes Anwendungsgebiet der Künstlichen Intelligenz, das zeigt,
+      wie KI-Modelle komplexe medizinische Diagnosen aus visuellen Daten
+      ableiten können.
+  - name: data protection
+    relevance: 8
+    reasoning: >-
+      Der Artikel thematisiert explizit kritische Datenschutzprobleme bei der
+      Verarbeitung sensibler Gesundheitsdaten aus Selfies und die Gefahr des
+      Missbrauchs dieser Informationen.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Die Technologie könnte die Arbeitswelt im Gesundheitswesen erheblich
+      verändern, indem sie den Zugang zu medizinischen Diagnosen erleichtert und
+      möglicherweise traditionelle Diagnoseverfahren ergänzt oder ersetzt.
+  - name: security
+    relevance: 5
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, sind die Sicherheitsaspekte bei der
+      Übertragung und Speicherung sensibler Gesundheitsdaten aus Selfie-Analysen
+      ein wichtiger Nebenaspekt der diskutierten Datenschutzproblematik.
 ---
 
 Die Idee, Gesundheitsdaten aus einem einfachen Selfie zu gewinnen, klingt wie aus einem Science-Fiction-Film. Doch moderne KI-Systeme versprechen genau das: Sie analysieren Gesichtszüge, Hautbeschaffenheit und andere visuelle Merkmale, um Rückschlüsse auf den Gesundheitszustand zu ziehen. Erste Anwendungen können bereits genetische Syndrome, Herz-Kreislauf-Risiken oder den biologischen Alterungsprozess erkennen. Besonders in der Dermatologie und bei seltenen genetischen Erkrankungen zeigen Studien vielversprechende Ergebnisse. Doch wie zuverlässig sind diese Technologien wirklich, und welche Risiken bergen sie?
