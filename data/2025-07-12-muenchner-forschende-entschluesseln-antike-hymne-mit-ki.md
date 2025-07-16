@@ -1,8 +1,34 @@
 ---
-layout: "post"
-language: "de"
-title: "Münchner Forschende entschlüsseln antike Hymne mit KI"
+layout: post
+language: de
+title: Münchner Forschende entschlüsseln antike Hymne mit KI
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Die Künstliche Intelligenz spielt eine zentrale Rolle bei der
+      Entschlüsselung der Keilschrifttafeln - ein bahnbrechender Einsatz von KI
+      in der Archäologie, der Prozesse von Jahrzehnten auf kurze Zeit verkürzt.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Das Projekt erfordert die Entwicklung spezialisierter Software zur
+      Digitalisierung und KI-gestützten Analyse von Keilschrifttexten, was eine
+      interessante Programmierherausforderung darstellt.
+  - name: databases
+    relevance: 7
+    reasoning: >-
+      Das Projekt digitalisiert alle weltweit entdeckten
+      Keilschrift-Textfragmente in einem umfassenden Fragmentarium - ein
+      beeindruckendes Beispiel für den Aufbau wissenschaftlicher
+      Datensammlungen.
+  - name: work
+    relevance: 5
+    reasoning: >-
+      Die Nachricht zeigt, wie KI traditionelle Forschungsarbeit revolutioniert,
+      ist aber hauptsächlich für Wissenschaftler und weniger für die breite
+      Arbeitswelt relevant.
 ---
 
 Ein Team von Forschenden der Ludwig-Maximilians-Universität München (LMU) hat in Zusammenarbeit mit der Universität Bagdad eine 3.000 Jahre alte Hymne aus der antiken Stadt Babylon entschlüsselt. Mithilfe von Künstlicher Intelligenz (KI) konnten die Wissenschaftler Fragmente von Keilschrifttafeln digital rekonstruieren und so das bislang unbekannte Loblied auf Babylon wiederherstellen. Der Text, der aus der Zeit um 1000 vor Christus stammt, beschreibt die Blütezeit der Stadt und gibt faszinierende Einblicke in das Leben ihrer Bewohner.

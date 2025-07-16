@@ -1,8 +1,27 @@
 ---
-layout: "post"
-language: "de"
-title: "Meta plant KI-Rechenzentrum in der Größe von Manhattan"
+layout: post
+language: de
+title: Meta plant KI-Rechenzentrum in der Größe von Manhattan
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Meta plant gigantische Rechenzentren zur Entwicklung von
+      Superintelligenzen, was einen Meilenstein in der KI-Entwicklung darstellt
+      und den globalen Wettlauf um KI-Vorherrschaft anheizt.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Die massive Rekrutierung von KI-Experten mit Spitzengehältern und der
+      Abwerbungskampf zwischen Tech-Giganten wie Meta und OpenAI zeigt
+      bedeutende Veränderungen im Arbeitsmarkt für Technologie-Fachkräfte auf.
+  - name: security
+    relevance: 6
+    reasoning: >-
+      Die Entwicklung von Superintelligenzen wirft wichtige Fragen zur
+      KI-Sicherheit und den gesellschaftlichen Auswirkungen von KI-Systemen auf,
+      die Menschen in vielen Bereichen übertreffen könnten.
 ---
 
 Meta hat angekündigt, in den kommenden Jahren gigantische KI-Rechenzentren zu bauen, die in ihrer Größe mit Manhattan vergleichbar sind. Diese ambitionierten Projekte sollen die Grundlage für die Entwicklung von sogenannten Superintelligenzen bilden, also KI-Systemen, die den Menschen in vielen Bereichen übertreffen könnten. Das erste Zentrum, das den Namen "Prometheus" trägt, soll bereits 2026 in Ohio in Betrieb gehen. Ein weiteres Zentrum namens "Hyperion" ist in Louisiana geplant und könnte eine Kapazität von bis zu fünf Gigawatt erreichen – genug, um fast eine Million Haushalte mit Strom zu versorgen.

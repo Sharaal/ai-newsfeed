@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Meta plant KI-Rechenzentrum in der Größe von Manhattan\n\n\nMeta hat angekündigt, in den kommenden Jahren gigantische KI-Rechenzentren zu bauen, die in ihrer Größe mit Manhattan vergleichbar sind. Diese ambitionierten Projekte sollen die Grundlage für die Entwicklung von sogenannten Superintelligenzen bilden, also KI-Systemen, die den Menschen in vielen Bereichen übertreffen könnten. Das erste Zentrum, das den Namen \"Prometheus\" trägt, soll bereits 2026 in Ohio in Betrieb gehen. Ein weiteres Zentrum namens \"Hyperion\" ist in Louisiana geplant und könnte eine Kapazität von bis zu fünf Gigawatt erreichen – genug, um fast eine Million Haushalte mit Strom zu versorgen.\n\n<!--more-->\n\nDie Dimensionen dieser Rechenzentren sind beeindruckend: Jedes einzelne soll eine Fläche von bis zu 60 Quadratkilometern abdecken, was etwa der Größe von Manhattan entspricht. Meta-CEO Mark Zuckerberg erklärte, dass das Unternehmen \"Hunderte Milliarden Dollar\" in diese Projekte investieren werde. Ziel sei es, im globalen Wettlauf um die Vorherrschaft in der KI-Entwicklung eine führende Rolle einzunehmen. Neben den Rechenzentren hat Meta auch massiv in die Rekrutierung von KI-Experten investiert und bietet Spitzengehälter, um Talente von Konkurrenten wie OpenAI abzuwerben.\n\nDie geplanten Rechenzentren werfen jedoch auch Fragen auf. Kritiker bemängeln die enormen Umweltbelastungen, die durch den hohen Energie- und Wasserverbrauch entstehen könnten. Schätzungen zufolge könnten solche Anlagen bis 2027 weltweit etwa 1,7 Billionen Gallonen Wasser verbrauchen. Zuckerberg zeigte sich dennoch optimistisch und betonte, dass Meta über die finanziellen Mittel verfüge, um diese Projekte zu realisieren. Der Großteil der Investitionen wird aus den Gewinnen des Werbegeschäfts finanziert, das im vergangenen Jahr einen Umsatz von 165 Milliarden Dollar generierte.\n\n### Quellen\n- [Tagesschau](https://www.tagesschau.de/wirtschaft/technologie/ki-zuckerberg-meta-pentagon-xai-musk-100.html)\n- [BR24](https://www.br.de/nachrichten/netzwelt/metas-gigantomanie-ki-rechenzentrum-so-gross-wie-manhattan,Ur1PTyj)\n- [WinFuture](https://winfuture.de/news,152259.html)\n- [Spiegel](https://www.spiegel.de/netzwelt/meta-mark-zuckerberg-kuendigt-riesige-ki-rechenzentren-an-so-gross-wie-manhattan-a-46db9af9-43d3-45a1-a93a-ebcbc7d345cc)\n\n    ",
+    "timestamp": "2025-07-16T19:04:10.004Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über Metas geplante KI-Rechenzentren ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nMeta plant gigantische Rechenzentren zur Entwicklung von Superintelligenzen, was einen Meilenstein in der KI-Entwicklung darstellt und den globalen Wettlauf um KI-Vorherrschaft anheizt.\n\n## **work** - Relevanz: 7/10\nDie massive Rekrutierung von KI-Experten mit Spitzengehältern und der Abwerbungskampf zwischen Tech-Giganten wie Meta und OpenAI zeigt bedeutende Veränderungen im Arbeitsmarkt für Technologie-Fachkräfte auf.\n\n## **security** - Relevanz: 6/10\nDie Entwicklung von Superintelligenzen wirft wichtige Fragen zur KI-Sicherheit und den gesellschaftlichen Auswirkungen von KI-Systemen auf, die Menschen in vielen Bereichen übertreffen könnten.\n\nDie anderen Kategorien (programming, databases, data protection, copyright) sind nicht direkt relevant, da der Text sich primär auf die strategische Infrastruktur-Investition und deren gesellschaftliche Implikationen konzentriert, ohne spezifische technische Details zu diesen Bereichen zu behandeln.",
+          "id": "128530e0-d5bc-4b20-b1b3-51984f1c98e8"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Meta plant gigantische Rechenzentren zur Entwicklung von Superintelligenzen, was einen Meilenstein in der KI-Entwicklung darstellt und den globalen Wettlauf um KI-Vorherrschaft anheizt."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Die massive Rekrutierung von KI-Experten mit Spitzengehältern und der Abwerbungskampf zwischen Tech-Giganten wie Meta und OpenAI zeigt bedeutende Veränderungen im Arbeitsmarkt für Technologie-Fachkräfte auf."
+          },
+          {
+            "name": "security",
+            "relevance": 6,
+            "reasoning": "Die Entwicklung von Superintelligenzen wirft wichtige Fragen zur KI-Sicherheit und den gesellschaftlichen Auswirkungen von KI-Systemen auf, die Menschen in vielen Bereichen übertreffen könnten."
+          }
+        ]
+      ]
+    }
+  }
+}
