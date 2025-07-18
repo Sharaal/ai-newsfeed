@@ -1,8 +1,42 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-Entwicklung in der EU: Strengere Regulierungen geplant"
+layout: post
+language: de
+title: 'KI-Entwicklung in der EU: Strengere Regulierungen geplant'
 aigenerated: true
+categories:
+  - name: ai
+    reasoning: >-
+      Der Artikel behandelt direkt den EU AI Act und umfassende
+      KI-Regulierungen, was für alle KI-Entwickler und -Nutzer bahnbrechend ist.
+    relevance: 10
+  - name: security
+    reasoning: >-
+      Die Regulierungen zielen auf sicherere KI-Systeme ab, insbesondere bei
+      Hochrisiko-Anwendungen wie biometrischer Überwachung, was für
+      Sicherheitsexperten hochrelevant ist.
+    relevance: 8
+  - name: data protection
+    reasoning: >-
+      Transparenz- und Dokumentationspflichten sowie das Verbot von
+      Social-Scoring betreffen direkt den Datenschutz und sind für alle
+      Datenschutzbeauftragten essentiell.
+    relevance: 9
+  - name: work
+    reasoning: >-
+      Die neuen Compliance-Anforderungen und Schulungsbedarfe werden erhebliche
+      Auswirkungen auf Arbeitsabläufe in Unternehmen haben.
+    relevance: 7
+  - name: programming
+    reasoning: >-
+      Entwickler müssen ihre KI-Algorithmen dokumentieren und
+      Transparenzanforderungen erfüllen, was Programmierpraxis direkt
+      beeinflusst.
+    relevance: 6
+  - name: copyright
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, betreffen die Dokumentationspflichten für
+      Datenquellen auch urheberrechtliche Aspekte bei KI-Training.
+    relevance: 4
 ---
 
 Die Europäische Union hat in den letzten Tagen weitere Details zu den geplanten Regulierungen im Bereich der Künstlichen Intelligenz (KI) veröffentlicht. Der sogenannte EU AI Act, der weltweit als erster umfassender Rechtsrahmen für KI gilt, wird ab August 2025 in Kraft treten und strenge Anforderungen an Unternehmen stellen. Ziel ist es, den Einsatz von KI-Systemen sicherer und transparenter zu gestalten, ohne dabei Innovationen zu behindern. Die neuen Vorschriften umfassen unter anderem eine Kategorisierung von KI-Anwendungen in Risikoklassen, wobei Hochrisiko-Anwendungen wie biometrische Überwachung besonders strengen Auflagen unterliegen. Unternehmen, die gegen die Vorgaben verstoßen, drohen Bußgelder von bis zu 35 Millionen Euro oder 7 % des weltweiten Jahresumsatzes.

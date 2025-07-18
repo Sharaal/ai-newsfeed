@@ -1,8 +1,33 @@
 ---
-layout: "post"
-language: "de"
-title: "Neues KI-Modell sagt Naturkatastrophen präziser voraus"
+layout: post
+language: de
+title: Neues KI-Modell sagt Naturkatastrophen präziser voraus
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Dies ist eine bahnbrechende Entwicklung in der KI-Forschung, die zeigt,
+      wie maschinelles Lernen komplexe Klimaprobleme lösen kann und dabei 91%
+      der bisherigen Modelle übertrifft.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Das Modell basiert auf modernsten maschinellen Lernalgorithmen und der
+      Verarbeitung von über einer Million Stunden Klimadaten, was für Entwickler
+      von ML-Systemen hochrelevant ist.
+  - name: databases
+    relevance: 5
+    reasoning: >-
+      Die Analyse von über einer Million Stunden an Klimadaten erfordert
+      ausgeklügelte Datenbank- und Big-Data-Technologien, auch wenn diese nicht
+      im Fokus des Artikels stehen.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Aurora wird die Arbeit von Klimaforschern, Meteorologen und
+      Entscheidungsträgern grundlegend verändern und neue Arbeitsfelder in der
+      KI-gestützten Klimaforschung schaffen.
 ---
 
 Ein Durchbruch in der Klimaforschung: Das neue KI-Modell "Aurora" hat in den letzten Tagen weltweit für Aufsehen gesorgt. Entwickelt von Microsoft und führenden Klimaforschern, verspricht Aurora, Naturkatastrophen wie Stürme, Überschwemmungen und Hitzewellen präziser und schneller vorherzusagen als je zuvor. Das Modell basiert auf einer Analyse von über einer Million Stunden an Klimadaten und nutzt modernste maschinelle Lernalgorithmen, um komplexe Wetterphänomene zu entschlüsseln. Besonders beeindruckend: Aurora übertrifft laut einer aktuellen Studie im Fachjournal *Nature* 91 Prozent der bisherigen Wetter- und Klimamodelle in Genauigkeit und Geschwindigkeit.

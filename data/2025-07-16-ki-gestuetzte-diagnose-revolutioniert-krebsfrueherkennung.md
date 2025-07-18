@@ -1,8 +1,34 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-gestützte Diagnose revolutioniert Krebsfrüherkennung"
+layout: post
+language: de
+title: KI-gestützte Diagnose revolutioniert Krebsfrüherkennung
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 10
+    reasoning: >-
+      Der Artikel behandelt direkt KI-Anwendungen in der Medizin und zeigt
+      bahnbrechende Fortschritte auf, die das Potenzial haben, Millionen von
+      Leben zu retten - dies ist für alle relevant.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, sind die beschriebenen KI-Systeme,
+      Algorithmen und maschinellen Lernverfahren das Ergebnis komplexer
+      Programmierarbeit - interessant für Entwickler, die an medizinischen
+      Anwendungen arbeiten.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Der Artikel zeigt deutlich, wie KI die Arbeitswelt im Gesundheitswesen
+      verändert und Ärzte bei der Diagnose unterstützt, was für Fachkräfte im
+      Gesundheitswesen und andere Branchen relevant ist.
+  - name: data protection
+    relevance: 5
+    reasoning: >-
+      Medizinische Daten sind hochsensibel und der Einsatz von KI in der
+      Diagnostik wirft wichtige Datenschutzfragen auf, auch wenn diese im
+      Artikel nur am Rande als 'ethische Fragen' erwähnt werden.
 ---
 
 Künstliche Intelligenz (KI) verändert die Krebsfrüherkennung grundlegend. In den letzten Tagen wurden mehrere Studien und Projekte vorgestellt, die zeigen, wie KI-basierte Systeme die Diagnosegenauigkeit erheblich verbessern können. So hat beispielsweise ein Team der Universität Bielefeld ein interaktives System entwickelt, das Ärzt*innen bei der Diagnosefindung unterstützt. Dieses System analysiert nicht nur medizinische Daten, sondern stellt auch Rückfragen und überprüft Hypothesen, um Fehldiagnosen zu vermeiden. Ein weiteres Beispiel ist die britische Gesundheitsbehörde, die KI-Algorithmen zur Analyse von Mammografien einsetzt, um Brustkrebsfälle zu erkennen, die von menschlichen Augen übersehen werden könnten.
