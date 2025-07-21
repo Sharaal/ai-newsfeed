@@ -1,8 +1,41 @@
 ---
-layout: "post"
-language: "de"
-title: "Google integriert KI-Antworten direkt in die Suchmaschine und verändert die Internet-Ökonomie grundlegend"
+layout: post
+language: de
+title: >-
+  Google integriert KI-Antworten direkt in die Suchmaschine und verändert die
+  Internet-Ökonomie grundlegend
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der gesamte Artikel dreht sich um die Integration von KI-Antworten in
+      Googles Suchmaschine durch das Gemini 2.5 Pro Modell - dies ist eine
+      bahnbrechende Entwicklung für die KI-Branche.
+  - name: work
+    relevance: 8
+    reasoning: >-
+      Die KI-Integration führt zu massiven Veränderungen in der Arbeitswelt mit
+      ersten Entlassungen bei Content-Erstellern und bedroht traditionelle
+      Geschäftsmodelle fundamental.
+  - name: copyright
+    relevance: 7
+    reasoning: >-
+      Der Artikel thematisiert explizit Forderungen nach Content-Schutz und
+      automatischen Bezahlsystemen für KI-Nutzung, was zentrale
+      Urheberrechtsfragen aufwirft.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Relevant für Entwickler, da die KI-Integration neue technische
+      Herausforderungen für Website-Optimierung und SEO-Strategien mit sich
+      bringt.
+  - name: security
+    relevance: 5
+    reasoning: >-
+      Betrifft Informationssicherheit durch die Konzentration von
+      Informationsmacht bei wenigen Plattformen und mögliche Verzerrungen in
+      KI-generierten Antworten.
 ---
 
 Google hat in den letzten Tagen eine neue Ära der Internetsuche eingeläutet: Künstliche Intelligenz (KI) wird nun direkt in die Suchmaschine integriert, um Nutzern sofortige Antworten auf ihre Fragen zu liefern. Diese Entwicklung, die unter anderem durch das KI-Modell Gemini 2.5 Pro unterstützt wird, ermöglicht es, komplexe Anfragen zu beantworten, ohne dass Nutzer auf externe Links klicken müssen. Die Funktion, die in Deutschland und weiteren europäischen Ländern eingeführt wurde, zeigt KI-generierte Zusammenfassungen direkt über den klassischen Suchergebnissen an. Google beschreibt dies als "Überblick mit KI", der besonders bei Produktvergleichen, technischen Problemen oder umfangreichen Recherchen hilfreich sein soll.

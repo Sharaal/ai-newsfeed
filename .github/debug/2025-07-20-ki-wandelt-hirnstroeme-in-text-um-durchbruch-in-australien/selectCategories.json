@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI wandelt Hirnströme in Text um: Durchbruch in Australien\n\n\nAustralische Wissenschaftler haben einen bedeutenden Durchbruch in der Neurotechnologie erzielt: Ein neues KI-System kann Hirnströme in Text umwandeln. Diese Technologie, die an der University of Melbourne entwickelt wurde, nutzt maschinelles Lernen, um elektrische Signale des Gehirns zu analysieren und in geschriebene Sprache zu übersetzen. Ziel ist es, Menschen mit Sprachverlust, etwa nach einem Schlaganfall, eine neue Kommunikationsmöglichkeit zu bieten. Die Forscher betonen, dass die Technologie noch in der Testphase ist, aber bereits beeindruckende Ergebnisse liefert.\n\n<!--more-->\n\nDas System basiert auf der Analyse von Gehirnströmen, die durch Elektroden erfasst werden. Diese Signale werden von der KI in Echtzeit verarbeitet, um Wörter und Sätze zu generieren. Erste Tests mit Freiwilligen zeigten eine erstaunliche Genauigkeit von über 85 Prozent. Die Wissenschaftler hoffen, dass diese Technologie in Zukunft nicht nur für medizinische Zwecke, sondern auch in der Mensch-Maschine-Interaktion eingesetzt werden kann. Kritiker warnen jedoch vor möglichen ethischen Herausforderungen, insbesondere im Hinblick auf Datenschutz und die Gefahr des Missbrauchs.\n\n### Quellen:\n- [Blauautonom: Neue KI-Technologie wandelt Gehirnströme in Sätze um](https://blauautonom.com/2025/06/Neue-KI-Technologie--die-Gehirnstr%C3%B6me-in-S%C3%A4tze-%C3%BCbersetzt/)\n- [Vodafone Featured: Künstliche Intelligenz verwandelt Hirnströme in gesprochene Sprache](https://www.vodafone.de/featured/digital-life/kuenstliche-intelligenz-verwandelt-hirnstroeme-in-gesprochene-sprache/)\n- [KI-News: KI übersetzt Gehirnströme in Text](https://www.kinews.de/ki-uebersetzt-gehirnstroeme-in-text/)\n\n    ",
+    "timestamp": "2025-07-21T19:04:32.422Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über die KI-Technologie zur Umwandlung von Hirnströmen in Text:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDies ist ein bahnbrechender Durchbruch im Bereich der Künstlichen Intelligenz, der maschinelles Lernen zur Analyse von Gehirnsignalen einsetzt und neue Möglichkeiten der Mensch-Maschine-Interaktion eröffnet.\n\n**programming - Relevanz: 6/10**\nDie Entwicklung solcher KI-Systeme erfordert komplexe Programmierung und Algorithmen zur Echtzeit-Verarbeitung von Gehirnsignalen, ist aber primär für Entwickler im Bereich Neurotechnologie relevant.\n\n**data protection - Relevanz: 8/10**\nDie Technologie wirft erhebliche Datenschutzfragen auf, da sie direkten Zugang zu Gehirndaten ermöglicht und das Potenzial für Missbrauch sehr sensible persönliche Informationen betrifft.\n\n**work - Relevanz: 7/10**\nDiese Technologie könnte die Arbeitswelt revolutionieren, insbesondere für Menschen mit Behinderungen, und neue Formen der Mensch-Computer-Interaktion am Arbeitsplatz ermöglichen.\n\nDie Kategorien \"databases\", \"security\" und \"copyright\" sind nicht direkt relevant, da der Text keine spezifischen Datenbankthemen, IT-Sicherheitsaspekte oder Urheberrechtsfragen behandelt.",
+          "id": "5f553f63-e25c-4fc4-870f-c3d45e420266"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "reasoning": "Dies ist ein bahnbrechender Durchbruch im Bereich der Künstlichen Intelligenz, der maschinelles Lernen zur Analyse von Gehirnsignalen einsetzt und neue Möglichkeiten der Mensch-Maschine-Interaktion eröffnet.",
+            "relevance": 9
+          },
+          {
+            "name": "programming",
+            "reasoning": "Die Entwicklung solcher KI-Systeme erfordert komplexe Programmierung und Algorithmen zur Echtzeit-Verarbeitung von Gehirnsignalen, ist aber primär für Entwickler im Bereich Neurotechnologie relevant.",
+            "relevance": 6
+          },
+          {
+            "name": "data protection",
+            "reasoning": "Die Technologie wirft erhebliche Datenschutzfragen auf, da sie direkten Zugang zu Gehirndaten ermöglicht und das Potenzial für Missbrauch sehr sensible persönliche Informationen betrifft.",
+            "relevance": 8
+          },
+          {
+            "name": "work",
+            "reasoning": "Diese Technologie könnte die Arbeitswelt revolutionieren, insbesondere für Menschen mit Behinderungen, und neue Formen der Mensch-Computer-Interaktion am Arbeitsplatz ermöglichen.",
+            "relevance": 7
+          }
+        ]
+      ]
+    }
+  }
+}

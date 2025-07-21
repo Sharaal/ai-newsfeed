@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-gestützte Frühwarnsysteme sollen Hochwasserschutz revolutionieren\n\n\nDie jüngsten Entwicklungen im Bereich der künstlichen Intelligenz (KI) könnten den Hochwasserschutz grundlegend verändern. In Bayern wurde kürzlich ein neues Frühwarnsystem vorgestellt, das mithilfe von KI und Sensorik präzise Vorhersagen über potenzielle Hochwasserereignisse ermöglicht. Dieses System, das als \"digitaler Zwilling\" bezeichnet wird, sammelt in Echtzeit Daten von Pegelmessstellen, Wetterstationen und anderen Sensoren. Ziel ist es, Einsatzkräfte und Anwohner frühzeitig zu warnen und so Schäden zu minimieren. Besonders in Regionen, die in der Vergangenheit von unvorhersehbaren Fluten betroffen waren, könnte diese Technologie Leben retten und die Kosten für Katastrophenbewältigung senken.\n\n<!--more-->\n\nAuch in Nordrhein-Westfalen wird intensiv an KI-gestützten Hochwasserschutzsystemen gearbeitet. Das Projekt \"Hochwasserschutzsystem 4.0\" im Bergischen Land kombiniert modernste Sensorik mit maschinellem Lernen, um Wasserpegel, Niederschlagsmengen und andere relevante Daten zu analysieren. Eine speziell entwickelte App informiert gefährdete Gemeinden in Echtzeit über potenzielle Gefahren. Diese Innovationen sind Teil eines umfassenderen Trends, bei dem KI-basierte Technologien traditionelle Methoden der Hochwasserprognose ablösen. Experten betonen, dass solche Systeme nicht nur präzisere Vorhersagen liefern, sondern auch schneller auf sich ändernde Wetterbedingungen reagieren können.\n\nDie Bedeutung dieser Technologien wird durch den Klimawandel und die Zunahme extremer Wetterereignisse immer deutlicher. Forscher der Universität Bath haben beispielsweise ein KI-gestütztes System entwickelt, das mithilfe von Videoüberwachung blockierte Abflüsse erkennt und so präventiv eingreifen kann. In Deutschland setzt das Karlsruher Institut für Technologie auf maschinelles Lernen, um hydrologische Daten zu analysieren und Hochwasserereignisse noch genauer vorherzusagen. Diese Fortschritte zeigen, wie KI nicht nur die Effizienz, sondern auch die Sicherheit in Hochwasserregionen erhöhen kann.\n\n### Quellen\n- [BR24: Moderner Hochwasserschutz: Mit KI gegen die Fluten](https://www.br.de/nachrichten/bayern/moderner-hochwasserschutz-mit-ki-gegen-die-fluten,Uqcpy06)\n- [Klimaschutz Kommune: Hochwasser früher erkennen mit KI](https://www.klimaschutz-kommune.de/hochwasser-frueher-erkennen-mit-ki/)\n- [CHIP: Deutsches KI-Frühwarnsystem für Extremwetter](https://www.chip.de/news/kuenstliche-intelligenz/deutsches-ki-fruehwarnsystem-es-soll-extremwetter-genauer-vorhersagen_8fbf2e19-5d96-4fb7-b062-088b4cfeb3b5.html)\n- [Zukunftsgewässer NRW: Okeanos.VIVID – KI-gestützte Hochwasserfrühinformation](https://zukunftsgewaesser.nrw/ki-gestuetzte-wasseranalyse-mit-okeanos-ai/)\n\n    ",
+    "timestamp": "2025-07-21T19:12:36.721Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über KI-gestützte Frühwarnsysteme für Hochwasserschutz ordne ich folgende Kategorien zu:\n\n## Passende Kategorien mit Relevanzbewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt zentral den Einsatz von KI und maschinellem Lernen für Hochwasservorhersagen - eine hochrelevante Anwendung von KI-Technologie mit direktem gesellschaftlichem Nutzen.\n\n**programming - Relevanz: 6/10**\nDie Entwicklung der beschriebenen KI-Systeme, Apps und \"digitalen Zwillinge\" erfordert umfangreiche Programmierarbeit, auch wenn die technischen Details nicht im Fokus stehen.\n\n**databases - Relevanz: 7/10**\nDie Systeme sammeln und verarbeiten große Mengen an Echtzeitdaten von Sensoren, Wetterstationen und Pegelmessstellen, was leistungsfähige Datenbanklösungen voraussetzt.\n\n**work - Relevanz: 5/10**\nDer Artikel erwähnt die Auswirkungen auf Einsatzkräfte und deren Arbeitsweise, jedoch ist dies nicht der Hauptfokus der Berichterstattung.\n\nDie Kategorien **security**, **data protection** und **copyright** sind nicht relevant, da der Artikel weder Sicherheitslücken, Datenschutzaspekte noch urheberrechtliche Fragen behandelt, sondern sich auf die technische Anwendung und den gesellschaftlichen Nutzen der KI-Systeme konzentriert.",
+          "id": "6a2ed1b0-1aef-4f60-9268-77a1ae0b0548"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt zentral den Einsatz von KI und maschinellem Lernen für Hochwasservorhersagen - eine hochrelevante Anwendung von KI-Technologie mit direktem gesellschaftlichem Nutzen."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Die Entwicklung der beschriebenen KI-Systeme, Apps und 'digitalen Zwillinge' erfordert umfangreiche Programmierarbeit, auch wenn die technischen Details nicht im Fokus stehen."
+          },
+          {
+            "name": "databases",
+            "relevance": 7,
+            "reasoning": "Die Systeme sammeln und verarbeiten große Mengen an Echtzeitdaten von Sensoren, Wetterstationen und Pegelmessstellen, was leistungsfähige Datenbanklösungen voraussetzt."
+          },
+          {
+            "name": "work",
+            "relevance": 5,
+            "reasoning": "Der Artikel erwähnt die Auswirkungen auf Einsatzkräfte und deren Arbeitsweise, jedoch ist dies nicht der Hauptfokus der Berichterstattung."
+          }
+        ]
+      ]
+    }
+  }
+}

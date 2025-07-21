@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Seniorenheime testen KI-Roboter als Gesprächspartner\n\n\nEin Berliner Seniorenheim hat kürzlich den KI-Roboter \"Willi\" eingeführt, um die soziale Interaktion der Bewohner zu fördern. Der 75 Zentimeter große Roboter mit kindlichem Design und großen blauen Augen ist speziell darauf programmiert, Gespräche zu führen und auf die individuellen Bedürfnisse der Senioren einzugehen. Willi kann sich an frühere Unterhaltungen erinnern und reagiert auf persönliche Themen, was ihn zu einem einzigartigen Begleiter macht. Die Bewohner zeigen sich begeistert von der neuen Technologie, die nicht nur für Unterhaltung sorgt, sondern auch Einsamkeit lindern soll.\n\n<!--more-->\n\nDas Projekt wird von der Sozialstiftung Köpenick in Zusammenarbeit mit der Berliner Hochschule für Technik durchgeführt. Ziel ist es, die Lebensqualität der Senioren zu verbessern, ohne dabei Pflegekräfte zu ersetzen. Willi übernimmt keine pflegerischen Aufgaben, sondern konzentriert sich ausschließlich auf zwischenmenschliche Interaktionen. Die ersten Ergebnisse des Pilotprojekts sind vielversprechend: Viele Bewohner, die anfangs skeptisch waren, haben den Roboter inzwischen ins Herz geschlossen. Kritiker warnen jedoch vor einer möglichen Entfremdung durch den Einsatz von Technologie in der Pflege.\n\n### Quellen\n- [ZDFheute: Roboter im Seniorenheim](https://www.zdfheute.de/video/panorama-kuenstliche-intelligenz-altenpflege-100.html)\n- [Berliner Kurier: Roboter Willi im Einsatz](https://www.berliner-kurier.de/berlin/kann-ein-roboter-unsere-alten-in-koepenick-bespassen-li.2315165)\n- [Tagesspiegel: Willi gegen Einsamkeit](https://www.tagesspiegel.de/berlin/bezirke/willi-nimmt-niemandem-den-job-weg-sozialer-roboter-hilft-gegen-einsamkeit-in-berliner-pflegeheim-13665871.html)\n\n    ",
+    "timestamp": "2025-07-21T19:07:03.019Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über den KI-Roboter \"Willi\" in Berliner Seniorenheimen:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 8/10**\nDer Artikel behandelt eine konkrete, innovative Anwendung von KI-Technologie im sozialen Bereich, die zeigt, wie KI über reine Automatisierung hinaus für zwischenmenschliche Interaktionen eingesetzt werden kann - hochrelevant für alle, die sich für praktische KI-Anwendungen interessieren.\n\n**work - Relevanz: 6/10**\nDer Text thematisiert explizit, dass der Roboter keine Pflegekräfte ersetzen soll, sondern ergänzende Aufgaben übernimmt, was für Diskussionen über die Zukunft der Arbeitswelt in der Pflege relevant ist.\n\n**data protection - Relevanz: 4/10**\nObwohl nicht explizit erwähnt, wirft ein KI-Roboter, der sich an persönliche Gespräche erinnert und auf individuelle Bedürfnisse eingeht, implizit Fragen zum Datenschutz auf - für Datenschutz-Spezialisten durchaus bedenkenswert.\n\nDie anderen Kategorien (programming, databases, security, copyright) sind nicht relevant, da der Artikel keine technischen Details zur Programmierung, Datenbanknutzung, Sicherheitsaspekte oder urheberrechtliche Fragen behandelt, sondern sich auf die soziale Anwendung und deren Auswirkungen konzentriert.",
+          "id": "9deafb91-fa3c-4475-8079-66e2f049f18b"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "reasoning": "Der Artikel behandelt eine konkrete, innovative Anwendung von KI-Technologie im sozialen Bereich, die zeigt, wie KI über reine Automatisierung hinaus für zwischenmenschliche Interaktionen eingesetzt werden kann - hochrelevant für alle, die sich für praktische KI-Anwendungen interessieren.",
+            "relevance": 8
+          },
+          {
+            "name": "work",
+            "reasoning": "Der Text thematisiert explizit, dass der Roboter keine Pflegekräfte ersetzen soll, sondern ergänzende Aufgaben übernimmt, was für Diskussionen über die Zukunft der Arbeitswelt in der Pflege relevant ist.",
+            "relevance": 6
+          },
+          {
+            "name": "data protection",
+            "reasoning": "Obwohl nicht explizit erwähnt, wirft ein KI-Roboter, der sich an persönliche Gespräche erinnert und auf individuelle Bedürfnisse eingeht, implizit Fragen zum Datenschutz auf - für Datenschutz-Spezialisten durchaus bedenkenswert.",
+            "relevance": 4
+          }
+        ]
+      ]
+    }
+  }
+}

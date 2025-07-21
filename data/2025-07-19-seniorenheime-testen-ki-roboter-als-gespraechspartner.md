@@ -1,8 +1,30 @@
 ---
-layout: "post"
-language: "de"
-title: "Seniorenheime testen KI-Roboter als Gesprächspartner"
+layout: post
+language: de
+title: Seniorenheime testen KI-Roboter als Gesprächspartner
 aigenerated: true
+categories:
+  - name: ai
+    reasoning: >-
+      Der Artikel behandelt eine konkrete, innovative Anwendung von
+      KI-Technologie im sozialen Bereich, die zeigt, wie KI über reine
+      Automatisierung hinaus für zwischenmenschliche Interaktionen eingesetzt
+      werden kann - hochrelevant für alle, die sich für praktische
+      KI-Anwendungen interessieren.
+    relevance: 8
+  - name: work
+    reasoning: >-
+      Der Text thematisiert explizit, dass der Roboter keine Pflegekräfte
+      ersetzen soll, sondern ergänzende Aufgaben übernimmt, was für Diskussionen
+      über die Zukunft der Arbeitswelt in der Pflege relevant ist.
+    relevance: 6
+  - name: data protection
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, wirft ein KI-Roboter, der sich an
+      persönliche Gespräche erinnert und auf individuelle Bedürfnisse eingeht,
+      implizit Fragen zum Datenschutz auf - für Datenschutz-Spezialisten
+      durchaus bedenkenswert.
+    relevance: 4
 ---
 
 Ein Berliner Seniorenheim hat kürzlich den KI-Roboter "Willi" eingeführt, um die soziale Interaktion der Bewohner zu fördern. Der 75 Zentimeter große Roboter mit kindlichem Design und großen blauen Augen ist speziell darauf programmiert, Gespräche zu führen und auf die individuellen Bedürfnisse der Senioren einzugehen. Willi kann sich an frühere Unterhaltungen erinnern und reagiert auf persönliche Themen, was ihn zu einem einzigartigen Begleiter macht. Die Bewohner zeigen sich begeistert von der neuen Technologie, die nicht nur für Unterhaltung sorgt, sondern auch Einsamkeit lindern soll.

@@ -1,8 +1,27 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-Kunst 2025: Künstler und Events weltweit im Fokus"
+layout: post
+language: de
+title: 'KI-Kunst 2025: Künstler und Events weltweit im Fokus'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Text behandelt zentral die Anwendung von Künstlicher Intelligenz in
+      der Kunst und zeigt deren gesellschaftliche Auswirkungen auf, was für ein
+      breites Publikum hochrelevant ist.
+  - name: copyright
+    relevance: 6
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, wirft KI-Kunst fundamentale Fragen zum
+      Urheberrecht auf (wer ist Urheber von KI-generierten Werken?), was für
+      Juristen und Kreative wichtig ist.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Der Text thematisiert die veränderte Rolle des Künstlers durch KI und
+      stellt die Frage nach der Definition von Kunst, was die Zukunft kreativer
+      Berufe betrifft.
 ---
 
 2025 ist das Jahr, in dem KI-Kunst weltweit neue Maßstäbe setzt. Von Heilbronn bis Helsinki, von Paris bis Tokio – Künstler und Events zeigen, wie künstliche Intelligenz die Kunstwelt revolutioniert. Besonders im Fokus stehen dabei hybride Werke, die menschliche Kreativität und maschinelle Intelligenz verschmelzen lassen. Ein Highlight ist die Helsinki Biennale, die unter dem Motto "Shelter" die Beziehung zwischen Mensch und Natur thematisiert. Auf der Insel Vallisaari, einem ehemaligen Militärgelände, werden Installationen und Skulpturen präsentiert, die die Rolle von Pflanzen, Pilzen und Insekten für das Ökosystem beleuchten. Auch in Deutschland sorgt das KI-Festival in Heilbronn für Aufsehen, bei dem die Gewinner eines KI-Kunstwettbewerbs ihre Werke live vorstellen.

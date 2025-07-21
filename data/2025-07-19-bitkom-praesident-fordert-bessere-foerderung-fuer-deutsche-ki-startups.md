@@ -1,8 +1,26 @@
 ---
-layout: "post"
-language: "de"
-title: "Bitkom-Präsident fordert bessere Förderung für deutsche KI-Startups"
+layout: post
+language: de
+title: Bitkom-Präsident fordert bessere Förderung für deutsche KI-Startups
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt zentral die Förderung von KI-Startups und
+      Deutschlands Position als KI-Standort, was für die gesamte AI-Community
+      hochrelevant ist.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Die Forderungen betreffen direkt die Arbeitswelt im Tech-Sektor,
+      Startup-Gründungen und die Schaffung neuer Arbeitsplätze in der
+      KI-Branche.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      KI-Startups sind eng mit Programmierung verbunden, und die Fördermaßnahmen
+      betreffen indirekt auch Entwickler und Software-Engineers.
 ---
 
 Der Präsident des Digitalverbands Bitkom, Dr. Ralf Wintergerst, hat in dieser Woche eine stärkere Förderung für deutsche KI-Startups gefordert. In einem Positionspapier präsentierte der Verband zehn konkrete Maßnahmen, um Deutschland als führenden Standort für Künstliche Intelligenz zu etablieren. Zu den Vorschlägen gehören unter anderem die Bereitstellung von mehr Wagniskapital, die Digitalisierung von Gründungsprozessen sowie der Abbau bürokratischer Hürden. Wintergerst betonte, dass Deutschland zwar über exzellente KI-Forschung verfüge, jedoch bei der praktischen Anwendung und Skalierung von KI-Lösungen hinterherhinke.

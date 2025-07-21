@@ -1,8 +1,33 @@
 ---
-layout: "post"
-language: "de"
-title: "KI wandelt Hirnströme in Text um: Durchbruch in Australien"
+layout: post
+language: de
+title: 'KI wandelt Hirnströme in Text um: Durchbruch in Australien'
 aigenerated: true
+categories:
+  - name: ai
+    reasoning: >-
+      Dies ist ein bahnbrechender Durchbruch im Bereich der Künstlichen
+      Intelligenz, der maschinelles Lernen zur Analyse von Gehirnsignalen
+      einsetzt und neue Möglichkeiten der Mensch-Maschine-Interaktion eröffnet.
+    relevance: 9
+  - name: programming
+    reasoning: >-
+      Die Entwicklung solcher KI-Systeme erfordert komplexe Programmierung und
+      Algorithmen zur Echtzeit-Verarbeitung von Gehirnsignalen, ist aber primär
+      für Entwickler im Bereich Neurotechnologie relevant.
+    relevance: 6
+  - name: data protection
+    reasoning: >-
+      Die Technologie wirft erhebliche Datenschutzfragen auf, da sie direkten
+      Zugang zu Gehirndaten ermöglicht und das Potenzial für Missbrauch sehr
+      sensible persönliche Informationen betrifft.
+    relevance: 8
+  - name: work
+    reasoning: >-
+      Diese Technologie könnte die Arbeitswelt revolutionieren, insbesondere für
+      Menschen mit Behinderungen, und neue Formen der
+      Mensch-Computer-Interaktion am Arbeitsplatz ermöglichen.
+    relevance: 7
 ---
 
 Australische Wissenschaftler haben einen bedeutenden Durchbruch in der Neurotechnologie erzielt: Ein neues KI-System kann Hirnströme in Text umwandeln. Diese Technologie, die an der University of Melbourne entwickelt wurde, nutzt maschinelles Lernen, um elektrische Signale des Gehirns zu analysieren und in geschriebene Sprache zu übersetzen. Ziel ist es, Menschen mit Sprachverlust, etwa nach einem Schlaganfall, eine neue Kommunikationsmöglichkeit zu bieten. Die Forscher betonen, dass die Technologie noch in der Testphase ist, aber bereits beeindruckende Ergebnisse liefert.

@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-Influencerin täuscht mit generierten Bildern einen Sport-Star\n\n\nDie KI-Influencerin Mia Zelu hat mit täuschend echten, generierten Bildern aus Wimbledon für Aufsehen gesorgt. Auf Instagram präsentierte sie sich scheinbar als Teilnehmerin des prestigeträchtigen Tennisturniers und erntete dafür über 43.000 Likes. Unter ihren Bewunderern befand sich auch der indische Cricket-Star Rishab Pant, der ihre Beiträge zunächst likte, später jedoch wieder löschte, nachdem die Wahrheit ans Licht kam. Die Bilder, die Mia Zelu in eleganter Tennisbekleidung und inmitten der Wimbledon-Kulisse zeigen, sind vollständig künstlich generiert – Mia Zelu selbst existiert nicht.\n\n<!--more-->\n\nDie KI-Influencerin, die über 160.000 Follower auf Instagram hat, beschreibt sich selbst als \"digitale Geschichtenerzählerin\". Ihre Posts, die mit modernster KI-Technologie erstellt werden, verwischen die Grenzen zwischen Realität und Fiktion. Viele ihrer Fans waren überzeugt, dass sie tatsächlich in Wimbledon war. Erst durch Diskussionen in den Kommentaren und Berichte in den Medien wurde klar, dass es sich um eine rein digitale Kreation handelt. Der Vorfall hat eine Debatte über die Authentizität von Social-Media-Inhalten und die ethischen Implikationen von KI-generierten Influencern ausgelöst.\n\n### Quellen\n- [20 Minuten: KI-Influencerin täuscht mit Wimbledon-Bildern](https://www.20min.ch/story/mia-zelu-ki-influencerin-taeuscht-mit-generierten-bildern-sport-star-103379715)\n- [Heute.at: KI-Influencerin Mia Zelu sorgt für Verwirrung](https://www.heute.at/s/ki-influencerin-taeuscht-mit-ihren-bildern-sport-star-120119583)\n- [Sportbild: Fans spotten über KI-Model Mia Zelu](https://sportbild.bild.de/sportmix/fans-spotten-sport-star-faellt-auf-ki-model-mia-zelu-rein-6875ecd775e6eb6eedf7d98e)\n\n    ",
+    "timestamp": "2025-07-21T19:11:17.945Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über die KI-Influencerin Mia Zelu und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt direkt KI-generierte Inhalte und deren gesellschaftliche Auswirkungen - ein hochaktuelles Thema, das zeigt, wie fortgeschritten und täuschend echt KI-Technologie bereits ist.\n\n**data protection - Relevanz: 6/10**\nDie Verwendung von KI zur Erstellung falscher Identitäten wirft wichtige Fragen zum Schutz vor Identitätsmissbrauch und zur Authentizität digitaler Personen auf.\n\n**copyright - Relevanz: 7/10**\nKI-generierte Inhalte, die reale Personen oder Orte (wie Wimbledon) nachahmen, berühren komplexe urheberrechtliche Fragen bezüglich der Nutzung von Marken und Persönlichkeitsrechten.\n\n**work - Relevanz: 5/10**\nDer Fall zeigt neue Arbeitsformen im digitalen Zeitalter auf, wo KI-Influencer traditionelle Influencer-Arbeit übernehmen könnten, was für die Medien- und Marketingbranche relevant ist.\n\nDie anderen Kategorien (programming, databases, security) sind nicht direkt relevant, da der Artikel sich auf die gesellschaftlichen und ethischen Aspekte von KI-Technologie konzentriert, nicht auf technische Implementierungsdetails.",
+          "id": "9e915c3f-381b-471f-ba3d-fc4790aa87f9"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt direkt KI-generierte Inhalte und deren gesellschaftliche Auswirkungen - ein hochaktuelles Thema, das zeigt, wie fortgeschritten und täuschend echt KI-Technologie bereits ist."
+          },
+          {
+            "name": "data protection",
+            "relevance": 6,
+            "reasoning": "Die Verwendung von KI zur Erstellung falscher Identitäten wirft wichtige Fragen zum Schutz vor Identitätsmissbrauch und zur Authentizität digitaler Personen auf."
+          },
+          {
+            "name": "copyright",
+            "relevance": 7,
+            "reasoning": "KI-generierte Inhalte, die reale Personen oder Orte (wie Wimbledon) nachahmen, berühren komplexe urheberrechtliche Fragen bezüglich der Nutzung von Marken und Persönlichkeitsrechten."
+          },
+          {
+            "name": "work",
+            "relevance": 5,
+            "reasoning": "Der Fall zeigt neue Arbeitsformen im digitalen Zeitalter auf, wo KI-Influencer traditionelle Influencer-Arbeit übernehmen könnten, was für die Medien- und Marketingbranche relevant ist."
+          }
+        ]
+      ]
+    }
+  }
+}
