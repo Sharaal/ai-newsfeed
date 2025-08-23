@@ -1,8 +1,29 @@
 ---
-layout: "post"
-language: "de"
-title: "OpenAI führt neuen \"Study Mode\" für ChatGPT ein, der das Lernen interaktiv gestaltet"
+layout: post
+language: de
+title: >-
+  OpenAI führt neuen "Study Mode" für ChatGPT ein, der das Lernen interaktiv
+  gestaltet
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Dies ist eine bedeutende Produktentwicklung von OpenAI, die zeigt, wie
+      KI-Systeme zunehmend für spezifische Anwendungsbereiche wie Bildung
+      optimiert werden und dabei lernwissenschaftliche Prinzipien integrieren.
+  - name: programming
+    relevance: 4
+    reasoning: >-
+      Für Programmierer relevant, da sie ChatGPT häufig zum Lernen neuer
+      Technologien nutzen und der Study Mode ihre Lerneffizienz beim Erwerb von
+      Programmierkenntnissen verbessern könnte.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Der Study Mode hat direkten Einfluss auf Weiterbildung und berufliche
+      Entwicklung, da er strukturiertes Lernen am Arbeitsplatz unterstützt und
+      die Art verändert, wie Mitarbeiter sich neue Fähigkeiten aneignen.
 ---
 
 OpenAI hat mit dem "Study Mode" eine neue Funktion für ChatGPT eingeführt, die speziell darauf abzielt, das Lernen interaktiver und effektiver zu gestalten. Statt lediglich Antworten auf Fragen zu liefern, unterstützt der Modus Nutzer:innen dabei, sich aktiv mit dem Lernstoff auseinanderzusetzen. Durch gezielte Fragen, Denkanstöße und schrittweise Erklärungen soll der "Study Mode" das Verständnis fördern und kritisches Denken anregen. Die Funktion ist ab sofort für alle Nutzer:innen der Free-, Plus-, Pro- und Team-Versionen verfügbar und wird in den kommenden Wochen auch in ChatGPT Edu integriert.

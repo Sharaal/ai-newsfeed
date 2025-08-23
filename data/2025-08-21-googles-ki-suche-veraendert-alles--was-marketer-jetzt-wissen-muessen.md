@@ -1,8 +1,32 @@
 ---
-layout: "post"
-language: "de"
-title: "Googles KI-Suche verändert alles – Was Marketer jetzt wissen müssen"
+layout: post
+language: de
+title: Googles KI-Suche verändert alles – Was Marketer jetzt wissen müssen
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt zentral Googles neue KI-gestützte Suchfunktion mit
+      AI Overviews und komplexen KI-Aufgaben - eine bahnbrechende Entwicklung,
+      die das Suchverhalten grundlegend verändert.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Marketer und SEO-Experten müssen ihre Arbeitsstrategien komplett
+      überdenken und anpassen, was erhebliche Auswirkungen auf deren
+      Berufspraxis hat.
+  - name: programming
+    relevance: 5
+    reasoning: >-
+      Entwickler müssen ihre Websites und Inhalte für KI-Algorithmen optimieren
+      und strukturieren, was neue technische Anforderungen mit sich bringt.
+  - name: security
+    relevance: 3
+    reasoning: >-
+      Nur indirekt relevant durch die Erwähnung von Restaurantreservierungen und
+      Produktvergleichen, die potenzielle Datenschutz- und Sicherheitsaspekte
+      aufwerfen könnten.
 ---
 
 Die Einführung des neuen "AI Mode" in der Google-Suche markiert einen Wendepunkt in der Art und Weise, wie Menschen Informationen suchen und finden. Statt nur Links anzuzeigen, liefert die KI jetzt kontextbezogene Antworten, die auf die individuellen Bedürfnisse der Nutzer zugeschnitten sind. Diese Entwicklung verändert nicht nur das Nutzerverhalten, sondern stellt auch Marketer vor neue Herausforderungen. Besonders betroffen ist die Suchmaschinenoptimierung (SEO): Einzelne Absätze und präzise Antworten gewinnen an Bedeutung, während klassische Seitenrankings an Relevanz verlieren.  

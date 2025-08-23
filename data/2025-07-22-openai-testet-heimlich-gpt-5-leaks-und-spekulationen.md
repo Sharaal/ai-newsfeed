@@ -1,8 +1,34 @@
 ---
-layout: "post"
-language: "de"
-title: "OpenAI testet heimlich GPT-5: Leaks und Spekulationen"
+layout: post
+language: de
+title: 'OpenAI testet heimlich GPT-5: Leaks und Spekulationen'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 10
+    reasoning: >-
+      Dies ist eine bahnbrechende Nachricht für die KI-Branche. GPT-5 als
+      nächste Generation von OpenAIs Flaggschiff-Modell mit erweiterten
+      Fähigkeiten wie komplexer Mathematik, multimodalen Features und
+      verbessertem logischen Denken ist für alle KI-Interessierten hochrelevant.
+  - name: programming
+    relevance: 8
+    reasoning: >-
+      Sam Altmans Erwähnung eines neuen Modells für Coding-Projekte und die
+      Automatisierung von KI-gestützten Workflows sind für Programmierer sehr
+      relevant, da GPT-5 die Art der Softwareentwicklung revolutionieren könnte.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Der erwähnte ChatGPT-Agentenmodus zur Workflow-Automatisierung und die
+      potenzielle nahtlose Integration verschiedener Aufgabenbereiche werden
+      erhebliche Auswirkungen auf die moderne Arbeitswelt haben.
+  - name: security
+    relevance: 4
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, sind heimliche Tests und interne Leaks bei
+      einem so mächtigen KI-System durchaus sicherheitsrelevant, jedoch nur für
+      Spezialisten in diesem Bereich von direktem Interesse.
 ---
 
 OpenAI sorgt erneut für Schlagzeilen: In den letzten Tagen sind Berichte aufgetaucht, dass das Unternehmen heimlich an der nächsten Generation seines KI-Modells, GPT-5, arbeitet. Interne Leaks und Aussagen von OpenAI-Mitarbeitern deuten darauf hin, dass das Modell bereits in einer frühen Testphase ist. Besonders brisant: Ein Prototyp mit dem Namen "gpt-5-reasoning-alpha-2025-07-13" wurde angeblich am 13. Juli intern getestet. Dieses Modell soll in der Lage sein, komplexe mathematische Aufgaben auf höchstem Niveau zu lösen – ein Meilenstein, der die Grenzen der bisherigen KI-Entwicklung sprengen könnte.

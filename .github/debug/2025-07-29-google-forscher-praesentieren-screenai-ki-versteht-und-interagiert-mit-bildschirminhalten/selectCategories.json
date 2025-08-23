@@ -1,0 +1,70 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Google-Forscher präsentieren ScreenAI: KI versteht und interagiert mit Bildschirminhalten\n\n\nGoogle hat mit ScreenAI ein neues KI-Modell vorgestellt, das die Interaktion mit Bildschirminhalten revolutionieren könnte. ScreenAI kombiniert visuelle und sprachliche Verarbeitung, um Benutzeroberflächen (UIs) und Infografiken zu verstehen, zu analysieren und mit ihnen zu interagieren. Die Technologie ermöglicht es, UI-Elemente zu identifizieren, ihre Funktion zu erklären und sogar Anweisungen wie \"Klicke auf den Suchbutton\" auszuführen. Besonders beeindruckend ist die Fähigkeit, den Inhalt eines Bildschirms zusammenzufassen oder Fragen zu spezifischen Elementen zu beantworten.\n\n<!--more-->\n\nDas Modell basiert auf Googles fortschrittlicher Vision-Language-Technologie und nutzt synthetische Trainingsdaten, die mit dem PaLM 2-S Modell generiert wurden. ScreenAI wurde in verschiedenen Benchmarks getestet und übertrifft dabei viele bestehende Modelle, auch solche mit größerer Parameteranzahl. Die potenziellen Anwendungsbereiche sind vielfältig: von der Unterstützung sehbehinderter Nutzer durch detaillierte Beschreibungen von Interfaces bis hin zu automatisierten Tests von Benutzeroberflächen. Auch Sprachassistenten könnten durch ScreenAI in der Lage sein, besser mit dargestellten Inhalten zu interagieren.\n\nTrotz der beeindruckenden Fortschritte betonen die Forscher, dass ScreenAI noch nicht vollständig ausgereift ist. Insbesondere die praktische Umsetzung der generierten Aktionen steht noch aus. Dennoch zeigt die Entwicklung, wie KI zunehmend in der Lage ist, komplexe visuelle und sprachliche Aufgaben zu bewältigen und so den Alltag der Nutzer zu erleichtern.\n\n### Quellen\n- [Google Research Blog](https://research.google/blog/screenai-a-visual-language-model-for-ui-and-visually-situated-language-understanding/)\n- [Golem.de](https://www.golem.de/news/screenai-googles-ki-versteht-user-interfaces-und-bedient-sie-2403-183437.html)\n- [The Decoder](https://the-decoder.de/googles-screenai-navigiert-zuverlaessig-ueber-smartphone-oberflaechen/)\n\n    ",
+    "timestamp": "2025-08-23T19:43:12.468Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über Googles ScreenAI und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nScreenAI ist ein bahnbrechendes KI-Modell, das Vision-Language-Technologie nutzt und neue Maßstäbe in der multimodalen KI-Entwicklung setzt - hochrelevant für alle AI-Interessierten.\n\n**programming - Relevanz: 7/10**\nDie Technologie hat direkten Bezug zur Softwareentwicklung durch automatisierte UI-Tests und die Möglichkeit, mit Benutzeroberflächen zu interagieren - wichtig für Entwickler und Tester.\n\n**work - Relevanz: 8/10**\nScreenAI könnte Arbeitsabläufe grundlegend verändern, von der Barrierefreiheit bis zur Automatisierung von UI-Interaktionen - sehr relevant für die moderne Arbeitswelt.\n\n**security - Relevanz: 5/10**\nObwohl nicht explizit erwähnt, birgt eine KI, die Bildschirminhalte analysiert und mit UIs interagiert, potenzielle Sicherheitsimplikationen - mäßig relevant für Sicherheitsexperten.\n\n**data protection - Relevanz: 6/10**\nEine KI, die Bildschirminhalte erfasst und analysiert, wirft Fragen zum Datenschutz auf, auch wenn dies im Artikel nicht thematisiert wird - relevant für Datenschutzbeauftragte.\n\nDie Kategorien \"databases\" und \"copyright\" sind nicht relevant, da der Artikel keine entsprechenden Aspekte behandelt.",
+          "id": "ea1c7532-5ebf-4f8d-a13e-15dc395949a8"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "ScreenAI ist ein bahnbrechendes KI-Modell, das Vision-Language-Technologie nutzt und neue Maßstäbe in der multimodalen KI-Entwicklung setzt - hochrelevant für alle AI-Interessierten."
+          },
+          {
+            "name": "programming",
+            "relevance": 7,
+            "reasoning": "Die Technologie hat direkten Bezug zur Softwareentwicklung durch automatisierte UI-Tests und die Möglichkeit, mit Benutzeroberflächen zu interagieren - wichtig für Entwickler und Tester."
+          },
+          {
+            "name": "work",
+            "relevance": 8,
+            "reasoning": "ScreenAI könnte Arbeitsabläufe grundlegend verändern, von der Barrierefreiheit bis zur Automatisierung von UI-Interaktionen - sehr relevant für die moderne Arbeitswelt."
+          },
+          {
+            "name": "security",
+            "relevance": 5,
+            "reasoning": "Obwohl nicht explizit erwähnt, birgt eine KI, die Bildschirminhalte analysiert und mit UIs interagiert, potenzielle Sicherheitsimplikationen - mäßig relevant für Sicherheitsexperten."
+          },
+          {
+            "name": "data protection",
+            "relevance": 6,
+            "reasoning": "Eine KI, die Bildschirminhalte erfasst und analysiert, wirft Fragen zum Datenschutz auf, auch wenn dies im Artikel nicht thematisiert wird - relevant für Datenschutzbeauftragte."
+          }
+        ]
+      ]
+    }
+  }
+}

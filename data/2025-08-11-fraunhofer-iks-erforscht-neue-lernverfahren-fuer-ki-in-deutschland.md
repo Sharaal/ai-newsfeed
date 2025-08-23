@@ -1,8 +1,34 @@
 ---
-layout: "post"
-language: "de"
-title: "Fraunhofer IKS erforscht neue Lernverfahren für KI in Deutschland"
+layout: post
+language: de
+title: Fraunhofer IKS erforscht neue Lernverfahren für KI in Deutschland
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der gesamte Artikel dreht sich um Fortschritte in der KI-Forschung,
+      insbesondere 'Safe Intelligence'-Ansätze und die Verbesserung neuronaler
+      Netze - dies ist hochrelevant für alle, die sich für KI-Entwicklungen
+      interessieren.
+  - name: security
+    relevance: 8
+    reasoning: >-
+      Ein zentraler Fokus liegt auf sicherheitskritischen Anwendungen und der
+      Entwicklung sicherer KI-Systeme, die Unsicherheiten quantifizieren und
+      minimieren können - essentiell für alle sicherheitsrelevanten IT-Bereiche.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Die Entwicklung neuer Lernverfahren und Methoden für neuronale Netze
+      betrifft direkt Programmierer und Entwickler, die mit KI-Systemen
+      arbeiten, auch wenn keine konkreten Programmierdetails genannt werden.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Die Forschung zielt auf praktische Anwendungen in Automobilindustrie,
+      Medizintechnik und Industrie 4.0 ab, was erhebliche Auswirkungen auf
+      verschiedene Arbeitsbereiche haben wird.
 ---
 
 ### Fraunhofer IKS erforscht neue Lernverfahren für KI in Deutschland

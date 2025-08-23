@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Elon Musk sichert Neuralink 650 Millionen Dollar für Gehirnchip-Entwicklung\n\n\nElon Musks Neurotechnologie-Unternehmen Neuralink hat in einer neuen Finanzierungsrunde beeindruckende 650 Millionen Dollar eingesammelt. Mit dieser Summe will das Unternehmen die Entwicklung seiner Gehirnimplantate weiter vorantreiben, die Menschen mit neurologischen Erkrankungen wie Lähmungen oder Blindheit helfen sollen. Neuralink plant, die Mittel auch für die Erforschung innovativer Technologien zu nutzen, die eine tiefere Verbindung zwischen biologischer und künstlicher Intelligenz ermöglichen könnten. Die Vision: eine Symbiose zwischen Mensch und Maschine, die nicht nur medizinische Probleme löst, sondern auch die kognitiven Fähigkeiten des Menschen erweitert.\n\n<!--more-->\n\nDie Finanzierungsrunde wurde von einer Gruppe prominenter Investoren aus dem Silicon Valley und dem Nahen Osten unterstützt. Neuralink hat bereits erste Erfolge vorzuweisen: Patienten mit Querschnittslähmungen konnten mithilfe der Implantate Computer steuern und sogar Videospiele wie \"Mario Kart\" spielen – allein durch Gedankenkraft. Musk betont, dass die Technologie langfristig Milliarden von Menschen zugutekommen könnte, indem sie nicht nur Krankheiten behandelt, sondern auch neue Möglichkeiten der Kommunikation und Interaktion eröffnet. Kritiker warnen jedoch vor ethischen und sicherheitstechnischen Herausforderungen, die mit der Verschmelzung von Mensch und Maschine einhergehen.\n\n### Quellen\n- [Tagesschau: Geldregen für Neuralink](https://www.tagesschau.de/wirtschaft/technologie/musk-neuralink-ki-gehirn-chip-zukunft-100.html)  \n- [FAZ: Neuralink sammelt 650 Millionen Dollar ein](https://www.faz.net/aktuell/wirtschaft/unternehmen/musks-gehirnchip-firma-neuralink-sammelt-650-millionen-dollar-ein-110514286.html)  \n- [Spiegel: Neuralink und die Symbiose mit KI](https://www.spiegel.de/wirtschaft/unternehmen/neuralink-elon-musks-gehirnchip-firma-sammelt-650-millionen-dollar-ein-a-f2a2224a-0cce-4ad7-8570-622fe6d049a5)\n\n    ",
+    "timestamp": "2025-08-23T19:27:55.842Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts über Neuralinks 650-Millionen-Dollar-Finanzierung ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDie Entwicklung von Gehirnimplantaten zur Verbindung biologischer und künstlicher Intelligenz sowie die Vision einer Mensch-Maschine-Symbiose stellt einen bahnbrechenden Fortschritt im KI-Bereich dar, der die Zukunft der Technologie maßgeblich prägen könnte.\n\n## **security** - Relevanz: 7/10\nDie direkte Verbindung zwischen Gehirn und Computer wirft erhebliche Sicherheitsfragen auf, da Gehirnimplantate potenzielle Angriffsziele für Hacker darstellen und die Integrität menschlicher Gedanken und Daten gefährden könnten.\n\n## **data protection** - Relevanz: 8/10\nGehirnimplantate sammeln hochsensible neurologische Daten und Gedankenmuster, was fundamentale Fragen zum Schutz der privatesten menschlichen Informationen aufwirft und neue Datenschutzstandards erfordert.\n\n## **work** - Relevanz: 6/10\nDie Technologie könnte mittelfristig Arbeitsprozesse revolutionieren, indem sie neue Formen der Mensch-Computer-Interaktion ermöglicht und Menschen mit Behinderungen besseren Zugang zum Arbeitsmarkt verschafft.\n\nDie Kategorien \"programming\", \"databases\" und \"copyright\" sind für diesen spezifischen Newstext nicht direkt relevant, da der Fokus auf der medizinischen Anwendung und den gesellschaftlichen Auswirkungen der Neurotechnologie liegt.",
+          "id": "f87d6d1c-cb5c-4ff1-a7f7-5b829facdc31"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Die Entwicklung von Gehirnimplantaten zur Verbindung biologischer und künstlicher Intelligenz sowie die Vision einer Mensch-Maschine-Symbiose stellt einen bahnbrechenden Fortschritt im KI-Bereich dar, der die Zukunft der Technologie maßgeblich prägen könnte."
+          },
+          {
+            "name": "security",
+            "relevance": 7,
+            "reasoning": "Die direkte Verbindung zwischen Gehirn und Computer wirft erhebliche Sicherheitsfragen auf, da Gehirnimplantate potenzielle Angriffsziele für Hacker darstellen und die Integrität menschlicher Gedanken und Daten gefährden könnten."
+          },
+          {
+            "name": "data protection",
+            "relevance": 8,
+            "reasoning": "Gehirnimplantate sammeln hochsensible neurologische Daten und Gedankenmuster, was fundamentale Fragen zum Schutz der privatesten menschlichen Informationen aufwirft und neue Datenschutzstandards erfordert."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Die Technologie könnte mittelfristig Arbeitsprozesse revolutionieren, indem sie neue Formen der Mensch-Computer-Interaktion ermöglicht und Menschen mit Behinderungen besseren Zugang zum Arbeitsmarkt verschafft."
+          }
+        ]
+      ]
+    }
+  }
+}

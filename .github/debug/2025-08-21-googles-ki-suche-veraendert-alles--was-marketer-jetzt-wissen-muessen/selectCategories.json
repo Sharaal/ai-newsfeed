@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Googles KI-Suche verändert alles – Was Marketer jetzt wissen müssen\n\n\nDie Einführung des neuen \"AI Mode\" in der Google-Suche markiert einen Wendepunkt in der Art und Weise, wie Menschen Informationen suchen und finden. Statt nur Links anzuzeigen, liefert die KI jetzt kontextbezogene Antworten, die auf die individuellen Bedürfnisse der Nutzer zugeschnitten sind. Diese Entwicklung verändert nicht nur das Nutzerverhalten, sondern stellt auch Marketer vor neue Herausforderungen. Besonders betroffen ist die Suchmaschinenoptimierung (SEO): Einzelne Absätze und präzise Antworten gewinnen an Bedeutung, während klassische Seitenrankings an Relevanz verlieren.  \n\n<!--more-->\n\nFür Marketer bedeutet dies, dass sie ihre Strategien anpassen müssen. Inhalte müssen nicht nur informativ, sondern auch klar strukturiert und KI-freundlich sein, um in den neuen \"AI Overviews\" aufzutauchen. Diese KI-generierten Zusammenfassungen erscheinen direkt in den Suchergebnissen und bieten Nutzern schnelle Antworten, ohne dass sie eine Website besuchen müssen. Erste Tests zeigen, dass dies die Klickrate (CTR) auf organische und bezahlte Suchergebnisse deutlich senken kann. Gleichzeitig eröffnen sich neue Möglichkeiten: Unternehmen können durch gezielte Optimierung ihrer Inhalte weiterhin sichtbar bleiben und sogar von der gesteigerten Nutzerzufriedenheit profitieren.\n\nEin weiteres Highlight des neuen \"AI Mode\" ist die Fähigkeit, komplexe Aufgaben zu übernehmen, wie etwa Restaurantreservierungen oder Produktvergleiche. Dies macht die Google-Suche zu einer interaktiven Plattform, die nicht nur Informationen liefert, sondern auch Entscheidungen erleichtert. Für Marketer bedeutet dies, dass sie ihre Zielgruppen noch genauer analysieren und personalisierte Inhalte erstellen müssen, um in diesem neuen Ökosystem erfolgreich zu sein.\n\n### Quellen\n- [Think with Google: KI-Trends 2025](https://www.thinkwithgoogle.com/intl/de-de/marketing-strategien/automatisierung/ki-trends-2025/)  \n- [UnitedAds: Google I/O 2025 – Was die neuen Features bedeuten](https://unitedads.de/blog/google-i-o-2025-ki-dominiert-die-zukunft-was-die-neuen-features-bedeuten/)  \n- [Evergreen Media: Google AI Overviews](https://www.evergreen.media/ratgeber/google-ki-uebersichten/)  \n- [The Decoder: Googles KI-Suche wird agentischer](https://the-decoder.de/googles-ki-suche-wird-agentischer-und-rollt-weltweit-aus/)\n\n    ",
+    "timestamp": "2025-08-23T19:04:07.686Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über Googles neuen \"AI Mode\" in der Suche und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt zentral Googles neue KI-gestützte Suchfunktion mit \"AI Overviews\" und komplexen KI-Aufgaben - eine bahnbrechende Entwicklung, die das Suchverhalten grundlegend verändert.\n\n**work - Relevanz: 7/10**\nMarketer und SEO-Experten müssen ihre Arbeitsstrategien komplett überdenken und anpassen, was erhebliche Auswirkungen auf deren Berufspraxis hat.\n\n**programming - Relevanz: 5/10**\nEntwickler müssen ihre Websites und Inhalte für KI-Algorithmen optimieren und strukturieren, was neue technische Anforderungen mit sich bringt.\n\n**security - Relevanz: 3/10**\nNur indirekt relevant durch die Erwähnung von Restaurantreservierungen und Produktvergleichen, die potenzielle Datenschutz- und Sicherheitsaspekte aufwerfen könnten.\n\nDie Kategorien \"databases\", \"data protection\" und \"copyright\" sind für diesen Artikel nicht relevant, da sie nicht thematisiert werden.",
+          "id": "e49da6ef-2f44-4857-94bb-fdfdd4fb257a"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt zentral Googles neue KI-gestützte Suchfunktion mit AI Overviews und komplexen KI-Aufgaben - eine bahnbrechende Entwicklung, die das Suchverhalten grundlegend verändert."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Marketer und SEO-Experten müssen ihre Arbeitsstrategien komplett überdenken und anpassen, was erhebliche Auswirkungen auf deren Berufspraxis hat."
+          },
+          {
+            "name": "programming",
+            "relevance": 5,
+            "reasoning": "Entwickler müssen ihre Websites und Inhalte für KI-Algorithmen optimieren und strukturieren, was neue technische Anforderungen mit sich bringt."
+          },
+          {
+            "name": "security",
+            "relevance": 3,
+            "reasoning": "Nur indirekt relevant durch die Erwähnung von Restaurantreservierungen und Produktvergleichen, die potenzielle Datenschutz- und Sicherheitsaspekte aufwerfen könnten."
+          }
+        ]
+      ]
+    }
+  }
+}

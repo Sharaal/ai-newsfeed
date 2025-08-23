@@ -1,0 +1,80 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Softbank plant Einsatz von einer Milliarde KI-Agenten in der Wirtschaft\n\n\nSoftbank hat kürzlich angekündigt, eine Milliarde KI-Agenten in den Arbeitsalltag zu integrieren. Diese Softwareprogramme sollen in verschiedenen Bereichen wie Programmierung, Datenanalyse und Kundenservice eingesetzt werden. Unternehmensgründer Masayoshi Son erklärte, dass diese Maßnahme nicht nur die Effizienz steigern, sondern auch die Kosten erheblich senken soll. Laut Son könnten etwa 1.000 KI-Agenten die Arbeit eines menschlichen Mitarbeiters übernehmen, wobei die monatlichen Kosten pro Agent bei nur 40 Yen (ca. 23 Cent) liegen. Dies entspricht etwa 230 Euro pro ersetztem Mitarbeiter – ein Bruchteil der üblichen Personalkosten.\n\n<!--more-->\n\nDie KI-Agenten sollen nicht nur einfache Aufgaben übernehmen, sondern auch eigenständig lernen und Entscheidungen treffen. Softbank plant, diese Technologie konzernintern einzusetzen, bevor sie möglicherweise auch anderen Unternehmen angeboten wird. Kritiker warnen jedoch vor den sozialen Folgen, da der massive Einsatz von KI-Agenten zahlreiche Arbeitsplätze gefährden könnte. Son hingegen sieht die Entwicklung als unvermeidlich und betont, dass die \"Ära menschlicher Programmierer\" zu Ende gehe. Langfristig plant Softbank sogar den Einsatz von Billionen solcher Agenten, um eine vollständig automatisierte Arbeitswelt zu schaffen.\n\n### Quellen\n- [Heise Online](https://www.heise.de/news/Softbank-1-000-KI-Agenten-ersetzen-1-Arbeitsplatz-10490298.html)  \n- [BR24](https://www.br.de/nachrichten/netzwelt/uebernehmen-ki-agenten-jetzt-die-wirtschaft,UrxKwwm)  \n- [Computerbild](https://www.computerbild.de/artikel/News-Internet-Softbank-ersetzt-Programmierende-durch-Milliarden-KI-Agenten-39863351.html)  \n- [Der Standard](https://www.derstandard.at/story/3000000279890/softbank-chef-son-die-zeit-in-der-menschen-programmieren-geht-zu-ende)  \n\n    ",
+    "timestamp": "2025-08-23T19:45:36.050Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über Softbanks Plan zum Einsatz von einer Milliarde KI-Agenten:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 10/10**\nDies ist eine bahnbrechende Ankündigung über den massiven industriellen Einsatz von KI-Agenten, die das Potenzial hat, die gesamte Arbeitswelt zu revolutionieren.\n\n**programming - Relevanz: 9/10**\nDie Nachricht ist hochrelevant für Programmierer, da Son explizit das \"Ende der Ära menschlicher Programmierer\" prognostiziert und KI-Agenten Programmieraufgaben übernehmen sollen.\n\n**work - Relevanz: 9/10**\nDer geplante Ersatz von Arbeitsplätzen durch KI-Agenten (1.000 Agenten pro Mitarbeiter) hat massive Auswirkungen auf die Arbeitswelt und betrifft praktisch alle Branchen.\n\n**security - Relevanz: 6/10**\nWährend nicht explizit erwähnt, wirft der Einsatz autonomer KI-Agenten, die eigenständig Entscheidungen treffen, wichtige Sicherheitsfragen auf, die für IT-Sicherheitsexperten relevant sind.\n\n**databases - Relevanz: 5/10**\nKI-Agenten für Datenanalyse werden erwähnt, was für Datenbankspezialisten von mittlerer Relevanz ist, auch wenn keine spezifischen Datenbankthemen behandelt werden.\n\n**data protection - Relevanz: 4/10**\nObwohl nicht direkt thematisiert, sind bei autonomen KI-Agenten im Unternehmenseinsatz Datenschutzaspekte zu bedenken, was für Spezialisten interessant ist.\n\n**copyright - Relevanz: 2/10**\nUrheberrechtsfragen werden nicht behandelt und sind nur indirekt relevant, falls KI-Agenten urheberrechtlich geschützte Inhalte verarbeiten.",
+          "id": "0acbde8a-067a-43df-b0f7-5239e0f148fc"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 10,
+            "reasoning": "Dies ist eine bahnbrechende Ankündigung über den massiven industriellen Einsatz von KI-Agenten, die das Potenzial hat, die gesamte Arbeitswelt zu revolutionieren."
+          },
+          {
+            "name": "programming",
+            "relevance": 9,
+            "reasoning": "Die Nachricht ist hochrelevant für Programmierer, da Son explizit das 'Ende der Ära menschlicher Programmierer' prognostiziert und KI-Agenten Programmieraufgaben übernehmen sollen."
+          },
+          {
+            "name": "work",
+            "relevance": 9,
+            "reasoning": "Der geplante Ersatz von Arbeitsplätzen durch KI-Agenten (1.000 Agenten pro Mitarbeiter) hat massive Auswirkungen auf die Arbeitswelt und betrifft praktisch alle Branchen."
+          },
+          {
+            "name": "security",
+            "relevance": 6,
+            "reasoning": "Während nicht explizit erwähnt, wirft der Einsatz autonomer KI-Agenten, die eigenständig Entscheidungen treffen, wichtige Sicherheitsfragen auf, die für IT-Sicherheitsexperten relevant sind."
+          },
+          {
+            "name": "databases",
+            "relevance": 5,
+            "reasoning": "KI-Agenten für Datenanalyse werden erwähnt, was für Datenbankspezialisten von mittlerer Relevanz ist, auch wenn keine spezifischen Datenbankthemen behandelt werden."
+          },
+          {
+            "name": "data protection",
+            "relevance": 4,
+            "reasoning": "Obwohl nicht direkt thematisiert, sind bei autonomen KI-Agenten im Unternehmenseinsatz Datenschutzaspekte zu bedenken, was für Spezialisten interessant ist."
+          },
+          {
+            "name": "copyright",
+            "relevance": 2,
+            "reasoning": "Urheberrechtsfragen werden nicht behandelt und sind nur indirekt relevant, falls KI-Agenten urheberrechtlich geschützte Inhalte verarbeiten."
+          }
+        ]
+      ]
+    }
+  }
+}

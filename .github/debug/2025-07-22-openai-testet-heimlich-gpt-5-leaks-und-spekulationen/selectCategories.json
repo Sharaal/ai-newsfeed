@@ -1,0 +1,94 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# OpenAI testet heimlich GPT-5: Leaks und Spekulationen\n\n\nOpenAI sorgt erneut für Schlagzeilen: In den letzten Tagen sind Berichte aufgetaucht, dass das Unternehmen heimlich an der nächsten Generation seines KI-Modells, GPT-5, arbeitet. Interne Leaks und Aussagen von OpenAI-Mitarbeitern deuten darauf hin, dass das Modell bereits in einer frühen Testphase ist. Besonders brisant: Ein Prototyp mit dem Namen \"gpt-5-reasoning-alpha-2025-07-13\" wurde angeblich am 13. Juli intern getestet. Dieses Modell soll in der Lage sein, komplexe mathematische Aufgaben auf höchstem Niveau zu lösen – ein Meilenstein, der die Grenzen der bisherigen KI-Entwicklung sprengen könnte.\n\n<!--more-->\n\nDie Gerüchte werden zusätzlich durch kryptische Aussagen von OpenAI-CEO Sam Altman befeuert. In einem Social-Media-Post erwähnte er, dass er ein \"neues Modell\" für ein Coding-Projekt genutzt habe, das ihn in nur fünf Minuten zum Ziel brachte. Obwohl er den Namen des Modells nicht nannte, spekulieren viele, dass es sich um GPT-5 handelt. Gleichzeitig wird vermutet, dass der kürzlich eingeführte \"ChatGPT-Agentenmodus\" als Testfeld für die neue Technologie dient. Dieser Modus erlaubt es, KI-gestützte Workflows zu automatisieren – eine Funktion, die in GPT-5 nahtlos integriert sein könnte.\n\nDie Erwartungen an GPT-5 sind hoch: Es soll nicht nur multimodale Fähigkeiten wie Text-, Bild- und Audioverarbeitung vereinen, sondern auch ein erweitertes Gedächtnis und fortgeschrittenes logisches Denken bieten. Brancheninsider sprechen bereits von einer \"magischen Intelligenz\", die verschiedene Aufgabenbereiche nahtlos miteinander verbinden kann. Ob und wann OpenAI das Modell offiziell ankündigt, bleibt jedoch unklar. Einige Quellen spekulieren auf eine Veröffentlichung im Spätsommer 2025.\n\n### Quellen\n- [GPT‑5 kommt: Alles, was bisher zum neuen KI-Wunder bekannt ist](https://www.all-ai.de/news/topbeitraege/gpt5-bekannt-25)  \n- [GPT-5 von OpenAI: Was hinter den Gerüchten um das neue KI-Modell steckt](https://www.techzeitgeist.de/gpt-5-von-openai-was-hinter-den-geruechten-um-das-neue-ki-modell-steckt/)  \n- [OpenAI arbeitet an Release von GPT-5: Das soll die neue Sprachmodell-Version können](https://t3n.de/news/openai-release-gpt-5-1698434/)\n\n    ",
+    "timestamp": "2025-08-23T19:56:23.322Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool-call",
+              "toolCallId": "tooluse_lhVp_o9DRnWNPgXmg69Rug",
+              "toolName": "web_search",
+              "args": {
+                "query": "OpenAI GPT-5 testing leaks July 2025 Sam Altman"
+              }
+            }
+          ],
+          "id": "011c690a-2d90-46d3-9d7e-7b8169c71e57"
+        },
+        {
+          "role": "tool",
+          "id": "a8363957-6a9b-4617-a5e9-ea2c1cbb568a",
+          "content": [
+            {
+              "type": "tool-result",
+              "toolCallId": "tooluse_lhVp_o9DRnWNPgXmg69Rug",
+              "toolName": "web_search",
+              "result": {
+                "input": "OpenAI GPT-5 testing leaks July 2025 Sam Altman",
+                "error": "The search for your query faild since the engine was unresponsive."
+              }
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts über OpenAIs heimliche Tests von GPT-5 ordne ich folgende Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 10/10**\nDies ist eine bahnbrechende Nachricht für die KI-Branche. GPT-5 als nächste Generation von OpenAIs Flaggschiff-Modell mit erweiterten Fähigkeiten wie komplexer Mathematik, multimodalen Features und verbessertem logischen Denken ist für alle KI-Interessierten hochrelevant.\n\n**programming - Relevanz: 8/10**\nSam Altmans Erwähnung eines neuen Modells für Coding-Projekte und die Automatisierung von KI-gestützten Workflows sind für Programmierer sehr relevant, da GPT-5 die Art der Softwareentwicklung revolutionieren könnte.\n\n**work - Relevanz: 7/10**\nDer erwähnte \"ChatGPT-Agentenmodus\" zur Workflow-Automatisierung und die potenzielle nahtlose Integration verschiedener Aufgabenbereiche werden erhebliche Auswirkungen auf die moderne Arbeitswelt haben.\n\n**security - Relevanz: 4/10**\nObwohl nicht explizit erwähnt, sind heimliche Tests und interne Leaks bei einem so mächtigen KI-System durchaus sicherheitsrelevant, jedoch nur für Spezialisten in diesem Bereich von direktem Interesse.\n\nDie Kategorien \"databases\", \"data protection\" und \"copyright\" sind nicht relevant, da der Text diese Aspekte nicht behandelt.",
+          "id": "342ac850-5fde-4f3b-afdf-6abcbfb19dd5"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 10,
+            "reasoning": "Dies ist eine bahnbrechende Nachricht für die KI-Branche. GPT-5 als nächste Generation von OpenAIs Flaggschiff-Modell mit erweiterten Fähigkeiten wie komplexer Mathematik, multimodalen Features und verbessertem logischen Denken ist für alle KI-Interessierten hochrelevant."
+          },
+          {
+            "name": "programming",
+            "relevance": 8,
+            "reasoning": "Sam Altmans Erwähnung eines neuen Modells für Coding-Projekte und die Automatisierung von KI-gestützten Workflows sind für Programmierer sehr relevant, da GPT-5 die Art der Softwareentwicklung revolutionieren könnte."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Der erwähnte ChatGPT-Agentenmodus zur Workflow-Automatisierung und die potenzielle nahtlose Integration verschiedener Aufgabenbereiche werden erhebliche Auswirkungen auf die moderne Arbeitswelt haben."
+          },
+          {
+            "name": "security",
+            "relevance": 4,
+            "reasoning": "Obwohl nicht explizit erwähnt, sind heimliche Tests und interne Leaks bei einem so mächtigen KI-System durchaus sicherheitsrelevant, jedoch nur für Spezialisten in diesem Bereich von direktem Interesse."
+          }
+        ]
+      ]
+    }
+  }
+}

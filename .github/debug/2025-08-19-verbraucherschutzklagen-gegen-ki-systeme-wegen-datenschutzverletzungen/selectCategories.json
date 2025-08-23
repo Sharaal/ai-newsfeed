@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Verbraucherschutzklagen gegen KI-Systeme wegen Datenschutzverletzungen\n\n\nIn den letzten Tagen haben mehrere Verbraucherschutzorganisationen Klagen gegen große Technologieunternehmen eingereicht, die Künstliche Intelligenz (KI) einsetzen. Im Fokus stehen dabei Datenschutzverletzungen, die durch die Nutzung personenbezogener Daten für das Training von KI-Modellen entstehen. Besonders im Rampenlicht steht der Fall der Verbraucherzentrale Nordrhein-Westfalen gegen Meta. Die Organisation hatte versucht, die Nutzung von Daten aus Facebook und Instagram für das Training der KI-Software Meta AI per einstweiliger Verfügung zu stoppen. Das Oberlandesgericht Köln wies die Klage jedoch ab und erklärte, dass die Maßnahmen von Meta, wie die De-Identifizierung von Daten, ausreichend seien, um die Datenschutz-Grundverordnung (DSGVO) einzuhalten. \n\n<!--more-->\n\nTrotz des Urteils bleibt die Debatte um den Datenschutz bei KI-Systemen hochaktuell. Die europäische KI-Verordnung, die seit dem 2. August 2025 in Teilen in Kraft ist, verschärft die Anforderungen an Unternehmen. Sie verpflichtet Anbieter von KI-Systemen, strenge Datenschutzmaßnahmen zu implementieren und klare Opt-out-Mechanismen anzubieten. Verbraucherschützer fordern zudem die zügige Einrichtung einer nationalen Aufsichtsbehörde, um die Einhaltung der neuen Vorschriften zu überwachen. Parallel dazu drohen Unternehmen bei Verstößen gegen die DSGVO und die KI-Verordnung hohe Bußgelder, die bis zu 30 Millionen Euro oder 6 % des weltweiten Jahresumsatzes betragen können.\n\n### Quellen\n- [Gerichtsverfahren KI: Urteile 2025 prägen Zukunft der KI](https://ki-agentur.io/gerichtsverfahren-ki/)\n- [OLG Köln erlaubt Meta Datennutzung für KI-Training - LTO](https://www.lto.de/recht/hintergruende/h/olg-koeln-15ukl225-meta-facebook-instagram-datenschutz-ai-ki-dsgvo)\n- [Meta-KI: Verbraucherschützer scheitern mit Eil-Klage vor OLG Köln - Spiegel](https://www.spiegel.de/netzwelt/netzpolitik/meta-ki-verbraucherschuetzer-scheitern-mit-eil-klage-vor-oberlandesgericht-koeln-a-41176a44-8e1b-4251-981c-8ce424035d50)\n- [KI-Verordnung: Was Unternehmen jetzt wissen müssen](https://cortina-consult.com/ki-compliance/wissen/ki-verordnung/)\n\n    ",
+    "timestamp": "2025-08-23T19:10:08.990Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt zentral KI-Systeme und deren rechtliche Regulierung durch die neue EU-KI-Verordnung. Dies ist bahnbrechend relevant, da es die Zukunft der KI-Entwicklung und -Nutzung maßgeblich prägt.\n\n**data protection - Relevanz: 10/10**\nDatenschutzverletzungen durch KI-Training stehen im absoluten Mittelpunkt des Artikels, einschließlich DSGVO-Compliance und hohen Bußgeldern bis 30 Millionen Euro - dies ist für alle Unternehmen und Verbraucher von höchster Relevanz.\n\n**work - Relevanz: 7/10**\nDie neuen rechtlichen Anforderungen der KI-Verordnung betreffen direkt Unternehmen und deren Compliance-Verpflichtungen, was erhebliche Auswirkungen auf Arbeitsprozesse und -strukturen hat.\n\n**security - Relevanz: 6/10**\nObwohl nicht explizit erwähnt, sind die Datenschutzmaßnahmen und De-Identifizierung von Daten wichtige Sicherheitsaspekte, die für IT-Sicherheitsverantwortliche relevant sind.\n\nDie Kategorien \"programming\", \"databases\" und \"copyright\" sind nicht direkt relevant, da der Artikel sich auf rechtliche und regulatorische Aspekte konzentriert, nicht auf technische Implementierung oder Urheberrechtsfragen.",
+          "id": "e75cde53-3cf7-4654-b504-5555212f35b7"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt zentral KI-Systeme und deren rechtliche Regulierung durch die neue EU-KI-Verordnung. Dies ist bahnbrechend relevant, da es die Zukunft der KI-Entwicklung und -Nutzung maßgeblich prägt."
+          },
+          {
+            "name": "data protection",
+            "relevance": 10,
+            "reasoning": "Datenschutzverletzungen durch KI-Training stehen im absoluten Mittelpunkt des Artikels, einschließlich DSGVO-Compliance und hohen Bußgeldern bis 30 Millionen Euro - dies ist für alle Unternehmen und Verbraucher von höchster Relevanz."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Die neuen rechtlichen Anforderungen der KI-Verordnung betreffen direkt Unternehmen und deren Compliance-Verpflichtungen, was erhebliche Auswirkungen auf Arbeitsprozesse und -strukturen hat."
+          },
+          {
+            "name": "security",
+            "relevance": 6,
+            "reasoning": "Obwohl nicht explizit erwähnt, sind die Datenschutzmaßnahmen und De-Identifizierung von Daten wichtige Sicherheitsaspekte, die für IT-Sicherheitsverantwortliche relevant sind."
+          }
+        ]
+      ]
+    }
+  }
+}

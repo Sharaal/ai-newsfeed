@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Nvidia-Chef: KI wird mehr Millionäre schaffen als das Internet\n\n\nKünstliche Intelligenz (KI) wird in den kommenden Jahren mehr Millionäre hervorbringen als das Internet in den letzten zwei Jahrzehnten – diese kühne Prognose stammt von Jensen Huang, dem CEO des Chipherstellers Nvidia. In einem kürzlich geführten Interview erklärte Huang, dass KI nicht nur die Art und Weise, wie Unternehmen arbeiten, revolutionieren wird, sondern auch eine neue Ära der wirtschaftlichen Chancen einläutet. Besonders bemerkenswert sei, dass KI die Einstiegshürden für Innovation und Unternehmertum drastisch senkt. \n\n<!--more-->\n\nHuang betonte, dass KI eine \"demokratisierende Kraft\" sei, die es Menschen ermöglicht, ohne tiefgehende technische Kenntnisse kreative und wirtschaftliche Projekte umzusetzen. \"Wer eine Idee hat, kann sie mit KI realisieren\", so Huang. Dies sei ein entscheidender Unterschied zu früheren technologischen Revolutionen, bei denen technisches Know-how oft eine Voraussetzung war. Unternehmen könnten künftig sowohl physische als auch digitale \"KI-Fabriken\" betreiben, um ihre Effizienz zu steigern und neue Märkte zu erschließen.\n\nDoch nicht alle teilen Huangs Optimismus. Kritiker warnen vor einer ungleichen Verteilung der Ressourcen, die den Zugang zu KI-Technologien erschwert. Während in den USA und Asien bereits massive Investitionen in KI-Infrastrukturen getätigt werden, hinkt Europa hinterher. Zudem bleibt die Frage offen, wie die Gesellschaft mit den potenziellen Risiken der Technologie umgehen wird, darunter Arbeitsplatzverluste und ethische Herausforderungen.\n\n### Quellen\n- [Dataconomy: Laut CEO von NVIDIA wird KI mehr Millionäre als das Internet schaffen](https://de.dataconomy.com/2025/07/29/laut-ceo-von-nvidia-wird-ki-mehr-millionaere-als-das-internet-schaffen/)\n- [All-AI.de: Nvidia-Boss: KI macht bald mehr Millionäre als das Internet](https://www.all-ai.de/news/news24/nvidia-ki-millionaer)\n- [Der Aktionär: Millionär dank KI – Depotwert Nvidia rockt weiter](https://www.deraktionaer.de/artikel/kolumnen/nvidia-so-millionaer-in-5-jahren-werden-100-mal-mehr-ideen-20383929.html)\n\n    ",
+    "timestamp": "2025-08-23T19:42:01.172Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts über Jensen Huangs Prognose zu KI und Millionären ordne ich folgende Kategorien zu:\n\n## Passende Kategorien mit Relevanzbewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt zentral die wirtschaftlichen Auswirkungen von KI und Prognosen des Nvidia-CEOs zur transformativen Kraft der Technologie - hochrelevant für alle, die sich für KI-Entwicklungen interessieren.\n\n**work - Relevanz: 8/10**\nDer Text thematisiert explizit die Veränderung der Arbeitswelt durch KI, Unternehmertum ohne technische Vorkenntnisse und potenzielle Arbeitsplatzverluste - sehr relevant für Berufstätige aller Branchen.\n\n**programming - Relevanz: 6/10**\nObwohl nicht direkt über Programmierung gesprochen wird, ist die Aussage über sinkende technische Einstiegshürden und \"KI-Fabriken\" für Entwickler interessant, da es ihre Rolle in der Zukunft betrifft.\n\nDie anderen Kategorien (databases, security, data protection, copyright) werden im Text nicht behandelt oder nur sehr indirekt angesprochen, weshalb sie nicht zugeordnet werden.",
+          "id": "247ede72-fa46-44ac-ae40-d2b331d31109"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt zentral die wirtschaftlichen Auswirkungen von KI und Prognosen des Nvidia-CEOs zur transformativen Kraft der Technologie - hochrelevant für alle, die sich für KI-Entwicklungen interessieren."
+          },
+          {
+            "name": "work",
+            "relevance": 8,
+            "reasoning": "Der Text thematisiert explizit die Veränderung der Arbeitswelt durch KI, Unternehmertum ohne technische Vorkenntnisse und potenzielle Arbeitsplatzverluste - sehr relevant für Berufstätige aller Branchen."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Obwohl nicht direkt über Programmierung gesprochen wird, ist die Aussage über sinkende technische Einstiegshürden und 'KI-Fabriken' für Entwickler interessant, da es ihre Rolle in der Zukunft betrifft."
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -1,8 +1,28 @@
 ---
-layout: "post"
-language: "de"
-title: "OpenAI sichert sich mit 30-Milliarden-Dollar-Deal Rechenkapazitäten bei Oracle"
+layout: post
+language: de
+title: OpenAI sichert sich mit 30-Milliarden-Dollar-Deal Rechenkapazitäten bei Oracle
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 10
+    reasoning: >-
+      Dieser Deal ist bahnbrechend für die KI-Branche, da er OpenAI massive
+      Rechenkapazitäten für die Weiterentwicklung von GPT-4o und anderen
+      KI-Modellen sichert und das 'Stargate'-Projekt zur KI-Infrastruktur
+      vorantreibt.
+  - name: work
+    relevance: 8
+    reasoning: >-
+      Der 30-Milliarden-Deal wird erhebliche Auswirkungen auf die Arbeitswelt
+      haben, da er den Ausbau von KI-Anwendungen wie ChatGPT beschleunigt und
+      neue Arbeitsplätze in den geplanten Rechenzentren schafft.
+  - name: programming
+    relevance: 7
+    reasoning: >-
+      Für Entwickler ist dieser Deal hochrelevant, da die erweiterten
+      Rechenkapazitäten die Entwicklung und den Einsatz von KI-gestützten
+      Programmiertools und -anwendungen erheblich vorantreiben werden.
 ---
 
 OpenAI hat mit Oracle einen der größten Cloud-Deals der Geschichte abgeschlossen. Der Vertrag, der ein jährliches Volumen von 30 Milliarden US-Dollar umfasst, sichert OpenAI langfristig 4,5 Gigawatt Rechenleistung. Diese Kapazitäten sollen vor allem für die Weiterentwicklung von KI-Modellen wie GPT-4o und die Unterstützung von Anwendungen wie ChatGPT genutzt werden. Der Deal ist Teil des sogenannten "Stargate"-Projekts, einer Initiative, die von OpenAI, Oracle, SoftBank und weiteren Partnern ins Leben gerufen wurde, um eine neue KI-Infrastruktur in den USA aufzubauen.

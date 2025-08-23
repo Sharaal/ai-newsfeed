@@ -1,8 +1,34 @@
 ---
-layout: "post"
-language: "de"
-title: "BeatSquares führt modulare KI-Infrastruktur bei Verlagspartnern ein"
+layout: post
+language: de
+title: BeatSquares führt modulare KI-Infrastruktur bei Verlagspartnern ein
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt eine innovative KI-Infrastruktur, die
+      journalistische Inhalte automatisiert in verschiedene Formate umwandelt -
+      dies ist hochrelevant für alle, die sich für praktische KI-Anwendungen
+      interessieren.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Die modulare Infrastruktur und technische Implementierung sind für
+      Entwickler interessant, auch wenn keine spezifischen Programmierdetails
+      genannt werden.
+  - name: work
+    relevance: 8
+    reasoning: >-
+      Die Lösung zielt darauf ab, Arbeitsprozesse in Redaktionen erheblich zu
+      vereinfachen und die Effizienz zu steigern - sehr relevant für alle, die
+      sich für Arbeitsplatzveränderungen durch KI interessieren.
+  - name: copyright
+    relevance: 5
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, wirft die automatisierte Umwandlung
+      journalistischer Inhalte in verschiedene Formate potenzielle
+      urheberrechtliche Fragen auf, die für Fachinteressierte relevant sind.
 ---
 
 Das Berliner Deep-Tech-Startup BeatSquares hat in den letzten Tagen den Rollout seiner modularen KI-Infrastruktur bei ersten Verlagspartnern bekannt gegeben. Ziel ist es, lokale und regionale Redaktionen dabei zu unterstützen, ihre Inhalte effizienter und plattformübergreifend bereitzustellen. Die innovative Lösung ermöglicht es, journalistische Inhalte automatisiert in verschiedene Formate wie Podcasts, Newsletter oder interaktive Artikel umzuwandeln. Dies soll nicht nur die Reichweite der Inhalte erhöhen, sondern auch die Arbeitsprozesse in den Redaktionen erheblich vereinfachen.

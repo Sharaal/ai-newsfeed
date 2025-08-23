@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Neues KI-Modell verbessert die Präzision bei medizinischen Diagnosen\n\n\nEin Forschungsteam der Universität Würzburg hat ein bahnbrechendes KI-Modell entwickelt, das die Interpretation von dreidimensionalen medizinischen Bilddaten revolutioniert. Das Modell, das speziell für die Analyse von Röntgen- und MRT-Bildern optimiert wurde, übertrifft bestehende Technologien in Präzision und Geschwindigkeit. Es gewann kürzlich einen internationalen Wettbewerb, bei dem es gegen führende KI-Systeme aus der ganzen Welt antrat. Die Forscher betonen, dass das Modell nicht nur präzisere Diagnosen ermöglicht, sondern auch die Arbeitsbelastung von Radiologen erheblich reduziert, indem es potenzielle Anomalien automatisch hervorhebt.\n\n<!--more-->\n\nEin weiteres Highlight ist die Integration von Retrieval-Augmented Generation (RAG), einer Methode, die externe Datenquellen nutzt, um die Genauigkeit der KI zu verbessern. Diese Technologie wurde in mehreren klinischen Tests erprobt und zeigte eine beeindruckende Steigerung der Diagnosegenauigkeit um 20,8 %. Besonders in der Onkologie und Kardiologie, wo präzise Bildanalysen entscheidend sind, könnte das Modell einen großen Unterschied machen. Die Forscher arbeiten nun daran, das System in reale klinische Umgebungen zu integrieren und es für den Einsatz in Krankenhäusern weltweit zu zertifizieren.\n\n### Quellen\n- [MedWiss: Neues KI-Modell bringt mehr Klarheit in medizinische Daten](https://www.medwiss.de/2025/07/15/kuenstliche-intelligenz-neues-modell-bringt-mehr-klarheit-in-medizinische-daten/)\n- [SciSimple: Die Genauigkeit in medizinischen KI-Diagnosen verbessern](https://scisimple.com/de/articles/2025-07-18-die-genauigkeit-in-medizinischen-ki-diagnosen-verbessern--akegvlv)\n- [Universität Würzburg: Neues Modell für medizinische Bilddaten](https://www.uni-wuerzburg.de/aktuelles/einblick/single/news/cvpr-2025/)\n\n    ",
+    "timestamp": "2025-08-23T19:58:46.904Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über das neue KI-Modell für medizinische Diagnosen und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDies ist eine bahnbrechende KI-Innovation mit 20,8% Verbesserung der Diagnosegenauigkeit und Integration von RAG-Technologie, die das Potenzial hat, die medizinische Diagnostik weltweit zu revolutionieren.\n\n**programming - Relevanz: 6/10**\nDie Entwicklung eines solchen KI-Modells erfordert fortgeschrittene Programmiertechniken und ist für Entwickler im Bereich Machine Learning und medizinischer Software hochrelevant.\n\n**work - Relevanz: 7/10**\nDas System reduziert die Arbeitsbelastung von Radiologen erheblich und verändert Arbeitsabläufe in der medizinischen Diagnostik, was für Fachkräfte im Gesundheitswesen sehr relevant ist.\n\n**Nicht zugeordnete Kategorien:**\n- **databases**: Keine spezifischen Datenbankthemen erwähnt\n- **security**: Keine Sicherheitsaspekte thematisiert\n- **data protection**: Datenschutz wird nicht behandelt\n- **copyright**: Keine urheberrechtlichen Fragen angesprochen\n\nDie Nachricht fokussiert sich primär auf die technologische Innovation im KI-Bereich mit direkten Auswirkungen auf die Arbeitswelt im Gesundheitswesen.",
+          "id": "64a0382f-7b08-43b1-be43-ab18de2381a7"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Dies ist eine bahnbrechende KI-Innovation mit 20,8% Verbesserung der Diagnosegenauigkeit und Integration von RAG-Technologie, die das Potenzial hat, die medizinische Diagnostik weltweit zu revolutionieren."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Die Entwicklung eines solchen KI-Modells erfordert fortgeschrittene Programmiertechniken und ist für Entwickler im Bereich Machine Learning und medizinischer Software hochrelevant."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Das System reduziert die Arbeitsbelastung von Radiologen erheblich und verändert Arbeitsabläufe in der medizinischen Diagnostik, was für Fachkräfte im Gesundheitswesen sehr relevant ist."
+          }
+        ]
+      ]
+    }
+  }
+}

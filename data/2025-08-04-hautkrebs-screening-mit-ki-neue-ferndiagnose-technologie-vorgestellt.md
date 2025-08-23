@@ -1,8 +1,32 @@
 ---
-layout: "post"
-language: "de"
-title: "Hautkrebs-Screening mit KI: Neue Ferndiagnose-Technologie vorgestellt"
+layout: post
+language: de
+title: 'Hautkrebs-Screening mit KI: Neue Ferndiagnose-Technologie vorgestellt'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Die künstliche Intelligenz ist das Herzstück dieser Innovation, da sie
+      Hautläsionen analysiert, mit Datenbanken vergleicht und Risikobewertungen
+      erstellt - eine bahnbrechende Anwendung von KI im Gesundheitswesen.
+  - name: databases
+    relevance: 6
+    reasoning: >-
+      Das System nutzt eine umfangreiche Datenbank zum Vergleich von
+      Hautläsionen, was für Datenbankspezialisten und Entwickler medizinischer
+      Systeme interessant ist.
+  - name: data protection
+    relevance: 7
+    reasoning: >-
+      Der Text erwähnt explizit Datenschutzbedenken von Kritikern, was bei
+      medizinischen Daten und KI-Systemen ein hochrelevantes Thema ist.
+  - name: work
+    relevance: 8
+    reasoning: >-
+      Die Technologie adressiert den Fachärztemangel in ländlichen Regionen und
+      verändert die Arbeitsweise von Dermatologen durch Ferndiagnosen - ein
+      wichtiger Aspekt für die Zukunft der Arbeitswelt im Gesundheitswesen.
 ---
 
 Ein neues KI-gestütztes Hautkrebs-Screening-System wurde vorgestellt, das die Früherkennung von Hautkrebs revolutionieren könnte. Die Technologie kombiniert hochauflösende Bildgebung mit künstlicher Intelligenz, um verdächtige Hautveränderungen zu identifizieren. Besonders in ländlichen Regionen, wo der Fachärztemangel spürbar ist, könnte das System eine entscheidende Rolle spielen. Die KI analysiert Bilder von Hautläsionen und vergleicht sie mit einer umfangreichen Datenbank, um potenziell gefährliche Veränderungen zu markieren. Anschließend können Dermatologen die Ergebnisse aus der Ferne überprüfen und eine Diagnose stellen.

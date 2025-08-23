@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Nvidia plant erste KI-Plattform für industrielle Anwendungen in Deutschland\n\n\nDer US-amerikanische Technologiekonzern Nvidia hat angekündigt, in Deutschland seine erste Cloud-Plattform für künstliche Intelligenz (KI) mit Schwerpunkt auf industrielle Anwendungen aufzubauen. Die Ankündigung erfolgte durch CEO Jensen Huang auf der VivaTech-Konferenz in Paris. Ziel des Projekts ist es, eine sogenannte \"industrielle KI-Cloud\" zu schaffen, die europäische Hersteller bei der digitalen Transformation unterstützt. Die Plattform soll mit modernster Hardware ausgestattet werden, darunter 10.000 GPUs, um die Verarbeitung großer Datenmengen und die Entwicklung von KI-Modellen zu beschleunigen. \n\n<!--more-->\n\nDie geplante Plattform wird als Teil einer umfassenderen Initiative gesehen, die darauf abzielt, Europa im Bereich der KI-Technologie wettbewerbsfähiger zu machen. Nvidia arbeitet dabei eng mit Partnern wie der Deutschen Telekom zusammen, um die Infrastruktur für die Plattform bereitzustellen. Neben der Unterstützung von Herstellern in der Automobil- und Maschinenbauindustrie soll die Plattform auch Anwendungen in der Robotik und Automatisierung fördern. Ein genauer Standort für das Rechenzentrum wurde bisher nicht bekannt gegeben, jedoch wird erwartet, dass die Plattform in den kommenden Jahren eine Schlüsselrolle in der europäischen KI-Strategie spielen wird.\n\n### Quellen\n- [IT-Business: Nvidia plant den Bau einer KI-Fabrik für die Industrie in Deutschland](https://www.it-business.de/nvidia-plant-den-bau-einer-ki-fabrik-fuer-die-industrie-in-deutschland-a-383f8e338163629f9d3edd012f12ad1e/)\n- [Manager Magazin: Nvidia: KI-Cloud für deutsche Industrie angekündigt](https://www.manager-magazin.de/unternehmen/tech/nvidia-ki-cloud-fuer-deutsche-industrie-angekuendigt-a-015de699-4862-4346-914f-7f1e08ed3635)\n- [Elektronik Praxis: Nvidia plant den Bau einer KI-Fabrik für die Industrie in Deutschland](https://www.elektronikpraxis.de/nvidia-plant-den-bau-einer-ki-fabrik-fuer-die-industrie-in-deutschland-a-811bead9343329d6d2f122a41633e7d2/)\n\n    ",
+    "timestamp": "2025-08-23T19:25:34.254Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts über Nvidias geplante KI-Plattform in Deutschland ordne ich folgende Kategorien zu:\n\n## Passende Kategorien mit Relevanzbewertung:\n\n**ai - Relevanz: 9/10**\nDie Nachricht behandelt direkt den Aufbau einer industriellen KI-Cloud-Plattform mit 10.000 GPUs und ist hochrelevant für die europäische KI-Strategie und digitale Transformation der Industrie.\n\n**programming - Relevanz: 6/10**\nDie Plattform wird die Entwicklung von KI-Modellen beschleunigen, was für Entwickler und Programmierer im KI-Bereich von mittlerer bis hoher Relevanz ist.\n\n**work - Relevanz: 7/10**\nDie Initiative zielt auf die digitale Transformation europäischer Hersteller ab und wird Arbeitsplätze und Arbeitsprozesse in der Automobil-, Maschinenbau-, Robotik- und Automatisierungsbranche erheblich beeinflussen.\n\n## Nicht zutreffende Kategorien:\n\n- **databases**: Keine spezifischen Datenbankthemen erwähnt\n- **security**: Keine Sicherheitsaspekte thematisiert\n- **data protection**: Keine Datenschutzfragen behandelt\n- **copyright**: Keine urheberrechtlichen Themen angesprochen\n\nDie Nachricht ist besonders bedeutsam, da sie Nvidias erste industrielle KI-Plattform in Deutschland betrifft und strategische Auswirkungen auf die europäische Wettbewerbsfähigkeit im KI-Bereich haben wird.",
+          "id": "72c5bcd0-bdc4-4efd-873a-71f17f385c48"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Die Nachricht behandelt direkt den Aufbau einer industriellen KI-Cloud-Plattform mit 10.000 GPUs und ist hochrelevant für die europäische KI-Strategie und digitale Transformation der Industrie."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Die Plattform wird die Entwicklung von KI-Modellen beschleunigen, was für Entwickler und Programmierer im KI-Bereich von mittlerer bis hoher Relevanz ist."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Die Initiative zielt auf die digitale Transformation europäischer Hersteller ab und wird Arbeitsplätze und Arbeitsprozesse in der Automobil-, Maschinenbau-, Robotik- und Automatisierungsbranche erheblich beeinflussen."
+          }
+        ]
+      ]
+    }
+  }
+}

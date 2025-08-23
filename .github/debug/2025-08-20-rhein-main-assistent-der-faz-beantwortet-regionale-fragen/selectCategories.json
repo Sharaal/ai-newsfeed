@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Rhein-Main-Assistent der FAZ beantwortet regionale Fragen\n\n\nDie \"Frankfurter Allgemeine Zeitung\" (FAZ) hat ein innovatives KI-gestütztes Feature eingeführt: den Rhein-Main-Assistenten. Dieses Tool ermöglicht es Leserinnen und Lesern, gezielt Fragen zu regionalen Themen zu stellen und fundierte Antworten zu erhalten. Der Assistent greift dabei ausschließlich auf Inhalte des Rhein-Main-Ressorts der FAZ zurück, die in den letzten Monaten veröffentlicht wurden. Ob Politik, Sicherheit, Sport, Kunst oder Kultur – der Rhein-Main-Assistent bietet eine breite Palette an Informationen, die speziell auf die Region zugeschnitten sind.\n\n<!--more-->\n\nDie Funktionalität des Assistenten ist einfach und benutzerfreundlich. Leser können Fragen wie \"Welche Ausflüge lohnen sich in der Region?\" oder \"Wie weit sind die Städte in Rhein-Main mit der Wärmeplanung?\" stellen. Die Antworten basieren auf sorgfältig recherchierten Artikeln der FAZ und bieten eine verlässliche Grundlage für regionale Informationen. Ziel ist es, den Zugang zu relevanten Inhalten zu erleichtern und die Leserbindung zu stärken. Laut FAZ-Herausgeber Carsten Knop soll der Assistent nicht nur informieren, sondern auch inspirieren und die Vielfalt der Rhein-Main-Region erlebbar machen.\n\nDie Einführung des Rhein-Main-Assistenten ist Teil einer größeren Strategie der FAZ, digitale Technologien zu nutzen, um ihre Inhalte noch besser zugänglich zu machen. Die Redaktion hat zudem eine Auswahl möglicher Fragen bereitgestellt, die Nutzer direkt anklicken können, um sich inspirieren zu lassen. Der Assistent ist in ausgewählten Artikeln des Rhein-Main-Ressorts integriert und soll kontinuierlich weiterentwickelt werden, um den Bedürfnissen der Leser gerecht zu werden.\n\n### Quellen\n- [Meedia.de: Rhein-Main-Assistent beantwortet Fragen zur Region](https://meedia.de/news/beitrag/19524-rhein-main-assistent-beantwortet-fragen-zur-region.html)  \n- [FAZ.net: Neues KI-Feature bei der FAZ](https://www.faz.net/aktuell/rhein-main/neues-ki-feature-bei-der-faz-rhein-main-assistent-beantwortet-fragen-zur-region-110376344.html)  \n- [BDZV: FAZ startet regionalen KI-Assistenten](https://www.bdzv.de/service/presse/branchennachrichten/2025/frankfurter-allgemeine-zeitung-startet-regionalen-ki-assistenten)\n\n    ",
+    "timestamp": "2025-08-23T19:06:31.523Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über den Rhein-Main-Assistenten der FAZ:\n\n## Passende Kategorien mit Relevanzbewertung:\n\n**ai - Relevanz: 7/10**\nDer Artikel beschreibt die Einführung eines KI-gestützten Assistenten bei einer großen deutschen Zeitung, was ein konkretes Beispiel für den praktischen Einsatz von KI im Medienbereich darstellt und für viele AI-Interessierte relevant ist.\n\n**work - Relevanz: 6/10**\nDie Implementierung zeigt, wie KI-Tools die Arbeitsweise in Redaktionen verändert und neue Wege der Leserbindung ermöglicht, was für Medienschaffende und Fachkräfte in der Digitalbranche interessant ist.\n\n**copyright - Relevanz: 4/10**\nDa der Assistent ausschließlich auf eigene FAZ-Inhalte zugreift, berührt dies Fragen des Urheberrechts bei KI-Anwendungen, ist aber nur für Spezialisten in diesem Bereich von größerem Interesse.\n\nDie anderen Kategorien (programming, databases, security, data protection) sind nicht direkt relevant, da der Artikel keine technischen Details zur Implementierung, Datensicherheit oder Programmierung enthält, sondern sich auf die journalistische Anwendung und Nutzererfahrung fokussiert.",
+          "id": "1eb88310-29bf-4ae4-a969-65216a4d2291"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 7,
+            "reasoning": "Der Artikel beschreibt die Einführung eines KI-gestützten Assistenten bei einer großen deutschen Zeitung, was ein konkretes Beispiel für den praktischen Einsatz von KI im Medienbereich darstellt und für viele AI-Interessierte relevant ist."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Die Implementierung zeigt, wie KI-Tools die Arbeitsweise in Redaktionen verändert und neue Wege der Leserbindung ermöglicht, was für Medienschaffende und Fachkräfte in der Digitalbranche interessant ist."
+          },
+          {
+            "name": "copyright",
+            "relevance": 4,
+            "reasoning": "Da der Assistent ausschließlich auf eigene FAZ-Inhalte zugreift, berührt dies Fragen des Urheberrechts bei KI-Anwendungen, ist aber nur für Spezialisten in diesem Bereich von größerem Interesse."
+          }
+        ]
+      ]
+    }
+  }
+}

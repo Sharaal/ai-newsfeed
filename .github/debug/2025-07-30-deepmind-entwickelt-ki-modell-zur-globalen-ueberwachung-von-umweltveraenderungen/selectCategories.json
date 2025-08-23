@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# DeepMind entwickelt KI-Modell zur globalen Überwachung von Umweltveränderungen\n\n\nDeepMind hat kürzlich ein neues KI-Modell vorgestellt, das speziell für die globale Überwachung von Umweltveränderungen entwickelt wurde. Dieses Modell kombiniert modernste Algorithmen mit umfangreichen Datensätzen, um Veränderungen in Ökosystemen, Klimamustern und natürlichen Ressourcen in Echtzeit zu analysieren. Ziel ist es, Regierungen, Wissenschaftlern und Organisationen Werkzeuge an die Hand zu geben, um schneller auf Umweltkrisen zu reagieren und langfristige Strategien für den Klimaschutz zu entwickeln. Besonders beeindruckend ist die Fähigkeit des Modells, Daten aus verschiedenen Quellen wie Satellitenbildern, Wetterstationen und Sensoren zu integrieren und präzise Vorhersagen zu treffen.\n\n<!--more-->\n\nDie Anwendungsmöglichkeiten sind vielfältig: Von der Vorhersage von Extremwetterereignissen über die Überwachung von Entwaldung bis hin zur Analyse von CO₂-Emissionen. Laut DeepMind könnte das Modell auch dazu beitragen, die Effizienz von erneuerbaren Energien zu steigern, indem es Wetterbedingungen genauer vorhersagt und Energiesysteme optimiert. Ein weiterer Schwerpunkt liegt auf der Unterstützung von Entwicklungsländern, die oft am stärksten von den Auswirkungen des Klimawandels betroffen sind. Hier soll die Technologie helfen, Frühwarnsysteme zu verbessern und die Widerstandsfähigkeit gegenüber Naturkatastrophen zu erhöhen.\n\n### Quellen\n- [DeepMind: KI für den Klimaschutz](https://deepmind.google/discover/blog/using-ai-to-fight-climate-change/)\n- [The Decoder: DeepMind und Klimawandel](https://the-decoder.de/deepmind-will-mit-ki-loesungen-fuer-den-klimawandel-verstehen-optimieren-und-beschleunigen/)\n- [Techno-Science: Simulation der realen Welt durch KI](https://www.techno-science.net/de/nachrichten/google-deepmind-strebt-an-die-reale-welt-mit-ki-zu-simulieren-N26352.html)\n\n    ",
+    "timestamp": "2025-08-23T19:40:51.586Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über DeepMinds KI-Modell zur Umweltüberwachung und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanzbewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt ein hochmodernes KI-Modell von DeepMind mit bahnbrechenden Anwendungen für Klimaschutz und Umweltüberwachung, was für die gesamte KI-Community von großer Bedeutung ist.\n\n**programming - Relevanz: 6/10**\nDie Entwicklung komplexer Algorithmen zur Integration verschiedener Datenquellen und Echtzeitanalyse ist für Programmierer interessant, die an ähnlichen Herausforderungen arbeiten.\n\n**databases - Relevanz: 7/10**\nDas Modell integriert und verarbeitet umfangreiche Datensätze aus verschiedenen Quellen (Satellitenbilder, Wetterstationen, Sensoren), was wichtige Erkenntnisse für Datenbankspezialisten zur Verarbeitung heterogener Datenströme liefert.\n\nDie Kategorien **security**, **work**, **data protection** und **copyright** sind nicht relevant, da der Artikel keine entsprechenden Themen behandelt - weder Sicherheitsaspekte, Arbeitsplatzauswirkungen, Datenschutzfragen noch urheberrechtliche Problematiken werden erwähnt.",
+          "id": "c5026d0f-4303-4645-a17b-4c472f561903"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt ein hochmodernes KI-Modell von DeepMind mit bahnbrechenden Anwendungen für Klimaschutz und Umweltüberwachung, was für die gesamte KI-Community von großer Bedeutung ist."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Die Entwicklung komplexer Algorithmen zur Integration verschiedener Datenquellen und Echtzeitanalyse ist für Programmierer interessant, die an ähnlichen Herausforderungen arbeiten."
+          },
+          {
+            "name": "databases",
+            "relevance": 7,
+            "reasoning": "Das Modell integriert und verarbeitet umfangreiche Datensätze aus verschiedenen Quellen (Satellitenbilder, Wetterstationen, Sensoren), was wichtige Erkenntnisse für Datenbankspezialisten zur Verarbeitung heterogener Datenströme liefert."
+          }
+        ]
+      ]
+    }
+  }
+}

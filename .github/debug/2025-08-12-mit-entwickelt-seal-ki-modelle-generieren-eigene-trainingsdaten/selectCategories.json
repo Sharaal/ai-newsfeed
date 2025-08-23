@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# MIT entwickelt SEAL: KI-Modelle generieren eigene Trainingsdaten\n\n\nEin Forscherteam des Massachusetts Institute of Technology (MIT) hat mit SEAL (Self-Adapting Language Models) ein revolutionäres Framework entwickelt, das Sprachmodelle in die Lage versetzt, eigenständig synthetische Trainingsdaten zu generieren und sich kontinuierlich zu verbessern. SEAL basiert auf einem zweistufigen Prozess: Zunächst analysiert das Modell neue Informationen und erstellt sogenannte \"Self-Edits\", also Anweisungen in natürlicher Sprache, die sowohl neue Trainingsdaten als auch Optimierungsparameter enthalten. Anschließend testet das System diese Anweisungen und aktualisiert seine internen Parameter nur dann, wenn die Änderungen tatsächlich zu besseren Ergebnissen führen.\n\n<!--more-->\n\nDie Methode wurde bereits erfolgreich getestet. In einem Experiment mit dem Sprachmodell Qwen-2.5-7B konnte die Genauigkeit bei einem Textverständnistest von 33,5 % auf 47 % gesteigert werden. Ein weiteres Experiment mit dem Modell Llama 3.2-1B zeigte, dass SEAL die Erfolgsrate bei komplexen Aufgaben wie logischen Schlussfolgerungen von 20 % auf 72,5 % erhöhen konnte. Besonders bemerkenswert ist, dass SEAL keine externen Datensätze benötigt, sondern sich ausschließlich auf selbst generierte Inhalte stützt. Dies könnte eine Lösung für die sogenannte \"Datenmauer\" darstellen, also den Punkt, an dem alle verfügbaren menschlich generierten Textdaten für das Training von KI-Modellen erschöpft sind.\n\nTrotz der vielversprechenden Ergebnisse gibt es noch Herausforderungen. Das sogenannte \"katastrophale Vergessen\" bleibt ein Problem: Neue Updates können dazu führen, dass das Modell frühere Aufgaben schlechter bewältigt. Zudem ist der Rechenaufwand erheblich, da jede Selbstbearbeitung ein kurzes Finetuning erfordert. Dennoch sehen die Forschenden in SEAL einen wichtigen Schritt in Richtung autonomer KI-Systeme, die sich dynamisch an verändernde Anforderungen anpassen können.\n\n### Quellen\n- [The Decoder](https://the-decoder.de/forschende-haben-womoeglich-eine-leiter-fuer-die-datenmauer-gefunden/)\n- [Notebookcheck](https://www.notebookcheck.com/SEAL-So-kann-KI-denken-und-sich-staendig-weiterbilden.1045090.0.html)\n\n    ",
+    "timestamp": "2025-08-23T19:18:25.386Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über MITs SEAL-Framework und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDies ist eine bahnbrechende Entwicklung in der KI-Forschung, da SEAL Sprachmodelle befähigt, sich selbstständig zu verbessern und eigene Trainingsdaten zu generieren - ein fundamentaler Durchbruch für die Weiterentwicklung autonomer KI-Systeme.\n\n**programming - Relevanz: 7/10**\nDas Framework ist hochrelevant für Entwickler, die mit Sprachmodellen arbeiten, da es neue Möglichkeiten für selbstlernende Systeme eröffnet und traditionelle Trainingsansätze revolutionieren könnte.\n\n**data protection - Relevanz: 6/10**\nDie Fähigkeit von SEAL, ohne externe Datensätze auszukommen und nur selbst generierte Inhalte zu nutzen, hat wichtige Implikationen für Datenschutz und könnte Abhängigkeiten von externen, möglicherweise sensiblen Datenquellen reduzieren.\n\n**work - Relevanz: 5/10**\nDie Entwicklung autonomer, sich selbst verbessernder KI-Systeme wird mittelfristig Auswirkungen auf verschiedene Arbeitsbereiche haben, insbesondere dort wo KI-Modelle eingesetzt werden.\n\nDie anderen Kategorien (databases, security, copyright) sind nicht direkt relevant für diesen spezifischen Newstext, da der Fokus auf der KI-Modell-Entwicklung und dem selbstlernenden Framework liegt.",
+          "id": "1576d4c7-3679-4b7a-ae24-27c903eb1db0"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Dies ist eine bahnbrechende Entwicklung in der KI-Forschung, da SEAL Sprachmodelle befähigt, sich selbstständig zu verbessern und eigene Trainingsdaten zu generieren - ein fundamentaler Durchbruch für die Weiterentwicklung autonomer KI-Systeme."
+          },
+          {
+            "name": "programming",
+            "relevance": 7,
+            "reasoning": "Das Framework ist hochrelevant für Entwickler, die mit Sprachmodellen arbeiten, da es neue Möglichkeiten für selbstlernende Systeme eröffnet und traditionelle Trainingsansätze revolutionieren könnte."
+          },
+          {
+            "name": "data protection",
+            "relevance": 6,
+            "reasoning": "Die Fähigkeit von SEAL, ohne externe Datensätze auszukommen und nur selbst generierte Inhalte zu nutzen, hat wichtige Implikationen für Datenschutz und könnte Abhängigkeiten von externen, möglicherweise sensiblen Datenquellen reduzieren."
+          },
+          {
+            "name": "work",
+            "relevance": 5,
+            "reasoning": "Die Entwicklung autonomer, sich selbst verbessernder KI-Systeme wird mittelfristig Auswirkungen auf verschiedene Arbeitsbereiche haben, insbesondere dort wo KI-Modelle eingesetzt werden."
+          }
+        ]
+      ]
+    }
+  }
+}

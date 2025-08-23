@@ -1,0 +1,70 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Meta AI jetzt auf europäischen Handys verfügbar, Datenschützer warnen\n\n\nMeta hat seine KI-Plattform \"Meta AI\" nun auch auf europäischen Smartphones verfügbar gemacht. Die Integration erfolgt über beliebte Apps wie WhatsApp und Instagram, was für viele Nutzer zunächst wie ein praktisches Upgrade erscheint. Die KI soll dabei helfen, Anfragen schneller zu beantworten, Inhalte zu generieren und die Kommunikation zu verbessern. Doch Datenschützer schlagen Alarm: Die Nutzung der KI könnte die Ende-zu-Ende-Verschlüsselung von Nachrichten untergraben und sensible Daten gefährden. Besonders in Italien wurde bereits eine Untersuchung eingeleitet, da Meta die Zustimmung der Nutzer für die Aktivierung der KI nicht eingeholt haben soll.\n\n<!--more-->\n\nDie Einführung von Meta AI fällt zeitlich mit dem Inkrafttreten des EU-weiten \"AI Act\" zusammen, der strengere Regeln für den Einsatz von Künstlicher Intelligenz vorschreibt. Während andere Tech-Giganten wie Google den neuen Verhaltenskodex der EU unterzeichnet haben, lehnt Meta diesen ab. Der Konzern kritisiert die Regelungen als innovationsfeindlich und rechtlich unsicher. Datenschützer hingegen sehen in Metas Vorgehen eine Missachtung der europäischen Datenschutzstandards. Besonders problematisch sei, dass die KI Anfragen speichert und verarbeitet, was bei sensiblen Themen ein erhebliches Risiko darstellt.\n\nDie Diskussion um Meta AI zeigt, wie schwierig der Balanceakt zwischen technologischer Innovation und Datenschutz ist. Während Meta betont, dass die Chats weiterhin verschlüsselt bleiben, warnen Experten davor, dass die KI dennoch Zugriff auf Metadaten und Inhalte haben könnte. Nutzer sollten sich daher bewusst sein, welche Daten sie preisgeben und wie diese verarbeitet werden.\n\n### Quellen\n- [BornCity: Italien untersucht Meta AI in WhatsApp](https://www.borncity.com/blog/2025/08/01/google-unterzeichnet-ai-akt-meta-verweigert-sich-italien-untersucht-ai-in-whatsapp/)\n- [Heise Online: Meta stellt sich gegen die KI-Pläne der EU](https://www.heise.de/news/Meta-stellt-sich-gegen-die-KI-Plaene-der-EU-10493568.html)\n- [Tagesschau: Meta AI auch in Europa – Datenschützer warnen](https://www.tagesschau.de/wirtschaft/digitales/meta-ai-104.html)\n\n    ",
+    "timestamp": "2025-08-23T19:33:49.032Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über Meta AI in Europa und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt zentral die Einführung von Meta AI in Europa und die damit verbundenen Kontroversen um den EU AI Act. Dies ist hochrelevant für alle, die sich für KI-Entwicklungen interessieren, da es zeigt, wie regulatorische Rahmenbedingungen die KI-Landschaft prägen.\n\n**data protection - Relevanz: 8/10**\nDatenschutz ist ein Kernthema des Artikels, mit konkreten Warnungen von Datenschützern und einer laufenden Untersuchung in Italien bezüglich fehlender Nutzerzustimmung. Sehr relevant für alle europäischen Nutzer von Meta-Diensten.\n\n**security - Relevanz: 7/10**\nDie potenzielle Untergrabung der Ende-zu-Ende-Verschlüsselung und Risiken bei der Verarbeitung sensibler Daten sind wichtige Sicherheitsaspekte, die viele Nutzer betreffen könnten.\n\n**work - Relevanz: 6/10**\nDer Artikel erwähnt regulatorische Herausforderungen und Metas Kritik an innovationsfeindlichen Regelungen, was für Fachkräfte in der Tech-Branche und Unternehmen relevant ist, die KI einsetzen möchten.\n\n**copyright - Relevanz: 4/10**\nObwohl nicht explizit erwähnt, sind KI-Systeme wie Meta AI oft mit urheberrechtlichen Fragen verbunden, besonders bei der Generierung von Inhalten - hier aber nur am Rande relevant.\n\nDie Kategorien \"programming\" und \"databases\" sind für diesen Artikel nicht relevant, da keine technischen Implementierungsdetails oder Datenbankaspekte behandelt werden.",
+          "id": "a21fd766-5f50-47e2-aeac-e94e1a225c62"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt zentral die Einführung von Meta AI in Europa und die damit verbundenen Kontroversen um den EU AI Act. Dies ist hochrelevant für alle, die sich für KI-Entwicklungen interessieren, da es zeigt, wie regulatorische Rahmenbedingungen die KI-Landschaft prägen."
+          },
+          {
+            "name": "data protection",
+            "relevance": 8,
+            "reasoning": "Datenschutz ist ein Kernthema des Artikels, mit konkreten Warnungen von Datenschützern und einer laufenden Untersuchung in Italien bezüglich fehlender Nutzerzustimmung. Sehr relevant für alle europäischen Nutzer von Meta-Diensten."
+          },
+          {
+            "name": "security",
+            "relevance": 7,
+            "reasoning": "Die potenzielle Untergrabung der Ende-zu-Ende-Verschlüsselung und Risiken bei der Verarbeitung sensibler Daten sind wichtige Sicherheitsaspekte, die viele Nutzer betreffen könnten."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Der Artikel erwähnt regulatorische Herausforderungen und Metas Kritik an innovationsfeindlichen Regelungen, was für Fachkräfte in der Tech-Branche und Unternehmen relevant ist, die KI einsetzen möchten."
+          },
+          {
+            "name": "copyright",
+            "relevance": 4,
+            "reasoning": "Obwohl nicht explizit erwähnt, sind KI-Systeme wie Meta AI oft mit urheberrechtlichen Fragen verbunden, besonders bei der Generierung von Inhalten - hier aber nur am Rande relevant."
+          }
+        ]
+      ]
+    }
+  }
+}

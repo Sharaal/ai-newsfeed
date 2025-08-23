@@ -1,8 +1,33 @@
 ---
-layout: "post"
-language: "de"
-title: "Deepseek-App wegen Datenschutzverstößen in Deutschland verboten"
+layout: post
+language: de
+title: Deepseek-App wegen Datenschutzverstößen in Deutschland verboten
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt direkt eine KI-Anwendung (DeepSeek als
+      ChatGPT-Alternative) und deren Verbot, was für die gesamte KI-Branche
+      wegweisend sein könnte.
+  - name: data protection
+    relevance: 10
+    reasoning: >-
+      Das ist die Hauptthematik des Artikels - DSGVO-Verstöße, rechtswidrige
+      Datenübermittlung nach China und Datenschutzbehörden-Entscheidungen sind
+      hier zentral und bahnbrechend.
+  - name: security
+    relevance: 8
+    reasoning: >-
+      Die unverschlüsselte Datenübertragung an chinesische Server und staatliche
+      Überwachungsrisiken machen dies zu einem wichtigen Sicherheitsthema mit
+      breiter Relevanz.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Betrifft Arbeitsplätze indirekt, da KI-Tools wie DeepSeek zunehmend im
+      beruflichen Kontext eingesetzt werden und das Verbot Auswirkungen auf
+      Unternehmen hat.
 ---
 
 Die Berliner Datenschutzbeauftragte hat die Nutzung der chinesischen KI-App DeepSeek in Deutschland untersagt. Grund für das Verbot ist die rechtswidrige Übermittlung personenbezogener Daten deutscher Nutzerinnen und Nutzer nach China. Laut den Behörden verstößt die App gegen die europäische Datenschutz-Grundverordnung (DSGVO), insbesondere gegen Artikel 46 Absatz 1, der den Transfer von Daten in Drittländer ohne angemessene Schutzmaßnahmen regelt. Die App, die als Alternative zu ChatGPT gilt, wurde bereits aus den deutschen App-Stores entfernt.  

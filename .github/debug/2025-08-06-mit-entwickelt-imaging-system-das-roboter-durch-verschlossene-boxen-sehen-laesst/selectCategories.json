@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# MIT entwickelt Imaging-System, das Roboter durch verschlossene Boxen sehen lässt\n\n\nForscher des Massachusetts Institute of Technology (MIT) haben ein innovatives System namens \"mmNorm\" entwickelt, das Robotern ermöglicht, durch verschlossene Boxen und sogar Wände zu sehen. Das System nutzt Millimeterwellen (mmWave), die ähnlich wie Wi-Fi-Signale funktionieren. Diese Wellen können durch Materialien wie Kunststoff, Karton oder Gipswände dringen und werden von dahinterliegenden Objekten reflektiert. Die reflektierten Signale werden von einem Algorithmus analysiert, der die Form und Struktur der Objekte präzise rekonstruiert.\n\n<!--more-->\n\nDas Besondere an mmNorm ist die hohe Genauigkeit von 96 Prozent bei der Rekonstruktion von Objekten, selbst bei komplexen Formen und kleinen Größen. Im Vergleich dazu erreichen ähnliche Systeme nur etwa 78 Prozent. Die Technologie könnte in der Industrie eingesetzt werden, beispielsweise zur Qualitätskontrolle von Produkten in verschlossenen Verpackungen. Erste Tests mit einem Roboterarm, der mit mmNorm ausgestattet war, zeigten vielversprechende Ergebnisse: Verborgene Objekte konnten nicht nur erkannt, sondern auch auf Defekte überprüft werden.\n\n### Quellen\n- [Heise Online: MIT-Imaging-System lässt Roboter in verschlossene Boxen gucken](https://www.heise.de/news/MIT-Imaging-System-laesst-Roboter-in-verschlossene-Boxen-gucken-10467436.html)\n\n    ",
+    "timestamp": "2025-08-23T19:29:04.703Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über das MIT-Imaging-System \"mmNorm\" und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung:\n\n**ai - Relevanz: 8/10**\nDas System nutzt einen Algorithmus zur präzisen Rekonstruktion von Objekten aus Millimeterwellen-Signalen mit 96% Genauigkeit - eine bedeutende KI-Anwendung in der Robotik, die weit über Spezialistenkreise hinaus interessant ist.\n\n**programming - Relevanz: 6/10**\nDie Entwicklung des Algorithmus zur Signalanalyse und Objektrekonstruktion ist für Programmierer im Bereich Computer Vision und Signalverarbeitung relevant, aber primär für Fachleute in diesen Spezialbereichen.\n\n**work - Relevanz: 7/10**\nDie Technologie hat direkten Einfluss auf industrielle Arbeitsplätze durch Automatisierung der Qualitätskontrolle und könnte Arbeitsprozesse in der Fertigung und Logistik grundlegend verändern.\n\nDie anderen Kategorien (databases, security, data protection, copyright) sind nicht relevant, da der Text keine entsprechenden Aspekte behandelt - es geht ausschließlich um die technische Innovation des Imaging-Systems und dessen Anwendungsmöglichkeiten.",
+          "id": "27d26d10-aff6-43ae-bc69-c42271fedf76"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Das System nutzt einen Algorithmus zur präzisen Rekonstruktion von Objekten aus Millimeterwellen-Signalen mit 96% Genauigkeit - eine bedeutende KI-Anwendung in der Robotik, die weit über Spezialistenkreise hinaus interessant ist."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Die Entwicklung des Algorithmus zur Signalanalyse und Objektrekonstruktion ist für Programmierer im Bereich Computer Vision und Signalverarbeitung relevant, aber primär für Fachleute in diesen Spezialbereichen."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Die Technologie hat direkten Einfluss auf industrielle Arbeitsplätze durch Automatisierung der Qualitätskontrolle und könnte Arbeitsprozesse in der Fertigung und Logistik grundlegend verändern."
+          }
+        ]
+      ]
+    }
+  }
+}

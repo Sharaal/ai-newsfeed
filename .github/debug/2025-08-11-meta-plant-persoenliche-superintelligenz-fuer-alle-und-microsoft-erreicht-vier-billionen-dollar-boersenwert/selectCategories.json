@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Meta plant \"persönliche Superintelligenz\" für alle und Microsoft erreicht Vier-Billionen-Dollar-Börsenwert\n\n\nMeta hat kürzlich eine ambitionierte Vision vorgestellt: eine \"persönliche Superintelligenz\" für alle. Mark Zuckerberg, CEO des Technologiekonzerns, erklärte auf der LlamaCon 2025, dass diese Technologie die Welt grundlegend verändern könnte. Ziel sei es, eine KI zu entwickeln, die individuell auf die Bedürfnisse jedes Nutzers eingeht und dabei hilft, persönliche Ziele zu erreichen. Um dies zu ermöglichen, investiert Meta massiv in den Ausbau von Rechenzentren und die Rekrutierung von Top-Talenten aus der KI-Branche. Kritiker warnen jedoch vor den ethischen und sicherheitstechnischen Herausforderungen, die mit einer solchen Technologie einhergehen könnten. Zuckerberg betonte, dass Meta verantwortungsvoll vorgehen wolle, um Risiken zu minimieren.\n\n<!--more-->\n\nParallel dazu hat Microsoft einen historischen Meilenstein erreicht: Der Software-Gigant überschritt erstmals die Marke von vier Billionen US-Dollar Börsenwert. Dieser Erfolg ist vor allem auf das starke Wachstum im Cloud-Geschäft und die massive Nachfrage nach KI-Diensten zurückzuführen. Die Plattform Azure, die als Rückgrat von Microsofts KI-Strategie gilt, trug maßgeblich zu den beeindruckenden Quartalszahlen bei. Im Geschäftsjahr 2024/25 erzielte das Unternehmen einen Umsatz von 282 Milliarden US-Dollar, ein Plus von 15 Prozent im Vergleich zum Vorjahr. Analysten sehen Microsofts konsequente Ausrichtung auf KI und Cloud-Computing als Schlüssel für diesen Erfolg.\n\n### Quellen\n- [Tagesschau: \"Persönliche Superintelligenz\" für alle?](https://www.tagesschau.de/wirtschaft/technologie/ki-boom-meta-microsoft-aktie-100.html)  \n- [Handelsblatt: Microsoft erreicht vier Billionen Dollar Börsenwert](https://www.handelsblatt.com/technik/it-internet/meta-zuckerberg-sieht-superintelligenz-voraus-und-erhoeht-das-risiko/100144757.html)  \n- [Spiegel: Microsoft ist nun vier Billionen US-Dollar wert](https://www.spiegel.de/wirtschaft/unternehmen/microsoft-techkonzern-erreicht-marktkapitalisierung-von-vier-billionen-us-dollar-a-821821c6-f0bd-4d1d-ae7e-1556f1db760e)\n\n    ",
+    "timestamp": "2025-08-23T19:19:36.726Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDer Text behandelt Metas Vision einer \"persönlichen Superintelligenz\" und Microsofts KI-Erfolge als Hauptthemen. Diese Entwicklungen sind bahnbrechend und betreffen praktisch jeden, da sie die Zukunft der KI-Nutzung im Alltag definieren könnten.\n\n## **work** - Relevanz: 7/10\nMeta rekrutiert massiv \"Top-Talente aus der KI-Branche\" und beide Unternehmen zeigen enormes Wachstum, was den Arbeitsmarkt im Tech-Bereich stark beeinflusst und neue Karrieremöglichkeiten schafft.\n\n## **security** - Relevanz: 6/10\nDer Text erwähnt explizit \"sicherheitstechnische Herausforderungen\" im Zusammenhang mit Superintelligenz, was für IT-Sicherheitsexperten und Unternehmen relevant ist, die sich auf KI-Sicherheit vorbereiten müssen.\n\n## **data protection** - Relevanz: 5/10\nEine \"persönliche Superintelligenz\" wirft unweigerlich Fragen zum Datenschutz auf, da sie individuell auf Nutzerbedürfnisse eingehen soll - dies ist besonders für Datenschutzbeauftragte und rechtlich Interessierte relevant.\n\nDie Kategorien **programming**, **databases** und **copyright** sind nicht direkt relevant, da der Text keine spezifischen Programmier- oder Datenbankthemen behandelt und Urheberrechtsfragen nicht angesprochen werden.",
+          "id": "915f3b9c-acfb-475b-8358-ecc65ba78cc3"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Text behandelt Metas Vision einer 'persönlichen Superintelligenz' und Microsofts KI-Erfolge als Hauptthemen. Diese Entwicklungen sind bahnbrechend und betreffen praktisch jeden, da sie die Zukunft der KI-Nutzung im Alltag definieren könnten."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Meta rekrutiert massiv 'Top-Talente aus der KI-Branche' und beide Unternehmen zeigen enormes Wachstum, was den Arbeitsmarkt im Tech-Bereich stark beeinflusst und neue Karrieremöglichkeiten schafft."
+          },
+          {
+            "name": "security",
+            "relevance": 6,
+            "reasoning": "Der Text erwähnt explizit 'sicherheitstechnische Herausforderungen' im Zusammenhang mit Superintelligenz, was für IT-Sicherheitsexperten und Unternehmen relevant ist, die sich auf KI-Sicherheit vorbereiten müssen."
+          },
+          {
+            "name": "data protection",
+            "relevance": 5,
+            "reasoning": "Eine 'persönliche Superintelligenz' wirft unweigerlich Fragen zum Datenschutz auf, da sie individuell auf Nutzerbedürfnisse eingehen soll - dies ist besonders für Datenschutzbeauftragte und rechtlich Interessierte relevant."
+          }
+        ]
+      ]
+    }
+  }
+}

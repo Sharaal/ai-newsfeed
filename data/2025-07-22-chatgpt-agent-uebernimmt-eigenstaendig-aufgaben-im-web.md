@@ -1,8 +1,39 @@
 ---
-layout: "post"
-language: "de"
-title: "ChatGPT-Agent übernimmt eigenständig Aufgaben im Web"
+layout: post
+language: de
+title: ChatGPT-Agent übernimmt eigenständig Aufgaben im Web
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 10
+    reasoning: >-
+      Diese Nachricht ist bahnbrechend für die KI-Branche, da sie einen
+      bedeutenden Sprung in der Entwicklung autonomer KI-Agenten darstellt, die
+      eigenständig komplexe Web-Aufgaben übernehmen können.
+  - name: programming
+    relevance: 8
+    reasoning: >-
+      Für Programmierer ist dies hochrelevant, da autonome Agenten die Art der
+      Softwareentwicklung und Automatisierung grundlegend verändern könnten und
+      neue Möglichkeiten für die Integration von KI in Anwendungen eröffnen.
+  - name: work
+    relevance: 9
+    reasoning: >-
+      Die Auswirkungen auf die Arbeitswelt sind erheblich, da der Agent Aufgaben
+      wie Formulare ausfüllen, Buchungen vornehmen und Datenanalysen durchführen
+      kann, was viele Arbeitsplätze und -prozesse transformieren wird.
+  - name: security
+    relevance: 8
+    reasoning: >-
+      Die erwähnten Sicherheitsrisiken wie 'Prompt Injections' und die
+      Notwendigkeit von Schutzmaßnahmen machen dies zu einem wichtigen
+      Sicherheitsthema für IT-Fachkräfte und Unternehmen.
+  - name: data protection
+    relevance: 7
+    reasoning: >-
+      Da der Agent auf Webseiten agiert, Formulare ausfüllt und Daten
+      verarbeitet, entstehen neue Datenschutzherausforderungen, die für
+      Compliance-Verantwortliche relevant sind.
 ---
 
 Der neue ChatGPT-Agent von OpenAI sorgt derzeit für Aufsehen in der Tech-Welt. Mit der Fähigkeit, eigenständig Aufgaben im Web zu erledigen, hebt er die Nutzung von KI auf ein neues Level. Der Agent kann Webseiten durchsuchen, Formulare ausfüllen, Buchungen vornehmen und sogar komplexe Aufgaben wie die Erstellung von Präsentationen oder die Analyse von Daten übernehmen. Diese Funktionen basieren auf einer Kombination aus bestehenden OpenAI-Tools wie "Operator" und "Deep Research", die nun in einem einheitlichen System zusammengeführt wurden.

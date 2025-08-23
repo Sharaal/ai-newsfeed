@@ -1,0 +1,99 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# EU-Gesetzgebung: KI-Anbieter müssen auf Transparenz achten\n\n\nAm 2. August 2025 traten in der Europäischen Union neue Vorschriften für Anbieter von KI-Modellen mit allgemeinem Verwendungszweck (General Purpose AI, GPAI) in Kraft. Diese Regelungen, die Teil des EU-KI-Gesetzes (AI Act) sind, zielen darauf ab, Transparenz, Sicherheit und Rechenschaftspflicht bei der Nutzung von KI-Systemen zu gewährleisten. Anbieter solcher Modelle, darunter auch große Sprachmodelle wie ChatGPT, sind nun verpflichtet, umfassende Informationen über die Funktionsweise ihrer Systeme bereitzustellen. Dazu gehören Angaben zu den Trainingsdaten, den zugrunde liegenden Algorithmen und den potenziellen Risiken der Nutzung. \n\n<!--more-->\n\nDie neuen Transparenzpflichten gelten für alle KI-Modelle, die ab dem 2. August 2025 auf den Markt gebracht werden. Für bereits bestehende Modelle wurde eine Übergangsfrist bis 2027 eingeräumt. Ziel der EU ist es, durch diese Maßnahmen das Vertrauen der Nutzer in KI-Systeme zu stärken und gleichzeitig die Einhaltung von Grundrechten wie Datenschutz und Nichtdiskriminierung sicherzustellen. Die EU-Kommission hat zudem Leitlinien veröffentlicht, die Anbietern helfen sollen, die neuen Anforderungen zu erfüllen. Diese beinhalten auch die Verpflichtung, KI-gestützte Inhalte klar zu kennzeichnen, um Missbrauch und Manipulation zu verhindern.\n\nDie Umsetzung der Vorschriften wird von nationalen Behörden überwacht, die bis zum Stichtag von den Mitgliedstaaten benannt werden mussten. Verstöße gegen die neuen Regeln können mit hohen Geldstrafen geahndet werden, die bis zu 15 Millionen Euro oder 3 % des weltweiten Jahresumsatzes eines Unternehmens betragen können. Kritiker warnen jedoch, dass die strengen Vorgaben Innovationen in der KI-Entwicklung bremsen könnten. Befürworter hingegen betonen, dass die Regulierung notwendig sei, um die Risiken von KI-Systemen zu minimieren und eine verantwortungsvolle Nutzung zu fördern.\n\n### Quellen\n- [Forschung und Lehre: KI-Anbieter müssen auf Transparenz achten](https://www.forschung-und-lehre.de/recht/ki-anbieter-muessen-auf-transparenz-achten-7204)  \n- [Digital Strategy: EU-Vorschriften über KI-Modelle mit allgemeinem Verwendungszweck](https://digital-strategy.ec.europa.eu/de/news/eu-rules-general-purpose-ai-models-start-apply-bringing-more-transparency-safety-and-accountability)  \n- [MDR: Neue EU-Verordnung soll KI-Tools für Nutzer besser regulieren](https://www.mdr.de/ratgeber/neu-ab/ki-kuenstliche-intelligenz-unternehmen-100.html)  \n- [Beck.de: Neue EU-Regeln fordern Transparenz von ChatGPT & Co.](https://rsw.beck.de/aktuell/daily/meldung/detail/neue-eu-regeln-ai-act-ki-transparenz-chatgpt-urheberrechte-geistiges-eigentum)\n\n    ",
+    "timestamp": "2025-08-23T19:05:21.465Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool-call",
+              "toolCallId": "tooluse_DJquq0FdTWumdIIwQTnPZA",
+              "toolName": "web_search",
+              "args": {
+                "query": "EU AI Act August 2025 transparency requirements GPAI models"
+              }
+            }
+          ],
+          "id": "ecd92227-ab50-41ff-a37b-bac109e33f9f"
+        },
+        {
+          "role": "tool",
+          "id": "85617a89-d300-4a3d-ad45-065da24a7cde",
+          "content": [
+            {
+              "type": "tool-result",
+              "toolCallId": "tooluse_DJquq0FdTWumdIIwQTnPZA",
+              "toolName": "web_search",
+              "result": {
+                "input": "EU AI Act August 2025 transparency requirements GPAI models",
+                "error": "The search for your query faild since the engine was unresponsive."
+              }
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes ordne ich ihn folgenden Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDie neuen EU-Vorschriften betreffen direkt KI-Anbieter und KI-Modelle mit allgemeinem Verwendungszweck, was für die gesamte KI-Branche von höchster Bedeutung ist und weitreichende Auswirkungen auf Entwicklung und Einsatz von KI-Systemen haben wird.\n\n## **data protection** - Relevanz: 8/10\nDer Text erwähnt explizit die Einhaltung von Grundrechten wie Datenschutz und die Verpflichtung zur Offenlegung von Trainingsdaten, was zentrale datenschutzrechtliche Aspekte der KI-Regulierung betrifft.\n\n## **copyright** - Relevanz: 7/10\nDie Transparenzpflichten bezüglich Trainingsdaten und die Kennzeichnungspflicht für KI-generierte Inhalte berühren wichtige urheberrechtliche Fragen, insbesondere im Kontext der Nutzung geschützter Werke für das Training von KI-Modellen.\n\n## **work** - Relevanz: 6/10\nDie neuen Regulierungen werden erhebliche Auswirkungen auf Unternehmen haben, die KI-Systeme entwickeln oder einsetzen, und erfordern neue Compliance-Prozesse und organisatorische Anpassungen in der Arbeitswelt.\n\n## **security** - Relevanz: 6/10\nDie Vorschriften zielen darauf ab, potenzielle Risiken von KI-Systemen zu minimieren und Missbrauch zu verhindern, was wichtige Sicherheitsaspekte im Umgang mit KI-Technologien adressiert.\n\nDie Kategorien **programming** und **databases** sind nicht direkt relevant, da der Text sich primär auf rechtliche und regulatorische Aspekte konzentriert, nicht auf technische Implementierungsdetails.",
+          "id": "29cbce94-ebd4-4b97-baf2-c7e6b7d1524b"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Die neuen EU-Vorschriften betreffen direkt KI-Anbieter und KI-Modelle mit allgemeinem Verwendungszweck, was für die gesamte KI-Branche von höchster Bedeutung ist und weitreichende Auswirkungen auf Entwicklung und Einsatz von KI-Systemen haben wird."
+          },
+          {
+            "name": "data protection",
+            "relevance": 8,
+            "reasoning": "Der Text erwähnt explizit die Einhaltung von Grundrechten wie Datenschutz und die Verpflichtung zur Offenlegung von Trainingsdaten, was zentrale datenschutzrechtliche Aspekte der KI-Regulierung betrifft."
+          },
+          {
+            "name": "copyright",
+            "relevance": 7,
+            "reasoning": "Die Transparenzpflichten bezüglich Trainingsdaten und die Kennzeichnungspflicht für KI-generierte Inhalte berühren wichtige urheberrechtliche Fragen, insbesondere im Kontext der Nutzung geschützter Werke für das Training von KI-Modellen."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Die neuen Regulierungen werden erhebliche Auswirkungen auf Unternehmen haben, die KI-Systeme entwickeln oder einsetzen, und erfordern neue Compliance-Prozesse und organisatorische Anpassungen in der Arbeitswelt."
+          },
+          {
+            "name": "security",
+            "relevance": 6,
+            "reasoning": "Die Vorschriften zielen darauf ab, potenzielle Risiken von KI-Systemen zu minimieren und Missbrauch zu verhindern, was wichtige Sicherheitsaspekte im Umgang mit KI-Technologien adressiert."
+          }
+        ]
+      ]
+    }
+  }
+}

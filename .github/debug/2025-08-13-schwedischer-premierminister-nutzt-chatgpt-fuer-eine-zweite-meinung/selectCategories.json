@@ -1,0 +1,70 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Schwedischer Premierminister nutzt ChatGPT für \"eine zweite Meinung\"\n\n\nDer schwedische Premierminister Ulf Kristersson hat in einem Interview mit der Wirtschaftszeitung *Dagens Industri* offenbart, dass er regelmäßig auf KI-Tools wie ChatGPT und den französischen Dienst LeChat zurückgreift. Diese nutze er, um \"eine zweite Meinung\" einzuholen und Perspektiven zu prüfen. Dabei betonte er, dass die Tools ihm helfen, große Datenmengen zu verarbeiten und alternative Ansätze zu überdenken. Die Aussage hat in Schweden eine hitzige Debatte ausgelöst, die von Datenschutzbedenken bis hin zu ethischen Fragen reicht.\n\n<!--more-->\n\nKritiker werfen Kristersson vor, die Risiken solcher Technologien zu unterschätzen. Experten warnen vor möglichen Sicherheitslücken, insbesondere wenn sensible Regierungsdaten in KI-Systeme eingespeist werden. Auch die Transparenz seiner Entscheidungen wird hinterfragt: Sollte ein Regierungschef offenlegen, inwiefern KI seine politischen Entscheidungen beeinflusst? Kristersson verteidigte sich, indem er betonte, dass keine sicherheitsrelevanten Informationen mit den Tools geteilt würden. Dennoch bleibt die Frage, ob der Einsatz solcher Technologien in der Politik angemessen ist.\n\nDie Diskussion reiht sich in eine breitere Debatte über den Einsatz von KI in der Politik ein. Während einige den technologischen Fortschritt begrüßen, sehen andere die Gefahr, dass KI-Tools die menschliche Entscheidungsfindung beeinflussen könnten. Die EU hat kürzlich strengere Regeln für den Einsatz von KI verabschiedet, die mehr Transparenz und Dokumentation fordern. Diese könnten auch für Politiker wie Kristersson relevant werden.\n\n### Quellen\n- [Dagens Industri](https://www.dagensindustri.se)  \n- [SRF: Kritik wegen KI](https://www.srf.ch/news/international/kritik-wegen-ki-wie-chatgpt-schwedens-premier-ins-straucheln-bringt)  \n- [Der Standard: Schwedens Premierminister wegen KI-Nutzung unter Beschuss](https://www.derstandard.de/story/3000000282413/nicht-fuer-chatgpt-gestimmt-schwedens-premierminister-wegen-ki-nutzung-unter-beschuss)  \n- [Zeit Online: Künstliche Intelligenz im Arbeitsalltag](https://www.zeit.de/politik/ausland/2025-08/kristersson-ulf-schweden-ministerpraesident-kuenstliche-intelligenz)\n\n    ",
+    "timestamp": "2025-08-23T19:13:41.369Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts über den schwedischen Premierminister und seine ChatGPT-Nutzung ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 8/10\nDer Artikel behandelt zentral den Einsatz von KI-Tools (ChatGPT, LeChat) durch einen Regierungschef, was hochrelevant für alle ist, die sich für KI-Entwicklungen und deren gesellschaftliche Auswirkungen interessieren.\n\n## **security** - Relevanz: 7/10\nSicherheitsbedenken beim Einsatz von KI in der Regierung sind ein wichtiger Aspekt des Artikels, da potenzielle Sicherheitslücken bei sensiblen Regierungsdaten thematisiert werden.\n\n## **work** - Relevanz: 6/10\nDer Artikel zeigt exemplarisch, wie KI-Tools den Arbeitsalltag verändern - selbst auf höchster politischer Ebene - und ist daher für Berufstätige relevant, die ähnliche Tools nutzen oder deren Einsatz erwägen.\n\n## **data protection** - Relevanz: 6/10\nDatenschutzbedenken werden explizit erwähnt und sind Teil der ausgelösten Debatte, besonders relevant im Kontext der EU-Regulierung von KI-Systemen.\n\n## **copyright** - Relevanz: 2/10\nUrheberrechtsfragen werden nicht direkt thematisiert, könnten aber implizit bei der Nutzung von KI-Tools eine Rolle spielen - jedoch nur für Spezialinteressierte relevant.\n\nDie Kategorien \"programming\" und \"databases\" sind nicht relevant, da der Artikel keine technischen Implementierungsdetails oder Datenbankaspekte behandelt.",
+          "id": "a4cc80e7-8f32-481a-a0ef-359abfd504b1"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Der Artikel behandelt zentral den Einsatz von KI-Tools (ChatGPT, LeChat) durch einen Regierungschef, was hochrelevant für alle ist, die sich für KI-Entwicklungen und deren gesellschaftliche Auswirkungen interessieren."
+          },
+          {
+            "name": "security",
+            "relevance": 7,
+            "reasoning": "Sicherheitsbedenken beim Einsatz von KI in der Regierung sind ein wichtiger Aspekt des Artikels, da potenzielle Sicherheitslücken bei sensiblen Regierungsdaten thematisiert werden."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Der Artikel zeigt exemplarisch, wie KI-Tools den Arbeitsalltag verändern - selbst auf höchster politischer Ebene - und ist daher für Berufstätige relevant, die ähnliche Tools nutzen oder deren Einsatz erwägen."
+          },
+          {
+            "name": "data protection",
+            "relevance": 6,
+            "reasoning": "Datenschutzbedenken werden explizit erwähnt und sind Teil der ausgelösten Debatte, besonders relevant im Kontext der EU-Regulierung von KI-Systemen."
+          },
+          {
+            "name": "copyright",
+            "relevance": 2,
+            "reasoning": "Urheberrechtsfragen werden nicht direkt thematisiert, könnten aber implizit bei der Nutzung von KI-Tools eine Rolle spielen - jedoch nur für Spezialinteressierte relevant."
+          }
+        ]
+      ]
+    }
+  }
+}

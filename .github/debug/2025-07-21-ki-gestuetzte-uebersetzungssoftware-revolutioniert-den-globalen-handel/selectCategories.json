@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-gestützte Übersetzungssoftware revolutioniert den globalen Handel\n\n\nDie rasante Entwicklung von KI-gestützter Übersetzungssoftware verändert die Art und Weise, wie Unternehmen weltweit miteinander kommunizieren. Tools wie DeepL, Google Translate und Smartling setzen auf neuronale Netzwerke und große Sprachmodelle, um Übersetzungen nicht nur schneller, sondern auch präziser und kontextbezogener zu gestalten. Besonders im globalen Handel, wo Sprachbarrieren oft ein Hindernis darstellen, ermöglichen diese Technologien eine reibungslose Kommunikation zwischen Geschäftspartnern aus verschiedenen Ländern. Unternehmen können so ihre Reichweite erweitern und neue Märkte erschließen, ohne auf teure und zeitaufwändige manuelle Übersetzungen angewiesen zu sein.\n\n<!--more-->\n\nEin Beispiel für den Erfolg dieser Technologien ist die EU, die zunehmend auf KI-gestützte Übersetzungsprogramme setzt, um die Vielzahl an Dokumenten in den 24 Amtssprachen effizient zu verwalten. Gleichzeitig zeigt sich, dass die Nachfrage nach menschlichen Übersetzern in bestimmten Bereichen sinkt, da KI-Tools immer besser werden. Doch die Technologie hat auch ihre Grenzen: Kulturelle Nuancen und komplexe Fachterminologien stellen nach wie vor Herausforderungen dar, die oft nur durch menschliche Expertise gemeistert werden können. Dennoch ist der Trend klar: KI-Übersetzungen werden immer mehr zum Standard, insbesondere in Branchen wie E-Commerce, Logistik und internationalem Marketing.\n\n### Quellen\n- [Tagesschau: Was Künstliche Intelligenz mit den Übersetzern der EU macht](https://www.tagesschau.de/ausland/europa/eu-uebersetzer-ki-100.html)  \n- [Smartling: Die 6 besten KI-Übersetzer](https://de.smartling.com/blog/ai-translation-tools)  \n- [Futura: Die 5 besten KI-Übersetzungssoftwares und -tools](https://www.futura-sciences.com/de/die-5-besten-ki-uebersetzungssoftwares-und-tools_16351/) \n\n    ",
+    "timestamp": "2025-08-23T19:59:56.650Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstexts über KI-gestützte Übersetzungssoftware ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDie KI-gestützte Übersetzungstechnologie mit neuronalen Netzwerken und großen Sprachmodellen steht im Zentrum des Artikels und zeigt eine bedeutende Anwendung von KI, die bereits heute weitreichende Auswirkungen hat.\n\n## **work** - Relevanz: 7/10\nDer Artikel thematisiert explizit den Wandel in der Arbeitswelt, insbesondere die sinkende Nachfrage nach menschlichen Übersetzern und die Veränderung von Arbeitsabläufen in internationalen Unternehmen.\n\n## **programming** - Relevanz: 4/10\nObwohl die zugrundeliegenden Technologien (neuronale Netzwerke, große Sprachmodelle) programmiert werden müssen, liegt der Fokus des Artikels auf der Anwendung und den geschäftlichen Auswirkungen, nicht auf den technischen Implementierungsdetails.\n\nDie anderen Kategorien (databases, security, data protection, copyright) sind nicht relevant, da der Artikel weder Datenbankthemen, Sicherheitsaspekte, Datenschutzfragen noch urheberrechtliche Problematiken behandelt. Der Fokus liegt klar auf der praktischen Anwendung von KI-Übersetzungstools im Geschäftskontext und deren Auswirkungen auf die Arbeitswelt.",
+          "id": "6383482c-858b-45e7-894b-9542f0456853"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Die KI-gestützte Übersetzungstechnologie mit neuronalen Netzwerken und großen Sprachmodellen steht im Zentrum des Artikels und zeigt eine bedeutende Anwendung von KI, die bereits heute weitreichende Auswirkungen hat."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Der Artikel thematisiert explizit den Wandel in der Arbeitswelt, insbesondere die sinkende Nachfrage nach menschlichen Übersetzern und die Veränderung von Arbeitsabläufen in internationalen Unternehmen."
+          },
+          {
+            "name": "programming",
+            "relevance": 4,
+            "reasoning": "Obwohl die zugrundeliegenden Technologien (neuronale Netzwerke, große Sprachmodelle) programmiert werden müssen, liegt der Fokus des Artikels auf der Anwendung und den geschäftlichen Auswirkungen, nicht auf den technischen Implementierungsdetails."
+          }
+        ]
+      ]
+    }
+  }
+}

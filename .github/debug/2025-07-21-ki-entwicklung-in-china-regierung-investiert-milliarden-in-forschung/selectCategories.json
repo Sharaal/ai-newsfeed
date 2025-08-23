@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-Entwicklung in China: Regierung investiert Milliarden in Forschung\n\n\nDie chinesische Regierung hat in den letzten Tagen eine massive Investition in die Entwicklung von Künstlicher Intelligenz (KI) angekündigt. Mit einem neuen Staatsfonds in Höhe von einer Billion Yuan (etwa 127 Milliarden Euro) sollen Schlüsseltechnologien wie KI, Biotechnologie und Kommunikation gefördert werden. Ziel ist es, die technologische Vorherrschaft Chinas weiter auszubauen und die Abhängigkeit von westlichen Technologien zu reduzieren. Diese Initiative ist Teil der \"KI-Plus\"-Strategie, die darauf abzielt, digitale Technologien mit Chinas Fertigungssektor und Marktvorteilen zu verknüpfen.\n\n<!--more-->\n\nNeben der finanziellen Unterstützung setzt die Regierung auf den Aufbau einer nationalen Datenökonomie und eines leistungsstarken Rechennetzwerks. Diese Infrastruktur soll es Unternehmen ermöglichen, KI-Modelle mit Milliarden von Parametern zu entwickeln und zu trainieren. Besonders bemerkenswert ist, dass lokale Regierungen und staatliche Unternehmen ihre Ressourcen bündeln, um Startups Zugang zu Rechenzentren und anderen essenziellen Technologien zu gewähren. Experten sehen in diesen Maßnahmen einen klaren Schritt Chinas, die USA und andere westliche Länder im globalen KI-Wettlauf zu überholen.\n\n### Quellen\n- [Capital: Chinas Milliardeninvestitionen in KI](https://www.capital.de/wirtschaft-politik/chinas-investiert-milliarden-in-ki---und-will-doch-etwas-anderes-35553080.html)\n- [Ingenieur.de: Chinas Rolle in der globalen KI-Forschung](https://www.ingenieur.de/technik/fachbereiche/kuenstliche-intelligenz/wenig-ueberraschend-china-ist-der-groesste-ki-player/)\n- [Finanzmarktwelt: Chinas KI-Strategie](https://finanzmarktwelt.de/china-will-die-ki-welt-beherrschen-ki-kontrolle-kapital-341673/)\n\n    ",
+    "timestamp": "2025-08-23T20:01:07.242Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über Chinas massive KI-Investitionen und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt direkt Chinas Billion-Yuan-Investition in KI-Entwicklung und die \"KI-Plus\"-Strategie, was für die gesamte KI-Branche von höchster strategischer Bedeutung ist.\n\n**programming - Relevanz: 6/10**\nDie Entwicklung von KI-Modellen mit Milliarden von Parametern und der Aufbau von Rechennetzwerken sind für Programmierer relevant, die an KI-Systemen arbeiten.\n\n**work - Relevanz: 7/10**\nDie staatliche Förderung von KI-Startups, Ressourcenbündelung und der Aufbau einer nationalen Datenökonomie werden erhebliche Auswirkungen auf Arbeitsplätze und Karrieremöglichkeiten in der Tech-Branche haben.\n\n**security - Relevanz: 8/10**\nChinas Ziel, die \"Abhängigkeit von westlichen Technologien zu reduzieren\" und technologische Vorherrschaft zu erlangen, hat bedeutende geopolitische und cybersicherheitstechnische Implikationen.\n\nDie Kategorien \"databases\", \"data protection\" und \"copyright\" sind nicht direkt relevant, da der Artikel diese Aspekte nicht spezifisch behandelt, sondern sich auf die strategische KI-Investition und deren geopolitische Bedeutung konzentriert.",
+          "id": "c6880ad4-d160-4970-af8e-491a82cd0cb1"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt direkt Chinas Billion-Yuan-Investition in KI-Entwicklung und die 'KI-Plus'-Strategie, was für die gesamte KI-Branche von höchster strategischer Bedeutung ist."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Die Entwicklung von KI-Modellen mit Milliarden von Parametern und der Aufbau von Rechennetzwerken sind für Programmierer relevant, die an KI-Systemen arbeiten."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Die staatliche Förderung von KI-Startups, Ressourcenbündelung und der Aufbau einer nationalen Datenökonomie werden erhebliche Auswirkungen auf Arbeitsplätze und Karrieremöglichkeiten in der Tech-Branche haben."
+          },
+          {
+            "name": "security",
+            "relevance": 8,
+            "reasoning": "Chinas Ziel, die 'Abhängigkeit von westlichen Technologien zu reduzieren' und technologische Vorherrschaft zu erlangen, hat bedeutende geopolitische und cybersicherheitstechnische Implikationen."
+          }
+        ]
+      ]
+    }
+  }
+}

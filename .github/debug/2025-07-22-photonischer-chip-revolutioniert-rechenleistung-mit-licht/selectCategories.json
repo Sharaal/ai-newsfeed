@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Photonischer Chip revolutioniert Rechenleistung mit Licht\n\n\nEin Durchbruch in der Computertechnologie könnte die Art und Weise, wie wir Daten verarbeiten, grundlegend verändern: Photonische Chips, die mit Licht statt Elektrizität arbeiten, versprechen eine Revolution in der Rechenleistung. Diese neuartigen Prozessoren nutzen Photonen, um Informationen zu übertragen und zu verarbeiten, was sie nicht nur schneller, sondern auch energieeffizienter macht. Am Leibniz-Rechenzentrum in Garching wurde kürzlich der weltweit erste photonische KI-Rechner in Betrieb genommen, entwickelt vom Stuttgarter Start-up Q.ANT. Der Chip ermöglicht paralleles Rechnen mit Lichtwellen und eliminiert dabei die Notwendigkeit energieintensiver Kühlung, da keine Wärme entsteht.\n\n<!--more-->\n\nDie Vorteile dieser Technologie sind enorm: Photonische Chips können mehrere Berechnungen gleichzeitig durchführen, indem sie verschiedene Lichtwellenlängen nutzen. Dies macht sie besonders geeignet für Anwendungen in der Künstlichen Intelligenz, die enorme Rechenleistung erfordern. Zudem sind sie umweltfreundlicher, da sie deutlich weniger Energie verbrauchen als herkömmliche Prozessoren. Die Herstellung dieser Chips ist ebenfalls kostengünstiger, da sie auf älteren Produktionsanlagen erfolgen kann, die für klassische Halbleiter längst überholt sind.\n\nDie Technologie steht jedoch noch vor Herausforderungen. Analoge Berechnungen, wie sie photonische Chips durchführen, sind anfällig für Messfehler, die sich aufaddieren können. Doch Q.ANT hat nach eigenen Angaben dieses Problem gelöst und die Fehlerquote auf ein akzeptables Niveau gesenkt. Experten sehen in dieser Entwicklung das Potenzial, die Effizienz von Rechenzentren drastisch zu steigern und den Energieverbrauch global zu senken. Ob photonische Chips tatsächlich eine neue Ära der Computertechnologie einläuten, wird sich in den kommenden Jahren zeigen.\n\n### Quellen\n- [Photonischer Chip: Schneller und nachhaltiger rechnen mit Licht](https://www.br.de/nachrichten/wissen/photonischer-chip-schneller-und-nachhaltiger-rechnen-mit-licht,UrICbSK)\n- [Leibniz-Rechenzentrum rechnet jetzt mit Licht](https://qant.com/de/pressemitteilung/leibniz-rechenzentrum-rechnet-jetzt-mit-licht-weltweit-erster-photonischer-ki-rechner-von-q-ant-geht-in-betrieb/)\n- [Photonische Chips - erster Testlauf von Licht-Prozessoren startet](https://www.tagesschau.de/wissen/forschung/computer-phoonik-licht-prozessoren-it-100.html)\n\n    ",
+    "timestamp": "2025-08-23T19:55:09.233Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über photonische Chips und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 8/10**\nDer photonische KI-Rechner am Leibniz-Rechenzentrum und die besondere Eignung für KI-Anwendungen mit enormer Rechenleistung machen dies zu einer hochrelevanten Entwicklung für die AI-Community.\n\n**programming - Relevanz: 6/10**\nDie neue Technologie wird mittelfristig Auswirkungen auf Programmierparadigmen haben, da analoge Berechnungen und paralleles Rechnen mit Lichtwellen neue Ansätze erfordern könnten.\n\n**security - Relevanz: 4/10**\nIndirekt relevant, da neue Chip-Architekturen oft neue Sicherheitsherausforderungen mit sich bringen, auch wenn im Text nicht explizit auf Sicherheitsaspekte eingegangen wird.\n\n**work - Relevanz: 7/10**\nDie drastische Effizienzsteigerung von Rechenzentren und der potenzielle Wandel in der Computertechnologie werden erhebliche Auswirkungen auf IT-Arbeitsplätze und die Industrie haben.\n\nDie Kategorien \"databases\" und \"data protection\" sowie \"copyright\" sind nicht relevant, da der Text keine spezifischen Bezüge zu Datenbankentechnologien, Datenschutz oder Urheberrechtsfragen enthält.\n\nDiese Entwicklung stellt einen bedeutenden technologischen Durchbruch dar, der besonders für AI- und IT-Fachkräfte von hoher Relevanz ist.",
+          "id": "0aa87874-bf3c-4493-96a0-6d55c6cd7210"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Der photonische KI-Rechner am Leibniz-Rechenzentrum und die besondere Eignung für KI-Anwendungen mit enormer Rechenleistung machen dies zu einer hochrelevanten Entwicklung für die AI-Community."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Die neue Technologie wird mittelfristig Auswirkungen auf Programmierparadigmen haben, da analoge Berechnungen und paralleles Rechnen mit Lichtwellen neue Ansätze erfordern könnten."
+          },
+          {
+            "name": "security",
+            "relevance": 4,
+            "reasoning": "Indirekt relevant, da neue Chip-Architekturen oft neue Sicherheitsherausforderungen mit sich bringen, auch wenn im Text nicht explizit auf Sicherheitsaspekte eingegangen wird."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Die drastische Effizienzsteigerung von Rechenzentren und der potenzielle Wandel in der Computertechnologie werden erhebliche Auswirkungen auf IT-Arbeitsplätze und die Industrie haben."
+          }
+        ]
+      ]
+    }
+  }
+}

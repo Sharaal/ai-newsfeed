@@ -1,0 +1,128 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# OpenAI veröffentlicht erstmals Open-Source-Modelle mit gpt-oss-120b und gpt-oss-20b\n\n\nOpenAI hat in dieser Woche mit der Veröffentlichung der Modelle GPT-OSS-120B und GPT-OSS-20B einen bedeutenden Schritt in Richtung Open Source gemacht. Die beiden Modelle, die unter der Apache-2.0-Lizenz stehen, sollen Entwicklern, Forschern und Unternehmen weltweit den Zugang zu fortschrittlicher KI erleichtern. GPT-OSS-120B, das größere der beiden Modelle, erreicht nahezu die Leistungsfähigkeit des proprietären Modells O4-Mini von OpenAI und kann auf einer einzigen 80-GB-GPU betrieben werden. Das kleinere Modell, GPT-OSS-20B, ist für den Einsatz auf Geräten mit nur 16 GB Speicher optimiert und eignet sich ideal für lokale Anwendungen und kostengünstige Inferenz.\n\n<!--more-->\n\nDie Modelle wurden umfassend getestet und evaluiert, um sowohl technische als auch ethische Standards zu erfüllen. OpenAI hat dabei auf Benchmarks in den Bereichen Codierung, Mathematik und Gesundheitswesen zurückgegriffen, um die Leistungsfähigkeit der Modelle zu bewerten. Besonders hervorzuheben ist, dass GPT-OSS-20B für den Einsatz auf Edge-Geräten konzipiert wurde, was es Entwicklern ermöglicht, KI-Anwendungen ohne teure Cloud-Infrastruktur zu betreiben. Mit dieser Veröffentlichung kehrt OpenAI zu seinen Wurzeln zurück, nachdem frühere Modelle wie GPT-2 ebenfalls Open Source waren. Ziel ist es, die Demokratisierung von KI voranzutreiben und gleichzeitig die Entwicklung sicherer und verantwortungsvoller KI-Systeme zu fördern.\n\nDie Open-Source-Modelle sind bereits auf Plattformen wie Azure AI Foundry und Northflank verfügbar, wo sie mit wenigen Klicks implementiert werden können. OpenAI betont, dass diese Modelle nicht nur für Entwickler, sondern auch für Regierungen und Bildungseinrichtungen von großem Nutzen sein können. Die Entscheidung, die Modelle offen zugänglich zu machen, wird als strategischer Schritt gesehen, um die globale KI-Entwicklung zu fördern und gleichzeitig die Abhängigkeit von geschlossenen Systemen zu reduzieren.\n\n### Quellen\n- [Introducing GPT-OSS - OpenAI](https://openai.com/index/introducing-gpt-oss/)\n- [GPT-OSS 120B & 20B: OpenAI\"s Open-Weight Reasoning Models Explained](https://medium.com/@servifyspheresolutions/gpt-oss-120b-20b-openais-open-weight-reasoning-models-explained-d43d7ad677f7)\n- [Run OpenAI's new GPT-OSS (open-source) model on Northflank](https://northflank.com/blog/self-host-openai-gpt-oss-120b-open-source-chatgpt)\n\n    ",
+    "timestamp": "2025-08-23T19:23:15.283Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool-call",
+              "toolCallId": "tooluse_HmhdrgMtSt2UBRfI67a06g",
+              "toolName": "web_search",
+              "args": {
+                "query": "OpenAI GPT-OSS-120B GPT-OSS-20B open source models 2024"
+              }
+            }
+          ],
+          "id": "8a5bd53e-cbdc-4944-b37e-d2ab01ea49f0"
+        },
+        {
+          "role": "tool",
+          "id": "b0e06930-6ba3-4da5-87da-43e12f82df4d",
+          "content": [
+            {
+              "type": "tool-result",
+              "toolCallId": "tooluse_HmhdrgMtSt2UBRfI67a06g",
+              "toolName": "web_search",
+              "result": {
+                "input": "OpenAI GPT-OSS-120B GPT-OSS-20B open source models 2024",
+                "error": "The search for your query faild since the engine was unresponsive."
+              }
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool-call",
+              "toolCallId": "tooluse_RhiuK0W9SE2tvHEJWrLobg",
+              "toolName": "open_url",
+              "args": {
+                "url": "https://openai.com/index/introducing-gpt-oss/"
+              }
+            }
+          ],
+          "id": "002342fd-b3c9-40e5-b003-535149a68e97"
+        },
+        {
+          "role": "tool",
+          "id": "9f3f13f2-a632-4b3c-81f4-8336d588e031",
+          "content": [
+            {
+              "type": "tool-result",
+              "toolCallId": "tooluse_RhiuK0W9SE2tvHEJWrLobg",
+              "toolName": "open_url",
+              "result": {
+                "input": "[\"https://openai.com/index/introducing-gpt-oss/\"]",
+                "error": "Could not load contents from any of the websites"
+              }
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes ordne ich ihn folgenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 10/10**\nDie Veröffentlichung von OpenAIs ersten Open-Source-Modellen GPT-OSS-120B und GPT-OSS-20B ist bahnbrechend für die KI-Branche und markiert eine strategische Wende des Unternehmens zurück zu seinen Open-Source-Wurzeln.\n\n**programming - Relevanz: 9/10**\nDie Modelle sind direkt für Entwickler konzipiert und können mit wenigen Klicks auf Plattformen wie Azure AI Foundry implementiert werden, was sie für die Programmier-Community hochrelevant macht.\n\n**work - Relevanz: 8/10**\nDie Demokratisierung von KI durch kostengünstige, lokal betreibbare Modelle wird die Arbeitswelt erheblich beeinflussen und neue Möglichkeiten für Unternehmen ohne teure Cloud-Infrastruktur schaffen.\n\n**security - Relevanz: 6/10**\nOpenAI betont die Entwicklung \"sicherer und verantwortungsvoller KI-Systeme\" und hat umfassende ethische Standards bei der Evaluierung angewendet, was für Sicherheitsexperten relevant ist.\n\n**copyright - Relevanz: 5/10**\nDie Apache-2.0-Lizenzierung der Modelle ist für Rechtsexperten und Unternehmen interessant, die die rechtlichen Rahmenbedingungen für die Nutzung verstehen müssen.\n\nDie Kategorien \"databases\" und \"data protection\" sind nicht direkt relevant, da der Text keine spezifischen Datenbankfunktionen oder Datenschutzaspekte behandelt.",
+          "id": "e21a9dbb-7158-437f-ad96-4b71379a5322"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 10,
+            "reasoning": "Die Veröffentlichung von OpenAIs ersten Open-Source-Modellen GPT-OSS-120B und GPT-OSS-20B ist bahnbrechend für die KI-Branche und markiert eine strategische Wende des Unternehmens zurück zu seinen Open-Source-Wurzeln."
+          },
+          {
+            "name": "programming",
+            "relevance": 9,
+            "reasoning": "Die Modelle sind direkt für Entwickler konzipiert und können mit wenigen Klicks auf Plattformen wie Azure AI Foundry implementiert werden, was sie für die Programmier-Community hochrelevant macht."
+          },
+          {
+            "name": "work",
+            "relevance": 8,
+            "reasoning": "Die Demokratisierung von KI durch kostengünstige, lokal betreibbare Modelle wird die Arbeitswelt erheblich beeinflussen und neue Möglichkeiten für Unternehmen ohne teure Cloud-Infrastruktur schaffen."
+          },
+          {
+            "name": "security",
+            "relevance": 6,
+            "reasoning": "OpenAI betont die Entwicklung sicherer und verantwortungsvoller KI-Systeme und hat umfassende ethische Standards bei der Evaluierung angewendet, was für Sicherheitsexperten relevant ist."
+          },
+          {
+            "name": "copyright",
+            "relevance": 5,
+            "reasoning": "Die Apache-2.0-Lizenzierung der Modelle ist für Rechtsexperten und Unternehmen interessant, die die rechtlichen Rahmenbedingungen für die Nutzung verstehen müssen."
+          }
+        ]
+      ]
+    }
+  }
+}

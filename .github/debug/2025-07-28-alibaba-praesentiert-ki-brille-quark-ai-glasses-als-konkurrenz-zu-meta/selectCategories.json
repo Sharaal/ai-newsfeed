@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Alibaba präsentiert KI-Brille \"Quark AI Glasses\" als Konkurrenz zu Meta\n\n\nAlibaba hat mit der Vorstellung seiner neuen \"Quark AI Glasses\" einen bedeutenden Schritt in den Markt für intelligente Wearables gemacht. Die Brille, die auf dem hauseigenen Sprachmodell Qwen und dem KI-Assistenten Quark basiert, bietet eine Vielzahl innovativer Funktionen. Dazu gehören Freisprechen, Musikstreaming, Echtzeit-Übersetzung und sogar die Integration von Alibabas Ökosystem, wie etwa der Navigationsdienst AMAP und die Bezahlplattform Alipay. Mit dieser Produktvorstellung positioniert sich Alibaba als direkter Konkurrent zu Meta, das mit seinen Ray-Ban Stories bereits ähnliche Produkte auf dem Markt hat.\n\n<!--more-->\n\nDie \"Quark AI Glasses\" sollen in zwei Varianten erscheinen: eine Standardversion und eine erweiterte Version mit Augmented-Reality-Funktionen. Beide Modelle nutzen ein Dual-Chip-System, das auf Qualcomms Snapdragon AR1 und BES2800 basiert, um eine hohe Leistung zu gewährleisten. Experten sehen in der Brille nicht nur ein technisches Gadget, sondern auch einen strategischen Schritt, um Alibabas Position im Bereich der künstlichen Intelligenz und Augmented Reality zu stärken. Der Markt für smarte Brillen gilt als zukunftsträchtig, auch wenn der kommerzielle Durchbruch bisher ausgeblieben ist.\n\nDie Markteinführung der Brille wird von vielen als Frontalangriff auf Meta und andere Tech-Giganten wie Apple gewertet. Während Meta mit seinen Ray-Ban Stories vor allem auf Lifestyle und soziale Interaktion setzt, scheint Alibaba mit der tiefen Integration in sein Ökosystem und den vielseitigen KI-Funktionen einen breiteren Ansatz zu verfolgen. Branchenbeobachter erwarten, dass die \"Quark AI Glasses\" den Wettbewerb im Wearable-Markt erheblich anheizen werden.\n\n### Quellen\n- [CNBC: Alibaba to launch AI-powered smart glasses creating rival to Meta](https://www.cnbc.com/2025/07/28/alibaba-ai-smart-glasses-creates-rival-to-meta.html)\n- [Futurezone: Alibaba wird KI-Brillen veröffentlichen](https://futurezone.at/produkte/alibaba-ki-brille-quark-qwen-ende-2025-alipay-navigation-preisvergleich-kamera/403061809)\n- [TechNode: Alibaba to launch its first AI glasses this week](https://technode.com/2025/07/25/alibaba-to-launch-its-first-ai-glasses-this-week/)\n\n    ",
+    "timestamp": "2025-08-23T19:46:46.197Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über Alibabas neue KI-Brille \"Quark AI Glasses\":\n\n## Passende Kategorien mit Relevanz-Bewertung:\n\n**ai - Relevanz: 8/10**\nDie KI-Brille basiert auf Alibabas eigenem Sprachmodell Qwen und KI-Assistenten Quark mit fortschrittlichen Funktionen wie Echtzeit-Übersetzung, was einen bedeutenden Fortschritt in der Consumer-KI darstellt.\n\n**programming - Relevanz: 6/10**\nDas Dual-Chip-System mit Qualcomm Snapdragon AR1 und BES2800 sowie die Integration verschiedener Services erfordern komplexe Softwareentwicklung, ist aber primär für Entwickler im AR/Wearable-Bereich relevant.\n\n**work - Relevanz: 7/10**\nDie Brille könnte Arbeitsabläufe durch Freisprechen, Echtzeit-Übersetzung und AR-Funktionen revolutionieren und stellt einen wichtigen Schritt zur Integration von KI in den Arbeitsalltag dar.\n\nDie Kategorien \"databases\", \"security\", \"data protection\" und \"copyright\" sind nicht direkt relevant, da der Text keine spezifischen Informationen zu Datenbankarchitekturen, Sicherheitsfeatures, Datenschutzaspekten oder urheberrechtlichen Fragen enthält.",
+          "id": "74468e6c-ee89-4058-9ca4-b0d0e6c3cf5c"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Die KI-Brille basiert auf Alibabas eigenem Sprachmodell Qwen und KI-Assistenten Quark mit fortschrittlichen Funktionen wie Echtzeit-Übersetzung, was einen bedeutenden Fortschritt in der Consumer-KI darstellt."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Das Dual-Chip-System mit Qualcomm Snapdragon AR1 und BES2800 sowie die Integration verschiedener Services erfordern komplexe Softwareentwicklung, ist aber primär für Entwickler im AR/Wearable-Bereich relevant."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Die Brille könnte Arbeitsabläufe durch Freisprechen, Echtzeit-Übersetzung und AR-Funktionen revolutionieren und stellt einen wichtigen Schritt zur Integration von KI in den Arbeitsalltag dar."
+          }
+        ]
+      ]
+    }
+  }
+}

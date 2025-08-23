@@ -1,8 +1,28 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-Gipfel in Paris: Europas Wettbewerbsfähigkeit im Fokus"
+layout: post
+language: de
+title: 'KI-Gipfel in Paris: Europas Wettbewerbsfähigkeit im Fokus'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der gesamte Artikel dreht sich um Künstliche Intelligenz, europäische
+      KI-Strategien und den globalen Wettbewerb in diesem Bereich - dies ist
+      hochrelevant für alle, die sich für KI-Entwicklungen interessieren.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Die Diskussion über Europas Wettbewerbsfähigkeit, Investitionen in
+      Milliardenhöhe und die Rolle von Start-ups als Innovationsmotoren hat
+      direkte Auswirkungen auf die Arbeitswelt und Beschäftigungsmöglichkeiten
+      im Tech-Sektor.
+  - name: data protection
+    relevance: 6
+    reasoning: >-
+      Das erwähnte europäische KI-Gesetz ab 2026 und die Betonung ethischer
+      KI-Nutzung berühren wichtige Datenschutzaspekte, auch wenn diese nicht im
+      Detail ausgeführt werden.
 ---
 
 In Paris fand in dieser Woche der "Artificial Intelligence Action Summit 2025" statt, bei dem sich führende Politiker, Wissenschaftler und Vertreter der Technologiebranche aus über 100 Ländern trafen. Ziel des Gipfels war es, Europas Position im globalen Wettbewerb um Künstliche Intelligenz (KI) zu stärken und eine gemeinsame Strategie für die Zukunft zu entwickeln. Frankreichs Präsident Emmanuel Macron betonte in seiner Eröffnungsrede die Notwendigkeit, Europa als führende KI-Macht zu etablieren, um den technologischen Supermächten USA und China Paroli bieten zu können. Dabei wurden Investitionen in Höhe von 30 bis 50 Milliarden Euro angekündigt, die unter anderem in den Aufbau eines europäischen KI-Campus in Paris fließen sollen.  

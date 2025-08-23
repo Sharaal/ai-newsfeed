@@ -1,8 +1,40 @@
 ---
-layout: "post"
-language: "de"
-title: "Spotify lässt erschossenen Musiker mit KI neues Lied singen"
+layout: post
+language: de
+title: Spotify lässt erschossenen Musiker mit KI neues Lied singen
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt einen hochaktuellen Fall von KI-Missbrauch in der
+      Musikindustrie, bei dem eine KI verwendet wurde, um posthum Songs eines
+      verstorbenen Künstlers zu generieren - dies zeigt sowohl die Möglichkeiten
+      als auch die ethischen Grenzen von KI-Technologie auf.
+  - name: copyright
+    relevance: 8
+    reasoning: >-
+      Der Fall wirft fundamentale Fragen zum Urheberrecht und geistigen Eigentum
+      auf, da ohne Zustimmung der Erben oder des Labels KI-generierte Inhalte
+      unter dem Namen eines verstorbenen Künstlers veröffentlicht wurden.
+  - name: data protection
+    relevance: 6
+    reasoning: >-
+      Die unrechtmäßige Nutzung der Identität und des künstlerischen Erbes von
+      Blaze Foley berührt Aspekte des Persönlichkeitsrechts und Datenschutzes,
+      auch wenn der Künstler verstorben ist.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Der Vorfall hat direkte Auswirkungen auf die Musikindustrie und zeigt, wie
+      KI-Technologie traditionelle Arbeitsweisen und Geschäftsmodelle in der
+      Kreativbranche bedroht oder verändert.
+  - name: security
+    relevance: 5
+    reasoning: >-
+      Der Fall zeigt Sicherheitslücken in den Upload-Systemen von
+      Streaming-Plattformen auf, die es ermöglichen, dass betrügerische Inhalte
+      ohne ausreichende Verifizierung veröffentlicht werden.
 ---
 
 Spotify hat kürzlich für Aufsehen gesorgt, als auf dem offiziellen Profil des 1989 erschossenen Country-Musikers Blaze Foley ein neuer Song mit dem Titel "Together" veröffentlicht wurde. Das Besondere daran: Der Song wurde vollständig von einer Künstlichen Intelligenz (KI) generiert – ohne Zustimmung der Erben oder des Labels. Der Vorfall hat eine hitzige Debatte über die ethischen und rechtlichen Grenzen von KI in der Musikindustrie ausgelöst.

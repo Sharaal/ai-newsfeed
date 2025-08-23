@@ -1,8 +1,33 @@
 ---
-layout: "post"
-language: "de"
-title: "Zalando steigert Gewinn durch KI-Feed im zweiten Quartal 2025"
+layout: post
+language: de
+title: Zalando steigert Gewinn durch KI-Feed im zweiten Quartal 2025
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Der KI-gesteuerte Discovery-Feed ist das zentrale Thema und Haupttreiber
+      für Zalandos Erfolg, zeigt praktische Anwendung von KI im E-Commerce mit
+      messbaren Geschäftsergebnissen.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Die Integration von About You und geplante Synergien sowie
+      Effizienzgewinne haben direkte Auswirkungen auf Arbeitsplätze und
+      Unternehmensstrukturen in der E-Commerce-Branche.
+  - name: programming
+    relevance: 5
+    reasoning: >-
+      Die Entwicklung und Implementierung des KI-Feeds erfordert erhebliche
+      Programmierarbeit, auch wenn technische Details nicht explizit erwähnt
+      werden.
+  - name: databases
+    relevance: 4
+    reasoning: >-
+      Personalisierte Produktempfehlungen basieren zwangsläufig auf
+      umfangreichen Kundendaten und deren intelligenter Verarbeitung, auch wenn
+      Datenbankaspekte nicht direkt thematisiert werden.
 ---
 
 Zalando, Europas führender Online-Modehändler, hat im zweiten Quartal 2025 einen deutlichen Gewinnanstieg verzeichnet. Das Unternehmen meldete ein Umsatzwachstum von 7,3 % auf 2,8 Milliarden Euro, während das Bruttowarenvolumen (GMV) um 5,0 % auf 4,1 Milliarden Euro stieg. Besonders hervorzuheben ist der neue KI-gesteuerte Discovery-Feed, der maßgeblich zur Steigerung der Kundenzufriedenheit und des Umsatzes beigetragen hat. Der Feed nutzt künstliche Intelligenz, um personalisierte Produktempfehlungen zu generieren, was zu einer höheren Verweildauer und einer gesteigerten Konversionsrate führte. 

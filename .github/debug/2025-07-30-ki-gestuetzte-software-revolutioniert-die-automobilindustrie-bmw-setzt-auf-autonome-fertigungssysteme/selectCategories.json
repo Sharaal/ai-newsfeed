@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-gestützte Software revolutioniert die Automobilindustrie: BMW setzt auf autonome Fertigungssysteme\n\n\nDie BMW Group hat in den letzten Tagen einen bedeutenden Schritt in Richtung der Automatisierung und Digitalisierung ihrer Produktionsprozesse gemacht. Im Rahmen der sogenannten BMW iFACTORY-Initiative setzt das Unternehmen auf KI-gestützte Technologien, um die Effizienz und Flexibilität in der Fertigung zu steigern. Besonders im Fokus steht dabei das automatisierte Fahren von Neufahrzeugen auf dem Werksgelände. In den Werken Dingolfing und Leipzig bewegen sich Fahrzeuge bereits fahrerlos von der Montage bis zur Verladung – ein Prozess, der durch eine Kombination aus LIDAR-Sensoren, Cloud-Architektur und KI-gestützter Bewegungsplanung ermöglicht wird. Diese Technologie wird nun auch auf andere Standorte wie Regensburg und den neuen Standort in Debrecen, Ungarn, ausgeweitet.\n\n<!--more-->\n\nNeben der Automatisierung der Fahrzeugbewegungen setzt BMW auch auf KI-gestützte Qualitätskontrollen. Im Werk Regensburg wurde kürzlich ein System eingeführt, das für jedes Fahrzeug individuelle Prüfempfehlungen erstellt. Diese basieren auf Echtzeitdaten aus der Produktion und ermöglichen eine präzisere und effizientere Endkontrolle. Die BMW Group arbeitet dabei eng mit Startups wie Datagon AI zusammen, um innovative Lösungen zu entwickeln. Ziel ist es, die Produktionsprozesse nicht nur zu optimieren, sondern auch nachhaltiger zu gestalten. So sollen die neuen Technologien langfristig dazu beitragen, die CO₂-Bilanz der Werke zu verbessern und die Wettbewerbsfähigkeit des Unternehmens zu sichern.\n\nDie BMW iFACTORY-Initiative zeigt, wie die Automobilindustrie durch den Einsatz von KI und Automatisierung revolutioniert werden kann. Mit der Integration von digitalen Zwillingen, 3D-Druck und autonomen Transportsystemen setzt BMW neue Maßstäbe in der Branche. Die Vision des Unternehmens ist es, eine vollständig vernetzte und flexible Produktion zu schaffen, die den Anforderungen der Zukunft gerecht wird.\n\n### Quellen\n- [BMW Group: Automatisiertes Fahren auf dem Werksgelände](https://www.bmwgroup-werke.com/leipzig/de/aktuelles/Neufahrzeuge_fahren_automatisiert.html)\n- [Automobil Produktion: KI in der Qualitätskontrolle](https://www.automobil-produktion.de/produktion/smart-factory/wie-digitalisierung-und-ki-die-bmw-produktion-veraendern-742.html)\n- [Elektroauto-News: BMW setzt auf GenAI4Q](https://www.elektroauto-news.net/news/bmw-ki-qualitaetskontrolle-produktion)\n- [Blogist: Industrie 4.0 in Bayern](https://www.blogist.de/industrie-4-0-automatisierte-fertigung-in-bayern-nimmt-fahrt-auf-einblicke-in-eine-neue-aera-der-produktion/)\n\n    ",
+    "timestamp": "2025-08-23T19:39:41.750Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über BMWs KI-gestützte Fertigungssysteme und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt umfassend den Einsatz von KI in der Automobilproduktion, von autonomer Fahrzeugbewegung bis hin zu KI-gestützter Qualitätskontrolle - dies zeigt eine bahnbrechende industrielle KI-Anwendung mit hoher Breitenwirkung.\n\n**programming - Relevanz: 6/10**\nDie beschriebenen KI-Systeme, Cloud-Architekturen und digitalen Zwillinge erfordern komplexe Softwareentwicklung, was für Programmierer in der Industrie-4.0-Entwicklung sehr relevant ist.\n\n**work - Relevanz: 8/10**\nDie Automatisierung und KI-Integration verändert fundamental Arbeitsplätze und Arbeitsprozesse in der Automobilindustrie und zeigt einen wichtigen Trend für die Zukunft der Arbeit auf.\n\n**security - Relevanz: 5/10**\nAutonome Systeme und vernetzte Produktionsanlagen bringen Cybersecurity-Herausforderungen mit sich, auch wenn diese im Artikel nicht explizit thematisiert werden.\n\nDie Kategorien **databases** und **data protection** sowie **copyright** sind nicht relevant, da der Artikel weder spezifische Datenbankthemen noch Datenschutz- oder Urheberrechtsfragen behandelt.",
+          "id": "d266e4ec-47b8-4a11-b11a-9997fb993387"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt umfassend den Einsatz von KI in der Automobilproduktion, von autonomer Fahrzeugbewegung bis hin zu KI-gestützter Qualitätskontrolle - dies zeigt eine bahnbrechende industrielle KI-Anwendung mit hoher Breitenwirkung."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Die beschriebenen KI-Systeme, Cloud-Architekturen und digitalen Zwillinge erfordern komplexe Softwareentwicklung, was für Programmierer in der Industrie-4.0-Entwicklung sehr relevant ist."
+          },
+          {
+            "name": "work",
+            "relevance": 8,
+            "reasoning": "Die Automatisierung und KI-Integration verändert fundamental Arbeitsplätze und Arbeitsprozesse in der Automobilindustrie und zeigt einen wichtigen Trend für die Zukunft der Arbeit auf."
+          },
+          {
+            "name": "security",
+            "relevance": 5,
+            "reasoning": "Autonome Systeme und vernetzte Produktionsanlagen bringen Cybersecurity-Herausforderungen mit sich, auch wenn diese im Artikel nicht explizit thematisiert werden."
+          }
+        ]
+      ]
+    }
+  }
+}

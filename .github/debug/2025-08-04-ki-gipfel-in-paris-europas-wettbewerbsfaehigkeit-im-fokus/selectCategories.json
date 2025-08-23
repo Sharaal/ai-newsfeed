@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# KI-Gipfel in Paris: Europas Wettbewerbsfähigkeit im Fokus\n\n\nIn Paris fand in dieser Woche der \"Artificial Intelligence Action Summit 2025\" statt, bei dem sich führende Politiker, Wissenschaftler und Vertreter der Technologiebranche aus über 100 Ländern trafen. Ziel des Gipfels war es, Europas Position im globalen Wettbewerb um Künstliche Intelligenz (KI) zu stärken und eine gemeinsame Strategie für die Zukunft zu entwickeln. Frankreichs Präsident Emmanuel Macron betonte in seiner Eröffnungsrede die Notwendigkeit, Europa als führende KI-Macht zu etablieren, um den technologischen Supermächten USA und China Paroli bieten zu können. Dabei wurden Investitionen in Höhe von 30 bis 50 Milliarden Euro angekündigt, die unter anderem in den Aufbau eines europäischen KI-Campus in Paris fließen sollen.  \n\n<!--more-->\n\nEin zentrales Thema des Gipfels war die Förderung einer ethischen und nachhaltigen Nutzung von KI. Die EU-Kommissionspräsidentin Ursula von der Leyen hob hervor, dass KI nicht nur die Wettbewerbsfähigkeit Europas steigern, sondern auch die Gesundheitsversorgung und Forschung revolutionieren könne. Gleichzeitig betonte sie die Bedeutung des europäischen KI-Gesetzes, das ab 2026 einheitliche Regeln für die Nutzung von KI schaffen soll. Neben den politischen und wirtschaftlichen Aspekten wurde auch die Rolle von Start-ups und kleinen Unternehmen diskutiert, die als Innovationsmotoren eine Schlüsselrolle in der europäischen KI-Strategie spielen sollen.  \n\n### Quellen\n- [Zeit Online: Pariser KI-Gipfel spricht sich für ethische und nachhaltige KI aus](https://www.zeit.de/digital/2025-02/paris-kuenstliche-intelligenz-abschlusserklaerung-ethisch)  \n- [DW: KI-Gipfel in Paris - ist Europa konkurrenzfähig?](https://www.dw.com/de/ki-gipfel-in-paris-ist-europa-konkurrenzf%C3%A4hig/a-71539290)  \n- [Manager Magazin: Wie Europa wieder wirtschaftliche Weltmacht werden kann](https://www.manager-magazin.de/politik/kuenstliche-intelligenz-wie-europa-wieder-wirtschaftliche-weltmacht-werden-kann-a-7de58450-75fc-42b5-b9ea-8b7e5059dcf1)  \n- [Netzwoche: Update: Investitionsankündigungen, aber kein gemeinsamer Plan](https://www.netzwoche.ch/news/2025-02-10/ki-welt-blickt-nach-paris)\n\n    ",
+    "timestamp": "2025-08-23T19:36:10.590Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über den KI-Gipfel in Paris ordne ich folgende Kategorien mit entsprechenden Relevanzen zu:\n\n## **ai** - Relevanz: 9/10\nDer gesamte Artikel dreht sich um Künstliche Intelligenz, europäische KI-Strategien und den globalen Wettbewerb in diesem Bereich - dies ist hochrelevant für alle, die sich für KI-Entwicklungen interessieren.\n\n## **work** - Relevanz: 7/10\nDie Diskussion über Europas Wettbewerbsfähigkeit, Investitionen in Milliardenhöhe und die Rolle von Start-ups als Innovationsmotoren hat direkte Auswirkungen auf die Arbeitswelt und Beschäftigungsmöglichkeiten im Tech-Sektor.\n\n## **data protection** - Relevanz: 6/10\nDas erwähnte europäische KI-Gesetz ab 2026 und die Betonung ethischer KI-Nutzung berühren wichtige Datenschutzaspekte, auch wenn diese nicht im Detail ausgeführt werden.\n\nDie Kategorien **programming**, **databases**, **security** und **copyright** sind nicht relevant, da der Text keine spezifischen technischen Implementierungsdetails, Datenbankthemen, Sicherheitsaspekte oder urheberrechtliche Fragestellungen behandelt, sondern sich auf politische und strategische Aspekte der KI-Entwicklung konzentriert.",
+          "id": "5b0c699a-2081-4f99-92ba-17affc264e0b"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der gesamte Artikel dreht sich um Künstliche Intelligenz, europäische KI-Strategien und den globalen Wettbewerb in diesem Bereich - dies ist hochrelevant für alle, die sich für KI-Entwicklungen interessieren."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Die Diskussion über Europas Wettbewerbsfähigkeit, Investitionen in Milliardenhöhe und die Rolle von Start-ups als Innovationsmotoren hat direkte Auswirkungen auf die Arbeitswelt und Beschäftigungsmöglichkeiten im Tech-Sektor."
+          },
+          {
+            "name": "data protection",
+            "relevance": 6,
+            "reasoning": "Das erwähnte europäische KI-Gesetz ab 2026 und die Betonung ethischer KI-Nutzung berühren wichtige Datenschutzaspekte, auch wenn diese nicht im Detail ausgeführt werden."
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -1,8 +1,28 @@
 ---
-layout: "post"
-language: "de"
-title: "Nvidia plant erste KI-Plattform für industrielle Anwendungen in Deutschland"
+layout: post
+language: de
+title: Nvidia plant erste KI-Plattform für industrielle Anwendungen in Deutschland
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Die Nachricht behandelt direkt den Aufbau einer industriellen
+      KI-Cloud-Plattform mit 10.000 GPUs und ist hochrelevant für die
+      europäische KI-Strategie und digitale Transformation der Industrie.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Die Plattform wird die Entwicklung von KI-Modellen beschleunigen, was für
+      Entwickler und Programmierer im KI-Bereich von mittlerer bis hoher
+      Relevanz ist.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Die Initiative zielt auf die digitale Transformation europäischer
+      Hersteller ab und wird Arbeitsplätze und Arbeitsprozesse in der
+      Automobil-, Maschinenbau-, Robotik- und Automatisierungsbranche erheblich
+      beeinflussen.
 ---
 
 Der US-amerikanische Technologiekonzern Nvidia hat angekündigt, in Deutschland seine erste Cloud-Plattform für künstliche Intelligenz (KI) mit Schwerpunkt auf industrielle Anwendungen aufzubauen. Die Ankündigung erfolgte durch CEO Jensen Huang auf der VivaTech-Konferenz in Paris. Ziel des Projekts ist es, eine sogenannte "industrielle KI-Cloud" zu schaffen, die europäische Hersteller bei der digitalen Transformation unterstützt. Die Plattform soll mit modernster Hardware ausgestattet werden, darunter 10.000 GPUs, um die Verarbeitung großer Datenmengen und die Entwicklung von KI-Modellen zu beschleunigen. 

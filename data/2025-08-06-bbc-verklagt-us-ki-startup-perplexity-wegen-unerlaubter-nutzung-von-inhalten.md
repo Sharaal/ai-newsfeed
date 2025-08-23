@@ -1,8 +1,32 @@
 ---
-layout: "post"
-language: "de"
-title: "BBC verklagt US-KI-Startup Perplexity wegen unerlaubter Nutzung von Inhalten"
+layout: post
+language: de
+title: BBC verklagt US-KI-Startup Perplexity wegen unerlaubter Nutzung von Inhalten
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Der Fall betrifft direkt ein KI-Startup und dessen Trainingsmethoden, was
+      für die gesamte KI-Branche wegweisend sein könnte und neue Präzedenzfälle
+      schaffen wird.
+  - name: copyright
+    relevance: 9
+    reasoning: >-
+      Dies ist ein Kernfall für Urheberrechtsfragen im KI-Zeitalter, der die
+      fundamentale Frage klärt, wie KI-Unternehmen mit geschützten Inhalten
+      umgehen dürfen.
+  - name: data protection
+    relevance: 7
+    reasoning: >-
+      Die unerlaubte Datensammlung trotz technischer Sperren (Robots.txt)
+      berührt wichtige datenschutzrechtliche Aspekte und zeigt Grenzen des
+      Web-Scrapings auf.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Der Fall hat direkte Auswirkungen auf die Medienbranche und Journalisten,
+      da es um den Schutz ihrer Arbeit und Finanzierungsgrundlagen geht.
 ---
 
 Die BBC hat rechtliche Schritte gegen das US-amerikanische KI-Startup Perplexity AI eingeleitet. Der öffentlich-rechtliche Rundfunkgigant wirft dem Unternehmen vor, Inhalte der BBC ohne Genehmigung für das Training seiner KI-Modelle verwendet zu haben. Laut Berichten soll Perplexity gezielt geschützte Inhalte abgegriffen haben, obwohl diese durch technische Maßnahmen wie Robots.txt-Dateien gesperrt waren. Die BBC fordert nicht nur die sofortige Löschung der betroffenen Daten, sondern auch eine finanzielle Entschädigung für die unerlaubte Nutzung ihrer Inhalte.

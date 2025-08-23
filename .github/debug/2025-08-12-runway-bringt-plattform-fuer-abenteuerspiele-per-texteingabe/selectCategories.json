@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Runway bringt Plattform für Abenteuerspiele per Texteingabe\n\n\nDas KI-Startup Runway hat mit \"Game Worlds\" eine neue Plattform vorgestellt, die es Nutzern ermöglicht, interaktive Abenteuerspiele allein durch Texteingaben zu erstellen. Die Plattform kombiniert klassische Text-Adventures mit moderner KI-Technologie, indem sie automatisch passende Bilder, Charaktere und Umgebungen generiert. Spieler können ihre Geschichten in natürlicher Sprache beschreiben, während die KI die Handlung dynamisch anpasst und visuelle Elemente hinzufügt. Laut CEO Cristóbal Valenzuela ist dies ein Schritt, um die Kreativität von Hobbyentwicklern und Autoren zu fördern, ohne dass Programmierkenntnisse erforderlich sind.\n\n<!--more-->\n\nDie Plattform richtet sich sowohl an Einzelpersonen als auch an professionelle Entwickler. Erste Tests zeigen, dass die KI nicht nur auf Texteingaben reagiert, sondern auch Entscheidungen der Spieler in Echtzeit verarbeitet. Dies eröffnet neue Möglichkeiten für interaktive Erzählungen und personalisierte Spielerfahrungen. Runway plant, die Funktionen von \"Game Worlds\" in den kommenden Monaten zu erweitern, etwa durch die Integration von Videos und komplexeren Spielmechaniken. Kritiker weisen jedoch darauf hin, dass die Plattform noch in einer frühen Phase ist und sich auf grundlegende Spielelemente beschränkt.\n\n### Quellen\n- [The Decoder: Runway startet KI-Plattform für Text-Adventures](https://the-decoder.de/runway-startet-ki-plattform-fuer-die-generierung-interaktiver-visueller-text-adventures/)\n- [All-AI.de: Game Worlds – Runways neue Plattform](https://www.all-ai.de/news/top-news24/runway-games-world)\n- [Dicloak: Runway Game Worlds Are HERE](https://dicloak.com/video-insights-detail/runway-game-worlds-are-here-interactive-ai-driven-image-and-text-game-building)\n\n    ",
+    "timestamp": "2025-08-23T19:17:14.438Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über Runways neue \"Game Worlds\" Plattform und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 8/10**\nDie KI-Technologie steht im Zentrum der Plattform, die automatisch Bilder, Charaktere und Umgebungen generiert und Handlungen dynamisch anpasst - dies zeigt bedeutende Fortschritte in der praktischen KI-Anwendung für kreative Bereiche.\n\n**programming - Relevanz: 6/10**\nDie Plattform ermöglicht Spieleentwicklung ohne Programmierkenntnisse, was für Entwickler interessant ist, da es neue Ansätze für No-Code/Low-Code-Entwicklung aufzeigt und traditionelle Entwicklungsprozesse herausfordert.\n\n**work - Relevanz: 5/10**\nDie Technologie könnte mittelfristig Auswirkungen auf Berufe in der Spieleentwicklung, im Storytelling und in der Content-Erstellung haben, da sie kreative Prozesse automatisiert und demokratisiert.\n\n**copyright - Relevanz: 4/10**\nBei KI-generierten Inhalten in Spielen entstehen potenzielle Urheberrechtsfragen bezüglich der automatisch erstellten Bilder, Charaktere und Geschichten, auch wenn dies im Text nicht explizit thematisiert wird.\n\nDie Kategorien \"databases\", \"security\" und \"data protection\" sind für diesen Newstext nicht relevant, da keine entsprechenden Aspekte behandelt werden.",
+          "id": "bcf87000-0794-49d9-a794-e215c2202467"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Die KI-Technologie steht im Zentrum der Plattform, die automatisch Bilder, Charaktere und Umgebungen generiert und Handlungen dynamisch anpasst - dies zeigt bedeutende Fortschritte in der praktischen KI-Anwendung für kreative Bereiche."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Die Plattform ermöglicht Spieleentwicklung ohne Programmierkenntnisse, was für Entwickler interessant ist, da es neue Ansätze für No-Code/Low-Code-Entwicklung aufzeigt und traditionelle Entwicklungsprozesse herausfordert."
+          },
+          {
+            "name": "work",
+            "relevance": 5,
+            "reasoning": "Die Technologie könnte mittelfristig Auswirkungen auf Berufe in der Spieleentwicklung, im Storytelling und in der Content-Erstellung haben, da sie kreative Prozesse automatisiert und demokratisiert."
+          },
+          {
+            "name": "copyright",
+            "relevance": 4,
+            "reasoning": "Bei KI-generierten Inhalten in Spielen entstehen potenzielle Urheberrechtsfragen bezüglich der automatisch erstellten Bilder, Charaktere und Geschichten, auch wenn dies im Text nicht explizit thematisiert wird."
+          }
+        ]
+      ]
+    }
+  }
+}

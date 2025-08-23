@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# GPT-5 sorgt für Chaos: Startschwierigkeiten und gemischtes Feedback\n\n\nDie Einführung von GPT-5, dem neuesten KI-Modell von OpenAI, hat in den letzten Tagen für viel Aufsehen gesorgt. Während das Unternehmen mit dem Versprechen antrat, die Benutzererfahrung durch eine automatische Modellauswahl zu verbessern, stieß diese Änderung auf gemischte Reaktionen. Viele Nutzer kritisierten, dass die Möglichkeit, zwischen verschiedenen Modellen zu wählen, entfernt wurde, was zu Verwirrung und Frustration führte. Besonders die Entscheidung, ältere Modelle wie GPT-4o nur noch eingeschränkt verfügbar zu machen, sorgte für Unmut. OpenAI-CEO Sam Altman reagierte auf die Kritik und kündigte an, die Modellauswahl für Plus-Nutzer wieder einzuführen, um die Flexibilität zu erhöhen.  \n\n<!--more-->\n\nEin weiteres Problem war die technische Stabilität des neuen Modells. Berichten zufolge kam es in den ersten Tagen nach dem Rollout zu Serverüberlastungen und längeren Antwortzeiten, da die Nachfrage nach der neuen Version die Erwartungen übertraf. Auch die neue Funktion \"GPT-5 Thinking\", die komplexere Aufgaben lösen soll, wurde von einigen Nutzern als zu langsam und unzuverlässig beschrieben. OpenAI versprach, diese Probleme in den kommenden Wochen zu beheben und die Rate Limits für Plus-Nutzer zu verdoppeln, um die Nutzung zu erleichtern.  \n\nTrotz der Kritik gibt es auch positive Stimmen. Viele loben die verbesserten Fähigkeiten von GPT-5, insbesondere bei der Verarbeitung komplexer Anfragen und der Integration von Echtzeit-Tools. Die neue Sicherheitsfunktion \"Safe Completions\" wurde ebenfalls positiv aufgenommen, da sie sicherstellen soll, dass die Antworten des Modells hilfreicher und weniger fehleranfällig sind. Dennoch bleibt abzuwarten, ob OpenAI die anfänglichen Probleme schnell genug lösen kann, um das Vertrauen der Nutzer zurückzugewinnen.  \n\n### Quellen\n- [GPT-5: OpenAI-Chef verspricht nach Holperstart viele Verbesserungen](https://the-decoder.de/gpt-5-openai-chef-verspricht-nach-holperstart-viele-verbesserungen/)  \n- [GPT-5: OpenAI wollte den größten Fehler von ChatGPT ausbessern](https://www.gamestar.de/artikel/openai-chatgpt-gpt5-bricht-versprechen,3437659.html)  \n- [Alles, was Sie über GPT wissen sollten [August 2025]](https://botpress.com/de/blog/everything-you-should-know-about-gpt-5)\n\n    ",
+    "timestamp": "2025-08-23T19:12:29.627Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über GPT-5 ordne ich folgende Kategorien zu:\n\n## **ai - Relevanz: 9/10**\nDer Artikel behandelt die Einführung von GPT-5, einem bahnbrechenden KI-Modell von OpenAI, was für alle AI-Interessierten und die breite Tech-Community hochrelevant ist.\n\n## **programming - Relevanz: 7/10**\nDie neuen Funktionen wie \"GPT-5 Thinking\" und verbesserte Fähigkeiten bei komplexen Anfragen sind für Entwickler sehr interessant, da sie direkte Auswirkungen auf deren Arbeitsweise haben.\n\n## **work - Relevanz: 6/10**\nDie Verbesserungen und Probleme von GPT-5 betreffen viele Berufstätige, die KI-Tools in ihrem Arbeitsalltag nutzen, insbesondere durch die Änderungen bei der Modellauswahl und Verfügbarkeit.\n\n## **security - Relevanz: 5/10**\nDie neue Sicherheitsfunktion \"Safe Completions\" ist für sicherheitsbewusste Nutzer relevant, auch wenn sie nur am Rande erwähnt wird.\n\nDie Kategorien **databases**, **data protection** und **copyright** sind nicht relevant, da der Artikel diese Themen nicht behandelt.",
+          "id": "62d84547-5c8c-4f04-99fe-8948be8c3b62"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt die Einführung von GPT-5, einem bahnbrechenden KI-Modell von OpenAI, was für alle AI-Interessierten und die breite Tech-Community hochrelevant ist."
+          },
+          {
+            "name": "programming",
+            "relevance": 7,
+            "reasoning": "Die neuen Funktionen wie 'GPT-5 Thinking' und verbesserte Fähigkeiten bei komplexen Anfragen sind für Entwickler sehr interessant, da sie direkte Auswirkungen auf deren Arbeitsweise haben."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Die Verbesserungen und Probleme von GPT-5 betreffen viele Berufstätige, die KI-Tools in ihrem Arbeitsalltag nutzen, insbesondere durch die Änderungen bei der Modellauswahl und Verfügbarkeit."
+          },
+          {
+            "name": "security",
+            "relevance": 5,
+            "reasoning": "Die neue Sicherheitsfunktion 'Safe Completions' ist für sicherheitsbewusste Nutzer relevant, auch wenn sie nur am Rande erwähnt wird."
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Hautkrebs-Screening mit KI: Neue Ferndiagnose-Technologie vorgestellt\n\n\nEin neues KI-gestütztes Hautkrebs-Screening-System wurde vorgestellt, das die Früherkennung von Hautkrebs revolutionieren könnte. Die Technologie kombiniert hochauflösende Bildgebung mit künstlicher Intelligenz, um verdächtige Hautveränderungen zu identifizieren. Besonders in ländlichen Regionen, wo der Fachärztemangel spürbar ist, könnte das System eine entscheidende Rolle spielen. Die KI analysiert Bilder von Hautläsionen und vergleicht sie mit einer umfangreichen Datenbank, um potenziell gefährliche Veränderungen zu markieren. Anschließend können Dermatologen die Ergebnisse aus der Ferne überprüfen und eine Diagnose stellen.\n\n<!--more-->\n\nDas System wurde im Rahmen eines EU-Projekts entwickelt und ist Teil einer umfassenderen Initiative zur Verbesserung der medizinischen Versorgung durch digitale Technologien. Ein Highlight ist der 3D-Ganzkörperscanner, der in nur sechs Minuten den gesamten Körper scannt und eine Risikobewertung für jede auffällige Stelle liefert. Experten betonen, dass die Technologie nicht nur die Diagnosegeschwindigkeit erhöht, sondern auch die Genauigkeit verbessert. Kritiker warnen jedoch vor möglichen Datenschutzproblemen und der Gefahr, dass die Technologie menschliche Expertise nicht vollständig ersetzen kann.\n\n### Quellen\n- [Tagesschau: Hautkrebs-Check mit KI und Ferndiagnose](https://www.tagesschau.de/wissen/gesundheit/hautkrebs-vorsorge-100.html)\n- [Fraunhofer: KI-Diagnoseplattform verbessert Früherkennung von Hautkrebs](https://www.fraunhofer.de/de/presse/presseinformationen/2025/maerz-2025/ki-diagnoseplattform-verbessert-frueherkennung-von-hautkrebs.html)\n- [Medical Tribune: 3D-Ganzkörperfotografie mit KI-Analyse](https://www.medical-tribune.de/medizin-und-forschung/artikel/vom-dermatoskop-bis-zur-3d-ganzkoerperfotografie-mit-ki-analyse)\n\n    ",
+    "timestamp": "2025-08-23T19:37:21.156Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über das KI-gestützte Hautkrebs-Screening-System und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDie künstliche Intelligenz ist das Herzstück dieser Innovation, da sie Hautläsionen analysiert, mit Datenbanken vergleicht und Risikobewertungen erstellt - eine bahnbrechende Anwendung von KI im Gesundheitswesen.\n\n**databases - Relevanz: 6/10**\nDas System nutzt eine umfangreiche Datenbank zum Vergleich von Hautläsionen, was für Datenbankspezialisten und Entwickler medizinischer Systeme interessant ist.\n\n**data protection - Relevanz: 7/10**\nDer Text erwähnt explizit Datenschutzbedenken von Kritikern, was bei medizinischen Daten und KI-Systemen ein hochrelevantes Thema ist.\n\n**work - Relevanz: 8/10**\nDie Technologie adressiert den Fachärztemangel in ländlichen Regionen und verändert die Arbeitsweise von Dermatologen durch Ferndiagnosen - ein wichtiger Aspekt für die Zukunft der Arbeitswelt im Gesundheitswesen.\n\nDie Kategorien \"programming\", \"security\" und \"copyright\" sind nicht direkt relevant, da der Text keine spezifischen Programmieraspekte, Sicherheitslücken oder urheberrechtliche Fragen behandelt.",
+          "id": "1b5bb2fd-2aa7-4ac4-9ea4-e476df16d842"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Die künstliche Intelligenz ist das Herzstück dieser Innovation, da sie Hautläsionen analysiert, mit Datenbanken vergleicht und Risikobewertungen erstellt - eine bahnbrechende Anwendung von KI im Gesundheitswesen."
+          },
+          {
+            "name": "databases",
+            "relevance": 6,
+            "reasoning": "Das System nutzt eine umfangreiche Datenbank zum Vergleich von Hautläsionen, was für Datenbankspezialisten und Entwickler medizinischer Systeme interessant ist."
+          },
+          {
+            "name": "data protection",
+            "relevance": 7,
+            "reasoning": "Der Text erwähnt explizit Datenschutzbedenken von Kritikern, was bei medizinischen Daten und KI-Systemen ein hochrelevantes Thema ist."
+          },
+          {
+            "name": "work",
+            "relevance": 8,
+            "reasoning": "Die Technologie adressiert den Fachärztemangel in ländlichen Regionen und verändert die Arbeitsweise von Dermatologen durch Ferndiagnosen - ein wichtiger Aspekt für die Zukunft der Arbeitswelt im Gesundheitswesen."
+          }
+        ]
+      ]
+    }
+  }
+}

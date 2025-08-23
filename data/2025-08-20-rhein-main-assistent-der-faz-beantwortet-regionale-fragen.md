@@ -1,8 +1,28 @@
 ---
-layout: "post"
-language: "de"
-title: "Rhein-Main-Assistent der FAZ beantwortet regionale Fragen"
+layout: post
+language: de
+title: Rhein-Main-Assistent der FAZ beantwortet regionale Fragen
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 7
+    reasoning: >-
+      Der Artikel beschreibt die Einführung eines KI-gestützten Assistenten bei
+      einer großen deutschen Zeitung, was ein konkretes Beispiel für den
+      praktischen Einsatz von KI im Medienbereich darstellt und für viele
+      AI-Interessierte relevant ist.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Die Implementierung zeigt, wie KI-Tools die Arbeitsweise in Redaktionen
+      verändert und neue Wege der Leserbindung ermöglicht, was für
+      Medienschaffende und Fachkräfte in der Digitalbranche interessant ist.
+  - name: copyright
+    relevance: 4
+    reasoning: >-
+      Da der Assistent ausschließlich auf eigene FAZ-Inhalte zugreift, berührt
+      dies Fragen des Urheberrechts bei KI-Anwendungen, ist aber nur für
+      Spezialisten in diesem Bereich von größerem Interesse.
 ---
 
 Die "Frankfurter Allgemeine Zeitung" (FAZ) hat ein innovatives KI-gestütztes Feature eingeführt: den Rhein-Main-Assistenten. Dieses Tool ermöglicht es Leserinnen und Lesern, gezielt Fragen zu regionalen Themen zu stellen und fundierte Antworten zu erhalten. Der Assistent greift dabei ausschließlich auf Inhalte des Rhein-Main-Ressorts der FAZ zurück, die in den letzten Monaten veröffentlicht wurden. Ob Politik, Sicherheit, Sport, Kunst oder Kultur – der Rhein-Main-Assistent bietet eine breite Palette an Informationen, die speziell auf die Region zugeschnitten sind.

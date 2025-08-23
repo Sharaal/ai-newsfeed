@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# Microsoft testet neuen \"Copilot-Modus\" im Edge-Browser\n\n\nMicrosoft hat kürzlich den neuen \"Copilot-Modus\" für seinen Edge-Browser vorgestellt, der auf künstlicher Intelligenz basiert und das Surfen im Internet revolutionieren soll. Der Modus integriert fortschrittliche KI-Funktionen, die Nutzern helfen, effizienter und intuitiver zu arbeiten. Zu den Hauptmerkmalen gehören die kontextbezogene Analyse von Tabs, die automatische Gruppierung von Inhalten und die Möglichkeit, per Sprachsteuerung oder Chat mit dem Browser zu interagieren. Der Copilot-Modus ist ab sofort in allen unterstützten Märkten kostenlos verfügbar und kann über die Einstellungen des Edge-Browsers aktiviert werden.\n\n<!--more-->\n\nEin Highlight des neuen Modus ist die Fähigkeit, mehrere Tabs gleichzeitig zu analysieren, um beispielsweise Unterschiede zwischen Reiseplänen oder Restaurantoptionen zu erkennen. Zudem bietet der Modus eine neue, KI-gestützte Startseite, die Suchanfragen, Chats und Navigation in einem einzigen Interface vereint. Microsoft plant, den Copilot-Modus kontinuierlich zu erweitern, etwa durch projektbasierte Verlaufssortierung und personalisierte Empfehlungen. Der Modus ist sowohl für Windows- als auch für Mac-Nutzer verfügbar und ein weiterer Schritt in Microsofts Vision, KI nahtlos in den Alltag zu integrieren.\n\n### Quellen\n- [Microsoft Edge Blog: Introducing Copilot Mode in Edge](https://blogs.windows.com/msedgedev/2025/07/28/introducing-copilot-mode-in-edge-a-new-way-to-browse-the-web/)\n- [The Decoder: Microsoft bringt neuen Copilot-Modus für Edge-Browser](https://the-decoder.de/microsoft-bringt-neuen-copilot-modus-fuer-edge-browser/)\n- [Microsoft Edge: Copilot Mode](https://www.microsoft.com/de-de/edge/ai-powered/copilot-mode)\n\n    ",
+    "timestamp": "2025-08-23T19:14:52.947Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über Microsofts neuen \"Copilot-Modus\" im Edge-Browser und ordne ihn den passenden Kategorien zu:\n\n## Kategorisierung und Relevanz-Bewertung:\n\n**ai - Relevanz: 9/10**\nDer Artikel behandelt eine bedeutende KI-Integration in einen weit verbreiteten Browser, die das tägliche Surfen für Millionen von Nutzern verändern könnte und Microsofts Vision der nahtlosen KI-Integration im Alltag vorantreibt.\n\n**programming - Relevanz: 6/10**\nFür Entwickler interessant, da neue Browser-KI-Features potenzielle Auswirkungen auf Webentwicklung und User Experience haben können, auch wenn keine spezifischen technischen Details zur Implementierung genannt werden.\n\n**work - Relevanz: 7/10**\nDie beschriebenen Funktionen wie kontextbezogene Tab-Analyse, automatische Inhaltgruppierung und Sprachsteuerung können die Arbeitseffizienz erheblich steigern und sind daher für berufliche Anwender sehr relevant.\n\n**data protection - Relevanz: 5/10**\nObwohl nicht explizit erwähnt, wirft die KI-basierte Analyse von Browser-Inhalten und personalisierten Empfehlungen wichtige Datenschutzfragen auf, die für datenschutzbewusste Nutzer relevant sind.\n\nDie Kategorien \"databases\", \"security\" und \"copyright\" sind nicht zutreffend, da der Artikel keine spezifischen Inhalte zu Datenbankthemen, Sicherheitslücken oder Urheberrechtsfragen behandelt.",
+          "id": "cfe80de3-d484-4f80-b50a-1aa6cac81fe2"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt eine bedeutende KI-Integration in einen weit verbreiteten Browser, die das tägliche Surfen für Millionen von Nutzern verändern könnte und Microsofts Vision der nahtlosen KI-Integration im Alltag vorantreibt."
+          },
+          {
+            "name": "programming",
+            "relevance": 6,
+            "reasoning": "Für Entwickler interessant, da neue Browser-KI-Features potenzielle Auswirkungen auf Webentwicklung und User Experience haben können, auch wenn keine spezifischen technischen Details zur Implementierung genannt werden."
+          },
+          {
+            "name": "work",
+            "relevance": 7,
+            "reasoning": "Die beschriebenen Funktionen wie kontextbezogene Tab-Analyse, automatische Inhaltgruppierung und Sprachsteuerung können die Arbeitseffizienz erheblich steigern und sind daher für berufliche Anwender sehr relevant."
+          },
+          {
+            "name": "data protection",
+            "relevance": 5,
+            "reasoning": "Obwohl nicht explizit erwähnt, wirft die KI-basierte Analyse von Browser-Inhalten und personalisierten Empfehlungen wichtige Datenschutzfragen auf, die für datenschutzbewusste Nutzer relevant sind."
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# G7-Staaten planen Maßnahmen gegen den Energieverbrauch von KI\n\n\nDie G7-Staaten haben auf ihrem jüngsten Gipfel eine gemeinsame Erklärung abgegeben, in der sie den steigenden Energieverbrauch durch Künstliche Intelligenz (KI) als dringendes Problem anerkennen. Laut einer aktuellen Analyse wird der KI-bedingte Stromverbrauch in Rechenzentren bis 2028 auf etwa 300 Terawattstunden ansteigen, was rund einem Prozent des weltweiten Stromverbrauchs entspricht. Die Regierungschefs der G7 betonten, dass die zunehmende Verbreitung von KI nicht nur die Stromnetze belaste, sondern auch Auswirkungen auf die Energiesicherheit und die Erschwinglichkeit von Energie habe. Gleichzeitig sehen sie in der Technologie ein Potenzial, Innovationen im Energiesektor voranzutreiben und die Resilienz der Energiesysteme zu stärken.\n\n<!--more-->\n\nUm diesen Herausforderungen zu begegnen, planen die G7-Staaten die Entwicklung eines Arbeitsplans, der bis Ende 2025 vorliegen soll. Dieser soll Maßnahmen zur Verbesserung der Energie- und Ressourceneffizienz von KI-Modellen sowie zur Förderung nachhaltiger Rechenzentren umfassen. Ein zentraler Punkt ist die Einführung gemeinsamer Standards, die den Energieverbrauch von KI-Systemen reduzieren sollen. Darüber hinaus wollen die G7 die Nutzung von KI zur Optimierung von Lieferketten und zur Verbesserung der Systemresilienz fördern. Die Zusammenarbeit zwischen den Mitgliedsstaaten soll dabei helfen, innovative Lösungen zu entwickeln, die sowohl den Energieverbrauch senken als auch die Klimaziele der Länder unterstützen.\n\n### Quellen\n- [Netzwoche: G7 rücken Energieaspekte der KI in den Fokus](https://www.netzwoche.ch/news/2025-06-19/g7-ruecken-energieaspekte-der-ki-in-den-fokus)  \n- [Heise: G7-Staaten wollen Energie-Herausforderungen von KI angehen](https://www.heise.de/news/Gipfel-Erklaerung-G7-Staaten-wollen-Energie-Herausforderungen-von-KI-angehen-10451971.html)  \n- [Ingenieur.de: Wie KI und Energie unter einen Hut kommen sollen](https://www.ingenieur.de/technik/fachbereiche/energie/ki-veraendert-alles-so-digital-wird-die-gruene-energie-von-morgen/)\n\n    ",
+    "timestamp": "2025-08-23T19:08:57.039Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Ich analysiere den Newstext über die G7-Pläne zum KI-Energieverbrauch:\n\n## Passende Kategorien mit Relevanzbewertung:\n\n**ai - Relevanz: 8/10**\nDer Artikel behandelt direkt die Auswirkungen von KI auf den Energieverbrauch und geplante Regulierungsmaßnahmen der G7-Staaten, was für die gesamte KI-Branche von hoher Bedeutung ist.\n\n**work - Relevanz: 6/10**\nDie geplanten Standards und Effizienzmaßnahmen werden sich auf Arbeitsplätze in der KI-Entwicklung, Rechenzentren und im Energiesektor auswirken, betrifft aber primär Fachkräfte in diesen Bereichen.\n\n**security - Relevanz: 5/10**\nDer Artikel erwähnt Energiesicherheit und Systemresilienz als wichtige Aspekte, die durch den steigenden KI-Energieverbrauch bedroht werden könnten - relevant für Infrastruktursicherheit.\n\nDie anderen Kategorien (programming, databases, data protection, copyright) sind nicht relevant, da der Artikel sich ausschließlich auf energiepolitische und nachhaltigkeitsbezogene Aspekte von KI konzentriert, ohne technische Implementierungsdetails oder rechtliche Fragen zu Daten und Urheberrecht zu behandeln.",
+          "id": "9cf31aa6-2575-4f7e-af38-1b89e89707d2"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Der Artikel behandelt direkt die Auswirkungen von KI auf den Energieverbrauch und geplante Regulierungsmaßnahmen der G7-Staaten, was für die gesamte KI-Branche von hoher Bedeutung ist."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Die geplanten Standards und Effizienzmaßnahmen werden sich auf Arbeitsplätze in der KI-Entwicklung, Rechenzentren und im Energiesektor auswirken, betrifft aber primär Fachkräfte in diesen Bereichen."
+          },
+          {
+            "name": "security",
+            "relevance": 5,
+            "reasoning": "Der Artikel erwähnt Energiesicherheit und Systemresilienz als wichtige Aspekte, die durch den steigenden KI-Energieverbrauch bedroht werden könnten - relevant für Infrastruktursicherheit."
+          }
+        ]
+      ]
+    }
+  }
+}

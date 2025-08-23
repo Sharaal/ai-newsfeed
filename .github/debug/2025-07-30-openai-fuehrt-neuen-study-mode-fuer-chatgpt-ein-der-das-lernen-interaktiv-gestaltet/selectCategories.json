@@ -1,0 +1,60 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# OpenAI führt neuen \"Study Mode\" für ChatGPT ein, der das Lernen interaktiv gestaltet\n\n\nOpenAI hat mit dem \"Study Mode\" eine neue Funktion für ChatGPT eingeführt, die speziell darauf abzielt, das Lernen interaktiver und effektiver zu gestalten. Statt lediglich Antworten auf Fragen zu liefern, unterstützt der Modus Nutzer:innen dabei, sich aktiv mit dem Lernstoff auseinanderzusetzen. Durch gezielte Fragen, Denkanstöße und schrittweise Erklärungen soll der \"Study Mode\" das Verständnis fördern und kritisches Denken anregen. Die Funktion ist ab sofort für alle Nutzer:innen der Free-, Plus-, Pro- und Team-Versionen verfügbar und wird in den kommenden Wochen auch in ChatGPT Edu integriert.\n\n<!--more-->\n\nDer \"Study Mode\" basiert auf Prinzipien der Lernforschung wie aktivem Lernen und Metakognition. Nutzer:innen können den Modus aktivieren, um komplexe Themen in übersichtliche Abschnitte unterteilt zu bekommen, die kognitive Überlastung vermeiden sollen. Zusätzlich bietet der Modus Quizfragen und offene Aufgaben, um das eigene Verständnis zu überprüfen. OpenAI hat bei der Entwicklung eng mit Lehrkräften und Bildungsforschern zusammengearbeitet, um sicherzustellen, dass die Funktion den Bedürfnissen von Lernenden gerecht wird. \n\nEin weiteres Highlight des \"Study Mode\" ist die Möglichkeit, den Modus individuell anzupassen. Nutzer:innen können beispielsweise ihren Wissensstand, das Thema und spezifische Lernziele angeben, um personalisierte Unterstützung zu erhalten. Auch das Hochladen von Dokumenten wie Notizen oder Aufgabenstellungen ist möglich, um den Lernprozess noch gezielter zu gestalten. OpenAI plant zudem, den Modus in Zukunft um Funktionen wie Fortschrittsverfolgung und visualisierte Erklärungen zu erweitern.\n\n### Quellen\n- [OpenAI: Study Mode](https://openai.com/de-DE/index/chatgpt-study-mode/)\n- [Deskmodder: OpenAI startet \"Study Mode\" in ChatGPT](https://www.deskmodder.de/blog/2025/07/29/openai-startet-study-mode-in-chatgpt/)\n- [Heise: Study Mode für ChatGPT](https://www.heise.de/news/Study-Mode-OpenAI-fuehrt-Lernmodus-fuer-ChatGPT-ein-10503553.html)\n\n    ",
+    "timestamp": "2025-08-23T19:38:30.864Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes über OpenAIs neuen \"Study Mode\" für ChatGPT ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 8/10\nDies ist eine bedeutende Produktentwicklung von OpenAI, die zeigt, wie KI-Systeme zunehmend für spezifische Anwendungsbereiche wie Bildung optimiert werden und dabei lernwissenschaftliche Prinzipien integrieren.\n\n## **programming** - Relevanz: 4/10\nFür Programmierer relevant, da sie ChatGPT häufig zum Lernen neuer Technologien nutzen und der Study Mode ihre Lerneffizienz beim Erwerb von Programmierkenntnissen verbessern könnte.\n\n## **work** - Relevanz: 6/10\nDer Study Mode hat direkten Einfluss auf Weiterbildung und berufliche Entwicklung, da er strukturiertes Lernen am Arbeitsplatz unterstützt und die Art verändert, wie Mitarbeiter sich neue Fähigkeiten aneignen.\n\nDie anderen Kategorien (databases, security, data protection, copyright) sind nicht relevant, da der Newstext keine spezifischen Aspekte zu Datenbanken, Sicherheit, Datenschutz oder Urheberrecht behandelt, sondern sich ausschließlich auf die neue Lernfunktionalität konzentriert.",
+          "id": "c38e263e-aa63-412b-a8ef-c6f2cdbfdbe4"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 8,
+            "reasoning": "Dies ist eine bedeutende Produktentwicklung von OpenAI, die zeigt, wie KI-Systeme zunehmend für spezifische Anwendungsbereiche wie Bildung optimiert werden und dabei lernwissenschaftliche Prinzipien integrieren."
+          },
+          {
+            "name": "programming",
+            "relevance": 4,
+            "reasoning": "Für Programmierer relevant, da sie ChatGPT häufig zum Lernen neuer Technologien nutzen und der Study Mode ihre Lerneffizienz beim Erwerb von Programmierkenntnissen verbessern könnte."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Der Study Mode hat direkten Einfluss auf Weiterbildung und berufliche Entwicklung, da er strukturiertes Lernen am Arbeitsplatz unterstützt und die Art verändert, wie Mitarbeiter sich neue Fähigkeiten aneignen."
+          }
+        ]
+      ]
+    }
+  }
+}

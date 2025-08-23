@@ -1,8 +1,43 @@
 ---
-layout: "post"
-language: "de"
-title: "Neue EU-Regeln: KI-Anbieter müssen Trainingsdaten offenlegen"
+layout: post
+language: de
+title: 'Neue EU-Regeln: KI-Anbieter müssen Trainingsdaten offenlegen'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 10
+    reasoning: >-
+      Der Artikel behandelt direkt neue EU-Regulierungen für KI-Anbieter wie
+      OpenAI und Google, die fundamentale Auswirkungen auf die gesamte
+      KI-Branche haben werden.
+  - name: data protection
+    relevance: 9
+    reasoning: >-
+      Die Offenlegungspflicht für Trainingsdaten und Schutzmaßnahmen gegen
+      Diskriminierung betreffen zentrale Aspekte des Datenschutzes in der
+      KI-Entwicklung.
+  - name: copyright
+    relevance: 8
+    reasoning: >-
+      Die Verpflichtung zur Offenlegung von Datenquellen und deren Herkunft hat
+      direkte Auswirkungen auf urheberrechtliche Fragen bei der Nutzung von
+      Trainingsdaten.
+  - name: security
+    relevance: 7
+    reasoning: >-
+      Die neuen Vorschriften zielen auf mehr Sicherheit im Umgang mit
+      KI-Systemen ab und verlangen regelmäßige Audits zur Risikominimierung.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Die Regulierung betrifft Arbeitsabläufe in KI-Unternehmen durch neue
+      Compliance-Anforderungen, Audit-Pflichten und Berichterstattung.
+  - name: programming
+    relevance: 5
+    reasoning: >-
+      Die Implementierung von Schutzmaßnahmen gegen Verzerrungen und die
+      Einhaltung der neuen Standards erfordern Anpassungen in der
+      KI-Entwicklung.
 ---
 
 Seit dem 2. August 2025 gelten in der Europäischen Union neue, strengere Vorschriften für Anbieter von Künstlicher Intelligenz (KI). Der sogenannte EU AI Act verpflichtet Unternehmen, die KI-Modelle mit allgemeinem Verwendungszweck entwickeln, ihre Trainingsdaten offenzulegen. Ziel ist es, mehr Transparenz und Sicherheit im Umgang mit KI-Systemen zu schaffen. Besonders betroffen sind Anbieter wie OpenAI, Google und andere, die generative KI-Modelle wie ChatGPT oder Gemini betreiben. Die neuen Regeln sollen sicherstellen, dass die Herkunft und Qualität der Daten, mit denen KI-Systeme trainiert werden, nachvollziehbar sind.  

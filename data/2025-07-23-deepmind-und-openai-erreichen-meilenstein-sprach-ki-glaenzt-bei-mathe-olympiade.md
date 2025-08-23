@@ -1,8 +1,30 @@
 ---
-layout: "post"
-language: "de"
-title: "DeepMind und OpenAI erreichen Meilenstein: Sprach-KI glänzt bei Mathe-Olympiade"
+layout: post
+language: de
+title: >-
+  DeepMind und OpenAI erreichen Meilenstein: Sprach-KI glänzt bei
+  Mathe-Olympiade
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 10
+    reasoning: >-
+      Dies ist eine bahnbrechende Entwicklung in der KI-Forschung, da erstmals
+      Sprachmodelle das Goldmedaillen-Niveau bei der anspruchsvollsten
+      Mathematik-Olympiade der Welt erreicht haben - ein Meilenstein für die
+      gesamte KI-Community.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Die Entwicklung hat erhebliche Auswirkungen auf die Arbeitswelt,
+      insbesondere in mathematischen, analytischen und bildungsnahen Berufen, da
+      KI nun komplexe Problemlösungen auf höchstem Niveau demonstriert.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Für Programmierer relevant, da die fortgeschrittenen logischen
+      Denkfähigkeiten der KI auch Auswirkungen auf Code-Generierung und
+      algorithmische Problemlösung haben könnten.
 ---
 
 Künstliche Intelligenz hat einen weiteren Meilenstein erreicht: Bei der diesjährigen Internationalen Mathematik-Olympiade (IMO) haben die Sprachmodelle von Google DeepMind und OpenAI erstmals das Goldmedaillen-Niveau erreicht. Beide Systeme lösten fünf von sechs hochkomplexen Aufgaben aus den Bereichen Algebra, Geometrie und Zahlentheorie. Dies markiert einen bedeutenden Fortschritt in der Fähigkeit von KI, logisches Denken und Problemlösung auf höchstem Niveau zu demonstrieren.

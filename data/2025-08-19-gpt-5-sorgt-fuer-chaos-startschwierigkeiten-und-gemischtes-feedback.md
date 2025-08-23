@@ -1,8 +1,33 @@
 ---
-layout: "post"
-language: "de"
-title: "GPT-5 sorgt für Chaos: Startschwierigkeiten und gemischtes Feedback"
+layout: post
+language: de
+title: 'GPT-5 sorgt für Chaos: Startschwierigkeiten und gemischtes Feedback'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt die Einführung von GPT-5, einem bahnbrechenden
+      KI-Modell von OpenAI, was für alle AI-Interessierten und die breite
+      Tech-Community hochrelevant ist.
+  - name: programming
+    relevance: 7
+    reasoning: >-
+      Die neuen Funktionen wie 'GPT-5 Thinking' und verbesserte Fähigkeiten bei
+      komplexen Anfragen sind für Entwickler sehr interessant, da sie direkte
+      Auswirkungen auf deren Arbeitsweise haben.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Die Verbesserungen und Probleme von GPT-5 betreffen viele Berufstätige,
+      die KI-Tools in ihrem Arbeitsalltag nutzen, insbesondere durch die
+      Änderungen bei der Modellauswahl und Verfügbarkeit.
+  - name: security
+    relevance: 5
+    reasoning: >-
+      Die neue Sicherheitsfunktion 'Safe Completions' ist für
+      sicherheitsbewusste Nutzer relevant, auch wenn sie nur am Rande erwähnt
+      wird.
 ---
 
 Die Einführung von GPT-5, dem neuesten KI-Modell von OpenAI, hat in den letzten Tagen für viel Aufsehen gesorgt. Während das Unternehmen mit dem Versprechen antrat, die Benutzererfahrung durch eine automatische Modellauswahl zu verbessern, stieß diese Änderung auf gemischte Reaktionen. Viele Nutzer kritisierten, dass die Möglichkeit, zwischen verschiedenen Modellen zu wählen, entfernt wurde, was zu Verwirrung und Frustration führte. Besonders die Entscheidung, ältere Modelle wie GPT-4o nur noch eingeschränkt verfügbar zu machen, sorgte für Unmut. OpenAI-CEO Sam Altman reagierte auf die Kritik und kündigte an, die Modellauswahl für Plus-Nutzer wieder einzuführen, um die Flexibilität zu erhöhen.  

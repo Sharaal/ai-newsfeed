@@ -1,8 +1,41 @@
 ---
-layout: "post"
-language: "de"
-title: "OpenAI veröffentlicht erstmals Open-Source-Modelle mit gpt-oss-120b und gpt-oss-20b"
+layout: post
+language: de
+title: >-
+  OpenAI veröffentlicht erstmals Open-Source-Modelle mit gpt-oss-120b und
+  gpt-oss-20b
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 10
+    reasoning: >-
+      Die Veröffentlichung von OpenAIs ersten Open-Source-Modellen GPT-OSS-120B
+      und GPT-OSS-20B ist bahnbrechend für die KI-Branche und markiert eine
+      strategische Wende des Unternehmens zurück zu seinen Open-Source-Wurzeln.
+  - name: programming
+    relevance: 9
+    reasoning: >-
+      Die Modelle sind direkt für Entwickler konzipiert und können mit wenigen
+      Klicks auf Plattformen wie Azure AI Foundry implementiert werden, was sie
+      für die Programmier-Community hochrelevant macht.
+  - name: work
+    relevance: 8
+    reasoning: >-
+      Die Demokratisierung von KI durch kostengünstige, lokal betreibbare
+      Modelle wird die Arbeitswelt erheblich beeinflussen und neue Möglichkeiten
+      für Unternehmen ohne teure Cloud-Infrastruktur schaffen.
+  - name: security
+    relevance: 6
+    reasoning: >-
+      OpenAI betont die Entwicklung sicherer und verantwortungsvoller KI-Systeme
+      und hat umfassende ethische Standards bei der Evaluierung angewendet, was
+      für Sicherheitsexperten relevant ist.
+  - name: copyright
+    relevance: 5
+    reasoning: >-
+      Die Apache-2.0-Lizenzierung der Modelle ist für Rechtsexperten und
+      Unternehmen interessant, die die rechtlichen Rahmenbedingungen für die
+      Nutzung verstehen müssen.
 ---
 
 OpenAI hat in dieser Woche mit der Veröffentlichung der Modelle GPT-OSS-120B und GPT-OSS-20B einen bedeutenden Schritt in Richtung Open Source gemacht. Die beiden Modelle, die unter der Apache-2.0-Lizenz stehen, sollen Entwicklern, Forschern und Unternehmen weltweit den Zugang zu fortschrittlicher KI erleichtern. GPT-OSS-120B, das größere der beiden Modelle, erreicht nahezu die Leistungsfähigkeit des proprietären Modells O4-Mini von OpenAI und kann auf einer einzigen 80-GB-GPU betrieben werden. Das kleinere Modell, GPT-OSS-20B, ist für den Einsatz auf Geräten mit nur 16 GB Speicher optimiert und eignet sich ideal für lokale Anwendungen und kostengünstige Inferenz.

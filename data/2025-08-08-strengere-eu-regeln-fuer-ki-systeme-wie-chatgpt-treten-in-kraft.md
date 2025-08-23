@@ -1,8 +1,45 @@
 ---
-layout: "post"
-language: "de"
-title: "Strengere EU-Regeln für KI-Systeme wie ChatGPT treten in Kraft"
+layout: post
+language: de
+title: Strengere EU-Regeln für KI-Systeme wie ChatGPT treten in Kraft
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 10
+    reasoning: >-
+      Der Artikel behandelt direkt neue EU-Vorschriften für KI-Systeme wie
+      ChatGPT und andere General-Purpose AI-Modelle, was für alle
+      AI-Interessierten und -Nutzer von höchster Relevanz ist.
+  - name: security
+    relevance: 8
+    reasoning: >-
+      Die neuen Regeln zielen explizit darauf ab, die Sicherheit von KI-Systemen
+      zu erhöhen und Risiken zu minimieren, was für alle Nutzer digitaler
+      Technologien wichtig ist.
+  - name: data protection
+    relevance: 9
+    reasoning: >-
+      Die Einführung von Datensteckbriefen und Transparenzpflichten bezüglich
+      Trainingsdaten betrifft direkt den Datenschutz und ist für Verbraucher
+      hochrelevant.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Da KI-Systeme zunehmend in Arbeitsprozessen eingesetzt werden, haben diese
+      Regulierungen erhebliche Auswirkungen auf die Arbeitswelt und
+      Compliance-Anforderungen in Unternehmen.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Entwickler von KI-Anwendungen müssen die neuen Compliance-Anforderungen
+      bei der Implementierung berücksichtigen, was für die
+      Programmiergemeinschaft relevant ist.
+  - name: copyright
+    relevance: 5
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, betreffen Transparenzpflichten bezüglich
+      Trainingsdaten auch urheberrechtliche Aspekte, die bei KI-Modellen eine
+      Rolle spielen.
 ---
 
 Am 2. August 2025 sind in der Europäischen Union neue Vorschriften für KI-Systeme wie ChatGPT, Google Gemini und andere sogenannte "General-Purpose AI"-Modelle in Kraft getreten. Diese Regelungen, die Teil des EU-KI-Gesetzes (AI Act) sind, zielen darauf ab, die Transparenz und Sicherheit solcher Systeme zu erhöhen. Anbieter müssen künftig offenlegen, wie ihre Modelle funktionieren, mit welchen Daten sie trainiert wurden und welche Maßnahmen sie ergreifen, um Risiken zu minimieren. Die neuen Vorschriften gelten als Meilenstein in der Regulierung von Künstlicher Intelligenz und sollen sowohl Verbraucher schützen als auch Innovationen in einem sicheren Rahmen fördern.  

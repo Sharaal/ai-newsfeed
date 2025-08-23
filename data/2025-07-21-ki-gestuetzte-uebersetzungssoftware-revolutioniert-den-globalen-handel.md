@@ -1,8 +1,29 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-gestützte Übersetzungssoftware revolutioniert den globalen Handel"
+layout: post
+language: de
+title: KI-gestützte Übersetzungssoftware revolutioniert den globalen Handel
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Die KI-gestützte Übersetzungstechnologie mit neuronalen Netzwerken und
+      großen Sprachmodellen steht im Zentrum des Artikels und zeigt eine
+      bedeutende Anwendung von KI, die bereits heute weitreichende Auswirkungen
+      hat.
+  - name: work
+    relevance: 7
+    reasoning: >-
+      Der Artikel thematisiert explizit den Wandel in der Arbeitswelt,
+      insbesondere die sinkende Nachfrage nach menschlichen Übersetzern und die
+      Veränderung von Arbeitsabläufen in internationalen Unternehmen.
+  - name: programming
+    relevance: 4
+    reasoning: >-
+      Obwohl die zugrundeliegenden Technologien (neuronale Netzwerke, große
+      Sprachmodelle) programmiert werden müssen, liegt der Fokus des Artikels
+      auf der Anwendung und den geschäftlichen Auswirkungen, nicht auf den
+      technischen Implementierungsdetails.
 ---
 
 Die rasante Entwicklung von KI-gestützter Übersetzungssoftware verändert die Art und Weise, wie Unternehmen weltweit miteinander kommunizieren. Tools wie DeepL, Google Translate und Smartling setzen auf neuronale Netzwerke und große Sprachmodelle, um Übersetzungen nicht nur schneller, sondern auch präziser und kontextbezogener zu gestalten. Besonders im globalen Handel, wo Sprachbarrieren oft ein Hindernis darstellen, ermöglichen diese Technologien eine reibungslose Kommunikation zwischen Geschäftspartnern aus verschiedenen Ländern. Unternehmen können so ihre Reichweite erweitern und neue Märkte erschließen, ohne auf teure und zeitaufwändige manuelle Übersetzungen angewiesen zu sein.

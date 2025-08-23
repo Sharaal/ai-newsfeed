@@ -1,8 +1,33 @@
 ---
-layout: "post"
-language: "de"
-title: "China schlägt weltweites Regelwerk für KI-Sicherheit vor"
+layout: post
+language: de
+title: China schlägt weltweites Regelwerk für KI-Sicherheit vor
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt direkt KI-Regulierung und globale KI-Governance, was
+      für alle KI-Interessierten und -Praktiker von höchster Bedeutung ist, da
+      internationale Standards die gesamte Branche prägen werden.
+  - name: security
+    relevance: 7
+    reasoning: >-
+      KI-Sicherheitsstandards und die Balance zwischen Innovation und Sicherheit
+      sind zentrale Themen des Artikels, die für Sicherheitsexperten und
+      Unternehmen mit KI-Systemen sehr relevant sind.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Die geplante internationale KI-Organisation und globale Regulierung werden
+      erhebliche Auswirkungen auf Arbeitsplätze in der Tech-Branche und
+      KI-Entwicklung haben, besonders für international tätige Unternehmen.
+  - name: data protection
+    relevance: 5
+    reasoning: >-
+      Obwohl nicht explizit erwähnt, sind Datenschutzaspekte implizit in
+      KI-Regulierung und Sicherheitsstandards enthalten, da KI-Systeme
+      typischerweise große Datenmengen verarbeiten.
 ---
 
 China hat auf der Welt-KI-Konferenz in Shanghai einen weitreichenden Vorschlag zur Regulierung von Künstlicher Intelligenz (KI) präsentiert. Ministerpräsident Li Qiang forderte die Gründung einer internationalen Organisation, die ein weltweit anerkanntes Regelwerk für die Entwicklung und Sicherheit von KI schaffen soll. Ziel sei es, die derzeit fragmentierte Regulierung zu überwinden und eine globale Zusammenarbeit zu fördern. Besonders betonte Li die Notwendigkeit, ein Gleichgewicht zwischen technologischer Innovation und Sicherheitsstandards zu finden.

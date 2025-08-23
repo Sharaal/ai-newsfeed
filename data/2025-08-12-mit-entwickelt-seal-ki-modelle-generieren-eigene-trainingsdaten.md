@@ -1,8 +1,35 @@
 ---
-layout: "post"
-language: "de"
-title: "MIT entwickelt SEAL: KI-Modelle generieren eigene Trainingsdaten"
+layout: post
+language: de
+title: 'MIT entwickelt SEAL: KI-Modelle generieren eigene Trainingsdaten'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Dies ist eine bahnbrechende Entwicklung in der KI-Forschung, da SEAL
+      Sprachmodelle befähigt, sich selbstständig zu verbessern und eigene
+      Trainingsdaten zu generieren - ein fundamentaler Durchbruch für die
+      Weiterentwicklung autonomer KI-Systeme.
+  - name: programming
+    relevance: 7
+    reasoning: >-
+      Das Framework ist hochrelevant für Entwickler, die mit Sprachmodellen
+      arbeiten, da es neue Möglichkeiten für selbstlernende Systeme eröffnet und
+      traditionelle Trainingsansätze revolutionieren könnte.
+  - name: data protection
+    relevance: 6
+    reasoning: >-
+      Die Fähigkeit von SEAL, ohne externe Datensätze auszukommen und nur selbst
+      generierte Inhalte zu nutzen, hat wichtige Implikationen für Datenschutz
+      und könnte Abhängigkeiten von externen, möglicherweise sensiblen
+      Datenquellen reduzieren.
+  - name: work
+    relevance: 5
+    reasoning: >-
+      Die Entwicklung autonomer, sich selbst verbessernder KI-Systeme wird
+      mittelfristig Auswirkungen auf verschiedene Arbeitsbereiche haben,
+      insbesondere dort wo KI-Modelle eingesetzt werden.
 ---
 
 Ein Forscherteam des Massachusetts Institute of Technology (MIT) hat mit SEAL (Self-Adapting Language Models) ein revolutionäres Framework entwickelt, das Sprachmodelle in die Lage versetzt, eigenständig synthetische Trainingsdaten zu generieren und sich kontinuierlich zu verbessern. SEAL basiert auf einem zweistufigen Prozess: Zunächst analysiert das Modell neue Informationen und erstellt sogenannte "Self-Edits", also Anweisungen in natürlicher Sprache, die sowohl neue Trainingsdaten als auch Optimierungsparameter enthalten. Anschließend testet das System diese Anweisungen und aktualisiert seine internen Parameter nur dann, wenn die Änderungen tatsächlich zu besseren Ergebnissen führen.

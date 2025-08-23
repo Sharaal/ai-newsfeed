@@ -1,0 +1,65 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# China schlägt weltweites Regelwerk für KI-Sicherheit vor\n\n\nChina hat auf der Welt-KI-Konferenz in Shanghai einen weitreichenden Vorschlag zur Regulierung von Künstlicher Intelligenz (KI) präsentiert. Ministerpräsident Li Qiang forderte die Gründung einer internationalen Organisation, die ein weltweit anerkanntes Regelwerk für die Entwicklung und Sicherheit von KI schaffen soll. Ziel sei es, die derzeit fragmentierte Regulierung zu überwinden und eine globale Zusammenarbeit zu fördern. Besonders betonte Li die Notwendigkeit, ein Gleichgewicht zwischen technologischer Innovation und Sicherheitsstandards zu finden.\n\n<!--more-->\n\nDer Vorschlag kommt zu einem Zeitpunkt, an dem die USA unter Präsident Donald Trump eine entgegengesetzte Strategie verfolgen. Während China auf internationale Kooperation und Open-Source-Ansätze setzt, lockern die USA regulatorische Vorgaben, um ihre Technologieführerschaft zu sichern. Li Qiang kritisierte indirekt diese Haltung und warnte vor einem Monopol weniger Länder und Unternehmen im Bereich der KI. China plant, insbesondere Entwicklungsländer in die Initiative einzubinden und ihnen Zugang zu KI-Infrastruktur und Wissen zu ermöglichen.\n\nDie Konferenz in Shanghai, an der über 800 Unternehmen und zahlreiche internationale Experten teilnahmen, unterstreicht Chinas Ambitionen, eine führende Rolle in der globalen KI-Governance einzunehmen. Neben der Präsentation eines 13-Punkte-Aktionsplans betonte Li, dass China bereit sei, technologische Fortschritte mit anderen Ländern zu teilen. Ob der Vorstoß Erfolg haben wird, hängt jedoch von der Bereitschaft anderer Staaten ab, sich an einer solchen Plattform zu beteiligen.\n\n### Quellen\n- [ZDFheute: China schlägt weltweites Regelwerk für KI-Entwicklung vor](https://www.zdfheute.de/politik/ausland/china-ki-weltweit-regelwerk-konferenz-shanghai-100.html)\n- [Tagesschau: China will nach globalen Standards KI regulieren](https://www.tagesschau.de/wirtschaft/technologie/china-vorschlag-ki-globales-regelwerk-100.html)\n- [Spiegel: Künstliche Intelligenz: China schlägt weltweit anerkanntes KI-Regelwerk vor](https://www.spiegel.de/netzwelt/kuenstliche-intelligenz-china-schlaegt-weltweit-anerkanntes-ki-regelwerk-vor-a-f80ccdb2-29d2-469d-a350-259348ed7a3b)\n- [ORF: China schlägt weltweites Regelwerk für KI vor](https://orf.at/stories/3400787/)\n\n    ",
+    "timestamp": "2025-08-23T19:50:24.346Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes ordne ich folgende Kategorien zu:\n\n## **ai** - Relevanz: 9/10\nDer Artikel behandelt direkt KI-Regulierung und globale KI-Governance, was für alle KI-Interessierten und -Praktiker von höchster Bedeutung ist, da internationale Standards die gesamte Branche prägen werden.\n\n## **security** - Relevanz: 7/10\nKI-Sicherheitsstandards und die Balance zwischen Innovation und Sicherheit sind zentrale Themen des Artikels, die für Sicherheitsexperten und Unternehmen mit KI-Systemen sehr relevant sind.\n\n## **work** - Relevanz: 6/10\nDie geplante internationale KI-Organisation und globale Regulierung werden erhebliche Auswirkungen auf Arbeitsplätze in der Tech-Branche und KI-Entwicklung haben, besonders für international tätige Unternehmen.\n\n## **data protection** - Relevanz: 5/10\nObwohl nicht explizit erwähnt, sind Datenschutzaspekte implizit in KI-Regulierung und Sicherheitsstandards enthalten, da KI-Systeme typischerweise große Datenmengen verarbeiten.\n\nDie Kategorien \"programming\", \"databases\" und \"copyright\" sind nicht direkt relevant, da der Artikel sich auf politische und regulatorische Aspekte der KI-Governance konzentriert, nicht auf technische Implementierung oder spezifische Rechtsfragen.",
+          "id": "e08d4928-1a23-4def-864b-dc13f027e41b"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 9,
+            "reasoning": "Der Artikel behandelt direkt KI-Regulierung und globale KI-Governance, was für alle KI-Interessierten und -Praktiker von höchster Bedeutung ist, da internationale Standards die gesamte Branche prägen werden."
+          },
+          {
+            "name": "security",
+            "relevance": 7,
+            "reasoning": "KI-Sicherheitsstandards und die Balance zwischen Innovation und Sicherheit sind zentrale Themen des Artikels, die für Sicherheitsexperten und Unternehmen mit KI-Systemen sehr relevant sind."
+          },
+          {
+            "name": "work",
+            "relevance": 6,
+            "reasoning": "Die geplante internationale KI-Organisation und globale Regulierung werden erhebliche Auswirkungen auf Arbeitsplätze in der Tech-Branche und KI-Entwicklung haben, besonders für international tätige Unternehmen."
+          },
+          {
+            "name": "data protection",
+            "relevance": 5,
+            "reasoning": "Obwohl nicht explizit erwähnt, sind Datenschutzaspekte implizit in KI-Regulierung und Sicherheitsstandards enthalten, da KI-Systeme typischerweise große Datenmengen verarbeiten."
+          }
+        ]
+      ]
+    }
+  }
+}

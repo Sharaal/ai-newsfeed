@@ -1,0 +1,89 @@
+{
+  "request": {
+    "output": {
+      "type": "array",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "name",
+            "relevance"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "relevance": {
+              "type": "number"
+            },
+            "reasoning": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "prompt": "\nDu bist ein technischer News-Kategorisierungsassistent mit Fachkenntnissen in IT, Künstlicher Intelligenz, Programmierung, Datenbanken, Arbeitswelt und rechtlichen Themen.\nDeine Aufgabe ist es, einen gegebenen Newstext den passenden Kategorien zuzuordnen und für jede Kategorie eine Relevanz zwischen 1 (nur für Spezialinteressierte) und 10 (bahnbrechend, für alle relevant) zu vergeben.\n\nDie Kategorien werden dir als Markdown-Liste vorgegeben.\nGehe folgendermaßen vor:\n1. Analysiere den Newstext.\n2. Wähle alle passenden Kategorien.\n3. Vergib für jede gewählte Kategorie eine Relevanz von 1 bis 10 und begründe deine Einstufung in einem Satz.\n\nHier ist die Kategorien-Liste:\n- ai\n- programming\n- databases\n- security\n- work\n- data protection\n- copyright\n\nHier ist der Newstext:\n# OpenAI sichert sich mit 30-Milliarden-Dollar-Deal Rechenkapazitäten bei Oracle\n\n\nOpenAI hat mit Oracle einen der größten Cloud-Deals der Geschichte abgeschlossen. Der Vertrag, der ein jährliches Volumen von 30 Milliarden US-Dollar umfasst, sichert OpenAI langfristig 4,5 Gigawatt Rechenleistung. Diese Kapazitäten sollen vor allem für die Weiterentwicklung von KI-Modellen wie GPT-4o und die Unterstützung von Anwendungen wie ChatGPT genutzt werden. Der Deal ist Teil des sogenannten \"Stargate\"-Projekts, einer Initiative, die von OpenAI, Oracle, SoftBank und weiteren Partnern ins Leben gerufen wurde, um eine neue KI-Infrastruktur in den USA aufzubauen.\n\n<!--more-->\n\nOracle plant im Rahmen des Abkommens den Bau und die Erweiterung mehrerer Rechenzentren in den USA, darunter in Texas, Michigan und Georgia. Besonders hervorzuheben ist ein \"Supercluster\"-Campus in Abilene, Texas, der mit modernster Nvidia-Hardware ausgestattet wird. Der Deal markiert einen Wendepunkt für Oracle, dessen jährlicher Cloud-Umsatz bisher bei 24,5 Milliarden US-Dollar lag. Die Nachricht ließ die Oracle-Aktie auf ein Allzeithoch steigen und stärkte die Position des Unternehmens im Wettbewerb mit Amazon Web Services und Microsoft Azure.\n\n### Quellen\n- [Trending Topics](https://www.trendingtopics.eu/openai-zahlt-oracle-jaehrlich-30-mrd-dollar-fuer-rechenzentrumsdienste/)\n- [Inside IT](https://www.inside-it.ch/oracle-sichert-sich-30-milliarden-deal-mit-openai-20250703)\n- [IT-Markt](https://www.it-markt.ch/news/2025-07-04/openai-sichert-sich-massive-cloud-kapazitaeten-von-oracle)\n\n    ",
+    "timestamp": "2025-08-23T19:51:35.381Z"
+  },
+  "response": {
+    "data": {
+      "result": [
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "type": "tool-call",
+              "toolCallId": "tooluse_9a2sITb4RnujdroNyRZE7g",
+              "toolName": "web_search",
+              "args": {
+                "query": "OpenAI Oracle 30 billion dollar deal cloud computing infrastructure 2025"
+              }
+            }
+          ],
+          "id": "d7389b3d-4894-4c42-9e4f-68f19fd139c2"
+        },
+        {
+          "role": "tool",
+          "id": "2e80cf36-fe57-48e0-8dc4-59f5d69e4c3d",
+          "content": [
+            {
+              "type": "tool-result",
+              "toolCallId": "tooluse_9a2sITb4RnujdroNyRZE7g",
+              "toolName": "web_search",
+              "result": {
+                "input": "OpenAI Oracle 30 billion dollar deal cloud computing infrastructure 2025",
+                "error": "The search for your query faild since the engine was unresponsive."
+              }
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": "Basierend auf der Analyse des Newstextes ordne ich ihn folgenden Kategorien zu:\n\n## **ai** - Relevanz: 10/10\nDieser Deal ist bahnbrechend für die KI-Branche, da er OpenAI massive Rechenkapazitäten für die Weiterentwicklung von GPT-4o und anderen KI-Modellen sichert und das \"Stargate\"-Projekt zur KI-Infrastruktur vorantreibt.\n\n## **work** - Relevanz: 8/10\nDer 30-Milliarden-Deal wird erhebliche Auswirkungen auf die Arbeitswelt haben, da er den Ausbau von KI-Anwendungen wie ChatGPT beschleunigt und neue Arbeitsplätze in den geplanten Rechenzentren schafft.\n\n## **programming** - Relevanz: 7/10\nFür Entwickler ist dieser Deal hochrelevant, da die erweiterten Rechenkapazitäten die Entwicklung und den Einsatz von KI-gestützten Programmiertools und -anwendungen erheblich vorantreiben werden.\n\nDie anderen Kategorien (databases, security, data protection, copyright) sind nicht direkt relevant, da der Text primär über Cloud-Infrastruktur und KI-Entwicklung berichtet, ohne spezifische Aspekte zu Datenbanken, Sicherheit, Datenschutz oder Urheberrecht zu behandeln.",
+          "id": "c96f1e8a-367a-455e-acf1-e9d0f7e346e6"
+        }
+      ],
+      "formattedResult": [
+        [
+          {
+            "name": "ai",
+            "relevance": 10,
+            "reasoning": "Dieser Deal ist bahnbrechend für die KI-Branche, da er OpenAI massive Rechenkapazitäten für die Weiterentwicklung von GPT-4o und anderen KI-Modellen sichert und das 'Stargate'-Projekt zur KI-Infrastruktur vorantreibt."
+          },
+          {
+            "name": "work",
+            "relevance": 8,
+            "reasoning": "Der 30-Milliarden-Deal wird erhebliche Auswirkungen auf die Arbeitswelt haben, da er den Ausbau von KI-Anwendungen wie ChatGPT beschleunigt und neue Arbeitsplätze in den geplanten Rechenzentren schafft."
+          },
+          {
+            "name": "programming",
+            "relevance": 7,
+            "reasoning": "Für Entwickler ist dieser Deal hochrelevant, da die erweiterten Rechenkapazitäten die Entwicklung und den Einsatz von KI-gestützten Programmiertools und -anwendungen erheblich vorantreiben werden."
+          }
+        ]
+      ]
+    }
+  }
+}

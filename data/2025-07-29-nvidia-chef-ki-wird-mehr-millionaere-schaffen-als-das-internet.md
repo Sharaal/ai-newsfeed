@@ -1,8 +1,27 @@
 ---
-layout: "post"
-language: "de"
-title: "Nvidia-Chef: KI wird mehr Millionäre schaffen als das Internet"
+layout: post
+language: de
+title: 'Nvidia-Chef: KI wird mehr Millionäre schaffen als das Internet'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt zentral die wirtschaftlichen Auswirkungen von KI und
+      Prognosen des Nvidia-CEOs zur transformativen Kraft der Technologie -
+      hochrelevant für alle, die sich für KI-Entwicklungen interessieren.
+  - name: work
+    relevance: 8
+    reasoning: >-
+      Der Text thematisiert explizit die Veränderung der Arbeitswelt durch KI,
+      Unternehmertum ohne technische Vorkenntnisse und potenzielle
+      Arbeitsplatzverluste - sehr relevant für Berufstätige aller Branchen.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Obwohl nicht direkt über Programmierung gesprochen wird, ist die Aussage
+      über sinkende technische Einstiegshürden und 'KI-Fabriken' für Entwickler
+      interessant, da es ihre Rolle in der Zukunft betrifft.
 ---
 
 Künstliche Intelligenz (KI) wird in den kommenden Jahren mehr Millionäre hervorbringen als das Internet in den letzten zwei Jahrzehnten – diese kühne Prognose stammt von Jensen Huang, dem CEO des Chipherstellers Nvidia. In einem kürzlich geführten Interview erklärte Huang, dass KI nicht nur die Art und Weise, wie Unternehmen arbeiten, revolutionieren wird, sondern auch eine neue Ära der wirtschaftlichen Chancen einläutet. Besonders bemerkenswert sei, dass KI die Einstiegshürden für Innovation und Unternehmertum drastisch senkt. 

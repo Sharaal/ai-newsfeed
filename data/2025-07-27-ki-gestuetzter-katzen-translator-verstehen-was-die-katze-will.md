@@ -1,8 +1,32 @@
 ---
-layout: "post"
-language: "de"
-title: "KI-gestützter Katzen-Translator: Verstehen, was die Katze will"
+layout: post
+language: de
+title: 'KI-gestützter Katzen-Translator: Verstehen, was die Katze will'
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 9
+    reasoning: >-
+      Der Artikel behandelt direkt KI-Anwendungen zur Tierkommunikation mit
+      konkreten Beispielen wie MeowTalk und NatureLM, was für die breite
+      KI-Community hochrelevant ist und neue Anwendungsfelder aufzeigt.
+  - name: programming
+    relevance: 6
+    reasoning: >-
+      Die entwickelten Apps und KI-Systeme erfordern komplexe Programmierung für
+      Audioanalyse und maschinelles Lernen, was für Entwickler interessant ist,
+      aber nicht im Fokus des Artikels steht.
+  - name: work
+    relevance: 4
+    reasoning: >-
+      Neue Technologien könnten Arbeitsplätze in der Tierbetreuung und
+      Veterinärmedizin beeinflussen, aber der Artikel fokussiert nicht auf
+      Arbeitsmarktauswirkungen.
+  - name: copyright
+    relevance: 3
+    reasoning: >-
+      Baidu hat ein Patent angemeldet, was rechtliche Aspekte des geistigen
+      Eigentums berührt, aber dies ist nur ein Nebenaspekt des Artikels.
 ---
 
 Die Welt der Tierkommunikation steht vor einem revolutionären Wandel: Dank künstlicher Intelligenz (KI) könnten Katzenbesitzer bald in der Lage sein, die Bedürfnisse und Wünsche ihrer Samtpfoten besser zu verstehen. Verschiedene Forscherteams und Unternehmen arbeiten derzeit an Technologien, die das Miauen von Katzen in menschliche Sprache übersetzen können. Eine der bekanntesten Entwicklungen ist die App "MeowTalk", die mithilfe von KI die Laute von Katzen analysiert und in elf allgemeine Bedeutungen wie "Ich habe Hunger" oder "Ich möchte spielen" übersetzt. Die App wurde bereits über 20 Millionen Mal heruntergeladen und wird kontinuierlich weiterentwickelt.

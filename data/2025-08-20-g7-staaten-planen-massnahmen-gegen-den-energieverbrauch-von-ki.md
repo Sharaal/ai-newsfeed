@@ -1,8 +1,27 @@
 ---
-layout: "post"
-language: "de"
-title: "G7-Staaten planen Maßnahmen gegen den Energieverbrauch von KI"
+layout: post
+language: de
+title: G7-Staaten planen Maßnahmen gegen den Energieverbrauch von KI
 aigenerated: true
+categories:
+  - name: ai
+    relevance: 8
+    reasoning: >-
+      Der Artikel behandelt direkt die Auswirkungen von KI auf den
+      Energieverbrauch und geplante Regulierungsmaßnahmen der G7-Staaten, was
+      für die gesamte KI-Branche von hoher Bedeutung ist.
+  - name: work
+    relevance: 6
+    reasoning: >-
+      Die geplanten Standards und Effizienzmaßnahmen werden sich auf
+      Arbeitsplätze in der KI-Entwicklung, Rechenzentren und im Energiesektor
+      auswirken, betrifft aber primär Fachkräfte in diesen Bereichen.
+  - name: security
+    relevance: 5
+    reasoning: >-
+      Der Artikel erwähnt Energiesicherheit und Systemresilienz als wichtige
+      Aspekte, die durch den steigenden KI-Energieverbrauch bedroht werden
+      könnten - relevant für Infrastruktursicherheit.
 ---
 
 Die G7-Staaten haben auf ihrem jüngsten Gipfel eine gemeinsame Erklärung abgegeben, in der sie den steigenden Energieverbrauch durch Künstliche Intelligenz (KI) als dringendes Problem anerkennen. Laut einer aktuellen Analyse wird der KI-bedingte Stromverbrauch in Rechenzentren bis 2028 auf etwa 300 Terawattstunden ansteigen, was rund einem Prozent des weltweiten Stromverbrauchs entspricht. Die Regierungschefs der G7 betonten, dass die zunehmende Verbreitung von KI nicht nur die Stromnetze belaste, sondern auch Auswirkungen auf die Energiesicherheit und die Erschwinglichkeit von Energie habe. Gleichzeitig sehen sie in der Technologie ein Potenzial, Innovationen im Energiesektor voranzutreiben und die Resilienz der Energiesysteme zu stärken.
