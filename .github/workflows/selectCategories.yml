@@ -1,9 +1,6 @@
 name: Select Categories
 
 on:
-  schedule:
-    # Run daily at 19:00 UTC
-    - cron: '0 19 * * *'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
